@@ -8,6 +8,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include('users.urls')),
     url(r'^api/', include('records.urls')),
+    url(r'^', include('snippets.urls')),
     url(r'^app/', app, name='app'),
     url('^auth/login/$', login, name='login'),
     url('^auth/logout/$', logout_then_login, name='logout'),
