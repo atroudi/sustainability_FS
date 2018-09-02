@@ -23,9 +23,9 @@ class Container extends React.Component {
                 <Col sm={rowTwoWidth}>
                     {children}
                 </Col>
-                <Col sm={rowTwoWidth}>
+                {/* <Col sm={rowTwoWidth}>
                     <GraphChartJs {...this.props}/>
-                </Col>
+                </Col> */}
             </Row>
         );
     }

@@ -9,12 +9,15 @@ import EditForm from "app/users/components/EditForm";
 import findModel from "app/components/higherOrder/findModel";
 import Model from "app/users/components/Model";
 
+import GraphChartJs from "app/components/graphs/GlucoseChartJs"
 
 class Container extends React.Component {
     render() {
         return (
             <div>
                 <Model {...this.props}/>
+                <GraphChartJs {...this.props}/>
+
                 <div className="text-center">
                     <DeleteButton
                         {...this.props}

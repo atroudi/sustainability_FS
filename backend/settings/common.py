@@ -18,6 +18,7 @@ DJANGO_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # 'django.contrib.sites',
 ]
 
 THIRD_PARTY_APPS = [
@@ -26,9 +27,9 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    "users",
-    "records",
-    "snippets"
+    "backend.apps.users",
+    "snippets",
+    "records"
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -118,6 +119,14 @@ REST_FRAMEWORK = {
         "rest_framework.filters.SearchFilter",
         "rest_framework.filters.DjangoFilterBackend",
     ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+        "rest_framework.authentication.SessionAuthentication",
+    ),
+   # 'DEFAULT_PERMISSION_CLASSES': (
+   #      'rest_framework.permissions.IsAdminUser'
+   # ),
 }
 
 AUTH_USER_MODEL = 'users.EmailUser'

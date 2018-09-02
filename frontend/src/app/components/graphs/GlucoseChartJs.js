@@ -34,6 +34,15 @@ var data = {
 
 var chartOptions = {
 
+	layout: {
+		padding: {
+			left: 500,
+			right: 0,
+			top: 0,
+			bottom: 0
+		}
+	},
+
 	///Boolean - Whether grid lines are shown across the chart
 	scaleShowGridLines : true,
 
@@ -75,6 +84,7 @@ var chartOptions = {
 
 	//Boolean - Whether to fill the dataset with a colour
 	datasetFill : true,
+	
 	// {% raw %}
 	//String - A legend template
 	// legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"><%if(datasets[i].label){%><%=datasets[i].label%><%}%></span></li><%}%></ul>"
@@ -86,15 +96,71 @@ var chartOptions = {
 
 class GraphChartJs extends React.Component{
     render(){
+		const {model} = this.props;
+
+		var data2 = {
+			labels: ["January", "February", "March", "April", "May", "June", "July"],
+			datasets: [
+				{
+					label: "My First dataset",
+					fillColor: "rgba(220,220,220,0.2)",
+					strokeColor: "rgba(220,220,220,1)",
+					pointColor: "rgba(220,220,220,1)",
+					pointStrokeColor: "#fff",
+					pointHighlightFill: "#fff",
+					pointHighlightStroke: "rgba(220,220,220,1)",
+					data: [65, 59, 80, 81, 56, 55, 40]
+				}
+				,
+				{
+					label: "My Second dataset",
+					fillColor: "rgba(173,174,214,0.2)",
+					strokeColor: "rgba(173,174,214,1)",
+					pointColor: "rgba(173,174,214,1)",
+					pointStrokeColor: "#fff",
+					pointHighlightFill: "#fff",
+					pointHighlightStroke: "rgba(173,174,214,1)",
+					data: [28, 48, 40, 19, 86, 27, 90]
+				}
+			]
+		};
+
+		data2.labels = [model.title, "February", "March", "April", "May", "June", "July"];
+		// var list2 = model.toList()
+		// collection.models.toList().map(model => parseInt(model.getId()))
+
+		var entries = new Array(1);
+
+		// entries.push(model.getId())
+		entries = model.getEntries();
+		data2.datasets.push(
+			{
+				label: "My Third dataset",
+			fillColor: "rgba(173,174,214,0.2)",
+			strokeColor: "rgba(173,174,214,1)",
+			pointColor: "rgba(173,174,214,1)",
+			pointStrokeColor: "#fff",
+			pointHighlightFill: "#fff",
+			pointHighlightStroke: "rgba(173,174,214,1)",
+			// data: [0]
+			data: entries
+
+			// data: collection.models.toList().map(model => parseInt(model.getId()))
+				}
+		);
       return(
-        <LineChart data={data} options={chartOptions} width="800" height="250"/>
+			  // <div style={{position: 'absolute',left: '0px'}}>
+			<div>
+
+				<LineChart data={data2} options={chartOptions} width="800" height="250" />
+			</div>
       )
     }
   }
 
-var MyComponent = React.createClass({
-    render: function() {
-      return <LineChart data={chartData} options={chartOptions} width="80%" height="250"/>
-    }
-  });
+// var MyComponent = React.createClass({
+//     render: function() {
+//       return <LineChart data={chartData} options={chartOptions} width="80%" height="250"/>
+//     }
+//   });
 export default GraphChartJs;

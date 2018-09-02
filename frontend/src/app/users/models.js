@@ -35,6 +35,19 @@ class User extends Record({
         return `${window.django.urls.users}${this.id}/`;
     }
 
+    getId(){
+        return this.id;
+    }
+
+    // Will filter all records with the username (email) of current user model
+        // Add record model
+            // with filter through email
+            // get SGV and convert it to list
+            // use the return result in get Entries
+    getEntries(){
+        return [0,100,200];
+    }
+
     toString() {
         return `${this.first_name} ${this.last_name}`;
     }
