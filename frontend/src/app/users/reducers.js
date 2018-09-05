@@ -1,8 +1,8 @@
 import collectionReducer from "app/reducers/collection";
 
-import {Collection} from "./models";
+import {UserCollection} from "./models";
 
-const initialState = new Collection();
+const initialState = new UserCollection();
 
 
 function reducer(state = initialState, action) {

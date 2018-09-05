@@ -24,7 +24,7 @@
                 logout: "{% url "logout" %}",
                 staticRoot: "{% static "" %}",
                 users: "{% url "emailuser-list" %}",
-                reducers: "{% url "records-list" %}"
+                records: "{% url "records-list" %}"
 
             },
             user: {
@@ -35,7 +35,7 @@
                     {% autoescape off %}JSON.parse('{{ permissions }}'){% endautoescape %}
                 )
             },
-            reducer: {
+            record: {
             }
         };
         </script>

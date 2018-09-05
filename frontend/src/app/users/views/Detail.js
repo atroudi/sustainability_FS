@@ -13,6 +13,7 @@ import GraphChartJs from "app/components/graphs/GlucoseChartJs"
 
 class Container extends React.Component {
     render() {
+        console.log(this.props);
         return (
             <div>
                 <Model {...this.props}/>
@@ -31,7 +32,7 @@ class Container extends React.Component {
 }
 
 const selector = createSelector(
-    (state) => state.users,
+    (state) => state.reducer,
     (collection) => {
         return {
             collection

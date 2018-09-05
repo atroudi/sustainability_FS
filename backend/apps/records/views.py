@@ -11,7 +11,7 @@ class RecordViewSet(viewsets.ModelViewSet):
     permission_classes = (permissions.AllowAny,)
 
     search_fields = ('api_secret', 'direction', 'sysTime', 'dateString')
-    filter_fields = ('api_secret', 'direction', 'sysTime')
+    filter_fields = ('id','api_secret', 'direction', 'sysTime')
 
     # def perform_create(self, serializer):
     #     serializer.save(owner=self.request.record)
