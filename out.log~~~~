@@ -1,0 +1,3209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>ValueError at /snippets/</title>
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; }
+    h2 { margin-bottom:.8em; }
+    h2 span { font-size:80%; color:#666; font-weight:normal; }
+    h3 { margin:1em 0 .5em 0; }
+    h4 { margin:0 0 .5em 0; font-weight: normal; }
+    code, pre { font-size: 100%; white-space: pre-wrap; }
+    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+    tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+    thead th {
+      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+      font-weight:normal; font-size:11px; border:1px solid #ddd;
+    }
+    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    table.vars { margin:5px 0 2px 40px; }
+    table.vars td, table.req td { font-family:monospace; }
+    table td.code { width:100%; }
+    table td.code pre { overflow:hidden; }
+    table.source th { color:#666; }
+    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+    ul.traceback { list-style-type:none; color: #222; }
+    ul.traceback li.frame { padding-bottom:1em; color:#666; }
+    ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+    div.context { padding:10px 0; overflow:hidden; }
+    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }
+    div.context ol li pre { display:inline; }
+    div.context ol.context-line li { color:#505050; background-color:#dfdfdf; padding: 3px 2px; }
+    div.context ol.context-line li span { position:absolute; right:32px; }
+    .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+    .user div.context ol li { color:#666; }
+    div.commands { margin-left: 40px; }
+    div.commands a { color:#555; text-decoration:none; }
+    .user div.commands a { color: black; }
+    #summary { background: #ffc; }
+    #summary h2 { font-weight: normal; color: #666; }
+    #explanation { background:#eee; }
+    #template, #template-not-exist { background:#f6f6f6; }
+    #template-not-exist ul { margin: 0 0 10px 20px; }
+    #template-not-exist .postmortem-section { margin-bottom: 3px; }
+    #unicode-hint { background:#eee; }
+    #traceback { background:#eee; }
+    #requestinfo { background:#f6f6f6; padding-left:120px; }
+    #summary table { border:none; background:transparent; }
+    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+    #requestinfo h3 { margin-bottom:-1em; }
+    .error { background: #ffc; }
+    .specific { color:#cc3300; font-weight:bold; }
+    h2 span.commands { font-size:.7em;}
+    span.commands a:link {color:#5E5694;}
+    pre.exception_value { font-family: sans-serif; color: #666; font-size: 1.5em; margin: 10px 0 10px 0; }
+    .append-bottom { margin-bottom: 10px; }
+  </style>
+  
+  <script type="text/javascript">
+  //<!--
+    function getElementsByClassName(oElm, strTagName, strClassName){
+        // Written by Jonathan Snook, http://www.snook.ca/jon; Add-ons by Robert Nyman, http://www.robertnyman.com
+        var arrElements = (strTagName == "*" && document.all)? document.all :
+        oElm.getElementsByTagName(strTagName);
+        var arrReturnElements = new Array();
+        strClassName = strClassName.replace(/\-/g, "\-");
+        var oRegExp = new RegExp("(^|\s)" + strClassName + "(\s|$)");
+        var oElement;
+        for(var i=0; i<arrElements.length; i++){
+            oElement = arrElements[i];
+            if(oRegExp.test(oElement.className)){
+                arrReturnElements.push(oElement);
+            }
+        }
+        return (arrReturnElements)
+    }
+    function hideAll(elems) {
+      for (var e = 0; e < elems.length; e++) {
+        elems[e].style.display = 'none';
+      }
+    }
+    window.onload = function() {
+      hideAll(getElementsByClassName(document, 'table', 'vars'));
+      hideAll(getElementsByClassName(document, 'ol', 'pre-context'));
+      hideAll(getElementsByClassName(document, 'ol', 'post-context'));
+      hideAll(getElementsByClassName(document, 'div', 'pastebin'));
+    }
+    function toggle() {
+      for (var i = 0; i < arguments.length; i++) {
+        var e = document.getElementById(arguments[i]);
+        if (e) {
+          e.style.display = e.style.display == 'none' ? 'block': 'none';
+        }
+      }
+      return false;
+    }
+    function varToggle(link, id) {
+      toggle('v' + id);
+      var s = link.getElementsByTagName('span')[0];
+      var uarr = String.fromCharCode(0x25b6);
+      var darr = String.fromCharCode(0x25bc);
+      s.innerHTML = s.innerHTML == uarr ? darr : uarr;
+      return false;
+    }
+    function switchPastebinFriendly(link) {
+      s1 = "Switch to copy-and-paste view";
+      s2 = "Switch back to interactive view";
+      link.innerHTML = link.innerHTML.trim() == s1 ? s2: s1;
+      toggle('browserTraceback', 'pastebinTraceback');
+      return false;
+    }
+    //-->
+  </script>
+  
+</head>
+<body>
+<div id="summary">
+  <h1>ValueError at /snippets/</h1>
+  <pre class="exception_value">Cannot assign &quot;&lt;django.contrib.auth.models.AnonymousUser object at 0x7f3978bf6b70&gt;&quot;: &quot;Snippet.owner&quot; must be a &quot;EmailUser&quot; instance.</pre>
+  <table class="meta">
+
+    <tr>
+      <th>Request Method:</th>
+      <td>POST</td>
+    </tr>
+    <tr>
+      <th>Request URL:</th>
+      <td>http://127.0.0.1:8000/snippets/</td>
+    </tr>
+
+    <tr>
+      <th>Django Version:</th>
+      <td>1.9.4</td>
+    </tr>
+
+    <tr>
+      <th>Exception Type:</th>
+      <td>ValueError</td>
+    </tr>
+
+
+    <tr>
+      <th>Exception Value:</th>
+      <td><pre>Cannot assign &quot;&lt;django.contrib.auth.models.AnonymousUser object at 0x7f3978bf6b70&gt;&quot;: &quot;Snippet.owner&quot; must be a &quot;EmailUser&quot; instance.</pre></td>
+    </tr>
+
+
+    <tr>
+      <th>Exception Location:</th>
+      <td>/home/migiwara/anaconda3/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py in __set__, line 207</td>
+    </tr>
+
+    <tr>
+      <th>Python Executable:</th>
+      <td>/home/migiwara/anaconda3/bin/python3.6</td>
+    </tr>
+    <tr>
+      <th>Python Version:</th>
+      <td>3.6.5</td>
+    </tr>
+    <tr>
+      <th>Python Path:</th>
+      <td><pre>[&#39;/home/migiwara/HBKU/BioSensors/BiosensorsServer&#39;,
+ &#39;/home/migiwara/HBKU/BioSensors/BiosensorsServer&#39;,
+ &#39;/home/migiwara/anaconda3/lib/python36.zip&#39;,
+ &#39;/home/migiwara/anaconda3/lib/python3.6&#39;,
+ &#39;/home/migiwara/anaconda3/lib/python3.6/lib-dynload&#39;,
+ &#39;/home/migiwara/anaconda3/lib/python3.6/site-packages&#39;,
+ &#39;/home/migiwara/Downloads/pycharm-2018.1.4/helpers/pycharm_matplotlib_backend&#39;,
+ &#39;/home/migiwara/HBKU/BioSensors/BiosensorsServer/backend/apps&#39;,
+ &#39;/home/migiwara/anaconda3/lib/python3.6/site-packages/IPython/extensions&#39;]</pre></td>
+    </tr>
+    <tr>
+      <th>Server time:</th>
+      <td>Tue, 28 Aug 2018 10:10:47 -0400</td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+<div id="traceback">
+  <h2>Traceback <span class="commands"><a href="#" onclick="return switchPastebinFriendly(this);">
+    Switch to copy-and-paste view</a></span>
+  </h2>
+  
+  <div id="browserTraceback">
+    <ul class="traceback">
+      
+        
+        <li class="frame django">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py</code> in <code>get_response</code>
+
+          
+            <div class="context" id="c139884815732680">
+              
+                <ol start="142" class="pre-context" id="pre139884815732680">
+                
+                  <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre>                        break</pre></li>
+                
+                  <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre>            if response is None:</pre></li>
+                
+                  <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre>                wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                
+                  <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre>                try:</pre></li>
+                
+                  <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre>                    response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre>                except Exception as e:</pre></li>
+                
+                </ol>
+              
+              <ol start="149" class="context-line">
+                <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre>
+                    response = self.process_exception_by_middleware(e, request)</pre> <span>...</span></li></ol>
+              
+                <ol start='150' class="post-context" id="post139884815732680">
+                  
+                  <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre>            # Complain if the view returned None (a common error).</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre>            if response is None:</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre>                if isinstance(callback, types.FunctionType):    # FBV</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre>                    view_name = callback.__name__</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732680', 'post139884815732680')"><pre>                else:                                           # CBV</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815732680')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815732680">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>wrapped_callback</td>
+                    <td class="code"><pre>&lt;function SnippetList at 0x7f3979df2a60&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback</td>
+                    <td class="code"><pre>&lt;function SnippetList at 0x7f3979df2a60&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>resolver_match</td>
+                    <td class="code"><pre>ResolverMatch(func=snippets.views.SnippetList, args=(), kwargs={}, url_name=None, app_names=[], namespaces=[])</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>middleware_method</td>
+                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x7f397a490668&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response_is_rendered</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>resolver</td>
+                    <td class="code"><pre>&lt;RegexURLResolver &#39;backend.urls&#39; (None:None) ^/&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>urlconf</td>
+                    <td class="code"><pre>&#39;backend.urls&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#39;/snippets/&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f3981570048&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py</code> in <code>get_response</code>
+
+          
+            <div class="context" id="c139884815729736">
+              
+                <ol start="140" class="pre-context" id="pre139884815729736">
+                
+                  <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre>                    response = middleware_method(request, callback, callback_args, callback_kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre>                    if response:</pre></li>
+                
+                  <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre>                        break</pre></li>
+                
+                  <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre>            if response is None:</pre></li>
+                
+                  <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre>                wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                
+                  <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre>                try:</pre></li>
+                
+                </ol>
+              
+              <ol start="147" class="context-line">
+                <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre>
+                    response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre> <span>...</span></li></ol>
+              
+                <ol start='148' class="post-context" id="post139884815729736">
+                  
+                  <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre>                except Exception as e:</pre></li>
+                  
+                  <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre>                    response = self.process_exception_by_middleware(e, request)</pre></li>
+                  
+                  <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre>            # Complain if the view returned None (a common error).</pre></li>
+                  
+                  <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre>            if response is None:</pre></li>
+                  
+                  <li onclick="toggle('pre139884815729736', 'post139884815729736')"><pre>                if isinstance(callback, types.FunctionType):    # FBV</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815729736')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815729736">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>wrapped_callback</td>
+                    <td class="code"><pre>&lt;function SnippetList at 0x7f3979df2a60&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback</td>
+                    <td class="code"><pre>&lt;function SnippetList at 0x7f3979df2a60&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>resolver_match</td>
+                    <td class="code"><pre>ResolverMatch(func=snippets.views.SnippetList, args=(), kwargs={}, url_name=None, app_names=[], namespaces=[])</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>middleware_method</td>
+                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x7f397a490668&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response_is_rendered</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>resolver</td>
+                    <td class="code"><pre>&lt;RegexURLResolver &#39;backend.urls&#39; (None:None) ^/&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>urlconf</td>
+                    <td class="code"><pre>&#39;backend.urls&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#39;/snippets/&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f3981570048&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/django/views/decorators/csrf.py</code> in <code>wrapped_view</code>
+
+          
+            <div class="context" id="c139884815731208">
+              
+                <ol start="51" class="pre-context" id="pre139884815731208">
+                
+                  <li onclick="toggle('pre139884815731208', 'post139884815731208')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139884815731208', 'post139884815731208')"><pre>    Marks a view function as being exempt from the CSRF view protection.</pre></li>
+                
+                  <li onclick="toggle('pre139884815731208', 'post139884815731208')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139884815731208', 'post139884815731208')"><pre>    # We could just do view_func.csrf_exempt = True, but decorators</pre></li>
+                
+                  <li onclick="toggle('pre139884815731208', 'post139884815731208')"><pre>    # are nicer if they don&#39;t have side-effects, so we return a new</pre></li>
+                
+                  <li onclick="toggle('pre139884815731208', 'post139884815731208')"><pre>    # function.</pre></li>
+                
+                  <li onclick="toggle('pre139884815731208', 'post139884815731208')"><pre>    def wrapped_view(*args, **kwargs):</pre></li>
+                
+                </ol>
+              
+              <ol start="58" class="context-line">
+                <li onclick="toggle('pre139884815731208', 'post139884815731208')"><pre>
+        return view_func(*args, **kwargs)</pre> <span>...</span></li></ol>
+              
+                <ol start='59' class="post-context" id="post139884815731208">
+                  
+                  <li onclick="toggle('pre139884815731208', 'post139884815731208')"><pre>    wrapped_view.csrf_exempt = True</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731208', 'post139884815731208')"><pre>    return wraps(view_func, assigned=available_attrs(view_func))(wrapped_view)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815731208')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815731208">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>(&lt;WSGIRequest: POST &#39;/snippets/&#39;&gt;,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>view_func</td>
+                    <td class="code"><pre>&lt;function SnippetList at 0x7f3979df2268&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/django/views/generic/base.py</code> in <code>view</code>
+
+          
+            <div class="context" id="c139884815732232">
+              
+                <ol start="61" class="pre-context" id="pre139884815732232">
+                
+                  <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre>        def view(request, *args, **kwargs):</pre></li>
+                
+                  <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre>            self = cls(**initkwargs)</pre></li>
+                
+                  <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre>            if hasattr(self, &#39;get&#39;) and not hasattr(self, &#39;head&#39;):</pre></li>
+                
+                  <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre>                self.head = self.get</pre></li>
+                
+                  <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre>            self.request = request</pre></li>
+                
+                  <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre>            self.args = args</pre></li>
+                
+                  <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre>            self.kwargs = kwargs</pre></li>
+                
+                </ol>
+              
+              <ol start="68" class="context-line">
+                <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre>
+            return self.dispatch(request, *args, **kwargs)</pre> <span>...</span></li></ol>
+              
+                <ol start='69' class="post-context" id="post139884815732232">
+                  
+                  <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre>        view.view_class = cls</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre>        view.view_initkwargs = initkwargs</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre>        # take name and docstring from class</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre>        update_wrapper(view, cls, updated=())</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732232', 'post139884815732232')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815732232')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815732232">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;snippets.views.SnippetList object at 0x7f3978bf6f28&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#39;/snippets/&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>initkwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>cls</td>
+                    <td class="code"><pre>&lt;class &#39;snippets.views.SnippetList&#39;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/rest_framework/views.py</code> in <code>dispatch</code>
+
+          
+            <div class="context" id="c139884815730440">
+              
+                <ol start="459" class="pre-context" id="pre139884815730440">
+                
+                  <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre>            response = handler(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre>        except Exception as exc:</pre></li>
+                
+                </ol>
+              
+              <ol start="466" class="context-line">
+                <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre>
+            response = self.handle_exception(exc)</pre> <span>...</span></li></ol>
+              
+                <ol start='467' class="post-context" id="post139884815730440">
+                  
+                  <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre>        return self.response</pre></li>
+                  
+                  <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre>    def options(self, request, *args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre139884815730440', 'post139884815730440')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815730440')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815730440">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method ListCreateAPIView.post of &lt;snippets.views.SnippetList object at 0x7f3978bf6f28&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request object at 0x7f3978bf6400&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;snippets.views.SnippetList object at 0x7f3978bf6f28&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/rest_framework/views.py</code> in <code>dispatch</code>
+
+          
+            <div class="context" id="c139884815731272">
+              
+                <ol start="456" class="pre-context" id="pre139884815731272">
+                
+                  <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre>            # Get the appropriate handler method</pre></li>
+                
+                  <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre>            if request.method.lower() in self.http_method_names:</pre></li>
+                
+                  <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre>                handler = getattr(self, request.method.lower(),</pre></li>
+                
+                  <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="463" class="context-line">
+                <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre>
+            response = handler(request, *args, **kwargs)</pre> <span>...</span></li></ol>
+              
+                <ol start='464' class="post-context" id="post139884815731272">
+                  
+                  <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre>        except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre>            response = self.handle_exception(exc)</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731272', 'post139884815731272')"><pre>        return self.response</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815731272')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815731272">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method ListCreateAPIView.post of &lt;snippets.views.SnippetList object at 0x7f3978bf6f28&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request object at 0x7f3978bf6400&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;snippets.views.SnippetList object at 0x7f3978bf6f28&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/rest_framework/generics.py</code> in <code>post</code>
+
+          
+            <div class="context" id="c139884815731080">
+              
+                <ol start="239" class="pre-context" id="pre139884815731080">
+                
+                  <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre>    Concrete view for listing a queryset or creating a model instance.</pre></li>
+                
+                  <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre>    def get(self, request, *args, **kwargs):</pre></li>
+                
+                  <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre>        return self.list(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre>    def post(self, request, *args, **kwargs):</pre></li>
+                
+                </ol>
+              
+              <ol start="246" class="context-line">
+                <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre>
+        return self.create(request, *args, **kwargs)</pre> <span>...</span></li></ol>
+              
+                <ol start='247' class="post-context" id="post139884815731080">
+                  
+                  <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre>class RetrieveUpdateAPIView(mixins.RetrieveModelMixin,</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre>                            mixins.UpdateModelMixin,</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre>                            GenericAPIView):</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731080', 'post139884815731080')"><pre>    &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815731080')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815731080">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request object at 0x7f3978bf6400&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;snippets.views.SnippetList object at 0x7f3978bf6f28&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/rest_framework/mixins.py</code> in <code>create</code>
+
+          
+            <div class="context" id="c139884815732616">
+              
+                <ol start="14" class="pre-context" id="pre139884815732616">
+                
+                  <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre>class CreateModelMixin(object):</pre></li>
+                
+                  <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre>    Create a model instance.</pre></li>
+                
+                  <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre>    def create(self, request, *args, **kwargs):</pre></li>
+                
+                  <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre>        serializer = self.get_serializer(data=request.data)</pre></li>
+                
+                  <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre>        serializer.is_valid(raise_exception=True)</pre></li>
+                
+                </ol>
+              
+              <ol start="21" class="context-line">
+                <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre>
+        self.perform_create(serializer)</pre> <span>...</span></li></ol>
+              
+                <ol start='22' class="post-context" id="post139884815732616">
+                  
+                  <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre>        headers = self.get_success_headers(serializer.data)</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre>        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre>    def perform_create(self, serializer):</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre>        serializer.save()</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732616', 'post139884815732616')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815732616')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815732616">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>serializer</td>
+                    <td class="code"><pre>SnippetSerializer(context={&#39;request&#39;: &lt;rest_framework.request.Request object&gt;, &#39;format&#39;: None, &#39;view&#39;: &lt;snippets.views.SnippetList object&gt;}, data={&#39;code&#39;: &#39;Flat3&#39;}):
+    id = IntegerField(label=&#39;ID&#39;, read_only=True)
+    title = CharField(allow_blank=True, max_length=100, required=False)
+    code = CharField(style={&#39;base_template&#39;: &#39;textarea.html&#39;})
+    linenos = BooleanField(required=False)
+    language = ChoiceField(choices=[(&#39;abap&#39;, &#39;ABAP&#39;), (&#39;abnf&#39;, &#39;ABNF&#39;), (&#39;ada&#39;, &#39;Ada&#39;), (&#39;adl&#39;, &#39;ADL&#39;), (&#39;agda&#39;, &#39;Agda&#39;), (&#39;aheui&#39;, &#39;Aheui&#39;), (&#39;ahk&#39;, &#39;autohotkey&#39;), (&#39;alloy&#39;, &#39;Alloy&#39;), (&#39;ampl&#39;, &#39;Ampl&#39;), (&#39;antlr&#39;, &#39;ANTLR&#39;), (&#39;antlr-as&#39;, &#39;ANTLR With ActionScript Target&#39;), (&#39;antlr-cpp&#39;, &#39;ANTLR With CPP Target&#39;), (&#39;antlr-csharp&#39;, &#39;ANTLR With C# Target&#39;), (&#39;antlr-java&#39;, &#39;ANTLR With Java Target&#39;), (&#39;antlr-objc&#39;, &#39;ANTLR With ObjectiveC Target&#39;), (&#39;antlr-perl&#39;, &#39;ANTLR With Perl Target&#39;), (&#39;antlr-python&#39;, &#39;ANTLR With Python Target&#39;), (&#39;antlr-ruby&#39;, &#39;ANTLR With Ruby Target&#39;), (&#39;apacheconf&#39;, &#39;ApacheConf&#39;), (&#39;apl&#39;, &#39;APL&#39;), (&#39;applescript&#39;, &#39;AppleScript&#39;), (&#39;arduino&#39;, &#39;Arduino&#39;), (&#39;as&#39;, &#39;ActionScript&#39;), (&#39;as3&#39;, &#39;ActionScript 3&#39;), (&#39;aspectj&#39;, &#39;AspectJ&#39;), (&#39;aspx-cs&#39;, &#39;aspx-cs&#39;), (&#39;aspx-vb&#39;, &#39;aspx-vb&#39;), (&#39;asy&#39;, &#39;Asymptote&#39;), (&#39;at&#39;, &#39;AmbientTalk&#39;), (&#39;autoit&#39;, &#39;AutoIt&#39;), (&#39;awk&#39;, &#39;Awk&#39;), (&#39;basemake&#39;, &#39;Base Makefile&#39;), (&#39;bash&#39;, &#39;Bash&#39;), (&#39;bat&#39;, &#39;Batchfile&#39;), (&#39;bbcode&#39;, &#39;BBCode&#39;), (&#39;bc&#39;, &#39;BC&#39;), (&#39;befunge&#39;, &#39;Befunge&#39;), (&#39;bib&#39;, &#39;BibTeX&#39;), (&#39;blitzbasic&#39;, &#39;BlitzBasic&#39;), (&#39;blitzmax&#39;, &#39;BlitzMax&#39;), (&#39;bnf&#39;, &#39;BNF&#39;), (&#39;boo&#39;, &#39;Boo&#39;), (&#39;boogie&#39;, &#39;Boogie&#39;), (&#39;brainfuck&#39;, &#39;Brainfuck&#39;), (&#39;bro&#39;, &#39;Bro&#39;), (&#39;bst&#39;, &#39;BST&#39;), (&#39;bugs&#39;, &#39;BUGS&#39;), (&#39;c&#39;, &#39;C&#39;), (&#39;c-objdump&#39;, &#39;c-objdump&#39;), (&#39;ca65&#39;, &#39;ca65 assembler&#39;), (&#39;cadl&#39;, &#39;cADL&#39;), (&#39;camkes&#39;, &#39;CAmkES&#39;), (&#39;capdl&#39;, &#39;CapDL&#39;), (&#39;capnp&#39;, &quot;Cap&#39;n Proto&quot;), (&#39;cbmbas&#39;, &#39;CBM BASIC V2&#39;), (&#39;ceylon&#39;, &#39;Ceylon&#39;), (&#39;cfc&#39;, &#39;Coldfusion CFC&#39;), (&#39;cfengine3&#39;, &#39;CFEngine3&#39;), (&#39;cfm&#39;, &#39;Coldfusion HTML&#39;), (&#39;cfs&#39;, &#39;cfstatement&#39;), (&#39;chai&#39;, &#39;ChaiScript&#39;), (&#39;chapel&#39;, &#39;Chapel&#39;), (&#39;cheetah&#39;, &#39;Cheetah&#39;), (&#39;cirru&#39;, &#39;Cirru&#39;), (&#39;clay&#39;, &#39;Clay&#39;), (&#39;clean&#39;, &#39;Clean&#39;), (&#39;clojure&#39;, &#39;Clojure&#39;), (&#39;clojurescript&#39;, &#39;ClojureScript&#39;), (&#39;cmake&#39;, &#39;CMake&#39;), (&#39;cobol&#39;, &#39;COBOL&#39;), (&#39;cobolfree&#39;, &#39;COBOLFree&#39;), (&#39;coffee-script&#39;, &#39;CoffeeScript&#39;), (&#39;common-lisp&#39;, &#39;Common Lisp&#39;), (&#39;componentpascal&#39;, &#39;Component Pascal&#39;), (&#39;console&#39;, &#39;Bash Session&#39;), (&#39;control&#39;, &#39;Debian Control file&#39;), (&#39;coq&#39;, &#39;Coq&#39;), (&#39;cpp&#39;, &#39;C++&#39;), (&#39;cpp-objdump&#39;, &#39;cpp-objdump&#39;), (&#39;cpsa&#39;, &#39;CPSA&#39;), (&#39;cr&#39;, &#39;Crystal&#39;), (&#39;crmsh&#39;, &#39;Crmsh&#39;), (&#39;croc&#39;, &#39;Croc&#39;), (&#39;cryptol&#39;, &#39;Cryptol&#39;), (&#39;csharp&#39;, &#39;C#&#39;), (&#39;csound&#39;, &#39;Csound Orchestra&#39;), (&#39;csound-document&#39;, &#39;Csound Document&#39;), (&#39;csound-score&#39;, &#39;Csound Score&#39;), (&#39;css&#39;, &#39;CSS&#39;), (&#39;css+django&#39;, &#39;CSS+Django/Jinja&#39;), (&#39;css+erb&#39;, &#39;CSS+Ruby&#39;), (&#39;css+genshitext&#39;, &#39;CSS+Genshi Text&#39;), (&#39;css+lasso&#39;, &#39;CSS+Lasso&#39;), (&#39;css+mako&#39;, &#39;CSS+Mako&#39;), (&#39;css+mozpreproc&#39;, &#39;CSS+mozpreproc&#39;), (&#39;css+myghty&#39;, &#39;CSS+Myghty&#39;), (&#39;css+php&#39;, &#39;CSS+PHP&#39;), (&#39;css+smarty&#39;, &#39;CSS+Smarty&#39;), (&#39;cucumber&#39;, &#39;Gherkin&#39;), (&#39;cuda&#39;, &#39;CUDA&#39;), (&#39;cypher&#39;, &#39;Cypher&#39;), (&#39;cython&#39;, &#39;Cython&#39;), (&#39;d&#39;, &#39;D&#39;), (&#39;d-objdump&#39;, &#39;d-objdump&#39;), (&#39;dart&#39;, &#39;Dart&#39;), (&#39;delphi&#39;, &#39;Delphi&#39;), (&#39;dg&#39;, &#39;dg&#39;), (&#39;diff&#39;, &#39;Diff&#39;), (&#39;django&#39;, &#39;Django/Jinja&#39;), (&#39;docker&#39;, &#39;Docker&#39;), (&#39;doscon&#39;, &#39;MSDOS Session&#39;), (&#39;dpatch&#39;, &#39;Darcs Patch&#39;), (&#39;dtd&#39;, &#39;DTD&#39;), (&#39;duel&#39;, &#39;Duel&#39;), (&#39;dylan&#39;, &#39;Dylan&#39;), (&#39;dylan-console&#39;, &#39;Dylan session&#39;), (&#39;dylan-lid&#39;, &#39;DylanLID&#39;), (&#39;earl-grey&#39;, &#39;Earl Grey&#39;), (&#39;easytrieve&#39;, &#39;Easytrieve&#39;), (&#39;ebnf&#39;, &#39;EBNF&#39;), (&#39;ec&#39;, &#39;eC&#39;), (&#39;ecl&#39;, &#39;ECL&#39;), (&#39;eiffel&#39;, &#39;Eiffel&#39;), (&#39;elixir&#39;, &#39;Elixir&#39;), (&#39;elm&#39;, &#39;Elm&#39;), (&#39;emacs&#39;, &#39;EmacsLisp&#39;), (&#39;erb&#39;, &#39;ERB&#39;), (&#39;erl&#39;, &#39;Erlang erl session&#39;), (&#39;erlang&#39;, &#39;Erlang&#39;), (&#39;evoque&#39;, &#39;Evoque&#39;), (&#39;extempore&#39;, &#39;xtlang&#39;), (&#39;ezhil&#39;, &#39;Ezhil&#39;), (&#39;factor&#39;, &#39;Factor&#39;), (&#39;fan&#39;, &#39;Fantom&#39;), (&#39;fancy&#39;, &#39;Fancy&#39;), (&#39;felix&#39;, &#39;Felix&#39;), (&#39;fish&#39;, &#39;Fish&#39;), (&#39;flatline&#39;, &#39;Flatline&#39;), (&#39;forth&#39;, &#39;Forth&#39;), (&#39;fortran&#39;, &#39;Fortran&#39;), (&#39;fortranfixed&#39;, &#39;FortranFixed&#39;), (&#39;foxpro&#39;, &#39;FoxPro&#39;), (&#39;fsharp&#39;, &#39;FSharp&#39;), (&#39;gap&#39;, &#39;GAP&#39;), (&#39;gas&#39;, &#39;GAS&#39;), (&#39;genshi&#39;, &#39;Genshi&#39;), (&#39;genshitext&#39;, &#39;Genshi Text&#39;), (&#39;glsl&#39;, &#39;GLSL&#39;), (&#39;gnuplot&#39;, &#39;Gnuplot&#39;), (&#39;go&#39;, &#39;Go&#39;), (&#39;golo&#39;, &#39;Golo&#39;), (&#39;gooddata... &lt;trimmed 11966 bytes string&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request object at 0x7f3978bf6400&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;snippets.views.SnippetList object at 0x7f3978bf6f28&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          <code>/home/migiwara/HBKU/BioSensors/BiosensorsServer/backend/apps/snippets/views.py</code> in <code>perform_create</code>
+
+          
+            <div class="context" id="c139884815731336">
+              
+                <ol start="10" class="pre-context" id="pre139884815731336">
+                
+                  <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre># @permission_classes((permissions.AllowAny,))</pre></li>
+                
+                  <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre>class SnippetList(generics.ListCreateAPIView):</pre></li>
+                
+                  <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre>    queryset = Snippet.objects.all()</pre></li>
+                
+                  <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre>    serializer_class = SnippetSerializer</pre></li>
+                
+                  <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre>    permission_classes = (permissions.AllowAny,)</pre></li>
+                
+                  <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre>    def perform_create(self, serializer):</pre></li>
+                
+                </ol>
+              
+              <ol start="17" class="context-line">
+                <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre>
+        serializer.save(owner=self.request.user)</pre> <span>...</span></li></ol>
+              
+                <ol start='18' class="post-context" id="post139884815731336">
+                  
+                  <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre># @permission_classes((permissions.AllowAny,))</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre>class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre>    queryset = Snippet.objects.all()</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731336', 'post139884815731336')"><pre>    serializer_class = SnippetSerializer</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815731336')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815731336">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>serializer</td>
+                    <td class="code"><pre>SnippetSerializer(context={&#39;request&#39;: &lt;rest_framework.request.Request object&gt;, &#39;format&#39;: None, &#39;view&#39;: &lt;snippets.views.SnippetList object&gt;}, data={&#39;code&#39;: &#39;Flat3&#39;}):
+    id = IntegerField(label=&#39;ID&#39;, read_only=True)
+    title = CharField(allow_blank=True, max_length=100, required=False)
+    code = CharField(style={&#39;base_template&#39;: &#39;textarea.html&#39;})
+    linenos = BooleanField(required=False)
+    language = ChoiceField(choices=[(&#39;abap&#39;, &#39;ABAP&#39;), (&#39;abnf&#39;, &#39;ABNF&#39;), (&#39;ada&#39;, &#39;Ada&#39;), (&#39;adl&#39;, &#39;ADL&#39;), (&#39;agda&#39;, &#39;Agda&#39;), (&#39;aheui&#39;, &#39;Aheui&#39;), (&#39;ahk&#39;, &#39;autohotkey&#39;), (&#39;alloy&#39;, &#39;Alloy&#39;), (&#39;ampl&#39;, &#39;Ampl&#39;), (&#39;antlr&#39;, &#39;ANTLR&#39;), (&#39;antlr-as&#39;, &#39;ANTLR With ActionScript Target&#39;), (&#39;antlr-cpp&#39;, &#39;ANTLR With CPP Target&#39;), (&#39;antlr-csharp&#39;, &#39;ANTLR With C# Target&#39;), (&#39;antlr-java&#39;, &#39;ANTLR With Java Target&#39;), (&#39;antlr-objc&#39;, &#39;ANTLR With ObjectiveC Target&#39;), (&#39;antlr-perl&#39;, &#39;ANTLR With Perl Target&#39;), (&#39;antlr-python&#39;, &#39;ANTLR With Python Target&#39;), (&#39;antlr-ruby&#39;, &#39;ANTLR With Ruby Target&#39;), (&#39;apacheconf&#39;, &#39;ApacheConf&#39;), (&#39;apl&#39;, &#39;APL&#39;), (&#39;applescript&#39;, &#39;AppleScript&#39;), (&#39;arduino&#39;, &#39;Arduino&#39;), (&#39;as&#39;, &#39;ActionScript&#39;), (&#39;as3&#39;, &#39;ActionScript 3&#39;), (&#39;aspectj&#39;, &#39;AspectJ&#39;), (&#39;aspx-cs&#39;, &#39;aspx-cs&#39;), (&#39;aspx-vb&#39;, &#39;aspx-vb&#39;), (&#39;asy&#39;, &#39;Asymptote&#39;), (&#39;at&#39;, &#39;AmbientTalk&#39;), (&#39;autoit&#39;, &#39;AutoIt&#39;), (&#39;awk&#39;, &#39;Awk&#39;), (&#39;basemake&#39;, &#39;Base Makefile&#39;), (&#39;bash&#39;, &#39;Bash&#39;), (&#39;bat&#39;, &#39;Batchfile&#39;), (&#39;bbcode&#39;, &#39;BBCode&#39;), (&#39;bc&#39;, &#39;BC&#39;), (&#39;befunge&#39;, &#39;Befunge&#39;), (&#39;bib&#39;, &#39;BibTeX&#39;), (&#39;blitzbasic&#39;, &#39;BlitzBasic&#39;), (&#39;blitzmax&#39;, &#39;BlitzMax&#39;), (&#39;bnf&#39;, &#39;BNF&#39;), (&#39;boo&#39;, &#39;Boo&#39;), (&#39;boogie&#39;, &#39;Boogie&#39;), (&#39;brainfuck&#39;, &#39;Brainfuck&#39;), (&#39;bro&#39;, &#39;Bro&#39;), (&#39;bst&#39;, &#39;BST&#39;), (&#39;bugs&#39;, &#39;BUGS&#39;), (&#39;c&#39;, &#39;C&#39;), (&#39;c-objdump&#39;, &#39;c-objdump&#39;), (&#39;ca65&#39;, &#39;ca65 assembler&#39;), (&#39;cadl&#39;, &#39;cADL&#39;), (&#39;camkes&#39;, &#39;CAmkES&#39;), (&#39;capdl&#39;, &#39;CapDL&#39;), (&#39;capnp&#39;, &quot;Cap&#39;n Proto&quot;), (&#39;cbmbas&#39;, &#39;CBM BASIC V2&#39;), (&#39;ceylon&#39;, &#39;Ceylon&#39;), (&#39;cfc&#39;, &#39;Coldfusion CFC&#39;), (&#39;cfengine3&#39;, &#39;CFEngine3&#39;), (&#39;cfm&#39;, &#39;Coldfusion HTML&#39;), (&#39;cfs&#39;, &#39;cfstatement&#39;), (&#39;chai&#39;, &#39;ChaiScript&#39;), (&#39;chapel&#39;, &#39;Chapel&#39;), (&#39;cheetah&#39;, &#39;Cheetah&#39;), (&#39;cirru&#39;, &#39;Cirru&#39;), (&#39;clay&#39;, &#39;Clay&#39;), (&#39;clean&#39;, &#39;Clean&#39;), (&#39;clojure&#39;, &#39;Clojure&#39;), (&#39;clojurescript&#39;, &#39;ClojureScript&#39;), (&#39;cmake&#39;, &#39;CMake&#39;), (&#39;cobol&#39;, &#39;COBOL&#39;), (&#39;cobolfree&#39;, &#39;COBOLFree&#39;), (&#39;coffee-script&#39;, &#39;CoffeeScript&#39;), (&#39;common-lisp&#39;, &#39;Common Lisp&#39;), (&#39;componentpascal&#39;, &#39;Component Pascal&#39;), (&#39;console&#39;, &#39;Bash Session&#39;), (&#39;control&#39;, &#39;Debian Control file&#39;), (&#39;coq&#39;, &#39;Coq&#39;), (&#39;cpp&#39;, &#39;C++&#39;), (&#39;cpp-objdump&#39;, &#39;cpp-objdump&#39;), (&#39;cpsa&#39;, &#39;CPSA&#39;), (&#39;cr&#39;, &#39;Crystal&#39;), (&#39;crmsh&#39;, &#39;Crmsh&#39;), (&#39;croc&#39;, &#39;Croc&#39;), (&#39;cryptol&#39;, &#39;Cryptol&#39;), (&#39;csharp&#39;, &#39;C#&#39;), (&#39;csound&#39;, &#39;Csound Orchestra&#39;), (&#39;csound-document&#39;, &#39;Csound Document&#39;), (&#39;csound-score&#39;, &#39;Csound Score&#39;), (&#39;css&#39;, &#39;CSS&#39;), (&#39;css+django&#39;, &#39;CSS+Django/Jinja&#39;), (&#39;css+erb&#39;, &#39;CSS+Ruby&#39;), (&#39;css+genshitext&#39;, &#39;CSS+Genshi Text&#39;), (&#39;css+lasso&#39;, &#39;CSS+Lasso&#39;), (&#39;css+mako&#39;, &#39;CSS+Mako&#39;), (&#39;css+mozpreproc&#39;, &#39;CSS+mozpreproc&#39;), (&#39;css+myghty&#39;, &#39;CSS+Myghty&#39;), (&#39;css+php&#39;, &#39;CSS+PHP&#39;), (&#39;css+smarty&#39;, &#39;CSS+Smarty&#39;), (&#39;cucumber&#39;, &#39;Gherkin&#39;), (&#39;cuda&#39;, &#39;CUDA&#39;), (&#39;cypher&#39;, &#39;Cypher&#39;), (&#39;cython&#39;, &#39;Cython&#39;), (&#39;d&#39;, &#39;D&#39;), (&#39;d-objdump&#39;, &#39;d-objdump&#39;), (&#39;dart&#39;, &#39;Dart&#39;), (&#39;delphi&#39;, &#39;Delphi&#39;), (&#39;dg&#39;, &#39;dg&#39;), (&#39;diff&#39;, &#39;Diff&#39;), (&#39;django&#39;, &#39;Django/Jinja&#39;), (&#39;docker&#39;, &#39;Docker&#39;), (&#39;doscon&#39;, &#39;MSDOS Session&#39;), (&#39;dpatch&#39;, &#39;Darcs Patch&#39;), (&#39;dtd&#39;, &#39;DTD&#39;), (&#39;duel&#39;, &#39;Duel&#39;), (&#39;dylan&#39;, &#39;Dylan&#39;), (&#39;dylan-console&#39;, &#39;Dylan session&#39;), (&#39;dylan-lid&#39;, &#39;DylanLID&#39;), (&#39;earl-grey&#39;, &#39;Earl Grey&#39;), (&#39;easytrieve&#39;, &#39;Easytrieve&#39;), (&#39;ebnf&#39;, &#39;EBNF&#39;), (&#39;ec&#39;, &#39;eC&#39;), (&#39;ecl&#39;, &#39;ECL&#39;), (&#39;eiffel&#39;, &#39;Eiffel&#39;), (&#39;elixir&#39;, &#39;Elixir&#39;), (&#39;elm&#39;, &#39;Elm&#39;), (&#39;emacs&#39;, &#39;EmacsLisp&#39;), (&#39;erb&#39;, &#39;ERB&#39;), (&#39;erl&#39;, &#39;Erlang erl session&#39;), (&#39;erlang&#39;, &#39;Erlang&#39;), (&#39;evoque&#39;, &#39;Evoque&#39;), (&#39;extempore&#39;, &#39;xtlang&#39;), (&#39;ezhil&#39;, &#39;Ezhil&#39;), (&#39;factor&#39;, &#39;Factor&#39;), (&#39;fan&#39;, &#39;Fantom&#39;), (&#39;fancy&#39;, &#39;Fancy&#39;), (&#39;felix&#39;, &#39;Felix&#39;), (&#39;fish&#39;, &#39;Fish&#39;), (&#39;flatline&#39;, &#39;Flatline&#39;), (&#39;forth&#39;, &#39;Forth&#39;), (&#39;fortran&#39;, &#39;Fortran&#39;), (&#39;fortranfixed&#39;, &#39;FortranFixed&#39;), (&#39;foxpro&#39;, &#39;FoxPro&#39;), (&#39;fsharp&#39;, &#39;FSharp&#39;), (&#39;gap&#39;, &#39;GAP&#39;), (&#39;gas&#39;, &#39;GAS&#39;), (&#39;genshi&#39;, &#39;Genshi&#39;), (&#39;genshitext&#39;, &#39;Genshi Text&#39;), (&#39;glsl&#39;, &#39;GLSL&#39;), (&#39;gnuplot&#39;, &#39;Gnuplot&#39;), (&#39;go&#39;, &#39;Go&#39;), (&#39;golo&#39;, &#39;Golo&#39;), (&#39;gooddata... &lt;trimmed 11966 bytes string&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;snippets.views.SnippetList object at 0x7f3978bf6f28&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/rest_framework/serializers.py</code> in <code>save</code>
+
+          
+            <div class="context" id="c139884815730760">
+              
+                <ol start="184" class="pre-context" id="pre139884815730760">
+                
+                  <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre>        if self.instance is not None:</pre></li>
+                
+                  <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre>            self.instance = self.update(self.instance, validated_data)</pre></li>
+                
+                  <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre>            assert self.instance is not None, (</pre></li>
+                
+                  <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre>                &#39;`update()` did not return an object instance.&#39;</pre></li>
+                
+                  <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre>            )</pre></li>
+                
+                  <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre>        else:</pre></li>
+                
+                </ol>
+              
+              <ol start="191" class="context-line">
+                <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre>
+            self.instance = self.create(validated_data)</pre> <span>...</span></li></ol>
+              
+                <ol start='192' class="post-context" id="post139884815730760">
+                  
+                  <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre>            assert self.instance is not None, (</pre></li>
+                  
+                  <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre>                &#39;`create()` did not return an object instance.&#39;</pre></li>
+                  
+                  <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre>            )</pre></li>
+                  
+                  <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre>        return self.instance</pre></li>
+                  
+                  <li onclick="toggle('pre139884815730760', 'post139884815730760')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815730760')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815730760">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>validated_data</td>
+                    <td class="code"><pre>{&#39;code&#39;: &#39;Flat3&#39;,
+ &#39;owner&#39;: &lt;django.contrib.auth.models.AnonymousUser object at 0x7f3978bf6b70&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#39;owner&#39;: &lt;django.contrib.auth.models.AnonymousUser object at 0x7f3978bf6b70&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>SnippetSerializer(context={&#39;request&#39;: &lt;rest_framework.request.Request object&gt;, &#39;format&#39;: None, &#39;view&#39;: &lt;snippets.views.SnippetList object&gt;}, data={&#39;code&#39;: &#39;Flat3&#39;}):
+    id = IntegerField(label=&#39;ID&#39;, read_only=True)
+    title = CharField(allow_blank=True, max_length=100, required=False)
+    code = CharField(style={&#39;base_template&#39;: &#39;textarea.html&#39;})
+    linenos = BooleanField(required=False)
+    language = ChoiceField(choices=[(&#39;abap&#39;, &#39;ABAP&#39;), (&#39;abnf&#39;, &#39;ABNF&#39;), (&#39;ada&#39;, &#39;Ada&#39;), (&#39;adl&#39;, &#39;ADL&#39;), (&#39;agda&#39;, &#39;Agda&#39;), (&#39;aheui&#39;, &#39;Aheui&#39;), (&#39;ahk&#39;, &#39;autohotkey&#39;), (&#39;alloy&#39;, &#39;Alloy&#39;), (&#39;ampl&#39;, &#39;Ampl&#39;), (&#39;antlr&#39;, &#39;ANTLR&#39;), (&#39;antlr-as&#39;, &#39;ANTLR With ActionScript Target&#39;), (&#39;antlr-cpp&#39;, &#39;ANTLR With CPP Target&#39;), (&#39;antlr-csharp&#39;, &#39;ANTLR With C# Target&#39;), (&#39;antlr-java&#39;, &#39;ANTLR With Java Target&#39;), (&#39;antlr-objc&#39;, &#39;ANTLR With ObjectiveC Target&#39;), (&#39;antlr-perl&#39;, &#39;ANTLR With Perl Target&#39;), (&#39;antlr-python&#39;, &#39;ANTLR With Python Target&#39;), (&#39;antlr-ruby&#39;, &#39;ANTLR With Ruby Target&#39;), (&#39;apacheconf&#39;, &#39;ApacheConf&#39;), (&#39;apl&#39;, &#39;APL&#39;), (&#39;applescript&#39;, &#39;AppleScript&#39;), (&#39;arduino&#39;, &#39;Arduino&#39;), (&#39;as&#39;, &#39;ActionScript&#39;), (&#39;as3&#39;, &#39;ActionScript 3&#39;), (&#39;aspectj&#39;, &#39;AspectJ&#39;), (&#39;aspx-cs&#39;, &#39;aspx-cs&#39;), (&#39;aspx-vb&#39;, &#39;aspx-vb&#39;), (&#39;asy&#39;, &#39;Asymptote&#39;), (&#39;at&#39;, &#39;AmbientTalk&#39;), (&#39;autoit&#39;, &#39;AutoIt&#39;), (&#39;awk&#39;, &#39;Awk&#39;), (&#39;basemake&#39;, &#39;Base Makefile&#39;), (&#39;bash&#39;, &#39;Bash&#39;), (&#39;bat&#39;, &#39;Batchfile&#39;), (&#39;bbcode&#39;, &#39;BBCode&#39;), (&#39;bc&#39;, &#39;BC&#39;), (&#39;befunge&#39;, &#39;Befunge&#39;), (&#39;bib&#39;, &#39;BibTeX&#39;), (&#39;blitzbasic&#39;, &#39;BlitzBasic&#39;), (&#39;blitzmax&#39;, &#39;BlitzMax&#39;), (&#39;bnf&#39;, &#39;BNF&#39;), (&#39;boo&#39;, &#39;Boo&#39;), (&#39;boogie&#39;, &#39;Boogie&#39;), (&#39;brainfuck&#39;, &#39;Brainfuck&#39;), (&#39;bro&#39;, &#39;Bro&#39;), (&#39;bst&#39;, &#39;BST&#39;), (&#39;bugs&#39;, &#39;BUGS&#39;), (&#39;c&#39;, &#39;C&#39;), (&#39;c-objdump&#39;, &#39;c-objdump&#39;), (&#39;ca65&#39;, &#39;ca65 assembler&#39;), (&#39;cadl&#39;, &#39;cADL&#39;), (&#39;camkes&#39;, &#39;CAmkES&#39;), (&#39;capdl&#39;, &#39;CapDL&#39;), (&#39;capnp&#39;, &quot;Cap&#39;n Proto&quot;), (&#39;cbmbas&#39;, &#39;CBM BASIC V2&#39;), (&#39;ceylon&#39;, &#39;Ceylon&#39;), (&#39;cfc&#39;, &#39;Coldfusion CFC&#39;), (&#39;cfengine3&#39;, &#39;CFEngine3&#39;), (&#39;cfm&#39;, &#39;Coldfusion HTML&#39;), (&#39;cfs&#39;, &#39;cfstatement&#39;), (&#39;chai&#39;, &#39;ChaiScript&#39;), (&#39;chapel&#39;, &#39;Chapel&#39;), (&#39;cheetah&#39;, &#39;Cheetah&#39;), (&#39;cirru&#39;, &#39;Cirru&#39;), (&#39;clay&#39;, &#39;Clay&#39;), (&#39;clean&#39;, &#39;Clean&#39;), (&#39;clojure&#39;, &#39;Clojure&#39;), (&#39;clojurescript&#39;, &#39;ClojureScript&#39;), (&#39;cmake&#39;, &#39;CMake&#39;), (&#39;cobol&#39;, &#39;COBOL&#39;), (&#39;cobolfree&#39;, &#39;COBOLFree&#39;), (&#39;coffee-script&#39;, &#39;CoffeeScript&#39;), (&#39;common-lisp&#39;, &#39;Common Lisp&#39;), (&#39;componentpascal&#39;, &#39;Component Pascal&#39;), (&#39;console&#39;, &#39;Bash Session&#39;), (&#39;control&#39;, &#39;Debian Control file&#39;), (&#39;coq&#39;, &#39;Coq&#39;), (&#39;cpp&#39;, &#39;C++&#39;), (&#39;cpp-objdump&#39;, &#39;cpp-objdump&#39;), (&#39;cpsa&#39;, &#39;CPSA&#39;), (&#39;cr&#39;, &#39;Crystal&#39;), (&#39;crmsh&#39;, &#39;Crmsh&#39;), (&#39;croc&#39;, &#39;Croc&#39;), (&#39;cryptol&#39;, &#39;Cryptol&#39;), (&#39;csharp&#39;, &#39;C#&#39;), (&#39;csound&#39;, &#39;Csound Orchestra&#39;), (&#39;csound-document&#39;, &#39;Csound Document&#39;), (&#39;csound-score&#39;, &#39;Csound Score&#39;), (&#39;css&#39;, &#39;CSS&#39;), (&#39;css+django&#39;, &#39;CSS+Django/Jinja&#39;), (&#39;css+erb&#39;, &#39;CSS+Ruby&#39;), (&#39;css+genshitext&#39;, &#39;CSS+Genshi Text&#39;), (&#39;css+lasso&#39;, &#39;CSS+Lasso&#39;), (&#39;css+mako&#39;, &#39;CSS+Mako&#39;), (&#39;css+mozpreproc&#39;, &#39;CSS+mozpreproc&#39;), (&#39;css+myghty&#39;, &#39;CSS+Myghty&#39;), (&#39;css+php&#39;, &#39;CSS+PHP&#39;), (&#39;css+smarty&#39;, &#39;CSS+Smarty&#39;), (&#39;cucumber&#39;, &#39;Gherkin&#39;), (&#39;cuda&#39;, &#39;CUDA&#39;), (&#39;cypher&#39;, &#39;Cypher&#39;), (&#39;cython&#39;, &#39;Cython&#39;), (&#39;d&#39;, &#39;D&#39;), (&#39;d-objdump&#39;, &#39;d-objdump&#39;), (&#39;dart&#39;, &#39;Dart&#39;), (&#39;delphi&#39;, &#39;Delphi&#39;), (&#39;dg&#39;, &#39;dg&#39;), (&#39;diff&#39;, &#39;Diff&#39;), (&#39;django&#39;, &#39;Django/Jinja&#39;), (&#39;docker&#39;, &#39;Docker&#39;), (&#39;doscon&#39;, &#39;MSDOS Session&#39;), (&#39;dpatch&#39;, &#39;Darcs Patch&#39;), (&#39;dtd&#39;, &#39;DTD&#39;), (&#39;duel&#39;, &#39;Duel&#39;), (&#39;dylan&#39;, &#39;Dylan&#39;), (&#39;dylan-console&#39;, &#39;Dylan session&#39;), (&#39;dylan-lid&#39;, &#39;DylanLID&#39;), (&#39;earl-grey&#39;, &#39;Earl Grey&#39;), (&#39;easytrieve&#39;, &#39;Easytrieve&#39;), (&#39;ebnf&#39;, &#39;EBNF&#39;), (&#39;ec&#39;, &#39;eC&#39;), (&#39;ecl&#39;, &#39;ECL&#39;), (&#39;eiffel&#39;, &#39;Eiffel&#39;), (&#39;elixir&#39;, &#39;Elixir&#39;), (&#39;elm&#39;, &#39;Elm&#39;), (&#39;emacs&#39;, &#39;EmacsLisp&#39;), (&#39;erb&#39;, &#39;ERB&#39;), (&#39;erl&#39;, &#39;Erlang erl session&#39;), (&#39;erlang&#39;, &#39;Erlang&#39;), (&#39;evoque&#39;, &#39;Evoque&#39;), (&#39;extempore&#39;, &#39;xtlang&#39;), (&#39;ezhil&#39;, &#39;Ezhil&#39;), (&#39;factor&#39;, &#39;Factor&#39;), (&#39;fan&#39;, &#39;Fantom&#39;), (&#39;fancy&#39;, &#39;Fancy&#39;), (&#39;felix&#39;, &#39;Felix&#39;), (&#39;fish&#39;, &#39;Fish&#39;), (&#39;flatline&#39;, &#39;Flatline&#39;), (&#39;forth&#39;, &#39;Forth&#39;), (&#39;fortran&#39;, &#39;Fortran&#39;), (&#39;fortranfixed&#39;, &#39;FortranFixed&#39;), (&#39;foxpro&#39;, &#39;FoxPro&#39;), (&#39;fsharp&#39;, &#39;FSharp&#39;), (&#39;gap&#39;, &#39;GAP&#39;), (&#39;gas&#39;, &#39;GAS&#39;), (&#39;genshi&#39;, &#39;Genshi&#39;), (&#39;genshitext&#39;, &#39;Genshi Text&#39;), (&#39;glsl&#39;, &#39;GLSL&#39;), (&#39;gnuplot&#39;, &#39;Gnuplot&#39;), (&#39;go&#39;, &#39;Go&#39;), (&#39;golo&#39;, &#39;Golo&#39;), (&#39;gooddata... &lt;trimmed 11966 bytes string&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/rest_framework/serializers.py</code> in <code>create</code>
+
+          
+            <div class="context" id="c139884815732040">
+              
+                <ol start="839" class="pre-context" id="pre139884815732040">
+                
+                  <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre>        info = model_meta.get_field_info(ModelClass)</pre></li>
+                
+                  <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre>        many_to_many = {}</pre></li>
+                
+                  <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre>        for field_name, relation_info in info.relations.items():</pre></li>
+                
+                  <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre>            if relation_info.to_many and (field_name in validated_data):</pre></li>
+                
+                  <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre>                many_to_many[field_name] = validated_data.pop(field_name)</pre></li>
+                
+                  <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre>        try:</pre></li>
+                
+                </ol>
+              
+              <ol start="846" class="context-line">
+                <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre>
+            instance = ModelClass.objects.create(**validated_data)</pre> <span>...</span></li></ol>
+              
+                <ol start='847' class="post-context" id="post139884815732040">
+                  
+                  <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre>        except TypeError as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre>            msg = (</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre>                &#39;Got a `TypeError` when calling `%s.objects.create()`. &#39;</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre>                &#39;This may be because you have a writable field on the &#39;</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre>                &#39;serializer class that is not a valid argument to &#39;</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732040', 'post139884815732040')"><pre>                &#39;`%s.objects.create()`. You may need to make the field &#39;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815732040')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815732040">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>relation_info</td>
+                    <td class="code"><pre>RelationInfo(model_field=&lt;django.db.models.fields.related.ForeignKey: owner&gt;, related_model=&lt;class &#39;backend.apps.users.models.EmailUser&#39;&gt;, to_many=False, to_field=&#39;id&#39;, has_through_model=False)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>field_name</td>
+                    <td class="code"><pre>&#39;owner&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>many_to_many</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>info</td>
+                    <td class="code"><pre>FieldResult(pk=&lt;django.db.models.fields.AutoField: id&gt;, fields=OrderedDict([(&#39;created&#39;, &lt;django.db.models.fields.DateTimeField: created&gt;), (&#39;title&#39;, &lt;django.db.models.fields.CharField: title&gt;), (&#39;code&#39;, &lt;django.db.models.fields.TextField: code&gt;), (&#39;linenos&#39;, &lt;django.db.models.fields.BooleanField: linenos&gt;), (&#39;language&#39;, &lt;django.db.models.fields.CharField: language&gt;), (&#39;style&#39;, &lt;django.db.models.fields.CharField: style&gt;), (&#39;highlighted&#39;, &lt;django.db.models.fields.TextField: highlighted&gt;)]), forward_relations=OrderedDict([(&#39;owner&#39;, RelationInfo(model_field=&lt;django.db.models.fields.related.ForeignKey: owner&gt;, related_model=&lt;class &#39;backend.apps.users.models.EmailUser&#39;&gt;, to_many=False, to_field=&#39;id&#39;, has_through_model=False))]), reverse_relations=OrderedDict(), fields_and_pk=OrderedDict([(&#39;pk&#39;, &lt;django.db.models.fields.AutoField: id&gt;), (&#39;id&#39;, &lt;django.db.models.fields.AutoField: id&gt;), (&#39;created&#39;, &lt;django.db.models.fields.DateTimeField: created&gt;), (&#39;title&#39;, &lt;django.db.models.fields.CharField: title&gt;), (&#39;code&#39;, &lt;django.db.models.fields.TextField: code&gt;), (&#39;linenos&#39;, &lt;django.db.models.fields.BooleanField: linenos&gt;), (&#39;language&#39;, &lt;django.db.models.fields.CharField: language&gt;), (&#39;style&#39;, &lt;django.db.models.fields.CharField: style&gt;), (&#39;highlighted&#39;, &lt;django.db.models.fields.TextField: highlighted&gt;)]), relations=OrderedDict([(&#39;owner&#39;, RelationInfo(model_field=&lt;django.db.models.fields.related.ForeignKey: owner&gt;, related_model=&lt;class &#39;backend.apps.users.models.EmailUser&#39;&gt;, to_many=False, to_field=&#39;id&#39;, has_through_model=False))]))</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>ModelClass</td>
+                    <td class="code"><pre>&lt;class &#39;snippets.models.Snippet&#39;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>validated_data</td>
+                    <td class="code"><pre>{&#39;code&#39;: &#39;Flat3&#39;,
+ &#39;owner&#39;: &lt;django.contrib.auth.models.AnonymousUser object at 0x7f3978bf6b70&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>SnippetSerializer(context={&#39;request&#39;: &lt;rest_framework.request.Request object&gt;, &#39;format&#39;: None, &#39;view&#39;: &lt;snippets.views.SnippetList object&gt;}, data={&#39;code&#39;: &#39;Flat3&#39;}):
+    id = IntegerField(label=&#39;ID&#39;, read_only=True)
+    title = CharField(allow_blank=True, max_length=100, required=False)
+    code = CharField(style={&#39;base_template&#39;: &#39;textarea.html&#39;})
+    linenos = BooleanField(required=False)
+    language = ChoiceField(choices=[(&#39;abap&#39;, &#39;ABAP&#39;), (&#39;abnf&#39;, &#39;ABNF&#39;), (&#39;ada&#39;, &#39;Ada&#39;), (&#39;adl&#39;, &#39;ADL&#39;), (&#39;agda&#39;, &#39;Agda&#39;), (&#39;aheui&#39;, &#39;Aheui&#39;), (&#39;ahk&#39;, &#39;autohotkey&#39;), (&#39;alloy&#39;, &#39;Alloy&#39;), (&#39;ampl&#39;, &#39;Ampl&#39;), (&#39;antlr&#39;, &#39;ANTLR&#39;), (&#39;antlr-as&#39;, &#39;ANTLR With ActionScript Target&#39;), (&#39;antlr-cpp&#39;, &#39;ANTLR With CPP Target&#39;), (&#39;antlr-csharp&#39;, &#39;ANTLR With C# Target&#39;), (&#39;antlr-java&#39;, &#39;ANTLR With Java Target&#39;), (&#39;antlr-objc&#39;, &#39;ANTLR With ObjectiveC Target&#39;), (&#39;antlr-perl&#39;, &#39;ANTLR With Perl Target&#39;), (&#39;antlr-python&#39;, &#39;ANTLR With Python Target&#39;), (&#39;antlr-ruby&#39;, &#39;ANTLR With Ruby Target&#39;), (&#39;apacheconf&#39;, &#39;ApacheConf&#39;), (&#39;apl&#39;, &#39;APL&#39;), (&#39;applescript&#39;, &#39;AppleScript&#39;), (&#39;arduino&#39;, &#39;Arduino&#39;), (&#39;as&#39;, &#39;ActionScript&#39;), (&#39;as3&#39;, &#39;ActionScript 3&#39;), (&#39;aspectj&#39;, &#39;AspectJ&#39;), (&#39;aspx-cs&#39;, &#39;aspx-cs&#39;), (&#39;aspx-vb&#39;, &#39;aspx-vb&#39;), (&#39;asy&#39;, &#39;Asymptote&#39;), (&#39;at&#39;, &#39;AmbientTalk&#39;), (&#39;autoit&#39;, &#39;AutoIt&#39;), (&#39;awk&#39;, &#39;Awk&#39;), (&#39;basemake&#39;, &#39;Base Makefile&#39;), (&#39;bash&#39;, &#39;Bash&#39;), (&#39;bat&#39;, &#39;Batchfile&#39;), (&#39;bbcode&#39;, &#39;BBCode&#39;), (&#39;bc&#39;, &#39;BC&#39;), (&#39;befunge&#39;, &#39;Befunge&#39;), (&#39;bib&#39;, &#39;BibTeX&#39;), (&#39;blitzbasic&#39;, &#39;BlitzBasic&#39;), (&#39;blitzmax&#39;, &#39;BlitzMax&#39;), (&#39;bnf&#39;, &#39;BNF&#39;), (&#39;boo&#39;, &#39;Boo&#39;), (&#39;boogie&#39;, &#39;Boogie&#39;), (&#39;brainfuck&#39;, &#39;Brainfuck&#39;), (&#39;bro&#39;, &#39;Bro&#39;), (&#39;bst&#39;, &#39;BST&#39;), (&#39;bugs&#39;, &#39;BUGS&#39;), (&#39;c&#39;, &#39;C&#39;), (&#39;c-objdump&#39;, &#39;c-objdump&#39;), (&#39;ca65&#39;, &#39;ca65 assembler&#39;), (&#39;cadl&#39;, &#39;cADL&#39;), (&#39;camkes&#39;, &#39;CAmkES&#39;), (&#39;capdl&#39;, &#39;CapDL&#39;), (&#39;capnp&#39;, &quot;Cap&#39;n Proto&quot;), (&#39;cbmbas&#39;, &#39;CBM BASIC V2&#39;), (&#39;ceylon&#39;, &#39;Ceylon&#39;), (&#39;cfc&#39;, &#39;Coldfusion CFC&#39;), (&#39;cfengine3&#39;, &#39;CFEngine3&#39;), (&#39;cfm&#39;, &#39;Coldfusion HTML&#39;), (&#39;cfs&#39;, &#39;cfstatement&#39;), (&#39;chai&#39;, &#39;ChaiScript&#39;), (&#39;chapel&#39;, &#39;Chapel&#39;), (&#39;cheetah&#39;, &#39;Cheetah&#39;), (&#39;cirru&#39;, &#39;Cirru&#39;), (&#39;clay&#39;, &#39;Clay&#39;), (&#39;clean&#39;, &#39;Clean&#39;), (&#39;clojure&#39;, &#39;Clojure&#39;), (&#39;clojurescript&#39;, &#39;ClojureScript&#39;), (&#39;cmake&#39;, &#39;CMake&#39;), (&#39;cobol&#39;, &#39;COBOL&#39;), (&#39;cobolfree&#39;, &#39;COBOLFree&#39;), (&#39;coffee-script&#39;, &#39;CoffeeScript&#39;), (&#39;common-lisp&#39;, &#39;Common Lisp&#39;), (&#39;componentpascal&#39;, &#39;Component Pascal&#39;), (&#39;console&#39;, &#39;Bash Session&#39;), (&#39;control&#39;, &#39;Debian Control file&#39;), (&#39;coq&#39;, &#39;Coq&#39;), (&#39;cpp&#39;, &#39;C++&#39;), (&#39;cpp-objdump&#39;, &#39;cpp-objdump&#39;), (&#39;cpsa&#39;, &#39;CPSA&#39;), (&#39;cr&#39;, &#39;Crystal&#39;), (&#39;crmsh&#39;, &#39;Crmsh&#39;), (&#39;croc&#39;, &#39;Croc&#39;), (&#39;cryptol&#39;, &#39;Cryptol&#39;), (&#39;csharp&#39;, &#39;C#&#39;), (&#39;csound&#39;, &#39;Csound Orchestra&#39;), (&#39;csound-document&#39;, &#39;Csound Document&#39;), (&#39;csound-score&#39;, &#39;Csound Score&#39;), (&#39;css&#39;, &#39;CSS&#39;), (&#39;css+django&#39;, &#39;CSS+Django/Jinja&#39;), (&#39;css+erb&#39;, &#39;CSS+Ruby&#39;), (&#39;css+genshitext&#39;, &#39;CSS+Genshi Text&#39;), (&#39;css+lasso&#39;, &#39;CSS+Lasso&#39;), (&#39;css+mako&#39;, &#39;CSS+Mako&#39;), (&#39;css+mozpreproc&#39;, &#39;CSS+mozpreproc&#39;), (&#39;css+myghty&#39;, &#39;CSS+Myghty&#39;), (&#39;css+php&#39;, &#39;CSS+PHP&#39;), (&#39;css+smarty&#39;, &#39;CSS+Smarty&#39;), (&#39;cucumber&#39;, &#39;Gherkin&#39;), (&#39;cuda&#39;, &#39;CUDA&#39;), (&#39;cypher&#39;, &#39;Cypher&#39;), (&#39;cython&#39;, &#39;Cython&#39;), (&#39;d&#39;, &#39;D&#39;), (&#39;d-objdump&#39;, &#39;d-objdump&#39;), (&#39;dart&#39;, &#39;Dart&#39;), (&#39;delphi&#39;, &#39;Delphi&#39;), (&#39;dg&#39;, &#39;dg&#39;), (&#39;diff&#39;, &#39;Diff&#39;), (&#39;django&#39;, &#39;Django/Jinja&#39;), (&#39;docker&#39;, &#39;Docker&#39;), (&#39;doscon&#39;, &#39;MSDOS Session&#39;), (&#39;dpatch&#39;, &#39;Darcs Patch&#39;), (&#39;dtd&#39;, &#39;DTD&#39;), (&#39;duel&#39;, &#39;Duel&#39;), (&#39;dylan&#39;, &#39;Dylan&#39;), (&#39;dylan-console&#39;, &#39;Dylan session&#39;), (&#39;dylan-lid&#39;, &#39;DylanLID&#39;), (&#39;earl-grey&#39;, &#39;Earl Grey&#39;), (&#39;easytrieve&#39;, &#39;Easytrieve&#39;), (&#39;ebnf&#39;, &#39;EBNF&#39;), (&#39;ec&#39;, &#39;eC&#39;), (&#39;ecl&#39;, &#39;ECL&#39;), (&#39;eiffel&#39;, &#39;Eiffel&#39;), (&#39;elixir&#39;, &#39;Elixir&#39;), (&#39;elm&#39;, &#39;Elm&#39;), (&#39;emacs&#39;, &#39;EmacsLisp&#39;), (&#39;erb&#39;, &#39;ERB&#39;), (&#39;erl&#39;, &#39;Erlang erl session&#39;), (&#39;erlang&#39;, &#39;Erlang&#39;), (&#39;evoque&#39;, &#39;Evoque&#39;), (&#39;extempore&#39;, &#39;xtlang&#39;), (&#39;ezhil&#39;, &#39;Ezhil&#39;), (&#39;factor&#39;, &#39;Factor&#39;), (&#39;fan&#39;, &#39;Fantom&#39;), (&#39;fancy&#39;, &#39;Fancy&#39;), (&#39;felix&#39;, &#39;Felix&#39;), (&#39;fish&#39;, &#39;Fish&#39;), (&#39;flatline&#39;, &#39;Flatline&#39;), (&#39;forth&#39;, &#39;Forth&#39;), (&#39;fortran&#39;, &#39;Fortran&#39;), (&#39;fortranfixed&#39;, &#39;FortranFixed&#39;), (&#39;foxpro&#39;, &#39;FoxPro&#39;), (&#39;fsharp&#39;, &#39;FSharp&#39;), (&#39;gap&#39;, &#39;GAP&#39;), (&#39;gas&#39;, &#39;GAS&#39;), (&#39;genshi&#39;, &#39;Genshi&#39;), (&#39;genshitext&#39;, &#39;Genshi Text&#39;), (&#39;glsl&#39;, &#39;GLSL&#39;), (&#39;gnuplot&#39;, &#39;Gnuplot&#39;), (&#39;go&#39;, &#39;Go&#39;), (&#39;golo&#39;, &#39;Golo&#39;), (&#39;gooddata... &lt;trimmed 11966 bytes string&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/django/db/models/manager.py</code> in <code>manager_method</code>
+
+          
+            <div class="context" id="c139884815732424">
+              
+                <ol start="115" class="pre-context" id="pre139884815732424">
+                
+                  <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre>    def check(self, **kwargs):</pre></li>
+                
+                  <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre>        return []</pre></li>
+                
+                  <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre>    @classmethod</pre></li>
+                
+                  <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre>    def _get_queryset_methods(cls, queryset_class):</pre></li>
+                
+                  <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre>        def create_method(name, method):</pre></li>
+                
+                  <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre>            def manager_method(self, *args, **kwargs):</pre></li>
+                
+                </ol>
+              
+              <ol start="122" class="context-line">
+                <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre>
+                return getattr(self.get_queryset(), name)(*args, **kwargs)</pre> <span>...</span></li></ol>
+              
+                <ol start='123' class="post-context" id="post139884815732424">
+                  
+                  <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre>            manager_method.__name__ = method.__name__</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre>            manager_method.__doc__ = method.__doc__</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre>            return manager_method</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre>        new_methods = {}</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732424', 'post139884815732424')"><pre>        # Refs http://bugs.python.org/issue1785.</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815732424')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815732424">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#39;code&#39;: &#39;Flat3&#39;,
+ &#39;owner&#39;: &lt;django.contrib.auth.models.AnonymousUser object at 0x7f3978bf6b70&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.models.manager.Manager object at 0x7f397c8fc208&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>name</td>
+                    <td class="code"><pre>&#39;create&#39;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/django/db/models/query.py</code> in <code>create</code>
+
+          
+            <div class="context" id="c139884815731784">
+              
+                <ol start="392" class="pre-context" id="pre139884815731784">
+                
+                  <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre>        )</pre></li>
+                
+                  <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre>    def create(self, **kwargs):</pre></li>
+                
+                  <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre>        Creates a new object with the given kwargs, saving it to the database</pre></li>
+                
+                  <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre>        and returning the created object.</pre></li>
+                
+                  <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                </ol>
+              
+              <ol start="399" class="context-line">
+                <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre>
+        obj = self.model(**kwargs)</pre> <span>...</span></li></ol>
+              
+                <ol start='400' class="post-context" id="post139884815731784">
+                  
+                  <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre>        self._for_write = True</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre>        obj.save(force_insert=True, using=self.db)</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre>        return obj</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre>    def _populate_pk_values(self, objs):</pre></li>
+                  
+                  <li onclick="toggle('pre139884815731784', 'post139884815731784')"><pre>        for obj in objs:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815731784')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815731784">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#39;code&#39;: &#39;Flat3&#39;,
+ &#39;owner&#39;: &lt;django.contrib.auth.models.AnonymousUser object at 0x7f3978bf6b70&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>[]</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/django/db/models/base.py</code> in <code>__init__</code>
+
+          
+            <div class="context" id="c139884815732104">
+              
+                <ol start="424" class="pre-context" id="pre139884815732104">
+                
+                  <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre>                val = field.get_default()</pre></li>
+                
+                  <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre>            if is_related_object:</pre></li>
+                
+                  <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre>                # If we are passed a related instance, set it using the</pre></li>
+                
+                  <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre>                # field.name instead of field.attname (e.g. &quot;user&quot; instead of</pre></li>
+                
+                  <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre>                # &quot;user_id&quot;) so that the object gets properly cached (and type</pre></li>
+                
+                  <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre>                # checked) by the RelatedObjectDescriptor.</pre></li>
+                
+                </ol>
+              
+              <ol start="431" class="context-line">
+                <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre>
+                setattr(self, field.name, rel_obj)</pre> <span>...</span></li></ol>
+              
+                <ol start='432' class="post-context" id="post139884815732104">
+                  
+                  <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre>            else:</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre>                setattr(self, field.attname, val)</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre>        if kwargs:</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre>            for prop in list(kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732104', 'post139884815732104')"><pre>                try:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815732104')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815732104">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>rel_obj</td>
+                    <td class="code"><pre>&lt;django.contrib.auth.models.AnonymousUser object at 0x7f3978bf6b70&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>is_related_object</td>
+                    <td class="code"><pre>True</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>field</td>
+                    <td class="code"><pre>&lt;django.db.models.fields.related.ForeignKey: owner&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>val</td>
+                    <td class="code"><pre>&#39;friendly&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>fields_iter</td>
+                    <td class="code"><pre>&lt;tuple_iterator object at 0x7f3978bf16d8&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args_len</td>
+                    <td class="code"><pre>0</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;Snippet: Snippet object&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>__class__</td>
+                    <td class="code"><pre>&lt;class &#39;django.db.models.base.Model&#39;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          <code>/home/migiwara/anaconda3/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py</code> in <code>__set__</code>
+
+          
+            <div class="context" id="c139884815732360">
+              
+                <ol start="200" class="pre-context" id="pre139884815732360">
+                
+                  <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>            )</pre></li>
+                
+                  <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>        elif value is not None and not isinstance(value, self.field.remote_field.model):</pre></li>
+                
+                  <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>            raise ValueError(</pre></li>
+                
+                  <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>                &#39;Cannot assign &quot;%r&quot;: &quot;%s.%s&quot; must be a &quot;%s&quot; instance.&#39; % (</pre></li>
+                
+                  <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>                    value,</pre></li>
+                
+                  <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>                    instance._meta.object_name,</pre></li>
+                
+                  <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>                    self.field.name,</pre></li>
+                
+                </ol>
+              
+              <ol start="207" class="context-line">
+                <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>
+                    self.field.remote_field.model._meta.object_name,</pre> <span>...</span></li></ol>
+              
+                <ol start='208' class="post-context" id="post139884815732360">
+                  
+                  <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>                )</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>            )</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>        elif value is not None:</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>            if instance._state.db is None:</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>                instance._state.db = router.db_for_write(instance.__class__, instance=value)</pre></li>
+                  
+                  <li onclick="toggle('pre139884815732360', 'post139884815732360')"><pre>            elif value._state.db is None:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139884815732360')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139884815732360">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>value</td>
+                    <td class="code"><pre>&lt;django.contrib.auth.models.AnonymousUser object at 0x7f3978bf6b70&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>instance</td>
+                    <td class="code"><pre>&lt;Snippet: Snippet object&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor object at 0x7f397c83d828&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+    </ul>
+  </div>
+  
+  <form action="http://dpaste.com/" name="pasteform" id="pasteform" method="post">
+
+  <div id="pastebinTraceback" class="pastebin">
+    <input type="hidden" name="language" value="PythonConsole">
+    <input type="hidden" name="title"
+      value="ValueError at /snippets/">
+    <input type="hidden" name="source" value="Django Dpaste Agent">
+    <input type="hidden" name="poster" value="Django">
+    <textarea name="content" id="traceback_area" cols="140" rows="25">
+Environment:
+
+
+Request Method: POST
+Request URL: http://127.0.0.1:8000/snippets/
+
+Django Version: 1.9.4
+Python Version: 3.6.5
+Installed Applications:
+[&#39;django.contrib.admin&#39;,
+ &#39;django.contrib.auth&#39;,
+ &#39;django.contrib.contenttypes&#39;,
+ &#39;django.contrib.sessions&#39;,
+ &#39;django.contrib.messages&#39;,
+ &#39;django.contrib.staticfiles&#39;,
+ &#39;django_extensions&#39;,
+ &#39;rest_framework&#39;,
+ &#39;backend.apps.users&#39;,
+ &#39;records&#39;,
+ &#39;snippets&#39;,
+ &#39;autofixture&#39;]
+Installed Middleware:
+[&#39;django.middleware.security.SecurityMiddleware&#39;,
+ &#39;django.contrib.sessions.middleware.SessionMiddleware&#39;,
+ &#39;django.middleware.common.CommonMiddleware&#39;,
+ &#39;django.middleware.csrf.CsrfViewMiddleware&#39;,
+ &#39;django.contrib.auth.middleware.AuthenticationMiddleware&#39;,
+ &#39;django.contrib.auth.middleware.SessionAuthenticationMiddleware&#39;,
+ &#39;django.contrib.messages.middleware.MessageMiddleware&#39;,
+ &#39;django.middleware.clickjacking.XFrameOptionsMiddleware&#39;]
+
+
+
+Traceback:
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py" in get_response
+  149.                     response = self.process_exception_by_middleware(e, request)
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py" in get_response
+  147.                     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/django/views/decorators/csrf.py" in wrapped_view
+  58.         return view_func(*args, **kwargs)
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/django/views/generic/base.py" in view
+  68.             return self.dispatch(request, *args, **kwargs)
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/rest_framework/views.py" in dispatch
+  466.             response = self.handle_exception(exc)
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/rest_framework/views.py" in dispatch
+  463.             response = handler(request, *args, **kwargs)
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/rest_framework/generics.py" in post
+  246.         return self.create(request, *args, **kwargs)
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/rest_framework/mixins.py" in create
+  21.         self.perform_create(serializer)
+
+File "/home/migiwara/HBKU/BioSensors/BiosensorsServer/backend/apps/snippets/views.py" in perform_create
+  17.         serializer.save(owner=self.request.user)
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/rest_framework/serializers.py" in save
+  191.             self.instance = self.create(validated_data)
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/rest_framework/serializers.py" in create
+  846.             instance = ModelClass.objects.create(**validated_data)
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/django/db/models/manager.py" in manager_method
+  122.                 return getattr(self.get_queryset(), name)(*args, **kwargs)
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/django/db/models/query.py" in create
+  399.         obj = self.model(**kwargs)
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/django/db/models/base.py" in __init__
+  431.                 setattr(self, field.name, rel_obj)
+
+File "/home/migiwara/anaconda3/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py" in __set__
+  207.                     self.field.remote_field.model._meta.object_name,
+
+Exception Type: ValueError at /snippets/
+Exception Value: Cannot assign &quot;&lt;django.contrib.auth.models.AnonymousUser object at 0x7f3978bf6b70&gt;&quot;: &quot;Snippet.owner&quot; must be a &quot;EmailUser&quot; instance.
+</textarea>
+  <br><br>
+  <input type="submit" value="Share this traceback on a public website">
+  </div>
+</form>
+</div>
+
+
+
+<div id="requestinfo">
+  <h2>Request information</h2>
+
+
+  <h3 id="get-info">GET</h3>
+  
+    <p>No GET data</p>
+  
+
+  <h3 id="post-info">POST</h3>
+  
+    <p>No POST data</p>
+  
+  <h3 id="files-info">FILES</h3>
+  
+    <p>No FILES data</p>
+  
+
+
+  <h3 id="cookie-info">COOKIES</h3>
+  
+    <p>No cookie data</p>
+  
+
+  <h3 id="meta-info">META</h3>
+  <table class="req">
+    <thead>
+      <tr>
+        <th>Variable</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>PATH</td>
+          <td class="code"><pre>&#39;/usr/lib/go-1.9/bin:/home/migiwara/bin:/home/migiwara/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XAUTHORITY</td>
+          <td class="code"><pre>&#39;/home/migiwara/.Xauthority&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LC_MEASUREMENT</td>
+          <td class="code"><pre>&#39;en_GB.UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XMODIFIERS</td>
+          <td class="code"><pre>&#39;@im=ibus&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LC_TELEPHONE</td>
+          <td class="code"><pre>&#39;en_GB.UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_DATA_DIRS</td>
+          <td class="code"><pre>&#39;/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GDMSESSION</td>
+          <td class="code"><pre>&#39;ubuntu&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MANDATORY_PATH</td>
+          <td class="code"><pre>&#39;/usr/share/gconf/ubuntu.mandatory.path&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LC_TIME</td>
+          <td class="code"><pre>&#39;en_GB.UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PAPERSIZE</td>
+          <td class="code"><pre>&#39;a4&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GTK_IM_MODULE</td>
+          <td class="code"><pre>&#39;ibus&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DBUS_SESSION_BUS_ADDRESS</td>
+          <td class="code"><pre>&#39;unix:abstract=/tmp/dbus-CO9fFcF7ww&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULTS_PATH</td>
+          <td class="code"><pre>&#39;/usr/share/gconf/ubuntu.default.path&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_CURRENT_DESKTOP</td>
+          <td class="code"><pre>&#39;Unity&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>UPSTART_SESSION</td>
+          <td class="code"><pre>&#39;unix:abstract=/com/ubuntu/upstart-session/1000/1946&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QT4_IM_MODULE</td>
+          <td class="code"><pre>&#39;xim&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QT_LINUX_ACCESSIBILITY_ALWAYS_ON</td>
+          <td class="code"><pre>&#39;1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LC_PAPER</td>
+          <td class="code"><pre>&#39;en_GB.UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGNAME</td>
+          <td class="code"><pre>&#39;migiwara&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>JOB</td>
+          <td class="code"><pre>&#39;unity-settings-daemon&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PWD</td>
+          <td class="code"><pre>&#39;/home/migiwara/HBKU/BioSensors/BiosensorsServer&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>IM_CONFIG_PHASE</td>
+          <td class="code"><pre>&#39;1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYCHARM_HOSTED</td>
+          <td class="code"><pre>&#39;1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE</td>
+          <td class="code"><pre>&#39;en_US&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYTHONPATH</td>
+          <td class="code"><pre>&#39;/home/migiwara/Downloads/pycharm-2018.1.4/helpers/pycharm_matplotlib_backend:/home/migiwara/HBKU/BioSensors/BiosensorsServer&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHELL</td>
+          <td class="code"><pre>&#39;/bin/bash&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LC_ADDRESS</td>
+          <td class="code"><pre>&#39;en_GB.UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GIO_LAUNCHED_DESKTOP_FILE</td>
+          <td class="code"><pre>&#39;/home/migiwara/.local/share/applications/jetbrains-pycharm.desktop&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INSTANCE</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GTK2_MODULES</td>
+          <td class="code"><pre>&#39;overlay-scrollbar&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>UPSTART_INSTANCE</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GNOME_DESKTOP_SESSION_ID</td>
+          <td class="code"><pre>&#39;this-is-deprecated&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GTK_MODULES</td>
+          <td class="code"><pre>&#39;gail:atk-bridge:unity-gtk-module&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CLUTTER_IM_MODULE</td>
+          <td class="code"><pre>&#39;xim&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_SESSION_PATH</td>
+          <td class="code"><pre>&#39;/org/freedesktop/DisplayManager/Session0&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMPIZ_BIN_PATH</td>
+          <td class="code"><pre>&#39;/usr/bin/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSIONTYPE</td>
+          <td class="code"><pre>&#39;gnome-session&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_SESSION_DESKTOP</td>
+          <td class="code"><pre>&#39;ubuntu&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHLVL</td>
+          <td class="code"><pre>&#39;0&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LC_IDENTIFICATION</td>
+          <td class="code"><pre>&#39;en_GB.UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LC_MONETARY</td>
+          <td class="code"><pre>&#39;en_GB.UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMPIZ_CONFIG_PROFILE</td>
+          <td class="code"><pre>&#39;ubuntu&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>UPSTART_JOB</td>
+          <td class="code"><pre>&#39;unity7&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QT_IM_MODULE</td>
+          <td class="code"><pre>&#39;ibus&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_CONFIG_DIRS</td>
+          <td class="code"><pre>&#39;/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GNOME_KEYRING_CONTROL</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANG</td>
+          <td class="code"><pre>&#39;en_US.UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_SEAT_PATH</td>
+          <td class="code"><pre>&#39;/org/freedesktop/DisplayManager/Seat0&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_SESSION_TYPE</td>
+          <td class="code"><pre>&#39;x11&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_SESSION_ID</td>
+          <td class="code"><pre>&#39;c2&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DISPLAY</td>
+          <td class="code"><pre>&#39;:0&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LC_NAME</td>
+          <td class="code"><pre>&#39;en_GB.UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYCHARM_MATPLOTLIB_PORT</td>
+          <td class="code"><pre>&#39;45051&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GDM_LANG</td>
+          <td class="code"><pre>&#39;en_US&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYTHONIOENCODING</td>
+          <td class="code"><pre>&#39;UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_GREETER_DATA_DIR</td>
+          <td class="code"><pre>&#39;/var/lib/lightdm-data/migiwara&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>UPSTART_EVENTS</td>
+          <td class="code"><pre>&#39;xsession started&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION</td>
+          <td class="code"><pre>&#39;ubuntu&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GPG_AGENT_INFO</td>
+          <td class="code"><pre>&#39;/home/migiwara/.gnupg/S.gpg-agent:0:1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DESKTOP_SESSION</td>
+          <td class="code"><pre>&#39;ubuntu&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USER</td>
+          <td class="code"><pre>&#39;migiwara&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GIO_LAUNCHED_DESKTOP_FILE_PID</td>
+          <td class="code"><pre>&#39;7654&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QT_ACCESSIBILITY</td>
+          <td class="code"><pre>&#39;1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LC_NUMERIC</td>
+          <td class="code"><pre>&#39;en_GB.UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SSH_AUTH_SOCK</td>
+          <td class="code"><pre>&#39;/run/user/1000/keyring/ssh&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_SEAT</td>
+          <td class="code"><pre>&#39;seat0&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DJANGO_SETTINGS_MODULE</td>
+          <td class="code"><pre>&#39;backend.settings.devl&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYTHONUNBUFFERED</td>
+          <td class="code"><pre>&#39;1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QT_QPA_PLATFORMTHEME</td>
+          <td class="code"><pre>&#39;appmenu-qt5&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_RUNTIME_DIR</td>
+          <td class="code"><pre>&#39;/run/user/1000&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_VTNR</td>
+          <td class="code"><pre>&#39;7&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOME</td>
+          <td class="code"><pre>&#39;/home/migiwara&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GNOME_KEYRING_PID</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TZ</td>
+          <td class="code"><pre>&#39;America/Indianapolis&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>RUN_MAIN</td>
+          <td class="code"><pre>&#39;true&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_NAME</td>
+          <td class="code"><pre>&#39;localhost&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GATEWAY_INTERFACE</td>
+          <td class="code"><pre>&#39;CGI/1.1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PORT</td>
+          <td class="code"><pre>&#39;8000&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_HOST</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_LENGTH</td>
+          <td class="code"><pre>&#39;17&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SCRIPT_NAME</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PROTOCOL</td>
+          <td class="code"><pre>&#39;HTTP/1.1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_SOFTWARE</td>
+          <td class="code"><pre>&#39;WSGIServer/0.2&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REQUEST_METHOD</td>
+          <td class="code"><pre>&#39;POST&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH_INFO</td>
+          <td class="code"><pre>&#39;/snippets/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QUERY_STRING</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_ADDR</td>
+          <td class="code"><pre>&#39;127.0.0.1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_TYPE</td>
+          <td class="code"><pre>&#39;application/json&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_HOST</td>
+          <td class="code"><pre>&#39;127.0.0.1:8000&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_USER_AGENT</td>
+          <td class="code"><pre>&#39;curl/7.60.0&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ACCEPT</td>
+          <td class="code"><pre>&#39;*/*&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.input</td>
+          <td class="code"><pre>&lt;_io.BufferedReader name=6&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.errors</td>
+          <td class="code"><pre>&lt;_io.TextIOWrapper name=&#39;&lt;stderr&gt;&#39; mode=&#39;w&#39; encoding=&#39;UTF-8&#39;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.version</td>
+          <td class="code"><pre>(1, 0)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.run_once</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.url_scheme</td>
+          <td class="code"><pre>&#39;http&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multithread</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multiprocess</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.file_wrapper</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+  <h3 id="settings-info">Settings</h3>
+  <h4>Using settings module <code>backend.settings.devl</code></h4>
+  <table class="req">
+    <thead>
+      <tr>
+        <th>Setting</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>ABSOLUTE_URL_OVERRIDES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ADMINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ALLOWED_HOSTS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ALLOWED_INCLUDE_ROOTS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>APPEND_SLASH</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTHENTICATION_BACKENDS</td>
+          <td class="code"><pre>[&#39;django.contrib.auth.backends.ModelBackend&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_PASSWORD_VALIDATORS</td>
+          <td class="code"><pre>&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_USER_MODEL</td>
+          <td class="code"><pre>&#39;users.EmailUser&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>BASE_DIR</td>
+          <td class="code"><pre>&#39;/home/migiwara/HBKU/BioSensors/BiosensorsServer/backend&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHES</td>
+          <td class="code"><pre>{&#39;default&#39;: {&#39;BACKEND&#39;: &#39;django.core.cache.backends.locmem.LocMemCache&#39;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_ALIAS</td>
+          <td class="code"><pre>&#39;default&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_KEY_PREFIX</td>
+          <td class="code"><pre>&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_SECONDS</td>
+          <td class="code"><pre>600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_AGE</td>
+          <td class="code"><pre>31449600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_NAME</td>
+          <td class="code"><pre>&#39;csrftoken&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_PATH</td>
+          <td class="code"><pre>&#39;/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_FAILURE_VIEW</td>
+          <td class="code"><pre>&#39;django.views.csrf.csrf_failure&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_HEADER_NAME</td>
+          <td class="code"><pre>&#39;HTTP_X_CSRFTOKEN&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_TRUSTED_ORIGINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASES</td>
+          <td class="code"><pre>{&#39;default&#39;: {&#39;ATOMIC_REQUESTS&#39;: False,
+             &#39;AUTOCOMMIT&#39;: True,
+             &#39;CONN_MAX_AGE&#39;: 0,
+             &#39;ENGINE&#39;: &#39;django.db.backends.postgresql&#39;,
+             &#39;HOST&#39;: &#39;&#39;,
+             &#39;NAME&#39;: &#39;BiosensorsServer2&#39;,
+             &#39;OPTIONS&#39;: {},
+             &#39;PASSWORD&#39;: &#39;********************&#39;,
+             &#39;PORT&#39;: &#39;&#39;,
+             &#39;TEST&#39;: {&#39;CHARSET&#39;: None,
+                      &#39;COLLATION&#39;: None,
+                      &#39;MIRROR&#39;: None,
+                      &#39;NAME&#39;: None},
+             &#39;TIME_ZONE&#39;: None,
+             &#39;USER&#39;: &#39;migiwara&#39;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASE_ROUTERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_FORMAT</td>
+          <td class="code"><pre>&#39;N j, Y, P&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#39;%Y-%m-%d %H:%M:%S&#39;,
+ &#39;%Y-%m-%d %H:%M:%S.%f&#39;,
+ &#39;%Y-%m-%d %H:%M&#39;,
+ &#39;%Y-%m-%d&#39;,
+ &#39;%m/%d/%Y %H:%M:%S&#39;,
+ &#39;%m/%d/%Y %H:%M:%S.%f&#39;,
+ &#39;%m/%d/%Y %H:%M&#39;,
+ &#39;%m/%d/%Y&#39;,
+ &#39;%m/%d/%y %H:%M:%S&#39;,
+ &#39;%m/%d/%y %H:%M:%S.%f&#39;,
+ &#39;%m/%d/%y %H:%M&#39;,
+ &#39;%m/%d/%y&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_FORMAT</td>
+          <td class="code"><pre>&#39;N j, Y&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#39;%Y-%m-%d&#39;,
+ &#39;%m/%d/%Y&#39;,
+ &#39;%m/%d/%y&#39;,
+ &#39;%b %d %Y&#39;,
+ &#39;%b %d, %Y&#39;,
+ &#39;%d %b %Y&#39;,
+ &#39;%d %b, %Y&#39;,
+ &#39;%B %d %Y&#39;,
+ &#39;%B %d, %Y&#39;,
+ &#39;%d %B %Y&#39;,
+ &#39;%d %B, %Y&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG_PROPAGATE_EXCEPTIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DECIMAL_SEPARATOR</td>
+          <td class="code"><pre>&#39;.&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_CHARSET</td>
+          <td class="code"><pre>&#39;utf-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_CONTENT_TYPE</td>
+          <td class="code"><pre>&#39;text/html&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER_FILTER</td>
+          <td class="code"><pre>&#39;django.views.debug.SafeExceptionReporterFilter&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_FILE_STORAGE</td>
+          <td class="code"><pre>&#39;django.core.files.storage.FileSystemStorage&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_FROM_EMAIL</td>
+          <td class="code"><pre>&#39;webmaster@localhost&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_INDEX_TABLESPACE</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_TABLESPACE</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DISALLOWED_USER_AGENTS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DJANGO_APPS</td>
+          <td class="code"><pre>[&#39;django.contrib.admin&#39;,
+ &#39;django.contrib.auth&#39;,
+ &#39;django.contrib.contenttypes&#39;,
+ &#39;django.contrib.sessions&#39;,
+ &#39;django.contrib.messages&#39;,
+ &#39;django.contrib.staticfiles&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_BACKEND</td>
+          <td class="code"><pre>&#39;django.core.mail.backends.smtp.EmailBackend&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST</td>
+          <td class="code"><pre>&#39;localhost&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_PASSWORD</td>
+          <td class="code"><pre>&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_USER</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_PORT</td>
+          <td class="code"><pre>25</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_CERTFILE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_KEYFILE</td>
+          <td class="code"><pre>&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SUBJECT_PREFIX</td>
+          <td class="code"><pre>&#39;[Django] &#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_TIMEOUT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_SSL</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_TLS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_CHARSET</td>
+          <td class="code"><pre>&#39;utf-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_DIRECTORY_PERMISSIONS</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_HANDLERS</td>
+          <td class="code"><pre>[&#39;django.core.files.uploadhandler.MemoryFileUploadHandler&#39;,
+ &#39;django.core.files.uploadhandler.TemporaryFileUploadHandler&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_PERMISSIONS</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_TEMP_DIR</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIRST_DAY_OF_WEEK</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIXTURE_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORCE_SCRIPT_NAME</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORMAT_MODULE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>IGNORABLE_404_URLS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INSTALLED_APPS</td>
+          <td class="code"><pre>[&#39;django.contrib.admin&#39;,
+ &#39;django.contrib.auth&#39;,
+ &#39;django.contrib.contenttypes&#39;,
+ &#39;django.contrib.sessions&#39;,
+ &#39;django.contrib.messages&#39;,
+ &#39;django.contrib.staticfiles&#39;,
+ &#39;django_extensions&#39;,
+ &#39;rest_framework&#39;,
+ &#39;backend.apps.users&#39;,
+ &#39;records&#39;,
+ &#39;snippets&#39;,
+ &#39;autofixture&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INTERNAL_IPS</td>
+          <td class="code"><pre>[&#39;192.168.56.1&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES</td>
+          <td class="code"><pre>[(&#39;af&#39;, &#39;Afrikaans&#39;),
+ (&#39;ar&#39;, &#39;Arabic&#39;),
+ (&#39;ast&#39;, &#39;Asturian&#39;),
+ (&#39;az&#39;, &#39;Azerbaijani&#39;),
+ (&#39;bg&#39;, &#39;Bulgarian&#39;),
+ (&#39;be&#39;, &#39;Belarusian&#39;),
+ (&#39;bn&#39;, &#39;Bengali&#39;),
+ (&#39;br&#39;, &#39;Breton&#39;),
+ (&#39;bs&#39;, &#39;Bosnian&#39;),
+ (&#39;ca&#39;, &#39;Catalan&#39;),
+ (&#39;cs&#39;, &#39;Czech&#39;),
+ (&#39;cy&#39;, &#39;Welsh&#39;),
+ (&#39;da&#39;, &#39;Danish&#39;),
+ (&#39;de&#39;, &#39;German&#39;),
+ (&#39;el&#39;, &#39;Greek&#39;),
+ (&#39;en&#39;, &#39;English&#39;),
+ (&#39;en-au&#39;, &#39;Australian English&#39;),
+ (&#39;en-gb&#39;, &#39;British English&#39;),
+ (&#39;eo&#39;, &#39;Esperanto&#39;),
+ (&#39;es&#39;, &#39;Spanish&#39;),
+ (&#39;es-ar&#39;, &#39;Argentinian Spanish&#39;),
+ (&#39;es-co&#39;, &#39;Colombian Spanish&#39;),
+ (&#39;es-mx&#39;, &#39;Mexican Spanish&#39;),
+ (&#39;es-ni&#39;, &#39;Nicaraguan Spanish&#39;),
+ (&#39;es-ve&#39;, &#39;Venezuelan Spanish&#39;),
+ (&#39;et&#39;, &#39;Estonian&#39;),
+ (&#39;eu&#39;, &#39;Basque&#39;),
+ (&#39;fa&#39;, &#39;Persian&#39;),
+ (&#39;fi&#39;, &#39;Finnish&#39;),
+ (&#39;fr&#39;, &#39;French&#39;),
+ (&#39;fy&#39;, &#39;Frisian&#39;),
+ (&#39;ga&#39;, &#39;Irish&#39;),
+ (&#39;gd&#39;, &#39;Scottish Gaelic&#39;),
+ (&#39;gl&#39;, &#39;Galician&#39;),
+ (&#39;he&#39;, &#39;Hebrew&#39;),
+ (&#39;hi&#39;, &#39;Hindi&#39;),
+ (&#39;hr&#39;, &#39;Croatian&#39;),
+ (&#39;hu&#39;, &#39;Hungarian&#39;),
+ (&#39;ia&#39;, &#39;Interlingua&#39;),
+ (&#39;id&#39;, &#39;Indonesian&#39;),
+ (&#39;io&#39;, &#39;Ido&#39;),
+ (&#39;is&#39;, &#39;Icelandic&#39;),
+ (&#39;it&#39;, &#39;Italian&#39;),
+ (&#39;ja&#39;, &#39;Japanese&#39;),
+ (&#39;ka&#39;, &#39;Georgian&#39;),
+ (&#39;kk&#39;, &#39;Kazakh&#39;),
+ (&#39;km&#39;, &#39;Khmer&#39;),
+ (&#39;kn&#39;, &#39;Kannada&#39;),
+ (&#39;ko&#39;, &#39;Korean&#39;),
+ (&#39;lb&#39;, &#39;Luxembourgish&#39;),
+ (&#39;lt&#39;, &#39;Lithuanian&#39;),
+ (&#39;lv&#39;, &#39;Latvian&#39;),
+ (&#39;mk&#39;, &#39;Macedonian&#39;),
+ (&#39;ml&#39;, &#39;Malayalam&#39;),
+ (&#39;mn&#39;, &#39;Mongolian&#39;),
+ (&#39;mr&#39;, &#39;Marathi&#39;),
+ (&#39;my&#39;, &#39;Burmese&#39;),
+ (&#39;nb&#39;, &#39;Norwegian Bokmal&#39;),
+ (&#39;ne&#39;, &#39;Nepali&#39;),
+ (&#39;nl&#39;, &#39;Dutch&#39;),
+ (&#39;nn&#39;, &#39;Norwegian Nynorsk&#39;),
+ (&#39;os&#39;, &#39;Ossetic&#39;),
+ (&#39;pa&#39;, &#39;Punjabi&#39;),
+ (&#39;pl&#39;, &#39;Polish&#39;),
+ (&#39;pt&#39;, &#39;Portuguese&#39;),
+ (&#39;pt-br&#39;, &#39;Brazilian Portuguese&#39;),
+ (&#39;ro&#39;, &#39;Romanian&#39;),
+ (&#39;ru&#39;, &#39;Russian&#39;),
+ (&#39;sk&#39;, &#39;Slovak&#39;),
+ (&#39;sl&#39;, &#39;Slovenian&#39;),
+ (&#39;sq&#39;, &#39;Albanian&#39;),
+ (&#39;sr&#39;, &#39;Serbian&#39;),
+ (&#39;sr-latn&#39;, &#39;Serbian Latin&#39;),
+ (&#39;sv&#39;, &#39;Swedish&#39;),
+ (&#39;sw&#39;, &#39;Swahili&#39;),
+ (&#39;ta&#39;, &#39;Tamil&#39;),
+ (&#39;te&#39;, &#39;Telugu&#39;),
+ (&#39;th&#39;, &#39;Thai&#39;),
+ (&#39;tr&#39;, &#39;Turkish&#39;),
+ (&#39;tt&#39;, &#39;Tatar&#39;),
+ (&#39;udm&#39;, &#39;Udmurt&#39;),
+ (&#39;uk&#39;, &#39;Ukrainian&#39;),
+ (&#39;ur&#39;, &#39;Urdu&#39;),
+ (&#39;vi&#39;, &#39;Vietnamese&#39;),
+ (&#39;zh-hans&#39;, &#39;Simplified Chinese&#39;),
+ (&#39;zh-hant&#39;, &#39;Traditional Chinese&#39;)]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES_BIDI</td>
+          <td class="code"><pre>[&#39;he&#39;, &#39;ar&#39;, &#39;fa&#39;, &#39;ur&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_CODE</td>
+          <td class="code"><pre>&#39;en-us&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_AGE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_NAME</td>
+          <td class="code"><pre>&#39;django_language&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_PATH</td>
+          <td class="code"><pre>&#39;/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOCALE_PATHS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOCAL_APPS</td>
+          <td class="code"><pre>[&#39;backend.apps.users&#39;, &#39;records&#39;, &#39;snippets&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING_CONFIG</td>
+          <td class="code"><pre>&#39;logging.config.dictConfig&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_REDIRECT_URL</td>
+          <td class="code"><pre>&lt;django.utils.functional.lazy.&lt;locals&gt;.__proxy__ object at 0x7f3982386d30&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_URL</td>
+          <td class="code"><pre>&lt;django.utils.functional.lazy.&lt;locals&gt;.__proxy__ object at 0x7f3982386c88&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGOUT_URL</td>
+          <td class="code"><pre>&#39;/accounts/logout/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MANAGERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_ROOT</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_URL</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MESSAGE_STORAGE</td>
+          <td class="code"><pre>&#39;django.contrib.messages.storage.fallback.FallbackStorage&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIDDLEWARE_CLASSES</td>
+          <td class="code"><pre>[&#39;django.middleware.security.SecurityMiddleware&#39;,
+ &#39;django.contrib.sessions.middleware.SessionMiddleware&#39;,
+ &#39;django.middleware.common.CommonMiddleware&#39;,
+ &#39;django.middleware.csrf.CsrfViewMiddleware&#39;,
+ &#39;django.contrib.auth.middleware.AuthenticationMiddleware&#39;,
+ &#39;django.contrib.auth.middleware.SessionAuthenticationMiddleware&#39;,
+ &#39;django.contrib.messages.middleware.MessageMiddleware&#39;,
+ &#39;django.middleware.clickjacking.XFrameOptionsMiddleware&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIGRATION_MODULES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MONTH_DAY_FORMAT</td>
+          <td class="code"><pre>&#39;F j&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>NUMBER_GROUPING</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_HASHERS</td>
+          <td class="code"><pre>&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_RESET_TIMEOUT_DAYS</td>
+          <td class="code"><pre>&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PREPEND_WWW</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REST_FRAMEWORK</td>
+          <td class="code"><pre>{&#39;DEFAULT_AUTHENTICATION_CLASSES&#39;: (&#39;rest_framework.authentication.SessionAuthentication&#39;,),
+ &#39;DEFAULT_FILTER_BACKENDS&#39;: (&#39;rest_framework.filters.SearchFilter&#39;,
+                             &#39;rest_framework.filters.DjangoFilterBackend&#39;),
+ &#39;DEFAULT_PAGINATION_CLASS&#39;: &#39;backend.pagination.StandardPagination&#39;,
+ &#39;DEFAULT_PARSER_CLASSES&#39;: (&#39;rest_framework.parsers.JSONParser&#39;,),
+ &#39;DEFAULT_PERMISSION_CLASSES&#39;: (&#39;rest_framework.permissions.IsAuthenticated&#39;,
+                                &#39;backend.permissions.DjangoModelViewPermissions&#39;),
+ &#39;DEFAULT_RENDERER_CLASSES&#39;: (&#39;rest_framework.renderers.BrowsableAPIRenderer&#39;,
+                              &#39;rest_framework.renderers.JSONRenderer&#39;)}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ROOT_URLCONF</td>
+          <td class="code"><pre>&#39;backend.urls&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECRET_KEY</td>
+          <td class="code"><pre>&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_BROWSER_XSS_FILTER</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_CONTENT_TYPE_NOSNIFF</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_INCLUDE_SUBDOMAINS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_SECONDS</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_PROXY_SSL_HEADER</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REDIRECT_EXEMPT</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_HOST</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_REDIRECT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_EMAIL</td>
+          <td class="code"><pre>&#39;root@localhost&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_CACHE_ALIAS</td>
+          <td class="code"><pre>&#39;default&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_AGE</td>
+          <td class="code"><pre>1209600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_NAME</td>
+          <td class="code"><pre>&#39;sessionid&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_PATH</td>
+          <td class="code"><pre>&#39;/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_ENGINE</td>
+          <td class="code"><pre>&#39;django.contrib.sessions.backends.db&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_EXPIRE_AT_BROWSER_CLOSE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_FILE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SAVE_EVERY_REQUEST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SERIALIZER</td>
+          <td class="code"><pre>&#39;django.contrib.sessions.serializers.JSONSerializer&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SETTINGS_MODULE</td>
+          <td class="code"><pre>&#39;backend.settings.devl&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATETIME_FORMAT</td>
+          <td class="code"><pre>&#39;m/d/Y P&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATE_FORMAT</td>
+          <td class="code"><pre>&#39;m/d/Y&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIGNING_BACKEND</td>
+          <td class="code"><pre>&#39;django.core.signing.TimestampSigner&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SILENCED_SYSTEM_CHECKS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_DIRS</td>
+          <td class="code"><pre>[&#39;/home/migiwara/HBKU/BioSensors/BiosensorsServer/backend/static&#39;,
+ &#39;/home/migiwara/HBKU/BioSensors/BiosensorsServer/backend/../frontend/build&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_FINDERS</td>
+          <td class="code"><pre>[&#39;django.contrib.staticfiles.finders.FileSystemFinder&#39;,
+ &#39;django.contrib.staticfiles.finders.AppDirectoriesFinder&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_STORAGE</td>
+          <td class="code"><pre>&#39;django.contrib.staticfiles.storage.StaticFilesStorage&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_ROOT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_URL</td>
+          <td class="code"><pre>&#39;/static/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATES</td>
+          <td class="code"><pre>[{&#39;APP_DIRS&#39;: True,
+  &#39;BACKEND&#39;: &#39;django.template.backends.django.DjangoTemplates&#39;,
+  &#39;DIRS&#39;: [&#39;/home/migiwara/HBKU/BioSensors/BiosensorsServer/backend/templates&#39;],
+  &#39;OPTIONS&#39;: {&#39;builtins&#39;: [],
+              &#39;context_processors&#39;: [&#39;django.template.context_processors.debug&#39;,
+                                     &#39;django.template.context_processors.request&#39;,
+                                     &#39;django.contrib.auth.context_processors.auth&#39;,
+                                     &#39;django.contrib.messages.context_processors.messages&#39;]}}]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATE_CONTEXT_PROCESSORS</td>
+          <td class="code"><pre>[&#39;django.contrib.auth.context_processors.auth&#39;,
+ &#39;django.template.context_processors.debug&#39;,
+ &#39;django.template.context_processors.i18n&#39;,
+ &#39;django.template.context_processors.media&#39;,
+ &#39;django.template.context_processors.static&#39;,
+ &#39;django.template.context_processors.tz&#39;,
+ &#39;django.contrib.messages.context_processors.messages&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATE_DEBUG</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATE_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATE_LOADERS</td>
+          <td class="code"><pre>[&#39;django.template.loaders.filesystem.Loader&#39;,
+ &#39;django.template.loaders.app_directories.Loader&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATE_STRING_IF_INVALID</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_NON_SERIALIZED_APPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_RUNNER</td>
+          <td class="code"><pre>&#39;django.test.runner.DiscoverRunner&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>THIRD_PARTY_APPS</td>
+          <td class="code"><pre>[&#39;django_extensions&#39;, &#39;rest_framework&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>&#39;,&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_FORMAT</td>
+          <td class="code"><pre>&#39;P&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#39;%H:%M:%S&#39;, &#39;%H:%M:%S.%f&#39;, &#39;%H:%M&#39;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_ZONE</td>
+          <td class="code"><pre>&#39;America/Indianapolis&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_ETAGS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_I18N</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_L10N</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_TZ</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_HOST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_PORT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>WSGI_APPLICATION</td>
+          <td class="code"><pre>&#39;backend.wsgi.application&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>X_FRAME_OPTIONS</td>
+          <td class="code"><pre>&#39;SAMEORIGIN&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>YEAR_MONTH_FORMAT</td>
+          <td class="code"><pre>&#39;F Y&#39;</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+
+  <div id="explanation">
+    <p>
+      You're seeing this error because you have <code>DEBUG = True</code> in your
+      Django settings file. Change that to <code>False</code>, and Django will
+      display a standard page generated by the handler for this status code.
+    </p>
+  </div>
+
+</body>
+</html>
