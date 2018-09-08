@@ -4,7 +4,7 @@ from rest_framework import serializers
 from django.apps import apps
 
 User = get_user_model()
-Snippet = apps.get_model('snippets', 'Snippet')
+# Snippet = apps.get_model('snippets', 'Snippet')
 Snippet = apps.get_model('records', 'Records')
 
 
@@ -12,11 +12,11 @@ class UserSerializer(serializers.ModelSerializer):
     # appConfig = AppConfig()
     # Snippet = appConfig.get_model(model_name='Snippet')
     # snippets = serializers.PrimaryKeyRelatedField(many=True, queryset=Snippet.objects.all())
-    snippets = serializers.HyperlinkedRelatedField(many=True, view_name='snippet-detail', read_only=True)
+    records = serializers.HyperlinkedRelatedField(many=True, view_name='records-detail', read_only=True)
 
     class Meta:
         model = User
         fields = (
             'id', 'first_name', 'last_name', 'email', 'last_login',
-            'is_active', 'date_joined', 'last_updated', 'snippets', 'records'
+            'is_active', 'date_joined', 'last_updated', 'records'
         )

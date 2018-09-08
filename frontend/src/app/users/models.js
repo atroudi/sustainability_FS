@@ -32,7 +32,8 @@ class RecordP extends Record({
     sysTime: "",
     dateString: "",
     rawData: "",
-    owner: ""
+    owner: "",
+    owner_id: ""
 }) {
     appUrl() {
         return `/admin/records/${this.id}`;
@@ -160,7 +161,7 @@ class UserCollection extends Record({
         search: ""
     }),
     routeId: "user",
-    title: "Records",
+    title: "Patients",
     titleSingular: "User"
 }){
     appUrl() {

@@ -17,7 +17,6 @@ class Records(models.Model):
 
     owner = models.ForeignKey('users.EmailUser', related_name='records', on_delete=models.CASCADE)
 
-
     class Meta:
         managed = True
         db_table = 'patient_records'

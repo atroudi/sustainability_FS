@@ -14,7 +14,6 @@ class Container extends React.Component {
 
     render() {
         const {children, rowOneWidth = 4, rowTwoWidth = 8} = this.props;
-
         return (
             <Row>
                 <Col sm={rowOneWidth}>
