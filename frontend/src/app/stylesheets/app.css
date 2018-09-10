@@ -41,3 +41,9 @@
     padding: 10px 10px;
     height: 55px;
 }
+
+.signup-box,
+.register-box {
+  width: 560px;
+  margin: 7% auto;
+}

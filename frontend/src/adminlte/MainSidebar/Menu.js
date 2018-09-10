@@ -6,7 +6,7 @@ import {Link} from "react-router";
 const allLinks = [
     {
         permission: "users.view_emailuser",
-        text: "Users",
+        text: "Patients",
         to: "/admin/users/",
         icon: "fa fa-users"
     }

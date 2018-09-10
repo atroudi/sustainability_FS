@@ -39,7 +39,7 @@ class UserMenu extends React.Component {
                         </p>
                     </li>
 
-                    <li className="user-body">
+                    {/* <li className="user-body">
                         <div className="row">
                             <div className="col-xs-4 text-center">
                                 <a href="#">Followers</a>
@@ -53,7 +53,7 @@ class UserMenu extends React.Component {
                                 <a href="#">Friends</a>
                             </div>
                         </div>
-                    </li>
+                    </li> */}
 
                     <li className="user-footer">
                         <div className="pull-left">
