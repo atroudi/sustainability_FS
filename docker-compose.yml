@@ -7,6 +7,7 @@ services:
       - "5432:5432"
   django:
     build: .
+    command: ["python", "manage.py", "migrate", "--noinput"]
     command: ["python", "manage.py", "runserver", "0.0.0.0:8080"]
     volumes:
       - .:/app
