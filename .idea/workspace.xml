@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Improve glucose graph2 with per userId graph visualization">
-      <change afterPath="$PROJECT_DIR$/backend/apps/users/registration/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/users/registration/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/users/registration/signup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/templates/registration/signup.html" afterDir="false" />
+    <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
+      <change afterPath="$PROJECT_DIR$/backend/apps/users/management/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/users/management/view_permission.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/snippets/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/users/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/settings/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/settings/devl.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/devl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/backend/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/backend/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/registration/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/build/js/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/js/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/stylesheets.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/stylesheets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/UserMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/UserMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/MainFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/MainFooter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/models.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +34,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/apps/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="348">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -46,37 +43,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/settings/devl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/apps/users/registration/signup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-              <folding>
-                <element signature="e#2#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/settings/common.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="111" column="55" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="55" />
+            <state relative-caret-position="484">
+              <caret line="112" column="6" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GlucoseChartJs2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="841">
+              <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/apps/users/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_permission.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/apps/users/management/view_permission.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,62 +103,29 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/apps/users/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="29" selection-start-line="1" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/apps/users/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="88" column="28" lean-forward="true" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
+            <state relative-caret-position="232">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/urls.py">
+        <entry file="file://$PROJECT_DIR$/backend/apps/users/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state>
+              <caret line="2" column="30" selection-end-line="2" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/templates/registration/signup.html">
+      <file leaf-file-name="app.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/templates/backend/app.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="48" />
-              <folding>
-                <element signature="e#453#473#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/templates/registration/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stylesheets.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/build/stylesheets.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="12353" column="17" selection-start-line="12353" selection-start-column="17" selection-end-line="12353" selection-end-column="17" />
+            <state relative-caret-position="957">
+              <caret line="33" column="59" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -172,6 +157,9 @@
       <find>get_user_model</find>
       <find>auth</find>
       <find>login</find>
+      <find>Djan</find>
+      <find>data</find>
+      <find>permissions</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,37 +170,41 @@
       <list>
         <option value="$PROJECT_DIR$/frontend/src/app/components/list/Container.js" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs.js" />
-        <option value="$PROJECT_DIR$/backend/apps/users/models.py" />
         <option value="$PROJECT_DIR$/dbModel.model" />
         <option value="$PROJECT_DIR$/backend/apps/users/migrations/0002_auto_20160309_1423.py" />
         <option value="$PROJECT_DIR$/backend/apps/users/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/backend/apps/records/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/backend/apps/records/migrations/__init__.py" />
         <option value="$PROJECT_DIR$/backend/apps/records/urls.py" />
-        <option value="$PROJECT_DIR$/backend/settings/devl.py" />
         <option value="$PROJECT_DIR$/backend/apps/snippets/permissions.py" />
         <option value="$PROJECT_DIR$/backend/apps/snippets/models.py" />
         <option value="$PROJECT_DIR$/backend/apps/snippets/views.py" />
         <option value="$PROJECT_DIR$/backend/apps/snippets/serializers.py" />
-        <option value="$PROJECT_DIR$/backend/settings/common.py" />
-        <option value="$PROJECT_DIR$/backend/templates/backend/app.html" />
         <option value="$PROJECT_DIR$/backend/apps/records/views.py" />
-        <option value="$PROJECT_DIR$/backend/apps/users/serializers.py" />
         <option value="$PROJECT_DIR$/backend/apps/records/serializers.py" />
         <option value="$PROJECT_DIR$/backend/apps/records/models.py" />
         <option value="$PROJECT_DIR$/backend/pagination.py" />
         <option value="$PROJECT_DIR$/backend/apps/snippets/urls.py" />
-        <option value="$PROJECT_DIR$/backend/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/backend/templates/signup.html" />
         <option value="$PROJECT_DIR$/backend/apps/users/forms.py" />
         <option value="$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/contrib/auth/forms.py" />
         <option value="$PROJECT_DIR$/frontend/dist/stylesheets.css" />
         <option value="$PROJECT_DIR$/frontend/build/stylesheets.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" />
-        <option value="$PROJECT_DIR$/backend/templates/registration/signup.html" />
         <option value="$PROJECT_DIR$/backend/apps/users/views.py" />
-        <option value="$PROJECT_DIR$/backend/apps/users/registration/signup.py" />
         <option value="$PROJECT_DIR$/backend/urls.py" />
+        <option value="$PROJECT_DIR$/backend/settings/devl.py" />
+        <option value="$PROJECT_DIR$/backend/apps/users/registration/signup.py" />
+        <option value="$PROJECT_DIR$/backend/apps/users/registration/forms.py" />
+        <option value="$PROJECT_DIR$/backend/templates/registration/base.html" />
+        <option value="$PROJECT_DIR$/backend/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/backend/templates/registration/signup.html" />
+        <option value="$PROJECT_DIR$/backend/apps/users/models.py" />
+        <option value="$PROJECT_DIR$/backend/apps/users/management/view_permission.py" />
+        <option value="$PROJECT_DIR$/backend/apps/users/serializers.py" />
+        <option value="$PROJECT_DIR$/backend/settings/common.py" />
+        <option value="$PROJECT_DIR$/backend/templates/backend/app.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" />
       </list>
     </option>
   </component>
@@ -231,10 +223,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="88" />
-    <option name="y" value="-2" />
-    <option name="width" value="3753" />
-    <option name="height" value="2163" />
+    <option name="x" value="89" />
+    <option name="y" value="-6" />
+    <option name="width" value="3751" />
+    <option name="height" value="2166" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -254,33 +246,6 @@
               <item name="BiosensorsServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="BiosensorsServer" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BiosensorsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BiosensorsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BiosensorsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BiosensorsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="records" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BiosensorsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BiosensorsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="snippets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BiosensorsServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BiosensorsServer" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BiosensorsServer" type="b2602c69:ProjectViewProjectNode" />
@@ -332,7 +297,16 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BiosensorsServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BiosensorsServer" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="graphs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -343,7 +317,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend" />
+    <property name="last_opened_file_path" value="$USER_HOME$/QCRI/Rheem/Rheem-CostML" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -449,27 +423,34 @@
       <option name="project" value="LOCAL" />
       <updated>1536429258369</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added signup page. Improve glucose graph2 with per userId graph visualization.">
+      <created>1536613853743</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1536613853743</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="162" y="25" width="3679" height="2136" extended-state="6" />
+    <frame x="89" y="-6" width="3751" height="2166" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33772153" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295688" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3296119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34240246" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3179747" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2821577" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3178808" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2819192" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -514,7 +495,8 @@
     <MESSAGE value="Improving records model in backend Integrate glucose graph to frontend." />
     <MESSAGE value="Integrate glucose graph2 with brushes to frontend." />
     <MESSAGE value="Improve glucose graph2 with per userId graph visualization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve glucose graph2 with per userId graph visualization" />
+    <MESSAGE value="Added signup page. Improve glucose graph2 with per userId graph visualization." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added signup page. Improve glucose graph2 with per userId graph visualization." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -522,38 +504,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/db/models/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/db/backends/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/contrib/auth/base_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/snippets/migrations/0002_auto_20180829_0450.py" />
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/permissions.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/snippets/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/apps/snippets/permissions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -640,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/pagination.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/apps/records/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -661,27 +604,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4374" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/settings/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/templates/backend/app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/templates/registration/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="999">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="39" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/contrib/auth/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -697,27 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="57" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/contrib/auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9720">
-          <caret line="373" column="25" selection-start-line="373" selection-start-column="21" selection-end-line="373" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/forms/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5191">
-          <caret line="256" selection-start-line="256" selection-end-line="256" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/utils/functional.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -729,16 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2241">
           <caret line="83" selection-start-line="83" selection-end-line="84" selection-end-column="35" />
-          <folding>
-            <element signature="e#38#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/registration/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -746,9 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-736">
           <caret line="132" column="22" selection-start-line="132" selection-start-column="17" selection-end-line="132" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -756,13 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
           <caret line="77" column="52" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -794,63 +677,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/templates/registration/login.html">
+    <entry file="file://$PROJECT_DIR$/backend/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/templates/registration/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="48" />
-          <folding>
-            <element signature="e#453#473#0#HTML" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-12" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="-12">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/settings/devl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/forms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="461" column="6" selection-start-line="461" selection-start-column="6" selection-end-line="461" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/users/registration/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/templates/registration/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/apps/users/registration/signup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        <state relative-caret-position="232">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="899">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/templates/registration/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="965">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/permissions.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/rest_framework/pagination.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="642" column="77" selection-start-line="642" selection-start-column="73" selection-end-line="642" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/pagination.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
           <folding>
-            <element signature="e#2#53#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/models.py">
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/contrib/auth/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="88" column="28" lean-forward="true" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="944">
+          <caret line="254" column="8" selection-start-line="254" selection-start-column="8" selection-end-line="254" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/serializers.py">
+    <entry file="file://$PROJECT_DIR$/backend/apps/users/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="29" selection-start-line="1" selection-end-line="2" />
+        <state>
+          <caret line="2" column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/requirements/common.pip">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/apps/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="348">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
@@ -858,22 +795,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/settings/devl.py">
+    <entry file="file://$PROJECT_DIR$/backend/apps/users/management/view_permission.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="290">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/settings/common.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="111" column="55" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="55" />
+        <state relative-caret-position="484">
+          <caret line="112" column="6" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/templates/backend/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="957">
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/users/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

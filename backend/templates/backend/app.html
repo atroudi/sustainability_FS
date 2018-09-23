@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Django & React Starter</title>
+        <title>GMS HBKU</title>
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link rel="stylesheet" type="text/css" href="{% static "stylesheets.css" %}">
         <!--[if lt IE 9]>
@@ -31,6 +31,8 @@
                 username: "{{ request.user.username }}",
                 full_name: "{{ request.user.get_full_name }}",
                 last_login: "{{ request.user.last_login }}",
+                is_superuser: "{{ request.user.is_superuser }}",
+                id: "{{ request.user.id }}",
                 permissions: immutable.Set(
                     {% autoescape off %}JSON.parse('{{ permissions }}'){% endautoescape %}
                 )
