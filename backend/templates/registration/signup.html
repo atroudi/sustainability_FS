@@ -5,10 +5,12 @@
 <body class="hold-transition login-page">
     <div class="signup-box">
     <div class="login-logo">
-            <a href="#"><b>Sign</b>UP</a>
+            <a href="#"><b>Admin</b>GMS</a>
 {#            # GMS stands for "Glucose Monitoring System"#}
     </div>
 {#        <h2>Sign up</h2>#}
+        <div class="login-box-body">
+
               <form method="post">
                 {% csrf_token %}
                 {% for field in form %}
@@ -23,8 +25,17 @@
                     {% endfor %}
                   </p>
                 {% endfor %}
-                <button type="submit">Sign up</button>
-              </form>
+
+                  <div class="row">
+                    <div class="col-xs-8"></div>
+                    <div class="col-xs-4">
+                        <button type="submit" class="btn btn-primary btn-block btn-flat">Sign Up</button>
+                    </div>
+                </div>
+                  <script>
+                        document.write('<a href="' + document.referrer + '">Go Back</a>');
+                    </script>
+
     </div>
 </body>
 {% endblock body %}

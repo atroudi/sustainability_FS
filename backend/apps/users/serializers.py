@@ -18,5 +18,6 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = (
             'id', 'first_name', 'last_name', 'email', 'last_login',
-            'is_active', 'date_joined', 'last_updated', 'records'
+            'is_active', 'date_joined', 'last_updated', 'records','is_staff','is_superuser'
         )
+        default_permissions = ('add', 'change', 'delete', 'view_emailuser')

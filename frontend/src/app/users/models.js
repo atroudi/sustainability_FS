@@ -111,6 +111,8 @@ class User extends Record({
     last_login: "",
     last_name: "",
     last_updated: "",
+    is_staff:"",
+    is_superuser: new Boolean(false)
     // records: new RecordCollection()
 }) {
     appUrl() {

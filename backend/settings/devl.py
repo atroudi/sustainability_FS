@@ -25,3 +25,7 @@ INSTALLED_APPS += (
 STATICFILES_DIRS.append(
     os.path.join(BASE_DIR, os.pardir, 'frontend', 'build'),
 )
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())

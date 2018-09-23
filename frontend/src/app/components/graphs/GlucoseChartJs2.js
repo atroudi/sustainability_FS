@@ -82,7 +82,7 @@ class GlucoseChartJs2 extends React.Component {
         var datelabels = [];
         var count=0
         collection.models.toList().
-        sort((a, b) => a.id > b.id).
+        sort((a, b) => a.id - b.id).
         map((model, key) => {
             if (model.owner_id==props.params.user){
                 var date = new Date(model.sysTime);
@@ -93,7 +93,7 @@ class GlucoseChartJs2 extends React.Component {
 
         var entries = [];
         collection.models.toList()
-        .sort((a, b) => a.id > b.id)
+        .sort((a, b) => a.id - b.id)
         .map(model => {
             if (model.owner_id==props.params.user){
                 entries.push(parseInt(model.getSgv()))
@@ -107,6 +107,7 @@ class GlucoseChartJs2 extends React.Component {
         }
         
         return points;
+
     }
 
 
@@ -135,9 +136,10 @@ class GlucoseChartJs2 extends React.Component {
             points:this.buildPoints2(this.props)
         });
 
+
         if (typeof this.currencySeries.range() === 'undefined'){
             // Data is not initialized
-
+            // Waiting for data to be pulled from DB
         } else if (this.props.params.user != this.state.userId){
             // Update range when userId changes
             this.range = this.currencySeries.range()
