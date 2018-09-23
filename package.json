@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "A Django & React Template",
   "scripts": {
-    "clean": "cd frontend && rimraf dist",
-    "build:webpack": "cd frontend && NODE_ENV=production webpack --config webpack.config.prod.js",
-    "build": "cd frontend && npm run clean && npm run build:webpack",
-    "start": "cd frontend && webpack -c --progress -w --config webpack.config.dev.js",
-    "lint": "cd frontend && eslint src/",
- 	"postinstall": "cd frontend && npm run build"
+    "clean": "rimraf dist",
+    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build": "npm run clean && npm run build:webpack",
+    "start": "webpack -c --progress -w --config webpack.config.dev.js",
+    "lint": "eslint src/",
+ 	"postinstall": "npm run build"
   },
   "author": "Your Name",
   "license": "MIT",
