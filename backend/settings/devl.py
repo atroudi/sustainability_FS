@@ -11,8 +11,9 @@ DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'USER': 'postgres',
-        'NAME': 'postgres',
+        'USER': 'biosensorsadmin',
+        'NAME': 'biosensorsdb',
+        'PASSWORD': 'qatar123',
         'HOST': 'db'
     }
 }

@@ -2,7 +2,15 @@ version: '3'
 
 services:
   db:
+    restart: always
     image: postgres
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      # - ./dump_23-09-2018_19_24_30.sql:/docker-entrypoint-initdb.d/dump_23-09-2018_19_24_30.sql
+    environment:
+      - POSTGRES_USER:'biosensorsadmin'
+      - POSTGRES_DB:'biosensorsdb'
+      - POSTGRES_PASSWORD:'qatar123'
     ports:
       - "5432:5432"
   django:
