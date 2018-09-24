@@ -7,14 +7,19 @@ import Container from "app/components/list/Container";
 import CreateForm from "app/users/components/CreateForm";
 import QueryForm from "app/users/components/QueryForm";
 
+const userSelector = state => state.users
+const recordSelector = state => state.records
 
-const selector = createSelector(
-    (state) => state.users,
-    (collection) => {
+const userRecordSelector = createSelector(
+    userSelector,
+    recordSelector,
+    (collection,recordCollection) => {
         return {
             collection,
             CreateForm,
-            QueryForm
+            QueryForm,
+            recordCollection
+
         };
     }
 );
@@ -23,4 +28,4 @@ const bindActions = (dispatch) => {
     return {actions: bindActionCreators(actions, dispatch)};
 };
 
-export default connect(selector, bindActions)(Container);
+export default connect(userRecordSelector, bindActions)(Container);

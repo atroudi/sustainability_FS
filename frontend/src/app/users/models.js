@@ -23,7 +23,7 @@ class RecordChangeSet extends Record({
  */
 
 class RecordP extends Record({
-    id: "234",
+    id: "0",
     constants: constantsRecords,
     ChangeSet,
     api_secret: "",

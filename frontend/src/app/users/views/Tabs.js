@@ -55,7 +55,7 @@ class Container extends React.Component {
                 <Tab
                     eventKey="details"
                     tabClassName="pull-right"
-                    title="Details"
+                    title="Glucose graph"
                 >
                     {activeKey === "details" && children}
                 </Tab>
