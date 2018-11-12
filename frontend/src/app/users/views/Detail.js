@@ -27,6 +27,7 @@ class Container extends React.Component {
                     <EditForm {...this.props}/>
                 </div>
             </div>
+            
         );
     }
 }

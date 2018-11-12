@@ -49,7 +49,7 @@ module.exports = {
             },
             {
                 // move images found within CSS to the build directory
-                test: /\.(jpg|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                test: /\.(jpg|png|jpeg|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: "file?name=[path][name].[ext]?[hash]&context=./node_modules"
             }
             ,

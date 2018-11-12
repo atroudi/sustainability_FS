@@ -212,7 +212,7 @@ class GraphChartJs extends React.Component{
 			  // <div style={{position: 'absolute',left: '0px'}}>
 			<div>
 
-				<LineChart data={data2} options={chartOptions} width="2200" height="650" />
+				<LineChart data={data2} options={chartOptions} width="1100" height="650" />
 			</div>
       )
     }

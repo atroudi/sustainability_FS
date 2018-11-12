@@ -15,12 +15,12 @@ services:
       - "5432:5432"
   django:
     build: .
-    command: ["python", "manage.py", "migrate"]
-    command: ["python", "manage.py", "runserver", "0.0.0.0:8080"]
+#    command: ["python", "manage.py", "migrate"]
+    command: ["python", "manage.py", "runserver", "0.0.0.0:80"]
     volumes:
       - .:/app
     ports:
-      - "8080:8080"
+      - "80:80"
     depends_on:
       - db
   frontend:

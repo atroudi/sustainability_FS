@@ -4,7 +4,6 @@ import GraphChartJs from "../graphs/GlucoseChartJs"
 
 import Box from "./Box";
 
-
 class Container extends React.Component {
     componentWillMount() {
         const {actions, collection} = this.props;
@@ -22,6 +21,11 @@ class Container extends React.Component {
                 <Col sm={rowTwoWidth}>
                     {children}
                 </Col>
+                <Col sm={rowOneWidth}>
+                </Col>
+                {/* <Col sm={rowTwoWidth}>
+                    {Tabs2.Container}
+                </Col> */}
                 {/* <Col sm={rowTwoWidth}>
                     <GraphChartJs {...this.props}/>
                 </Col> */}
