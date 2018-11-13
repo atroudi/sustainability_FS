@@ -17,7 +17,7 @@ DATABASES = {
 }
 
 INTERNAL_IPS = ['192.168.56.1']
-
+2222
 INSTALLED_APPS += (
     'autofixture',
 )
@@ -26,3 +26,6 @@ STATICFILES_DIRS.append(
     os.path.join(BASE_DIR, os.pardir, 'frontend', 'build'),
 )
 
+APPEND_SLASH = False
+# trailing_slash = False
+# CSRF_COOKIE_SECURE = False

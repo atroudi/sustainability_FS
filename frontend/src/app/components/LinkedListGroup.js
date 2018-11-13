@@ -5,6 +5,8 @@ import {Link} from "react-router";
 class LinkedListGroup extends React.Component {
     render() {
         const {collection,recordCollection} = this.props;
+        const staticRoot = window.django.urls.staticRoot;
+
         // console.log(collection)
         // console.log(collection.models.size)
 
@@ -42,10 +44,18 @@ class LinkedListGroup extends React.Component {
                     console.log(trend.reduce((m1,m2)=>m2.id));
 
                     let string=""
+                    let img=""
                     if(lastTrend== undefined){
                         string = model.toString()
+                        img=""
                     } else {
-                        string = model.toString() + "  (" + lastTrend + ")"
+                        // string = model.toString() + "  (" + lastTrend + ")"
+                        string = model.toString()+"        "
+
+                        img=<img
+                        src={`${staticRoot}arrow_flat_small.png`}
+                        className="pull-middle" alt="User Image"
+                        />
                     }
 
                     return <Link
@@ -54,7 +64,7 @@ class LinkedListGroup extends React.Component {
                         to={model.appUrl()}
                     >
                         {string}
-                        
+                        {img}
                         <span className="pull-right">
                             <i className="fa fa-fw fa-angle-right"/>
                         </span>
