@@ -31,14 +31,40 @@ class Container extends React.Component {
     }
     
     render() {
-
+        const staticRoot = window.django.urls.staticRoot;
+        let img=<img
+        style={{padding: 10, alignSelf: 'flex-start'}}
+        src={`${staticRoot}adminlte/img/food/f1.png`}
+        className="pull-middle" alt="food1" width="275" height="183"
+        />
+        let img2=<img 
+        style={{padding: 10, alignSelf: 'flex-start'}}
+        src={`${staticRoot}adminlte/img/food/f2.png`}
+        className="pull-middle" alt="food2" width="275" height="183" 
+        />
         console.log(this.props.params.user)
         return (
-            <div>
+            <div >
                 {/* <Model {...this.props}/> */}
                 {/* <text>dsdsdsdds</text> */}
-                <img src={require('app/images/food/photo1.png')} width="200" height="150" />
+                {img}
+                {img2}
+                {/* <img src={require('app/images/food/photo1.png')}ddsdsdwidth="200" height="150" /> */}
                 
+                <form onSubmit={(e)=>this._handleSubmit(e)}>
+                    <div className="input-group" >
+                        <div className="custom-file">
+                            <input  
+                                type="file" 
+                                className="custom-file-input"
+                                onChange={(e)=>this._handleImageChange(e)} />
+                        </div>
+                        <button 
+                            type="submit" 
+                            className="input-group-append"
+                            onClick={(e)=>this._handleSubmit(e)}>Upload Image</button>
+                    </div>
+                </form>
             </div>
         );
     }

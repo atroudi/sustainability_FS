@@ -128,7 +128,30 @@ var chartOptions = {
   
 
 class GraphChartJs extends React.Component{
+	
+	constructor(props) {
+		super(props);
+		this.state=({width:1100, height:650})
+	  }
+	  updateDimensions(){
+		console.log("Width is:"+this.state.width);
+		console.log("Height is:"+this.state.height);
+		let width = this.refs.div.offsetWidth;
+		let height= this.refs.div.offsetHeight;
+		this.setState({width:width,height:height});
+	  }
+	  componentWillMount(){
+		this.updateDimensions.bind(this);
+	  }
+	  componentDidMount(){
+		 window.addEventListener("resize", this.updateDimensions.bind(this));
+	  }
+	  
     render(){
+		const canStyle = {
+			width: this.state.width 
+		  };
+
 		const {model,collection} = this.props;
 
 		console.log(collection);
@@ -210,9 +233,9 @@ class GraphChartJs extends React.Component{
 		);
       return(
 			  // <div style={{position: 'absolute',left: '0px'}}>
-			<div>
+			<div >
 
-				<LineChart data={data2} options={chartOptions} width="1100" height="650" />
+				<LineChart data={data2} options={chartOptions} width="1100" height='650' className="flex-view" style={canStyle} />
 			</div>
       )
     }

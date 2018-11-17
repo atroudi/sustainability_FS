@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { format } from "d3-format";
-import { TimeSeries, TimeRange } from "pondjs";
+import {  TimeSeries, TimeRange } from "pondjs";
 import _ from "underscore";
 
-import { Charts, ChartContainer, ChartRow, YAxis, LineChart, Baseline, Legend, Resizable } from "react-timeseries-charts";
+import { styler, Charts, ChartContainer, ChartRow, YAxis, LineChart, Baseline, Legend, Resizable } from "react-timeseries-charts";
 // import LineChart from "../LineChart";
 
-import styler from "../../js/styler"
+// import styler from "../../js/styler"
 // import Chart from 'chart.js';
 
 // Data
@@ -25,9 +25,9 @@ function buildPoints() {
     return points;
 }
 
-// const style = styler([
-//     { key: "sgv", color: "#F68B24", width: 2 }
-// ]);
+const style = styler([
+    { key: "sgv", color: "#a69ce2", width: 2 }
+]);
 
 class CrossHairs extends React.Component {
     render() {
@@ -237,7 +237,7 @@ class GlucoseChartJs2 extends React.Component {
                                             breakLine={false}
                                             series={this.currencySeries}
                                             columns={["sgv"]}
-                                            // style={style}
+                                            style={style}
                                             interpolation="curveBasis"
                                             highlight={this.state.highlight}
                                             onHighlightChange={highlight =>

@@ -12,6 +12,7 @@ import Model from "app/users/components/Model";
 import GraphChartJs from "app/components/graphs/GlucoseChartJs"
 import GraphChartJs2 from "app/components/graphs/GlucoseChartJs2"
 import GraphChartJsPhysio from "app/components/graphs/GlucoseChartJsPhysio"
+import PhysioChart from "../../components/graphs/PhysioChart";
 
 class Container extends React.Component {
 
@@ -36,7 +37,8 @@ class Container extends React.Component {
         return (
             <div>
                 {/* <Model {...this.props}/> */}
-                <GraphChartJs {...this.props}/>
+                {/* <GraphChartJs {...this.props}/> */}
+                <PhysioChart {...this.props}/>
 
                 <div className="text-center">
                     {/* <DeleteButton
