@@ -14288,7 +14288,10 @@ table.text-center th {
     background-color: #163758;
     border-color: rgba(0, 0, 0, 0.2);
   }
-/* Make clicks pass-through */
+
+.nav-tabs-custom > .nav-tabs > li.active {
+    border-top-color: #5400a3;
+}/* Make clicks pass-through */
 #nprogress {
   pointer-events: none;
 }

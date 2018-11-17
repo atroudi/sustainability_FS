@@ -717,7 +717,7 @@ COPY public.snippets_snippet (id, created, title, code, linenos, language, style
 
 COPY public.users_emailuser (id, password, last_login, is_superuser, first_name, last_name, email, is_staff, is_active, date_joined, last_updated) FROM stdin;
 3	pbkdf2_sha256$24000$qoIAu0QIjl2d$Q6Wpx4YEQTK3o+TQgurygUw5Dx3rPz5YWj9uR5VrpWo=	2018-09-23 16:20:31.927471+00	f	Patient1		patient1@gmail.com	f	t	2018-09-23 16:20:31.862014+00	2018-09-23 16:20:31.890399+00
-1	pbkdf2_sha256$24000$fwjm7WYkvOjU$AUBh0iJ7hxVpIRSAL8ib2lWhNeYZcEfRy9/Iahgsd8M=	2018-09-23 16:19:25.32046+00	t	Anis	Troudi	anistroudi@gmail.com	f	t	2018-09-23 16:19:25.252647+00	2018-09-23 16:19:25.284202+00
+1	pbkdf2_sha256$24000$fwjm7WYkvOjU$AUBh0iJ7hxVpIRSAL8ib2lWhNeYZcEfRy9/Iahgsd8M=	2018-09-23 16:19:25.32046+00	t	patient0		patient0@gmail.com	f	t	2018-09-23 16:19:25.252647+00	2018-09-23 16:19:25.284202+00
 2	pbkdf2_sha256$24000$Zn7Enw9mEkKC$eqviXgqr3KM+O3UC9u20fLlJ0qO/hmfy/WVhWpQg/F4=	2018-09-23 16:19:56.469157+00	t	Doctor		doctor@hbku.edu.qa	t	t	2018-09-23 16:19:56.404447+00	2018-09-23 16:19:56.433899+00
 \.
 
