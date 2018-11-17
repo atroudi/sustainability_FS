@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
-      <change beforePath="$PROJECT_DIR$/dump_23-09-2018_19_24_30.sql" beforeDir="false" afterPath="$PROJECT_DIR$/dump_23-09-2018_19_24_30.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/settings/devl.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/devl.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/settings/devl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="638">
+              <caret line="24" selection-start-line="24" selection-end-line="28" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -227,8 +227,8 @@
         <option value="$PROJECT_DIR$/backend/templates/backend/app.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/backend/settings/devl.py" />
         <option value="$PROJECT_DIR$/frontend/package.json" />
+        <option value="$PROJECT_DIR$/backend/settings/devl.py" />
       </list>
     </option>
   </component>
@@ -418,6 +418,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="134" y="35" width="3706" height="2125" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30044222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -739,8 +740,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/settings/devl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="638">
+          <caret line="24" selection-start-line="24" selection-end-line="28" selection-end-column="20" />
         </state>
       </provider>
     </entry>
