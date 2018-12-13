@@ -3,7 +3,7 @@
 export project_name={{ project_name }}
 mkvirtualenv $project_name
 pip install django
-django-admin.py startproject --template=https://github.com/atroudi/biosensors/archive/master.zip $project_name
+django-admin.py startproject --template=https://github.com/atroudi/biosensors/archive/docker-deployment.zip $project_name
 cd $project_name
 ```
 1. Follow [backend/README.md](backend/README.md)
