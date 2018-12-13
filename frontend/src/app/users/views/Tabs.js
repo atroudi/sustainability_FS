@@ -55,11 +55,27 @@ class Container extends React.Component {
                 <Tab
                     eventKey="details"
                     tabClassName="pull-right"
-                    title="Glucose graph"
+
+                    title="Glucose"
                 >
                     {activeKey === "details" && children}
                 </Tab>
+                <Tab
+                    eventKey="physio"
+                    tabClassName="pull-right"
+                    title="Physiological"
+                >
+                    {activeKey === "physio" && children}
+                </Tab>
+                <Tab
+                    eventKey="food"
+                    tabClassName="pull-right"
+                    title="Food"
+                >
+                    {activeKey === "food" && children}
+                </Tab>
             </Tabs>
+            
         );
     }
 }

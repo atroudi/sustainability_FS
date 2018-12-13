@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "A Django & React Template",
   "scripts": {
-    "clean": "cd frontend && rimraf dist",
-    "build:webpack": "cd frontend && NODE_ENV=production webpack --config webpack.config.prod.js",
-    "build": "cd frontend && npm run clean && npm run build:webpack",
-    "start": "cd frontend && webpack -c --progress -w --config webpack.config.dev.js",
-    "lint": "cd frontend && eslint src/",
- 	"postinstall": "cd frontend && npm run build"
+    "clean": "rimraf dist",
+    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build": "npm run clean && npm run build:webpack",
+    "start": "webpack -c --progress -w --config webpack.config.dev.js",
+    "lint": "eslint src/",
+    "postinstall": "npm run build"
   },
   "author": "Your Name",
   "license": "MIT",
@@ -39,7 +39,7 @@
     "webpack": "^1.15.0"
   },
   "dependencies": {
-    "admin-lte": "^2.3.2",
+    "admin-lte": "2.4.8",
     "chart.js": "^1.1.1",
     "classnames": "2.2.3",
     "history": "2.0.1",
@@ -47,7 +47,7 @@
     "lodash": "3.10.1",
     "moment": "^2.11.2",
     "nprogress": "^0.2.0",
-    "pondjs": "^0.8.0",
+    "pondjs": "^0.8.9",
     "react": "^0.14.7",
     "react-bootstrap": "^0.28.3",
     "react-chartjs": "^1.2.0",
@@ -59,6 +59,8 @@
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.0.1",
     "reselect": "^2.2.1",
+    "ring": "^2.2.3",
+    "ringjs": "0.0.1",
     "superagent": "^1.8.2"
   }
 }

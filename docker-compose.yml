@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  db:
+    restart: always
+    image: postgres
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      # - ./dump_23-09-2018_19_24_30.sql:/docker-entrypoint-initdb.d/dump_23-09-2018_19_24_30.sql
+    environment:
+      - POSTGRES_USER:'biosensorsadmin'
+      - POSTGRES_DB:'biosensorsdb'
+      - POSTGRES_PASSWORD:'qatar123'
+    ports:
+      - "5432:5432"
+  django:
+    build: .
+#    command: ["python", "manage.py", "migrate"]
+    command: ["python", "manage.py", "runserver", "0.0.0.0:80"]
+    volumes:
+      - .:/app
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+  frontend:
+    build: ./frontend
+    command: ["npm", "start"]
+    volumes:
+      - ./frontend:/app/frontend
+      - node-modules:/app/frontend/node_modules
+    ports:
+      - "3000:3000"
+
+volumes:
+  node-modules:

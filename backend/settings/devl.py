@@ -10,9 +10,23 @@ DEBUG = True
 
 DATABASES = {
     'default': {
+
+# DEVELOPMENT INIT DB
+
         'ENGINE': 'django.db.backends.postgresql',
         'USER': 'migiwara',
-        'NAME': 'BiosensorsServer2',
+        'PASSWORD': 'root',
+        'HOST':'localhost',
+        'PORT':'5432',
+        'NAME': 'biosensorsdb',
+
+# DOCKER INIT DB
+
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'USER': 'biosensorsadmin',
+        # 'NAME': 'biosensorsdb',
+        # 'PASSWORD': 'qatar123',
+        # 'HOST': 'db'
     }
 }
 
