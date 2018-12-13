@@ -2,6 +2,7 @@ import React from "react";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {createSelector} from "reselect";
+import {Col, Row} from "react-bootstrap";
 
 import actions from "app/actions/collection";
 import DeleteButton from "app/components/DeleteButton";
@@ -12,6 +13,11 @@ import Model from "app/users/components/Model";
 import GraphChartJs from "app/components/graphs/GlucoseChartJs"
 import GraphChartJs2 from "app/components/graphs/GlucoseChartJs2"
 import GraphChartJsPhysio from "app/components/graphs/GlucoseChartJsPhysio"
+
+
+
+import {Image} from 'react-bootstrap';
+
 
 class Container extends React.Component {
 
@@ -43,14 +49,56 @@ class Container extends React.Component {
         className="pull-middle" alt="food2" width="275" height="183" 
         />
         console.log(this.props.params.user)
+
+        var background = {backgroundSize : 'cover'};
+        var textStyle = {
+          position: 'absolute', 
+          fontSize:24,
+          fontWeight:"bold",
+          color:"white",
+          top: '70%', 
+          left: '9%'
+        };
+
+        var textStyle2 = {
+            position: 'absolute', 
+            fontSize:14,
+            // fontWeight:"bold",
+            color:"white",
+            top: '0%', 
+            left: '65%'
+          };
+
         return (
             <div >
                 {/* <Model {...this.props}/> */}
                 {/* <text>dsdsdsdds</text> */}
-                {img}
-                {img2}
-                {/* <img src={require('app/images/food/photo1.png')}ddsdsdwidth="200" height="150" /> */}
+                <Row>
+
+                <Col sm={3}>
+                <h1 style={textStyle}>F1</h1>
+                <h1 style={textStyle2}>05/27/18</h1>
+
+                    {img}
+                    {/* <text style={{ position: 'relative', left: '5%', top: '50%'}}> Img1 </text> */}
+
+                </Col>
                 
+                    <Col sm={3}>
+                    <h1 style={textStyle}>F2</h1>
+                    <h1 style={textStyle2}>05/27/18</h1>
+                    {img2}
+                    {/* <text style={{ position: 'relative', left: '5%', top: '50%'}}> Img2 </text> */}
+
+                    </Col>
+                    
+                </Row>
+
+
+                {/* <img src={require('app/images/food/photo1.png')}ddsdsdwidth="200" height="150" /> */}
+                <Row>
+                <Col sm={3}>
+
                 <form onSubmit={(e)=>this._handleSubmit(e)}>
                     <div className="input-group" >
                         <div className="custom-file">
@@ -65,6 +113,10 @@ class Container extends React.Component {
                             onClick={(e)=>this._handleSubmit(e)}>Upload Image</button>
                     </div>
                 </form>
+                </Col>
+
+                </Row>
+
             </div>
         );
     }

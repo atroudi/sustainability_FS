@@ -14240,6 +14240,7 @@ table.text-center th {
 .content-wrapper{
     /* background-image: url('../images/food/photo1.png'); */
 }
+
 .btn-box-tool-active {
     border-color: #bbbbbb #dadada #dadada;
     border-radius: 6px 6px 6px 6px;
@@ -14291,7 +14292,30 @@ table.text-center th {
 
 .nav-tabs-custom > .nav-tabs > li.active {
     border-top-color: #5400a3;
-}/* Make clicks pass-through */
+}
+
+.image { 
+    position: relative; 
+    width: 100%; /* for IE 6 */
+ }
+ 
+ h2 { 
+   position: absolute; 
+   top: 300px; 
+   left: 0; 
+   width: 100%; 
+ }
+ 
+ h2 span { 
+    color: white; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px; 
+ }
+
+ /* Make clicks pass-through */
 #nprogress {
   pointer-events: none;
 }

@@ -8,7 +8,7 @@ import { TimeSeries, TimeRange, TimeEvent,
     percentile} from "pondjs";
 import _ from "underscore";
 
-import { Charts, ChartContainer, ChartRow, YAxis, BarChart, ScatterChart, Legend, Resizable } from "react-timeseries-charts";
+import { Charts, ChartContainer, ChartRow, YAxis, BarChart, ScatterChart, LineChart, Legend, Resizable } from "react-timeseries-charts";
 
 import styler from "../../js/styler"
 import Ring from "ringjs";
@@ -32,6 +32,7 @@ class PhysioChart extends React.Component {
 
     getNewEvent = t => {
         const base = Math.sin(t.getTime() / 10000000) * 350 + 500;
+        // const event = new TimeEvent(t, parseInt(base + Math.random() * 1000, 10));
         const event = new TimeEvent(t, parseInt(base + Math.random() * 1000, 10));
 
         return event;
@@ -108,7 +109,8 @@ class PhysioChart extends React.Component {
             value: {
                 normal: {
                     fill: "#775ea0",
-                    opacity: 0.5
+                    opacity: 0.5,
+                    size:100
                 }
             }
         };
@@ -206,7 +208,7 @@ class PhysioChart extends React.Component {
                     <div className="col-md-12">
                         <Resizable>
                             <ChartContainer timeRange={timeRange}>
-                                <ChartRow height="150">
+                                <ChartRow height="300">
                                     <YAxis
                                         id="y"
                                         label="EDA"
