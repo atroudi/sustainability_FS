@@ -4,6 +4,8 @@ from django.contrib.auth.models import (AbstractBaseUser, PermissionsMixin,
                                         BaseUserManager)
 from django.db import models
 from django.utils import timezone
+from pipenv.vendor import first
+import hashlib
 
 
 class EmailUserManager(BaseUserManager):
@@ -52,6 +54,15 @@ class EmailUserManager(BaseUserManager):
         )
 
 
+
+
+
+def hash_secret(api_secret):
+    sha1sum = hashlib.sha1()
+    # Hash the secret key
+    sha1sum.update(api_secret.encode())
+    return sha1sum.hexdigest()
+
 class EmailUser(AbstractBaseUser, PermissionsMixin):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
@@ -68,6 +79,8 @@ class EmailUser(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     date_joined = models.DateTimeField(default=timezone.now)
     last_updated = models.DateTimeField(auto_now=True)
+    # api_secret = models.CharField(max_length=300)
+    # api_secret = models.CharField(max_length=300, default=str(first_name.lower()))
     objects = EmailUserManager()
 
     USERNAME_FIELD = 'email'
