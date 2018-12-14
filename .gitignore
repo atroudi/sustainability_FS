@@ -13,3 +13,6 @@ media
 venv
 .idea
 backend/__pycache__
+backend/.idea
+frontend/.idea
+frontend/.vscode
