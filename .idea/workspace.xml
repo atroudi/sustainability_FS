@@ -2,236 +2,423 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
+      <change afterPath="$PROJECT_DIR$/backend/static/arrow_flat_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/base.9f6547179ace.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/base.9f6547179ace.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/base.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/changelists.32a12db9a480.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/changelists.32a12db9a480.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/changelists.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/changelists.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/dashboard.4898e2e9983d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/dashboard.4898e2e9983d.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/dashboard.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/fonts.cc6140298ba7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/fonts.cc6140298ba7.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/fonts.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/forms.70b858e61281.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/forms.70b858e61281.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/forms.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/login.a846c0e2ef65.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/login.a846c0e2ef65.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/login.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/rtl.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/rtl.e024aaf6df25.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/rtl.e024aaf6df25.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/widgets.a7251c097987.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/widgets.a7251c097987.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/widgets.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/widgets.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/LICENSE.d273d63619c9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/LICENSE.d273d63619c9.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/LICENSE.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/README.2c3d0bcdede2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/Roboto-Bold-webfont.2ad99072841e.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/Roboto-Bold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/Roboto-Light-webfont.b446c2399bb6.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/Roboto-Light-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/Roboto-Regular-webfont.ec39515ae8c6.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/Roboto-Regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/LICENSE.2c54f4e1ca1c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/LICENSE.2c54f4e1ca1c.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/LICENSE.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/README.837277fa1908.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/README.837277fa1908.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/README.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/calendar-icons.39b290681a8b.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/calendar-icons.39b290681a8b.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/calendar-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/calendar-icons.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_off.7a23bf31ef8a.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_off.7a23bf31ef8a.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_off.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_off.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_on.0047eba25b67.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_on.0047eba25b67.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_on.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_on.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-addlink.d519b3bab011.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-addlink.d519b3bab011.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-addlink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-addlink.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-alert.034cc7d8a67f.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-alert.034cc7d8a67f.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-alert.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-alert.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-calendar.ac7aea671bea.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-calendar.ac7aea671bea.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-calendar.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-changelink.18d2fd706348.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-changelink.18d2fd706348.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-changelink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-changelink.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-clock.e1d4dfac3f2b.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-clock.e1d4dfac3f2b.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-clock.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-deletelink.564ef9dc3854.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-deletelink.564ef9dc3854.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-deletelink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-deletelink.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-no.439e821418cd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-no.439e821418cd.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-no.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-no.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown-alt.81536e128bb6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown-alt.81536e128bb6.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown-alt.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown.a18cb4398978.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown.a18cb4398978.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-yes.d2f9f035226a.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-yes.d2f9f035226a.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-yes.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-yes.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/inline-delete.fec1b761f254.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/inline-delete.fec1b761f254.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/inline-delete.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/inline-delete.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/search.7cf54ff789c6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/search.7cf54ff789c6.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/search.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/selector-icons.b4555096cea2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/selector-icons.b4555096cea2.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/selector-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/selector-icons.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/sorting-icons.3a097b59f104.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/sorting-icons.3a097b59f104.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/sorting-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/sorting-icons.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-add.e59d620a9742.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-add.e59d620a9742.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-add.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-arrowright.bbfb788a849e.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-arrowright.bbfb788a849e.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-arrowright.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-arrowright.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectBox.9b544c47149c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectBox.9b544c47149c.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectBox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectBox.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectFilter2.92ca1fea6656.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectFilter2.92ca1fea6656.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectFilter2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectFilter2.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.df9119bcc981.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.df9119bcc981.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.min.c8d91e1d05fe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.min.c8d91e1d05fe.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.min.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/DateTimeShortcuts.1a1d41ec13f8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/DateTimeShortcuts.1a1d41ec13f8.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/DateTimeShortcuts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/DateTimeShortcuts.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/RelatedObjectLookups.b09945d2d972.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/RelatedObjectLookups.b09945d2d972.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/RelatedObjectLookups.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/calendar.847972dc11ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/calendar.847972dc11ca.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/calendar.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.17d715df2104.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.17d715df2104.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.min.dc930adb2821.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.min.dc930adb2821.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.min.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/core.84da04fcbfaf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/core.84da04fcbfaf.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/core.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.8199258210ef.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.8199258210ef.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.min.91c080dc1cbf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.min.91c080dc1cbf.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.min.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/jquery.init.95b62fa19378.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/jquery.init.95b62fa19378.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/jquery.init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/jquery.init.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.ff9208865444.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.ff9208865444.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.min.f4057ebb9b62.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.min.f4057ebb9b62.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.min.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/timeparse.51258861a46a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/timeparse.51258861a46a.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/timeparse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/timeparse.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/urlify.72f9b26e3ecd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/urlify.72f9b26e3ecd.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/urlify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/urlify.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/LICENSE-JQUERY.a158210a2737.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/LICENSE-JQUERY.a158210a2737.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/LICENSE-JQUERY.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/LICENSE-JQUERY.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.107fbe9555bf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.107fbe9555bf.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.min.f9c7afd05729.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.min.f9c7afd05729.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.min.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/LICENSE-XREGEXP.d64cecf4f157.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/LICENSE-XREGEXP.d64cecf4f157.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/xregexp.min.c95393b8ca4d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/xregexp.min.c95393b8ca4d.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/xregexp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/xregexp.min.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar.1d9e034d33ef.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar04.f2dd25735c26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar2.7a03f6ac2262.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar3.bb74b4e43298.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar5.dfb7f57d52e5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/boxed-bg.7799dece2c79.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/boxed-bg.b5c5ab66d833.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/boxed-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/boxed-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/american-express.9945cea9f4c0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/american-express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/cirrus.663653794086.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/cirrus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/mastercard.5823681a05ae.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/mastercard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/mestro.996758d3a75d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/mestro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/paypal.6ebaadcb3624.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/paypal2.83561d75644f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/paypal2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/visa.47e93c5cb44c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/visa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/default-50x50.bb4dba391c7b.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/default-50x50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/icons.71caf905dc29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo1.95aba97561f2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo2.e6a4cc39bbc4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo3.d63bb8b90d95.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo4.6a11b6546418.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user1-128x128.6eb9089296d3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user1-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user2-160x160.eafc49f5f1b4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user2-160x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user3-128x128.0c52e07439f0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user3-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user4-128x128.f46c2cbaffd1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user4-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user5-128x128.b628ca593909.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user5-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user6-128x128.11686717e146.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user6-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user7-128x128.aaee998167f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user7-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user8-128x128.cc1516d887bb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user8-128x128.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.448c34a56d69.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.89889688147b.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.89889688147b.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.e18bbf611f2a.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.e18bbf611f2a.ttf.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.f4769f9bdb74.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.fa2772327f55.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/css/jquery.autocomplete.aee02640594e.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/css/jquery.autocomplete.aee02640594e.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/css/jquery.autocomplete.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/css/jquery.autocomplete.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/img/indicator.03ce3dcc84af.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/img/indicator.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.ajaxQueue.ac504621bdd8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.ajaxQueue.ac504621bdd8.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.ajaxQueue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.ajaxQueue.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.autocomplete.26e55daaf7c5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.autocomplete.26e55daaf7c5.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.autocomplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.autocomplete.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.bgiframe.min.c8acb6921ba6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.bgiframe.min.c8acb6921ba6.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.bgiframe.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.bgiframe.min.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/emptyFile.d41d8cd98f00.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/emptyFile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/favicon.7eede2d0dbf8.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/favicon.7eede2d0dbf8.ico.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/favicon.ico.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.674f50d287a8.eot.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.912ec66d7572.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.b06871f281fe.ttf.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.eot.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.ttf.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/js/bundle.649b140d374e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/js/bundle.649b140d374e.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/js/bundle.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/js/vendor.bundle.c832c1560667.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/js/vendor.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/js/vendor.bundle.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap-tweaks.1464ccce96f5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap-tweaks.1464ccce96f5.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap-tweaks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap-tweaks.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap.min.5d5357cb3704.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap.min.5d5357cb3704.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap.min.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/default.713cbe203060.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/default.713cbe203060.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/default.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/prettify.a987f72342ee.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/prettify.a987f72342ee.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/prettify.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.448c34a56d69.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.89889688147b.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.89889688147b.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.e18bbf611f2a.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.e18bbf611f2a.ttf.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.f4769f9bdb74.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.fa2772327f55.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.svg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.ttf.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/img/glyphicons-halflings-white.9bbc6e960299.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/img/glyphicons-halflings-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/img/glyphicons-halflings.90233c9067e9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/img/glyphicons-halflings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/img/grid.a4b938cf382b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/img/grid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/ajax-form.8bf28512011a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/ajax-form.8bf28512011a.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/ajax-form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/ajax-form.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/bootstrap.min.4becdc910462.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/bootstrap.min.4becdc910462.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/bootstrap.min.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/csrf.41a1c5464913.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/csrf.41a1c5464913.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/csrf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/csrf.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/default.89dc3ae23594.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/default.89dc3ae23594.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/default.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/jquery-1.11.3.min.895323ed2f72.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/jquery-1.11.3.min.895323ed2f72.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/jquery-1.11.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/jquery-1.11.3.min.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/prettify-min.709bfcc456c6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/prettify-min.709bfcc456c6.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/prettify-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/prettify-min.js.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/staticfiles.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/stylesheets.018b56efa3fe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/stylesheets.018b56efa3fe.css.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/staticfiles/stylesheets.css.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BiosensorsServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BiosensorsServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadMe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/migrations/0002_auto_20180830_0417.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/migrations/0003_auto_20180830_0531.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/permissions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/permissions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/management/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/management/view_permission.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/migrations/0002_auto_20160309_1423.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/registration/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/registration/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/registration/signup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pagination.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/permissions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/requirements/common.pip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/requirements/devl.pip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/settings/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/settings/common.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/settings/devl.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/avatar04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/avatar2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/avatar3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/avatar5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/boxed-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/boxed-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/american-express.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/cirrus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/mastercard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/mestro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/paypal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/paypal2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/visa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/default-50x50.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/food/f1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/food/f1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/food/f1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/food/f2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/photo1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/photo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/photo3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/photo4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user1-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user2-160x160.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user3-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user4-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user5-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user6-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user7-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user8-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/backend/app.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/registration/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/registration/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/registration/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cookies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbModel.model" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dump_23-09-2018_19_24_30.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/frontend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/_/src/app/images/food/f1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/_/src/app/images/food/f1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/_/src/app/images/food/photo1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/emptyFile.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/js/bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/js/vendor.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/stylesheets.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Box/Body.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Box/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Box/Title.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Box/Tools.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Box/Wrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Box/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Content.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/ContentHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/ContentWrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/ControlSidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/ControlSidebarToggle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Logo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/MainSidebarToggle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Nav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/UserMenu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Wrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/UserPanel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Wrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Wrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/reducers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/selectors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/Root.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/actions/alerts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/actions/collection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/DeleteButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/EmptyComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/FoodImDisplay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/LineChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/Pagination.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/PaginationInfo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/RefreshButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/RouteNotFound.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/SearchBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/alerts/InternalServerError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/alerts/SessionExpired.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJsPhysio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/LineChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/PhysioChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/usd_vs_aud.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/usd_vs_euro.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/create.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/edit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/findModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/hasPermission.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/query.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/list/Box.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/list/Container.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/configureStore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/constants/alerts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/constants/http.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/history.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/images/food/f1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/images/food/f1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/images/food/f1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/images/food/photo1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/js/curve.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/js/interpolators.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/js/styler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/js/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/MainFooter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/MainHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/MainSidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/reducers/alerts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/reducers/collection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/rootReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/index.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/nprogress.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/urls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/components/CreateForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/components/EditForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/components/Model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/components/QueryForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/constantsRecords.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/models.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/recordReducers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/reducers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/urls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Detail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/FoodPicDisplay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Graph.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/GraphPhysio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/List.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Tabs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/utils/http.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/utils/isFilterActive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/utils/viewportDimensions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/webpack.config.dev.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/webpack.config.prod.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/more" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/settings/devl.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/devl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.674f50d287a8.eot" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.674f50d287a8.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.912ec66d7572.svg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.912ec66d7572.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.af7ae505a9ee.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.af7ae505a9ee.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.b06871f281fe.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.b06871f281fe.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.fee66e712a8a.woff" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.fee66e712a8a.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/staticfiles/js/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/js/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/staticfiles/js/vendor.bundle.c832c1560667.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/js/vendor.bundle.c832c1560667.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/staticfiles/stylesheets.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/stylesheets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/backend/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/backend/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -249,8 +436,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/stylesheets/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+            <state relative-caret-position="352">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
             </state>
           </provider>
         </entry>
@@ -314,7 +501,6 @@
         <option value="$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/contrib/auth/forms.py" />
         <option value="$PROJECT_DIR$/frontend/dist/stylesheets.css" />
         <option value="$PROJECT_DIR$/frontend/build/stylesheets.css" />
-        <option value="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" />
         <option value="$PROJECT_DIR$/backend/apps/users/views.py" />
         <option value="$PROJECT_DIR$/backend/urls.py" />
         <option value="$PROJECT_DIR$/backend/apps/users/registration/signup.py" />
@@ -334,6 +520,7 @@
         <option value="$PROJECT_DIR$/backend/apps/records/models.py" />
         <option value="$PROJECT_DIR$/backend/templates/registration/signup.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" />
       </list>
     </option>
   </component>
@@ -348,43 +535,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="biosensors" type="b2602c69:ProjectViewProjectNode" />
-              <item name="biosensors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="biosensors" type="b2602c69:ProjectViewProjectNode" />
-              <item name="biosensors" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="biosensors" type="b2602c69:ProjectViewProjectNode" />
-              <item name="biosensors" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="biosensors" type="b2602c69:ProjectViewProjectNode" />
-              <item name="biosensors" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="biosensors" type="b2602c69:ProjectViewProjectNode" />
-              <item name="biosensors" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -523,10 +674,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30362000" />
+    <option name="totallyTimeSpent" value="30553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="134" y="39" width="3706" height="2121" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3018242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -861,8 +1013,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/stylesheets/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        <state relative-caret-position="352">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
         </state>
       </provider>
     </entry>

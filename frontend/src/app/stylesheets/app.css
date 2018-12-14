@@ -65,6 +65,7 @@
     border-color: #a69ce2;
   }
 
+
 .list-group-item.active {
     color: #ffffff;
     background-color: #a69ce2;
@@ -108,4 +109,3 @@
     padding: 10px; 
  }
 
- 
