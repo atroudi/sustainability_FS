@@ -2,22 +2,236 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
-      <change beforePath="$PROJECT_DIR$/.idea/BiosensorsServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BiosensorsServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/settings/devl.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/devl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/js/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/js/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/stylesheets.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/build/stylesheets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/PhysioChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/PhysioChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/FoodPicDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/FoodPicDisplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/migrations/0002_auto_20180830_0417.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/migrations/0003_auto_20180830_0531.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/permissions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/permissions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/snippets/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/management/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/management/view_permission.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/migrations/0002_auto_20160309_1423.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/registration/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/registration/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/registration/signup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pagination.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/permissions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements/common.pip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements/devl.pip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/settings/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/settings/common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/settings/devl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/avatar04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/avatar2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/avatar3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/avatar5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/boxed-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/boxed-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/american-express.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/cirrus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/mastercard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/mestro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/paypal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/paypal2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/credit/visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/default-50x50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/food/f1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/food/f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/food/f1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/food/f2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/photo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/photo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/photo3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/photo4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user1-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user2-160x160.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user3-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user4-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user5-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user6-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user7-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/adminlte/img/user8-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/backend/app.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/registration/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/registration/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/registration/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbModel.model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dump_23-09-2018_19_24_30.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/frontend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/_/src/app/images/food/f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/_/src/app/images/food/f1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/_/src/app/images/food/photo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/emptyFile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/js/bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/js/vendor.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/stylesheets.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Box/Body.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Box/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Box/Title.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Box/Tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Box/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Box/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Content.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/ContentHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/ContentWrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/ControlSidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/ControlSidebarToggle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Logo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/MainSidebarToggle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/UserMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/UserPanel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/reducers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/selectors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/Root.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/actions/alerts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/actions/collection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/DeleteButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/EmptyComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/FoodImDisplay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/LineChart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/Pagination.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/PaginationInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/RefreshButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/RouteNotFound.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/SearchBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/alerts/InternalServerError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/alerts/SessionExpired.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJsPhysio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/LineChart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/PhysioChart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/usd_vs_aud.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/usd_vs_euro.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/create.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/edit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/findModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/hasPermission.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/query.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/list/Box.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/list/Container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/configureStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/constants/alerts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/constants/http.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/history.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/images/food/f1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/images/food/f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/images/food/f1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/images/food/photo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/js/curve.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/js/interpolators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/js/styler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/js/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/MainFooter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/MainHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/MainSidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reducers/alerts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/reducers/collection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/rootReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/nprogress.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/urls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/components/CreateForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/components/EditForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/components/Model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/components/QueryForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/constantsRecords.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/models.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/recordReducers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/reducers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/urls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Detail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/FoodPicDisplay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Graph.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/GraphPhysio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/List.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/utils/http.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/utils/isFilterActive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/utils/viewportDimensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/webpack.config.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/webpack.config.prod.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/init.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/more" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,102 +245,12 @@
     <option name="myModuleName" value="BiosensorsServer" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/apps/users/registration/signup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/templates/registration/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="30" column="33" selection-start-line="30" selection-end-line="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/stylesheets/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1421">
-              <caret line="49" selection-start-line="49" selection-end-line="53" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/apps/users/registration/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1276">
-              <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/templates/registration/signup.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="203">
-                <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../CSE_DBV/venv/lib/python3.6/site-packages/django/contrib/auth/base_user.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1131">
-              <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/apps/records/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/settings/devl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="841">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="294">
+              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -224,7 +348,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,6 +385,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -399,18 +523,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28839000" />
+    <option name="totallyTimeSpent" value="30362000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="2140" width="3840" height="2180" extended-state="6" />
-    <editor active="true" />
+    <frame x="134" y="39" width="3706" height="2121" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30197227" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3018242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962024" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31922674" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31913745" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -691,13 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/stylesheets/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1421">
-          <caret line="49" selection-start-line="49" selection-end-line="53" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/apps/users/registration/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1276">
@@ -740,6 +856,13 @@
             <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/stylesheets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
         </state>
       </provider>
     </entry>
