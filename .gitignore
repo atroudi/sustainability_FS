@@ -1,0 +1,15 @@
+.DS_Store
+*.pyc
+node_modules
+npm-debug.log
+frontend/build/*
+#backend/settings/devl.py
+.idea/CSE_DBV.iml .idea/dataSources.local.xml .idea/dataSources.xml .idea/inspectionProfiles .idea/misc.xml .idea/modules.xml .idea/vcs.xml .idea/workspace.xml
+#docker-compose.yml
+#Dockerfile
+.idea/workspace.xml
+documents
+media
+venv
+.idea
+backend/__pycache__
