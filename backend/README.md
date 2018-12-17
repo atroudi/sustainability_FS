@@ -13,7 +13,6 @@
 pip install -r backend/requirements/devl.pip
 createdb $project_name
 python manage.py migrate
-python manage.py loadtestdata users.EmailUser:100
 python manage.py createsuperuser
 python manage.py runserver
 ```
