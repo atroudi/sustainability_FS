@@ -1,52 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
-      <change afterPath="$PROJECT_DIR$/backend/apps/records/loadmodel2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/records/model2.pickle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/records/storeActual.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/records/tasks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/celery.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/model2.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/users/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pagination.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/settings/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/settings/devl.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/devl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/backend/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/backend/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/PhysioChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/stylesheets/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/urls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/models.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/urls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/Detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/FoodPicDisplay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Graph.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/GraphPhysio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/Tabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization." />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -504,7 +459,7 @@
       <workItem from="1550747190469" duration="25834000" />
       <workItem from="1551457516939" duration="64000" />
       <workItem from="1551458640823" duration="47900000" />
-      <workItem from="1551854586495" duration="6568000" />
+      <workItem from="1551854586495" duration="7186000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1535285696860</created>
@@ -552,7 +507,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228022000" />
+    <option name="totallyTimeSpent" value="228640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
