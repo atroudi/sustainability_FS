@@ -1,39 +1,17 @@
 from sys import path
 from rest_framework.routers import DefaultRouter
-from .views import RecordViewSet
-from .views import store_cmg_record
+from .views import RecordViewSet, PredictionViewSet
+from .views import GeolocationViewSet
+
 from rest_framework.routers import SimpleRouter
 from django.conf.urls import url
 
-#################################### ADAPTING WITH NIGHTSCOUT
-'''
-Removing trailing slash
-'''
-class OptionalSlashRouter(SimpleRouter):
-
-    def __init__(self):
-        self.trailing_slash = '/?'
-        super(SimpleRouter, self).__init__()
-
-'''
-ViewSet routing is not properly with nightscout App
-'''
-router = OptionalSlashRouter()
-router.register(r'entries', RecordViewSet)
-urlpatterns = router.urls
-
-'''
-URL pattern compatible with nightscout mobile app
-'''
-urlpatterns = [
-    # ex: /polls/
-    url(r'entries', store_cmg_record, name='entries')
-]
-
-################################################################### END ADAPTING WITH NIGHT SCOUT
 
 router = DefaultRouter()
 router.register(r'records', RecordViewSet)
+router.register(r'predictions', PredictionViewSet)
+router.register(r'geolocations', GeolocationViewSet)
+
 urlpatterns = router.urls
 
 # Example of inserting new record

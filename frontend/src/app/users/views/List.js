@@ -4,14 +4,15 @@ import {createSelector} from "reselect";
 
 import actions from "app/actions/collection";
 import Container from "app/components/list/Container";
+import ContainerMap from "../../components/graphs/ContainerMap"
 import CreateForm from "app/users/components/CreateForm";
 import QueryForm from "app/users/components/QueryForm";
 
-const userSelector = state => state.users
+const geolocationSelector = state => state.geolocations
 const recordSelector = state => state.records
 
 const userRecordSelector = createSelector(
-    userSelector,
+    geolocationSelector,
     recordSelector,
     (collection,recordCollection) => {
         return {
@@ -28,4 +29,4 @@ const bindActions = (dispatch) => {
     return {actions: bindActionCreators(actions, dispatch)};
 };
 
-export default connect(userRecordSelector, bindActions)(Container);
+export default connect(userRecordSelector, bindActions)(ContainerMap);

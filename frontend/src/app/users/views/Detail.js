@@ -13,7 +13,6 @@ import GraphChartJs from "app/components/graphs/GlucoseChartJs"
 
 class Container extends React.Component {
     render() {
-        console.log(this.props);
         return (
             <div>
                 <Model {...this.props}/>

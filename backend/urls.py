@@ -1,9 +1,13 @@
+from sys import path
+
 from django.conf.urls import url, include
 from django.contrib.auth.views import login, logout_then_login
 from backend.apps.users.registration.signup import signup
 from django.contrib import admin
 
 from .views import app, index
+
+from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -16,3 +20,11 @@ urlpatterns = [
     url('^auth/logout/$', logout_then_login, name='logout'),
     url('^$', index, name='index'),
 ]
+
+# if settings.DEBUG:
+#     import debug_toolbar
+#
+#     print("DEBUGGGGGGGGGG MATE!")
+#     urlpatterns += [
+#         url(r'^__debug__/', include(debug_toolbar.urls)),
+#     ]

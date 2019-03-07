@@ -2,423 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
-      <change afterPath="$PROJECT_DIR$/backend/static/arrow_flat_small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/base.9f6547179ace.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/base.9f6547179ace.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/base.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/changelists.32a12db9a480.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/changelists.32a12db9a480.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/changelists.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/changelists.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/dashboard.4898e2e9983d.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/dashboard.4898e2e9983d.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/dashboard.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/fonts.cc6140298ba7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/fonts.cc6140298ba7.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/fonts.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/forms.70b858e61281.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/forms.70b858e61281.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/forms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/forms.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/login.a846c0e2ef65.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/login.a846c0e2ef65.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/login.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/rtl.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/rtl.e024aaf6df25.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/rtl.e024aaf6df25.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/widgets.a7251c097987.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/widgets.a7251c097987.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/widgets.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/css/widgets.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/LICENSE.d273d63619c9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/LICENSE.d273d63619c9.txt.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/LICENSE.txt.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/README.2c3d0bcdede2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/Roboto-Bold-webfont.2ad99072841e.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/Roboto-Bold-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/Roboto-Light-webfont.b446c2399bb6.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/Roboto-Light-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/Roboto-Regular-webfont.ec39515ae8c6.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/fonts/Roboto-Regular-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/LICENSE.2c54f4e1ca1c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/LICENSE.2c54f4e1ca1c.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/LICENSE.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/README.837277fa1908.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/README.837277fa1908.txt.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/README.txt.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/calendar-icons.39b290681a8b.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/calendar-icons.39b290681a8b.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/calendar-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/calendar-icons.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_off.7a23bf31ef8a.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_off.7a23bf31ef8a.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_off.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_off.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_on.0047eba25b67.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_on.0047eba25b67.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_on.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/gis/move_vertex_on.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-addlink.d519b3bab011.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-addlink.d519b3bab011.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-addlink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-addlink.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-alert.034cc7d8a67f.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-alert.034cc7d8a67f.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-alert.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-alert.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-calendar.ac7aea671bea.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-calendar.ac7aea671bea.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-calendar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-calendar.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-changelink.18d2fd706348.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-changelink.18d2fd706348.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-changelink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-changelink.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-clock.e1d4dfac3f2b.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-clock.e1d4dfac3f2b.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-clock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-clock.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-deletelink.564ef9dc3854.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-deletelink.564ef9dc3854.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-deletelink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-deletelink.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-no.439e821418cd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-no.439e821418cd.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-no.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-no.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown-alt.81536e128bb6.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown-alt.81536e128bb6.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown-alt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown-alt.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown.a18cb4398978.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown.a18cb4398978.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-unknown.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-yes.d2f9f035226a.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-yes.d2f9f035226a.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-yes.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/icon-yes.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/inline-delete.fec1b761f254.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/inline-delete.fec1b761f254.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/inline-delete.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/inline-delete.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/search.7cf54ff789c6.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/search.7cf54ff789c6.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/search.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/selector-icons.b4555096cea2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/selector-icons.b4555096cea2.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/selector-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/selector-icons.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/sorting-icons.3a097b59f104.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/sorting-icons.3a097b59f104.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/sorting-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/sorting-icons.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-add.e59d620a9742.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-add.e59d620a9742.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-add.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-add.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-arrowright.bbfb788a849e.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-arrowright.bbfb788a849e.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-arrowright.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/img/tooltag-arrowright.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectBox.9b544c47149c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectBox.9b544c47149c.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectBox.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectFilter2.92ca1fea6656.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectFilter2.92ca1fea6656.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectFilter2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/SelectFilter2.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.df9119bcc981.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.df9119bcc981.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.min.c8d91e1d05fe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.min.c8d91e1d05fe.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/actions.min.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/DateTimeShortcuts.1a1d41ec13f8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/DateTimeShortcuts.1a1d41ec13f8.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/DateTimeShortcuts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/DateTimeShortcuts.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/RelatedObjectLookups.b09945d2d972.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/RelatedObjectLookups.b09945d2d972.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/admin/RelatedObjectLookups.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/calendar.847972dc11ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/calendar.847972dc11ca.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/calendar.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.17d715df2104.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.17d715df2104.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.min.dc930adb2821.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.min.dc930adb2821.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/collapse.min.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/core.84da04fcbfaf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/core.84da04fcbfaf.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/core.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.8199258210ef.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.8199258210ef.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.min.91c080dc1cbf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.min.91c080dc1cbf.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/inlines.min.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/jquery.init.95b62fa19378.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/jquery.init.95b62fa19378.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/jquery.init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/jquery.init.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.ff9208865444.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.ff9208865444.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.min.f4057ebb9b62.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.min.f4057ebb9b62.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/prepopulate.min.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/timeparse.51258861a46a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/timeparse.51258861a46a.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/timeparse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/timeparse.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/urlify.72f9b26e3ecd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/urlify.72f9b26e3ecd.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/urlify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/urlify.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/LICENSE-JQUERY.a158210a2737.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/LICENSE-JQUERY.a158210a2737.txt.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/LICENSE-JQUERY.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/LICENSE-JQUERY.txt.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.107fbe9555bf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.107fbe9555bf.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.min.f9c7afd05729.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.min.f9c7afd05729.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/jquery/jquery.min.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/LICENSE-XREGEXP.d64cecf4f157.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/LICENSE-XREGEXP.d64cecf4f157.txt.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/xregexp.min.c95393b8ca4d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/xregexp.min.c95393b8ca4d.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/xregexp.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/admin/js/vendor/xregexp/xregexp.min.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar.1d9e034d33ef.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar04.f2dd25735c26.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar2.7a03f6ac2262.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar3.bb74b4e43298.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar5.dfb7f57d52e5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/avatar5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/boxed-bg.7799dece2c79.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/boxed-bg.b5c5ab66d833.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/boxed-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/boxed-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/american-express.9945cea9f4c0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/american-express.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/cirrus.663653794086.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/cirrus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/mastercard.5823681a05ae.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/mastercard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/mestro.996758d3a75d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/mestro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/paypal.6ebaadcb3624.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/paypal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/paypal2.83561d75644f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/paypal2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/visa.47e93c5cb44c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/credit/visa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/default-50x50.bb4dba391c7b.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/default-50x50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/icons.71caf905dc29.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo1.95aba97561f2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo2.e6a4cc39bbc4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo3.d63bb8b90d95.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo4.6a11b6546418.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/photo4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user1-128x128.6eb9089296d3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user1-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user2-160x160.eafc49f5f1b4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user2-160x160.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user3-128x128.0c52e07439f0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user3-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user4-128x128.f46c2cbaffd1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user4-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user5-128x128.b628ca593909.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user5-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user6-128x128.11686717e146.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user6-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user7-128x128.aaee998167f1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user7-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user8-128x128.cc1516d887bb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/adminlte/img/user8-128x128.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.448c34a56d69.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.89889688147b.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.89889688147b.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.e18bbf611f2a.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.e18bbf611f2a.ttf.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.f4769f9bdb74.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.fa2772327f55.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/css/jquery.autocomplete.aee02640594e.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/css/jquery.autocomplete.aee02640594e.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/css/jquery.autocomplete.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/css/jquery.autocomplete.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/img/indicator.03ce3dcc84af.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/img/indicator.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.ajaxQueue.ac504621bdd8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.ajaxQueue.ac504621bdd8.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.ajaxQueue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.ajaxQueue.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.autocomplete.26e55daaf7c5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.autocomplete.26e55daaf7c5.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.autocomplete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.autocomplete.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.bgiframe.min.c8acb6921ba6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.bgiframe.min.c8acb6921ba6.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.bgiframe.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/django_extensions/js/jquery.bgiframe.min.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/emptyFile.d41d8cd98f00.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/emptyFile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/favicon.7eede2d0dbf8.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/favicon.7eede2d0dbf8.ico.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/favicon.ico.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.674f50d287a8.eot.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.912ec66d7572.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.b06871f281fe.ttf.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.eot.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.ttf.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/js/bundle.649b140d374e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/js/bundle.649b140d374e.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/js/bundle.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/js/vendor.bundle.c832c1560667.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/js/vendor.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/js/vendor.bundle.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap-tweaks.1464ccce96f5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap-tweaks.1464ccce96f5.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap-tweaks.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap-tweaks.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap.min.5d5357cb3704.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap.min.5d5357cb3704.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/bootstrap.min.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/default.713cbe203060.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/default.713cbe203060.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/default.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/prettify.a987f72342ee.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/prettify.a987f72342ee.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/prettify.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/css/prettify.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.448c34a56d69.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.89889688147b.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.89889688147b.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.e18bbf611f2a.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.e18bbf611f2a.ttf.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.f4769f9bdb74.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.fa2772327f55.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.svg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.ttf.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/img/glyphicons-halflings-white.9bbc6e960299.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/img/glyphicons-halflings-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/img/glyphicons-halflings.90233c9067e9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/img/glyphicons-halflings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/img/grid.a4b938cf382b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/img/grid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/ajax-form.8bf28512011a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/ajax-form.8bf28512011a.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/ajax-form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/ajax-form.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/bootstrap.min.4becdc910462.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/bootstrap.min.4becdc910462.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/bootstrap.min.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/csrf.41a1c5464913.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/csrf.41a1c5464913.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/csrf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/csrf.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/default.89dc3ae23594.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/default.89dc3ae23594.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/default.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/default.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/jquery-1.11.3.min.895323ed2f72.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/jquery-1.11.3.min.895323ed2f72.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/jquery-1.11.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/jquery-1.11.3.min.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/prettify-min.709bfcc456c6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/prettify-min.709bfcc456c6.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/prettify-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/rest_framework/js/prettify-min.js.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/staticfiles.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/stylesheets.018b56efa3fe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/stylesheets.018b56efa3fe.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/staticfiles/stylesheets.css.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BiosensorsServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BiosensorsServer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/records/loadmodel2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/records/model2.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/records/storeActual.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/records/tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/celery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/static/model2.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/records/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/records/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/users/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pagination.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/settings/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/common.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/settings/devl.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/devl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.674f50d287a8.eot" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.674f50d287a8.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.912ec66d7572.svg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.912ec66d7572.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.af7ae505a9ee.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.af7ae505a9ee.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.b06871f281fe.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.b06871f281fe.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.fee66e712a8a.woff" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/font-awesome/fonts/fontawesome-webfont.fee66e712a8a.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/staticfiles/js/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/js/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/staticfiles/js/vendor.bundle.c832c1560667.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/js/vendor.bundle.c832c1560667.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/staticfiles/stylesheets.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/staticfiles/stylesheets.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/templates/backend/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/backend/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/PhysioChart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/rootReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/stylesheets/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/urls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/models.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/urls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/Detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/FoodPicDisplay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Graph.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/GraphPhysio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/List.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/Tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -431,18 +58,151 @@
     <option name="myUseModuleSdk" value="true" />
     <option name="myModuleName" value="BiosensorsServer" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="biosustainability" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/stylesheets/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.4661727">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/apps/records/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="288">
+                  <caret line="38" column="23" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#0#11#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/apps/records/tasks.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1216">
+                  <caret line="16" column="16" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/backend/apps/records/loadmodel2.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1216">
+                  <caret line="41" column="129" selection-start-line="41" selection-start-column="129" selection-end-line="41" selection-end-column="129" />
+                  <folding>
+                    <element signature="e#0#10#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/apps/records/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1280">
+                  <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/apps/users/serializers.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="640">
+                  <caret line="23" selection-start-line="23" selection-end-line="23" />
+                  <folding>
+                    <element signature="e#0#33#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/permissions.py">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/pagination.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="256">
+                  <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/apps/records/serializers.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="352">
+                  <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+                  <folding>
+                    <element signature="e#0#38#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Commands.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="800">
+                  <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/utils/autoreload.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="6848">
+                  <caret line="225" selection-start-line="225" selection-end-line="225" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/celery.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="288">
+                  <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#0#38#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/templates/backend/app.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1088">
+                  <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/apps/users/urls.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="64">
+                  <caret line="2" selection-start-line="2" selection-end-line="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -455,15 +215,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>migrate</find>
-      <find>users</find>
-      <find>users_emailuser_user_permissions</find>
-      <find>api_secret</find>
-      <find>ord</find>
-      <find>order</find>
-      <find>pos</find>
-      <find>up</find>
-      <find>regist</find>
       <find>BASE_DIR</find>
       <find>django.contrib.auth.views</find>
       <find>get_user_model</find>
@@ -473,7 +224,35 @@
       <find>data</find>
       <find>permissions</find>
       <find>form</find>
+      <find>green</find>
+      <find>purple</find>
+      <find>record</find>
+      <find>rec</find>
+      <find>debug</find>
+      <find>settings</find>
+      <find>STATIC</find>
+      <find>MiddlewareMixin</find>
+      <find>INTER</find>
+      <find>DEBUG</find>
+      <find>create</find>
+      <find>retrieve</find>
+      <find>search</find>
+      <find>puto</find>
+      <find>print(&quot;puto&quot;)</find>
+      <find>model2.pickle</find>
+      <find>OFFSET_LIMIT</find>
+      <find>request</find>
+      <find>print</find>
+      <find>hello</find>
+      <find>week</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/backend</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -488,13 +267,10 @@
         <option value="$PROJECT_DIR$/backend/apps/users/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/backend/apps/records/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/backend/apps/records/migrations/__init__.py" />
-        <option value="$PROJECT_DIR$/backend/apps/records/urls.py" />
         <option value="$PROJECT_DIR$/backend/apps/snippets/permissions.py" />
         <option value="$PROJECT_DIR$/backend/apps/snippets/models.py" />
         <option value="$PROJECT_DIR$/backend/apps/snippets/views.py" />
         <option value="$PROJECT_DIR$/backend/apps/snippets/serializers.py" />
-        <option value="$PROJECT_DIR$/backend/apps/records/serializers.py" />
-        <option value="$PROJECT_DIR$/backend/pagination.py" />
         <option value="$PROJECT_DIR$/backend/apps/snippets/urls.py" />
         <option value="$PROJECT_DIR$/backend/templates/signup.html" />
         <option value="$PROJECT_DIR$/backend/apps/users/forms.py" />
@@ -502,32 +278,47 @@
         <option value="$PROJECT_DIR$/frontend/dist/stylesheets.css" />
         <option value="$PROJECT_DIR$/frontend/build/stylesheets.css" />
         <option value="$PROJECT_DIR$/backend/apps/users/views.py" />
-        <option value="$PROJECT_DIR$/backend/urls.py" />
         <option value="$PROJECT_DIR$/backend/apps/users/registration/signup.py" />
         <option value="$PROJECT_DIR$/backend/apps/users/registration/forms.py" />
         <option value="$PROJECT_DIR$/backend/templates/registration/base.html" />
         <option value="$PROJECT_DIR$/backend/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/backend/apps/users/models.py" />
         <option value="$PROJECT_DIR$/backend/apps/users/management/view_permission.py" />
-        <option value="$PROJECT_DIR$/backend/apps/users/serializers.py" />
-        <option value="$PROJECT_DIR$/backend/settings/common.py" />
-        <option value="$PROJECT_DIR$/backend/templates/backend/app.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/frontend/package.json" />
-        <option value="$PROJECT_DIR$/backend/settings/devl.py" />
-        <option value="$PROJECT_DIR$/backend/apps/records/views.py" />
-        <option value="$PROJECT_DIR$/backend/apps/records/models.py" />
         <option value="$PROJECT_DIR$/backend/templates/registration/signup.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" />
+        <option value="$PROJECT_DIR$/backend/pagination.py" />
+        <option value="$PROJECT_DIR$/backend/settings/common.py" />
+        <option value="$PROJECT_DIR$/venv/lib/python3.6/site-packages/debug_toolbar/middleware.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/backend/urls.py" />
+        <option value="$PROJECT_DIR$/backend/apps/users/serializers.py" />
+        <option value="$PROJECT_DIR$/ReadMe.txt" />
+        <option value="$PROJECT_DIR$/backend/requirements.txt" />
+        <option value="$PROJECT_DIR$/backend/__init__.py" />
+        <option value="$PROJECT_DIR$/backend/settings/devl.py" />
+        <option value="$PROJECT_DIR$/backend/celery.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/loadmodel.py" />
+        <option value="$PROJECT_DIR$/backend/templates/backend/app.html" />
+        <option value="$PROJECT_DIR$/backend/apps/records/urls.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/models.py" />
+        <option value="$PROJECT_DIR$/Commands.txt" />
+        <option value="$PROJECT_DIR$/backend/apps/records/storeActual.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/serializers.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/loadmodel2.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/tasks.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="2140" />
-    <option name="width" value="3840" />
-    <option name="height" value="2180" />
+    <option name="x" value="67" />
+    <option name="y" value="-29" />
+    <option name="width" value="3773" />
+    <option name="height" value="2189" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -535,7 +326,60 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="biosustainability" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biosustainability" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biosustainability" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biosustainability" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biosustainability" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biosustainability" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biosustainability" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biosustainability" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="records" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biosustainability" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biosustainability" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biosustainability" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biosustainability" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="requirements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biosustainability" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biosustainability" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biosustainability" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biosustainability" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -543,9 +387,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/frontend/node_modules/eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -556,13 +405,14 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backend/apps/records" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend/apps/users/registration" />
       <recent name="$PROJECT_DIR$/backend/templates/registration" />
       <recent name="$PROJECT_DIR$/backend/templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/static" />
+      <recent name="$PROJECT_DIR$/backend/apps/records" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -578,21 +428,21 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="BiosensorsServer" type="Python.DjangoServer" factoryName="Django server">
-      <module name="BiosensorsServer" />
+    <configuration name="BiosustainabilityServer" type="Python.DjangoServer" factoryName="Django server">
+      <module name="biosustainability" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="backend.settings.devl" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../CSE_DBV/venv/bin/python" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
+      <option name="port" value="4000" />
       <option name="host" value="localhost" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
@@ -627,6 +477,34 @@
       <workItem from="1544263285142" duration="598000" />
       <workItem from="1544269898933" duration="6597000" />
       <workItem from="1544442946858" duration="4302000" />
+      <workItem from="1546758637292" duration="3269000" />
+      <workItem from="1546808864090" duration="599000" />
+      <workItem from="1546811150046" duration="10384000" />
+      <workItem from="1546931056684" duration="2764000" />
+      <workItem from="1546946322318" duration="27000" />
+      <workItem from="1546947098135" duration="7122000" />
+      <workItem from="1547042095720" duration="2294000" />
+      <workItem from="1547051756155" duration="5827000" />
+      <workItem from="1547294111579" duration="6544000" />
+      <workItem from="1547317957605" duration="2257000" />
+      <workItem from="1547374145998" duration="13684000" />
+      <workItem from="1547475265124" duration="48000" />
+      <workItem from="1547475802536" duration="1138000" />
+      <workItem from="1547477370079" duration="3799000" />
+      <workItem from="1547571661631" duration="16000" />
+      <workItem from="1547571704633" duration="14536000" />
+      <workItem from="1548082520849" duration="49000" />
+      <workItem from="1548084428412" duration="9945000" />
+      <workItem from="1548176224724" duration="51000" />
+      <workItem from="1548177008914" duration="11663000" />
+      <workItem from="1548917456591" duration="3959000" />
+      <workItem from="1550045220615" duration="599000" />
+      <workItem from="1550388625613" duration="15781000" />
+      <workItem from="1550739326737" duration="748000" />
+      <workItem from="1550747190469" duration="25834000" />
+      <workItem from="1551457516939" duration="64000" />
+      <workItem from="1551458640823" duration="47900000" />
+      <workItem from="1551854586495" duration="6568000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1535285696860</created>
@@ -674,28 +552,37 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30553000" />
+    <option name="totallyTimeSpent" value="228022000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="134" y="39" width="3706" height="2121" extended-state="0" />
-    <editor active="true" />
+    <frame x="134" y="18" width="3706" height="2142" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3018242" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49954668" visible="true" weight="0.18103924" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.5004533" side_tool="true" weight="0.17495854" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32962024" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31913745" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.3291536" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5771144" visible="true" weight="0.3704691" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978677" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32967606" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295688" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32920924" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3296119" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3178808" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3291536" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.42288557" side_tool="true" visible="true" weight="0.3704691" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.51599145" side_tool="true" weight="0.33960292" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -703,22 +590,23 @@
       <window_info anchor="right" id="SciView" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26673895" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49954668" visible="true" weight="0.17270789" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.5004533" side_tool="true" weight="0.17495854" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32962024" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33772153" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.3291536" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48427504" visible="true" weight="0.38505748" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978677" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295688" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32920924" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3296119" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3179747" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32920924" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.51572496" side_tool="true" visible="true" weight="0.38505748" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5002764" side_tool="true" weight="0.40405118" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -738,231 +626,26 @@
     <MESSAGE value="Added signup page. Improve glucose graph2 with per userId graph visualization." />
     <option name="LAST_COMMIT_MESSAGE" value="Added signup page. Improve glucose graph2 with per userId graph visualization." />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/backend/apps/records/serializers.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/rest_framework/mixins.py</url>
+          <line>72</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/apps/config.py" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/apps/registry.py" />
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="31" column="41" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/snippets/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/snippets/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/settings/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/contrib/auth/__init__.py" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/template/response.py" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/utils/functional.py" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/utils/translation/__init__.py" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/contrib/auth/forms.py" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/contrib/auth/views.py" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/shortcuts.py" />
-    <entry file="file://$PROJECT_DIR$/frontend/dist/stylesheets.css" />
-    <entry file="file://$PROJECT_DIR$/frontend/build/stylesheets.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="12353" column="17" selection-start-line="12353" selection-start-column="17" selection-end-line="12353" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/forms/models.py" />
-    <entry file="file://$PROJECT_DIR$/backend/templates/registration/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/permissions.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/rest_framework/pagination.py" />
-    <entry file="file://$PROJECT_DIR$/backend/pagination.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/contrib/auth/models.py" />
-    <entry file="file://$PROJECT_DIR$/backend/requirements/common.pip">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/settings/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3132">
-          <caret line="112" column="6" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="11" column="23" selection-start-line="11" selection-end-line="11" selection-end-column="222" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/management/view_permission.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1189">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="22" column="41" selection-start-line="22" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CSE_DBV/venv/lib/python3.6/site-packages/rest_framework/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20735">
-          <caret line="749" column="6" selection-start-line="749" selection-start-column="6" selection-end-line="749" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/templates/backend/app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1421">
-          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/registration/signup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
           <caret line="30" column="33" selection-start-line="30" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -973,27 +656,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../CSE_DBV/venv/lib/python3.6/site-packages/django/contrib/auth/base_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1131">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/settings/devl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../CSE_DBV/venv/lib/python3.6/site-packages/django/contrib/auth/base_user.py" />
     <entry file="file://$PROJECT_DIR$/backend/templates/registration/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -1011,10 +674,335 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/staticfiles/stylesheets.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="10502" column="19" selection-start-line="10502" selection-start-column="14" selection-end-line="10502" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/0006_auto_20190107_1008.py" />
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/0002_auto_20190107_0939.py" />
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/0007_auto_20190107_1012.py" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/debug_toolbar/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/stylesheets/app.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="961">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3388">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/debug_toolbar/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/settings/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../CSE_DBV/venv/lib/python3.6/site-packages/django/apps/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="162" selection-start-line="162" selection-end-line="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../CSE_DBV/venv/lib/python3.6/site-packages/psycopg2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3306">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/loadmodel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/Mukenis_Data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../CSE_DBV/venv/lib/python3.6/site-packages/django/db/backends/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-384" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/settings/devl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-448">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib64/python3.6/site-packages/kombu/utils/div.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2336">
+          <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11136">
+          <caret line="370" selection-start-line="370" selection-end-line="370" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/storeActual.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="8" selection-start-line="8" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="467" selection-start-line="467" selection-end-line="467" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/rest_framework/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="148" column="37" selection-start-line="148" selection-start-column="37" selection-end-line="148" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/rest_framework/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="39" />
+          <folding>
+            <element signature="e#178#217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="23" selection-start-line="23" selection-start-column="2" selection-end-line="29" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1280">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/users/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/permissions.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/pagination.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/utils/autoreload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6848">
+          <caret line="225" selection-start-line="225" selection-end-line="225" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/templates/backend/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/users/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1216">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commands.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/loadmodel2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="41" column="129" selection-start-line="41" selection-start-column="129" selection-end-line="41" selection-end-column="129" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

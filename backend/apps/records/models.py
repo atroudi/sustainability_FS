@@ -1,21 +1,49 @@
 from django.db import models
 
-class Records(models.Model):
+
+class Record(models.Model):
     id = models.AutoField(primary_key=True)
+    temp_avg = models.FloatField(null=True, blank=True)
+    humidity_avg = models.FloatField(null=True, blank=True)
+    precipitation = models.FloatField(null=True, blank=True)
+    wind_avg = models.FloatField(null=True, blank=True)
+    gust_max = models.FloatField(null=True, blank=True)
+    time = models.DateTimeField()
+    label = models.CharField(max_length=100)
+    solar_radiation = models.FloatField(null=True, blank=True)
+    water_loss = models.FloatField(null=True, blank=True)
 
-    # api_secret refers to user password
-    api_secret = models.CharField(max_length=100)
-
-    sgv = models.IntegerField()
-    direction = models.CharField(max_length=100)
-
-    sysTime = models.DateTimeField()
-    dateString = models.CharField(max_length=100)
-
-    rawData = models.CharField(default="",max_length=500)
-
-    owner = models.ForeignKey('users.EmailUser', related_name='records', on_delete=models.CASCADE)
+    geolocation = models.ForeignKey('Geolocation')
 
     class Meta:
         managed = True
-        db_table = 'patient_records'
+        db_table = 'geolocation_records'
+
+
+class Geolocation(models.Model):
+    id = models.AutoField(primary_key=True)
+    label = models.CharField(max_length=100)
+    lat = models.FloatField()
+    lng = models.FloatField()
+    is_field = models.BooleanField(default=False);
+
+    class Meta:
+        managed = True
+        db_table = 'geolocation'
+
+
+class Prediction(models.Model):
+    id = models.AutoField(primary_key=True)
+    time = models.DateTimeField()
+    temp_avg = models.FloatField(null=True, blank=True)
+    humidity_avg = models.FloatField(null=True, blank=True)
+    label = models.CharField(max_length=100)
+    solar_radiation = models.FloatField(null=True, blank=True)
+    water_loss = models.FloatField(null=True, blank=True)
+    water_actual = models.FloatField(null=True, blank=True)
+
+    geolocation = models.ForeignKey('Geolocation')
+
+    class Meta:
+        managed = True
+        db_table = 'field_prediction'
