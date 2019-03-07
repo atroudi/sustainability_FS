@@ -24,7 +24,10 @@
                 logout: "{% url "logout" %}",
                 staticRoot: "{% static "" %}",
                 users: "{% url "emailuser-list" %}",
-                records: "{% url "records-list" %}"
+                records: "{% url "record-list" %}",
+                predictions: "{% url "prediction-list" %}",
+                geolocations: "{% url "geolocation-list" %}"
+
             },
             user: {
                 username: "{{ request.user.username }}",
@@ -37,6 +40,9 @@
                 )
             },
             record: {
+            },
+            geolocation: {
+
             }
         };
         </script>

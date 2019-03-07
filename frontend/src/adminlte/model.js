@@ -4,7 +4,7 @@ import {List, Map, Record} from "immutable";
 class AdminLTE extends Record({
     body: Map({
         classNames: List([
-            "skin-purple",
+            "skin-green",
             "sidebar-mini",
             "sidebar-collapse"
         ])

@@ -6,9 +6,21 @@ import {Link} from "react-router";
 const allLinks = [
     {
         permission: "users.view_emailuser",
-        text: "Patients",
-        to: "/admin/users/",
-        icon: "fa fa-users"
+        text: "All Geolocations",
+        to: "/admin/geolocations/",
+        icon: "fa fa-map"
+    },
+    {
+        permission: "users.view_emailuser",
+        text: "Stations",
+        to: "/admin/stations/",
+        icon: "fa fa-map"
+    },
+    {
+        permission: "users.view_emailuser",
+        text: "Fields",
+        to: "/admin/fields/",
+        icon: "fa fa-map"
     }
 ];
 

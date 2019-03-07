@@ -15,7 +15,14 @@ const NullMarker = props => {
 };
 
 
-
+// Add n year(s) to date
+function addYear(d, y) {
+    var year = d.getFullYear();
+    var month = d.getMonth();
+    var day = d.getDate();
+    var c = new Date(year + y, month, day);
+    return c;
+}
 
 // Data
 const aud = require("./usd_vs_aud.json");
@@ -32,8 +39,30 @@ function buildPoints() {
     return points;
 }
 
+function  buildPoints_perf(props) {
+    const {collection} = props;
+    let points = [];
+    var start = Date.now();
+     
+    // console.log(collection.models.toList())
+    collection.models.toList().
+    sort((a, b) => a.id - b.id).
+    map((model, key) => {
+            let date = new Date(model.time);
+            let ms = Date.parse(date);
+            points.push([ms,
+                parseInt(model.getValue(props.variable))]
+            )
+    });
+    var end = Date.now();
+    var elapsed = end - start;
+    console.log(elapsed);
+    return points;
+
+}
+
 const style = styler([
-    { key: "sgv", color: "#a69ce2", width: 2 }
+    { key: "sgv", color: "#6b948a", width: 2 }
 ]);
 
 const styleScatter = styler([
@@ -65,17 +94,11 @@ class GlucoseChartJs2 extends React.Component {
     // state;
         constructor(props) {
             super(props);
-
-            this.cgmSeries = new TimeSeries({
-                name: "Currency",
-                columns: ["time", "sgv"],
-                points:this.buildPoints2(this.props)
-            });
             
             
             this.state = {
                 initializeRange:false,
-                userId: this.props.params.user,
+                geolocation: this.props.params.geolocation,
                 tracker: null,
 
                 trackerValue: "-- °C",
@@ -92,102 +115,29 @@ class GlucoseChartJs2 extends React.Component {
             this.range = new TimeRange(0,1);
       }
 
-
-    buildPoints2(props) {
-        const {collection} = props;
-    
-        var datelabels = [];
-        var count=0
-        collection.models.toList().
-        sort((a, b) => a.id - b.id).
-        map((model, key) => {
-            if (model.owner_id==props.params.user){
-                var date = new Date(model.sysTime);
-                let ms = Date.parse(date);
-                datelabels.push(ms);
-            }
-        });
-
-        var entries = [];
-        collection.models.toList()
-        .sort((a, b) => a.id - b.id)
-        .map(model => {
-            if (model.owner_id==props.params.user){
-                entries.push(parseInt(model.getSgv()))
-            }
-        }
-        );
-
-        let points = [];
-        for (let i = 0; i < entries.length; i++) {
-            points.push([datelabels[i], entries[i]]);
-        }
-        
-        return points;
-
-    }
-
-    buildPoints3(props) {
-        const {collection} = props;
-    
-        var datelabels = [];
-        var count=0
-        collection.models.toList().
-        sort((a, b) => a.id - b.id).
-        map((model, key) => {
-            if (model.owner_id==props.params.user){
-                var date = new Date(model.sysTime);
-                let ms = Date.parse(date);
-                datelabels.push(ms);
-            }
-        });
-
-        var entries = [];
-        collection.models.toList()
-        .sort((a, b) => a.id - b.id)
-        .map(model => {
-            if (model.owner_id==props.params.user){
-                entries.push(parseInt(model.getSgv()))
-            }
-        }
-        );
-
-        let points = [];
-        // for (let i = 0; i < entries.length; i++) {
-        let pic1Pos=parseInt(entries.length/2)
-        let pic2Pos=parseInt(entries.length/4)
-
-        if (entries.length!=0){
-            points.push([datelabels[ pic2Pos ], entries[ pic2Pos ], "F1"]);
-            points.push([datelabels[ pic1Pos ], entries[ pic1Pos ], "F2"]);
-        }
-        // }
-        
-        return points;
-    }
-
-    // handleTrackerChanged = tracker => {
-    //     if (!tracker) {
-    //         this.setState({ tracker, x: null, y: null });
-    //     } else {  
-    //         this.setState({ tracker });
-    //     }
-    // };
-
-    handleTrackerChanged = t => {
-        if (t) {
-            const e = this.pictureSeries.atTime(t);
-            // const eventTime = new Date(
-            //     e.begin().getTime() + (e.end().getTime() - e.begin().getTime()) / 2
-            // );
-            const eventTime = new Date(this.pictureSeries.atTime(t));
-            const eventValue = e.get("picName");
-            const v = `${eventValue > 0 ? "+" : ""}${eventValue}`;
-            this.setState({ tracker: eventTime, trackerValue: v, trackerEvent: e });
-        } else {
-            this.setState({ tracker: null, trackerValue: null, trackerEvent: null });
+   
+    handleTrackerChanged = tracker => {
+        if (!tracker) {
+            this.setState({ tracker, x: null, y: null });
+        } else {  
+            this.setState({ tracker });
         }
     };
+
+    // handleTrackerChanged = t => {
+    //     if (t) {
+    //         const e = this.pictureSeries.atTime(t);
+    //         if(e){
+    //             const eventTime = new Date(this.pictureSeries.atTime(t));
+    //             const eventValue = e.get("picName");
+    //             const v = `${eventValue > 0 ? "+" : ""}${eventValue}`;
+    //             this.setState({ tracker: eventTime, trackerValue: v, trackerEvent: e });
+    //         }
+            
+    //     } else {
+    //         this.setState({ tracker: null, trackerValue: null, trackerEvent: null });
+    //     }
+    // };
 
     handleTimeRangeChange = timerange => {
         this.setState({ timerange });
@@ -233,25 +183,39 @@ class GlucoseChartJs2 extends React.Component {
         }
     };
 
-    render() {
 
+    componentWillMount(){
         this.cgmSeries = new TimeSeries({
             name: "Currency",
             columns: ["time", "sgv"],
-            points:this.buildPoints2(this.props)
+            points: buildPoints_perf(this.props)
         });
+    }
 
-        this.pictureSeries = new TimeSeries({
+    componentWillReceiveProps(nextProps){
+        this.cgmSeries = new TimeSeries({
             name: "Currency",
-            columns: ["time", "sgv","picName"],
-            points:this.buildPoints3(this.props)
+            columns: ["time", "sgv"],
+            points: buildPoints_perf(nextProps)
         });
+    }
+    render() {
+
+       
+        // this.pictureSeries = new TimeSeries({
+        //     name: "Currency",
+        //     columns: ["time", "sgv","picName"],
+        //     points:this.buildPoints3(this.props)
+        // });
 
         if (typeof this.cgmSeries.range() === 'undefined'){
             // Data is not initialized
             // Waiting for data to be pulled from DB
-        } else if (this.props.params.user != this.state.userId){
-            // Update range when userId changes
+        } else if (this.props.params.geolocation != this.state.geolocation){
+            
+
+            
+            // Update range when geolocation changes
             this.range = this.cgmSeries.range()
             this.setState({timerange:this.range});
 
@@ -259,10 +223,13 @@ class GlucoseChartJs2 extends React.Component {
             this.setState({maxY:this.cgmSeries.max("sgv")});
             this.setState({minY:this.cgmSeries.min("sgv")});
             
-            // Update state.userId with new UserId
-            this.setState({userId : this.props.params.user})
+            // Update state.geolocation with new geolocation
+            this.setState({geolocation : this.props.params.geolocation})
         } 
         else{
+
+
+            
             this.range = this.cgmSeries.range()
 
             // Initialize when the data are ready
@@ -277,8 +244,7 @@ class GlucoseChartJs2 extends React.Component {
 
 
         }
-
-        const f = format("$,.2f");
+        const f = format(",.2f");
         const formatter = format(".4s");
         const range = this.state.timerange;
         let sgvValue;
@@ -303,6 +269,7 @@ class GlucoseChartJs2 extends React.Component {
                         <Resizable>
                             <ChartContainer
                                 timeRange={range}
+                                // timeRange={new TimeRange(this.range.begin(),addYear(this.range.begin(),3))}
                                 timeAxisStyle={{
                                     ticks: {
                                         stroke: "#AAA",
@@ -319,6 +286,7 @@ class GlucoseChartJs2 extends React.Component {
                                 showGrid={true}
                                 paddingRight={100}
                                 maxTime={this.range.end()}
+                                // maxTime={addYear(this.range.begin(),3)}
                                 minTime={this.range.begin()}
                                 timeAxisAngledLabels={true}
                                 timeAxisHeight={65}
@@ -329,10 +297,10 @@ class GlucoseChartJs2 extends React.Component {
                                 onMouseMove={(x, y) => this.handleMouseMove(x, y)}
                                 minDuration={1000 * 60 * 60 * 24 * 30}
                             >
-                                <ChartRow height="400">
+                                <ChartRow height="200">
                                     <YAxis
                                         id="y"
-                                        label="SGV"
+                                        label={this.props.variable}
                                         min={this.state.minY}
                                         max={this.state.maxY}
                                         style={{
@@ -353,7 +321,7 @@ class GlucoseChartJs2 extends React.Component {
                                     <Charts>
                                         <LineChart
                                             axis="y"
-                                            breakLine={false}
+                                            breakLine={true}
                                             series={this.cgmSeries}
                                             columns={["sgv"]}
                                             style={style}
@@ -367,12 +335,12 @@ class GlucoseChartJs2 extends React.Component {
                                                 this.setState({ selection })
                                             }
                                         />
-                                        <ScatterChart
+                                        {/* <ScatterChart
                                             axis="y"
                                             series={this.pictureSeries}
                                             columns={["sgv"]}
                                             style={styleScatter}
-                                        />
+                                        /> */}
                                         
 
                                         {this.renderMarker()}
@@ -392,19 +360,19 @@ class GlucoseChartJs2 extends React.Component {
                 <div className="row">
                     <div className="col-md-12">
                         <span>
-                            {/* <Legend
+                            <Legend
                                 type="line"
                                 align="right"
-                                // style={style}
+                                style={style}
                                 highlight={this.state.highlight}
                                 onHighlightChange={highlight => this.setState({ highlight })}
                                 selection={this.state.selection}
                                 onSelectionChange={selection => this.setState({ selection })}
                                 categories={[
                                     // { key: "aud", label: "AUD", value: audValue },
-                                    { key: "sgv", label: "SGV", value: sgvValue }
+                                    { key: "sgv", label: this.props.variable, value: sgvValue }
                                 ]}
-                            /> */}
+                            />
                         </span>
                     </div>
                 </div>

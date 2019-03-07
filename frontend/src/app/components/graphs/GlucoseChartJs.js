@@ -134,8 +134,6 @@ class GraphChartJs extends React.Component{
 		this.state=({width:1100, height:650})
 	  }
 	  updateDimensions(){
-		console.log("Width is:"+this.state.width);
-		console.log("Height is:"+this.state.height);
 		let width = this.refs.div.offsetWidth;
 		let height= this.refs.div.offsetHeight;
 		this.setState({width:width,height:height});

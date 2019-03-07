@@ -4,22 +4,29 @@ import {IndexRedirect, Route} from "react-router";
 import Detail from "./views/Detail";
 import List from "./views/List";
 import Tabs from "./views/Tabs";
-import Graph from "./views/Graph";
-import GraphPhysio from "./views/GraphPhysio";
-import FoodPicDisplay from "./views/FoodPicDisplay";
+import RecordsGraph from "./views/RecordsGraph";
+import FieldHistoricalGraph from "./views/FieldHistoricalGraph";
+
+import RTimeGraph from "./views/RTimeGraph";
+import PredictionGraph from "./views/PredictionGraph";
+import PicTab from "./views/PicTab";
+import SankeyGraph from "./views/SankeyGraph"
+import SankeyGraph2 from "./views/SankeyGraph2"
 
 const routes = (
-    <Route path="users" component={List}>
-        <Route path=":user" component={Tabs}>
-            
-            <IndexRedirect to="physio"/>
-            <Route path="physio" component={GraphPhysio}/>
-            <IndexRedirect to="food"/>
-            <Route path="food" component={FoodPicDisplay}/>
-            <IndexRedirect to="details"/>
-            <Route path="details" component={Graph}/>
+    <Route path="geolocations" component={List}>
+        <Route path=":geolocation" component={Tabs}>
+            <Route path="field/images" component={PicTab}/>
+            <Route path="field/records" component={FieldHistoricalGraph}/>
+            <Route path="field/sankey" component={SankeyGraph2}/>
+            <Route path="field/prediction" component={PredictionGraph}/>
+            <Route path="images" component={PicTab}/>
+            <Route path="records" component={RecordsGraph}/>
+            <IndexRedirect to="rtime"/>
+            <Route path="rtime" component={RTimeGraph}/>
         </Route>
     </Route>
+    
 );
 
 export default routes;

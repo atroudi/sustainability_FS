@@ -1,0 +1,32 @@
+[2019-02-20 09:04:20,343: INFO/MainProcess] Connected to redis://localhost:6379//
+[2019-02-20 09:04:20,348: INFO/MainProcess] mingle: searching for neighbors
+[2019-02-20 09:04:21,359: INFO/MainProcess] mingle: all alone
+[2019-02-20 09:04:21,363: INFO/MainProcess] celery@migiwara-XPS-9570 ready.
+[2019-02-20 09:05:05,113: INFO/MainProcess] Received task: records.tasks.hello[26174b09-d6f2-4be6-88d3-6615abb8596e]  
+[2019-02-20 09:05:05,115: WARNING/ForkPoolWorker-7] Hello there!
+[2019-02-20 09:05:05,120: INFO/ForkPoolWorker-7] Task records.tasks.hello[26174b09-d6f2-4be6-88d3-6615abb8596e] succeeded in 0.004813568986719474s: None
+[2019-02-20 09:05:58,225: INFO/MainProcess] Received task: records.tasks.hello[bba7278f-1d4a-4cd7-9c81-8dfde4f42ee8]  
+[2019-02-20 09:05:58,227: WARNING/ForkPoolWorker-1] Hello there!
+[2019-02-20 09:05:58,230: INFO/ForkPoolWorker-1] Task records.tasks.hello[bba7278f-1d4a-4cd7-9c81-8dfde4f42ee8] succeeded in 0.003477630001725629s: None
+[2019-02-20 09:06:30,911: INFO/MainProcess] Received task: records.tasks.hello[fdc2ee17-c703-4f85-8cca-6e192e10c086]  
+[2019-02-20 09:06:30,912: WARNING/ForkPoolWorker-2] Hello there!
+[2019-02-20 09:06:30,916: INFO/ForkPoolWorker-2] Task records.tasks.hello[fdc2ee17-c703-4f85-8cca-6e192e10c086] succeeded in 0.0046243359975051135s: None
+[2019-02-20 09:08:00,163: INFO/MainProcess] Received task: records.tasks.hello[aa044440-afca-4cc5-8ec0-e21a6d5991ab]  
+[2019-02-20 09:08:00,164: WARNING/ForkPoolWorker-3] Hello there!
+[2019-02-20 09:08:00,167: INFO/ForkPoolWorker-3] Task records.tasks.hello[aa044440-afca-4cc5-8ec0-e21a6d5991ab] succeeded in 0.003139799984637648s: None
+[2019-02-20 09:08:37,211: INFO/MainProcess] Received task: records.tasks.hello[26512bb1-ad20-42d0-bc45-7d17d13aaa64]  
+[2019-02-20 09:08:37,212: WARNING/ForkPoolWorker-4] Hello there!
+[2019-02-20 09:08:37,216: INFO/ForkPoolWorker-4] Task records.tasks.hello[26512bb1-ad20-42d0-bc45-7d17d13aaa64] succeeded in 0.004030782001791522s: None
+[2019-02-20 09:09:19,315: INFO/MainProcess] Received task: records.tasks.hello[fef35164-9ea6-484a-99ab-4ad0c6fb36fe]  
+[2019-02-20 09:09:19,316: WARNING/ForkPoolWorker-5] Hello there!
+[2019-02-20 09:09:19,320: INFO/ForkPoolWorker-5] Task records.tasks.hello[fef35164-9ea6-484a-99ab-4ad0c6fb36fe] succeeded in 0.0040912819968070835s: None
+[2019-02-20 09:09:47,829: INFO/MainProcess] Received task: records.tasks.hello[9a649198-1690-464c-abde-954948a49590]  
+[2019-02-20 09:09:47,830: WARNING/ForkPoolWorker-7] Hello there!
+[2019-02-20 09:09:47,831: INFO/ForkPoolWorker-7] Task records.tasks.hello[9a649198-1690-464c-abde-954948a49590] succeeded in 0.000624266016529873s: None
+[2019-02-20 09:14:56,368: INFO/MainProcess] Received task: records.tasks.hello[b80a12c1-3117-4364-8318-74b73edb506d]  
+[2019-02-20 09:14:56,369: WARNING/ForkPoolWorker-1] Hello there!
+[2019-02-20 09:14:56,369: INFO/ForkPoolWorker-1] Task records.tasks.hello[b80a12c1-3117-4364-8318-74b73edb506d] succeeded in 0.000657215976389125s: None
+[2019-03-01 12:07:06,434: INFO/MainProcess] Connected to redis://localhost:6379//
+[2019-03-01 12:07:06,440: INFO/MainProcess] mingle: searching for neighbors
+[2019-03-01 12:07:07,450: INFO/MainProcess] mingle: all alone
+[2019-03-01 12:07:07,454: INFO/MainProcess] celery@migiwara-XPS-9570 ready.
