@@ -26,7 +26,6 @@ class RecordViewSet(viewsets.ModelViewSet):
         self.perform_update(serializer)
         return Response(serializer.data)
 
-
     def retrieve(self, request, *args, **kwargs):
         # hello.delay()
         print(request.data)
@@ -38,9 +37,11 @@ class RecordViewSet(viewsets.ModelViewSet):
         print(serializer.data)
         return Response(serializer.data)
 
+
 class GeolocationViewSet(viewsets.ModelViewSet):
     serializer_class = GeolocationSerializer
     queryset = Geolocation.objects.all()
+    search_fields = ('crop')
     permission_classes = (permissions.AllowAny,)
 
 
@@ -58,7 +59,6 @@ class PredictionViewSet(viewsets.ModelViewSet):
         elapsed_time = time.time() - start_time
         print('data retrieve overhead is %d' % elapsed_time)
         serializer = self.get_serializer(instance)
-
 
     def list(self, request, *args, **kwargs):
 

@@ -1,6 +1,6 @@
 import React from "react";
 import {Col, Pagination, Row} from "react-bootstrap";
-
+import PropTypes from 'prop-types';
 import PaginationInfo from "app/components/PaginationInfo";
 
 
@@ -41,7 +41,7 @@ class GenericPagination extends React.Component {
 }
 
 GenericPagination.contextTypes = {
-    router: React.PropTypes.object
+    router: PropTypes.object
 };
 
 export default GenericPagination;

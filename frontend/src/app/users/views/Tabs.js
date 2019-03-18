@@ -3,7 +3,7 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {createSelector} from "reselect";
 import {Tab, Tabs} from "react-bootstrap";
-
+import PropTypes from 'prop-types';
 import actions from "app/actions/collection";
 import findModel from "app/components/higherOrder/findModel";
 
@@ -12,6 +12,7 @@ class TabGraphsContainer extends React.Component {
     componentWillMount() {
         const {props} = this;
         this.setState({activeKey: props.children.props.route.path});
+        console.log(React.version);
     }
 
     componentWillReceiveProps(nextProps) {
@@ -66,13 +67,13 @@ class TabGraphsContainer extends React.Component {
                     >
                         {activeKey === "field/prediction" && children}
                     </Tab>
-                    <Tab
+                    {/* <Tab
                         eventKey="field/sankey"
                         tabClassName="pull-right"
                         title="Sankey Graph"
                     >
                         {activeKey === "field/sankey" && children}
-                    </Tab>
+                    </Tab> */}
                     <Tab
                         eventKey="field/records"
                         tabClassName="pull-right"
@@ -132,7 +133,7 @@ class TabGraphsContainer extends React.Component {
 }
 
 TabGraphsContainer.contextTypes = {
-    router: React.PropTypes.object
+    router: PropTypes.object
 };
 
 const selector = createSelector(

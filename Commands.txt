@@ -1,4 +1,4 @@
-#################################### commands to deploy GMS Docker ####################################
+#################################### commands to deploy SFS Docker ####################################
 
 # Build 
 sudo docker-compose build

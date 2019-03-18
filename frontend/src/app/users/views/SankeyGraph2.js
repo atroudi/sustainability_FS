@@ -22,7 +22,6 @@ export default class EnergySankey extends React.Component {
   };
   render() {
     const {modeIndex} = this.state;
-
     return (
       <div className="centered-and-flexed">
         <div className="centered-and-flexed-controls">

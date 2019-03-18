@@ -10,7 +10,8 @@ export default (Component) => {
             const {collection} = props;
 
             this.state = {
-                show: false,
+                show: true,
+                file: null,
                 changeSet: new collection.ChangeSet()
             };
         }
@@ -28,6 +29,31 @@ export default (Component) => {
             });
         }
 
+        // handleChangeFile(event) {
+        //     const f = event.target.files[0];
+        //     let formData = new FormData();
+        //     formData.append('file', f);
+        //     //Make a request to server and send formData
+        //     const {changeSet} = this.state;
+
+        //     console.log(f)
+
+
+        //     this.setState({
+        //         file: f
+        //         // changeSet: changeSet.set(event.target.name, file)
+        //     });
+        //   }
+
+        handleChangeFile = (event) => {
+            // Retreive file
+            const f = event.target.files[0];
+            this.setState({
+                file: f,
+                // changeSet: changeSet.set(event.target.name, formData)
+            });
+        }
+          
         handleChange = (evnt) => {
             const {changeSet} = this.state;
 
@@ -39,6 +65,7 @@ export default (Component) => {
         handleSubmit = (evnt) => {
             const {actions, collection} = this.props;
             const {changeSet} = this.state;
+            const {file} = this.state;
             const {router} = this.context;
 
             const successCb = List([
@@ -58,7 +85,36 @@ export default (Component) => {
             ]);
 
             evnt.preventDefault();
-            actions.createModel({collection, successCb, errorCb, changeSet});
+            actions.createModel({collection, successCb, errorCb, changeSet, file});
+        }
+
+        handleSubmit2 = (evnt) => {
+            const {actions, collection} = this.props;
+            const {changeSet} = this.state;
+            const {file} = this.state;
+            const {router} = this.context;
+            
+            console.log("handle next!")
+            console.log(this.props.nextUrl)
+            this.props.history.push(`/admin/geolocations`)
+            // const successCb = List([
+            //     () => this.hideModal(),
+            //     (response) => {
+            //         const Model = collection.get("Model");
+            //         const model = new Model(response.body);
+            //         this.setState({changeSet: changeSet.clear()});
+            //         router.push(model.appUrl());
+            //     }
+            // ]);
+
+            // const errorCb = List([
+            //     (response) => this.setState({
+            //         changeSet: changeSet.set("_errors", response.body)
+            //     })
+            // ]);
+
+            // evnt.preventDefault();
+            // actions.createModel({collection, successCb, errorCb, changeSet, file});
         }
 
         render() {
@@ -66,32 +122,34 @@ export default (Component) => {
             const {changeSet} = this.state;
 
             return(
-                <a className="btn btn-app" onClick={this.showModal}>
-                    <i className="fa fa-plus"></i> Create
+                // <a className="btn btn-app" onClick={this.showModal}>
+                    // <i className="fa fa-plus"></i> Add {collection.titleSingular}
                     <Modal
                         onHide={this.hideModal}
                         show={this.state.show}
                     >
                         <Modal.Header closeButton>
-                            <Modal.Title>Create {collection.titleSingular}</Modal.Title>
+                            <Modal.Title>{this.props.titleSingular} Selection</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
                             <Component
                                 changeSet={changeSet}
                                 handleChange={this.handleChange}
-                                handleSubmit={this.handleSubmit}
+                                handleChangeFile={this.handleChangeFile}
+
+                                // handleSubmit={this.handleSubmit}
                                 {...this.props}
                             />
                         </Modal.Body>
                         <Modal.Footer>
-                            <Button
+                            {/* <Button
                                 className="pull-left"
                                 onClick={this.hideModal}>Cancel
-                            </Button>
-                            <Button onClick={this.handleSubmit}>Save</Button>
+                            </Button> */}
+                            <Button onClick={this.handleSubmit2}>Next</Button>
                         </Modal.Footer>
                     </Modal>
-                </a>
+                // </a>
             );
         }
     }

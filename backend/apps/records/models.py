@@ -25,7 +25,8 @@ class Geolocation(models.Model):
     label = models.CharField(max_length=100)
     lat = models.FloatField()
     lng = models.FloatField()
-    is_field = models.BooleanField(default=False);
+    is_field = models.BooleanField(default=False)
+    crop = models.CharField(max_length=100)
 
     class Meta:
         managed = True

@@ -15,7 +15,7 @@ class GeolocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Geolocation
         fields = (
-            'id', 'label', 'lat', 'lng', 'is_field'
+            'id', 'label', 'lat', 'lng', 'is_field', 'crop'
         )
 
 class PredictionSerializer(serializers.ModelSerializer):

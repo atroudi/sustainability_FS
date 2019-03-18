@@ -2,6 +2,8 @@ import React from "react";
 import {Col, Row} from "react-bootstrap";
 import GraphChartJs from "./GlucoseChartJs"
 import Map from "./Map"
+// import MapBox from "./MapBox"
+
 // import Map from "./Map2" 
 import Box from "../list/Box";
 

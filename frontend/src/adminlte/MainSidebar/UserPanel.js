@@ -12,7 +12,7 @@ export default function UserPanel() {
                 />
             </div>
             <div className="pull-left info">
-                <p>Alexander Pierce</p>
+                {/* <p>Alexander Pierce</p> */}
                 <a href="#"><i className="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>

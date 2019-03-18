@@ -47,7 +47,8 @@
 /*
  * GoogleMap hover example
  */
-import React, {PropTypes, Component} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import shouldPureComponentUpdate from 'react-pure-render/function';
 import controllable from 'react-controllables';
 import { GoogleApiWrapper, InfoWindow, Marker } from 'google-map-react';
