@@ -6,7 +6,7 @@ class AdminLTE extends Record({
         classNames: List([
             "skin-green",
             "sidebar-mini",
-            "sidebar-collapse"
+            "sidebar-open"
         ])
     }),
     controlSidebar: Map({
@@ -26,7 +26,7 @@ class AdminLTE extends Record({
         })
     }),
     mainSidebar: Map({
-        collapsed: document.body.classList.contains("sidebar-collapse")
+        collapsed: document.body.classList.contains("sidebar-open")
     })
 }){}
 

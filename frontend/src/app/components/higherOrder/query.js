@@ -1,7 +1,7 @@
 import React from "react";
 import {Button, Modal} from "react-bootstrap";
 import {List} from "immutable";
-
+import PropTypes from 'prop-types';
 
 export default (Component) => {
     class QueryForm extends React.Component {
@@ -107,7 +107,7 @@ export default (Component) => {
     }
 
     QueryForm.contextTypes = {
-        router: React.PropTypes.object
+        router: PropTypes.object
     };
 
     return QueryForm;

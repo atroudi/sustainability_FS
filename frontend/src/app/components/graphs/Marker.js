@@ -2,9 +2,9 @@
  * Marker example
  */
 
-import React, {PropTypes, Component} from 'react/addons';
+import React, { Component} from 'react/addons';
 import cx from 'classnames';
-
+import PropTypes from 'prop-types';
 import controllable from 'react-controllables';
 
 import shouldPureComponentUpdate from 'react-pure-render/function';

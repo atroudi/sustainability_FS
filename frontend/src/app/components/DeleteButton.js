@@ -1,6 +1,6 @@
 import React from "react";
 import {Button, Modal} from "react-bootstrap";
-
+import PropTypes from 'prop-types';
 
 class DeleteButton extends React.Component {
     constructor(props) {
@@ -62,7 +62,7 @@ class DeleteButton extends React.Component {
 }
 
 DeleteButton.contextTypes = {
-    router: React.PropTypes.object
+    router: PropTypes.object
 };
 
 export default DeleteButton;

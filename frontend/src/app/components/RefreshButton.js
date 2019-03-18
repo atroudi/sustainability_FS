@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from 'prop-types';
 
 class RefreshButton extends React.Component {
     handleClick = () => {
@@ -23,7 +23,7 @@ class RefreshButton extends React.Component {
 }
 
 RefreshButton.contextTypes = {
-    router: React.PropTypes.object
+    router: PropTypes.object
 };
 
 export default RefreshButton;

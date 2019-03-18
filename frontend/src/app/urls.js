@@ -6,16 +6,20 @@ import RouteNotFound from "app/components/RouteNotFound";
 import users from "app/users/urls";
 import fields from "app/users/urls_fields"
 import stations from "app/users/urls_stations"
+import crops from "app/crops/urls";
+
 
 const urls = (
     <Route path="/">
-        <IndexRedirect to="admin/geolocations"/>
+        <IndexRedirect to="admin/crops"/>
         <Route component={Admin} path="admin">
-            <IndexRedirect to="geolocations"/>
+            <IndexRedirect to="crops"/>
+            {crops}
+            {/* <IndexRedirect to="geolocations"/> */}
             {users}
-            <IndexRedirect to="fields"/>
+            {/* <IndexRedirect to="fields"/> */}
             {fields}
-            <IndexRedirect to="stations"/>
+            {/* <IndexRedirect to="stations"/> */}
             {stations}
             <Route path="*" component={RouteNotFound}/>
         </Route>

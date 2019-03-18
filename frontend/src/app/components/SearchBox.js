@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from "classnames";
-
+import PropTypes from 'prop-types';
 
 class SearchBox extends React.Component {
     constructor(props) {
@@ -105,7 +105,7 @@ class SearchBox extends React.Component {
 }
 
 SearchBox.contextTypes = {
-    router: React.PropTypes.object
+    router: PropTypes.object
 };
 
 export default SearchBox;

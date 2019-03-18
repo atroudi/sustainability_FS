@@ -1107,3 +1107,41 @@
    .hint--info.hint--top.field:before {
     border-top-color:#ecb349
    }
+
+   .btn-primary {
+    color: #fff;
+    background-color: #378663;
+    border-color: #378663;
+  }
+
+
+  .btn-primary:hover {
+    background-color: #158a55;
+  }
+
+  .form-control:focus {
+    border-color: #378663;
+  }
+
+  .btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #378663;
+  border-color: #378663;
+}
+
+.btn-primary .badge {
+  color: #378663;
+  background-color: #fff;
+}
+
+.redirect-link-text {
+  color: #378663;
+  background-color: #fff;
+}
+
+.redirect-link-text:hover {
+  color: #06a35c;
+  background-color: #fff;
+}
