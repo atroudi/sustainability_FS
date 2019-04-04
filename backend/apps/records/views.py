@@ -3,9 +3,9 @@ import time
 from rest_framework import viewsets
 from rest_framework.response import Response
 
-from .serializers import RecordSerializer, PredictionSerializer
+from .serializers import RecordSerializer, PredictionSerializer, CropSerializer
 from .serializers import GeolocationSerializer
-from .models import Record
+from .models import Record, Crop
 from .models import Geolocation
 from .models import Prediction
 from rest_framework import status, permissions
@@ -76,13 +76,30 @@ class PredictionViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
 
+class CropViewSet(viewsets.ModelViewSet):
+    serializer_class = CropSerializer
+    queryset = Crop.objects.all()
+    permission_classes = (permissions.AllowAny,)
 
+    def list(self, request, *args, **kwargs):
 
-    # def retrieve(self, request, *args, **kwargs):
-    #     hello.delay()
-    #     print("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHh")
-        # start_time = time.time()
-        # instance = self.get_object()
-        # elapsed_time = time.time() - start_time
-        # print('data retrieve overhead is %d' % elapsed_time)
-        # serializer = self.get_serializer(instance)
+        print("list crop")
+        demand = int(self.request.query_params.get('demand'))
+        print(demand)
+        crop = self.request.query_params.get('crop')
+        print(crop)
+        # load_model.delay(demand)
+
+        queryset = self.filter_queryset(self.get_queryset())
+
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            test = serializer.data
+            print(test + [serializer.data[0]])
+
+            return self.get_paginated_response(serializer.data)
+
+        serializer = self.get_serializer(queryset, many=True)
+        print(serializer.data)
+        return Response(serializer.data)

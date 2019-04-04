@@ -7,13 +7,16 @@ import users from "app/users/urls";
 import fields from "app/users/urls_fields"
 import stations from "app/users/urls_stations"
 import crops from "app/crops/urls";
+import home from "app/home/urls";
+import decisions from "app/decisions/urls";
 
 
 const urls = (
     <Route path="/">
-        <IndexRedirect to="admin/crops"/>
+        <IndexRedirect to="admin/home"/>
         <Route component={Admin} path="admin">
-            <IndexRedirect to="crops"/>
+            <IndexRedirect to="home"/>
+            {home}
             {crops}
             {/* <IndexRedirect to="geolocations"/> */}
             {users}
@@ -21,6 +24,7 @@ const urls = (
             {fields}
             {/* <IndexRedirect to="stations"/> */}
             {stations}
+            {decisions}
             <Route path="*" component={RouteNotFound}/>
         </Route>
     </Route>

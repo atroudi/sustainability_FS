@@ -49,7 +49,6 @@ function buildPoints_prediction_actual(props) {
     Enry_Date=[dates, prediction, actual];
     var end = Date.now();
     var elapsed = end - start;
-    // console.log("RT Build points execution time: " + elapsed);
     return Enry_Date;
 }
 
@@ -63,7 +62,6 @@ class PredictionChart extends React.Component {
         query = query.set("week", 0);
         actions.fetchCollection({collection, query});
 
-        console.log("First fetch done")
         // Get points 
         let points = buildPoints_prediction_actual(props);
         this.state = {
@@ -102,12 +100,10 @@ class PredictionChart extends React.Component {
         // send predictionstart date 
         // actions.fetchCollection({collection, query});
 
-        // console.log("Fetch predictions"); // FETCH PREDICTION
         const {actions, collection} = this.props;
         let query = collection.get("query");
         query = query.set("week", this.state.week);
         actions.fetchCollection({collection, query});
-        console.log("3 fetch done")
 
         return event;
     };

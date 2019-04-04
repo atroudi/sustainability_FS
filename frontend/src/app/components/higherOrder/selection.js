@@ -36,7 +36,6 @@ export default (Component) => {
         //     //Make a request to server and send formData
         //     const {changeSet} = this.state;
 
-        //     console.log(f)
 
 
         //     this.setState({
@@ -93,10 +92,13 @@ export default (Component) => {
             const {changeSet} = this.state;
             const {file} = this.state;
             const {router} = this.context;
-            
-            console.log("handle next!")
-            console.log(this.props.nextUrl)
-            this.props.history.push(`/admin/geolocations`)
+            // hide modal
+            this.hideModal()
+            if (changeSet.get(this.props.entry))
+                this.props.history.push(this.props.location.pathname + "/" + changeSet.get(this.props.entry))
+            else
+                this.props.history.push(this.props.entry)
+
             // const successCb = List([
             //     () => this.hideModal(),
             //     (response) => {
@@ -126,10 +128,11 @@ export default (Component) => {
                     // <i className="fa fa-plus"></i> Add {collection.titleSingular}
                     <Modal
                         onHide={this.hideModal}
+                        centered
                         show={this.state.show}
                     >
                         <Modal.Header closeButton>
-                            <Modal.Title>{this.props.titleSingular} Selection</Modal.Title>
+                            <Modal.Title>{this.props.titleSingular}</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
                             <Component
@@ -137,7 +140,7 @@ export default (Component) => {
                                 handleChange={this.handleChange}
                                 handleChangeFile={this.handleChangeFile}
 
-                                // handleSubmit={this.handleSubmit}
+                                handleSubmit={this.handleSubmit}
                                 {...this.props}
                             />
                         </Modal.Body>

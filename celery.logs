@@ -30,3 +30,182 @@
 [2019-03-01 12:07:06,440: INFO/MainProcess] mingle: searching for neighbors
 [2019-03-01 12:07:07,450: INFO/MainProcess] mingle: all alone
 [2019-03-01 12:07:07,454: INFO/MainProcess] celery@migiwara-XPS-9570 ready.
+[2019-03-30 18:25:21,417: INFO/MainProcess] Connected to redis://localhost:6379//
+[2019-03-30 18:25:21,424: INFO/MainProcess] mingle: searching for neighbors
+[2019-03-30 18:25:22,435: INFO/MainProcess] mingle: all alone
+[2019-03-30 18:25:22,471: INFO/MainProcess] celery@migiwara-XPS-9570 ready.
+[2019-03-30 18:25:22,547: INFO/MainProcess] Received task: records.tasks.load_model[dd444fe0-a1e3-4966-9609-3eb981ba1120]  
+[2019-03-30 18:25:22,548: WARNING/ForkPoolWorker-7] loading model!
+[2019-03-30 18:25:22,548: INFO/MainProcess] Received task: records.tasks.load_model[0dfde2c0-6923-4410-8beb-724cbb06f19a]  
+[2019-03-30 18:25:22,548: WARNING/ForkPoolWorker-7] /home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/model2.pickle
+[2019-03-30 18:25:22,549: WARNING/ForkPoolWorker-1] loading model!
+[2019-03-30 18:25:22,549: WARNING/ForkPoolWorker-1] /home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/model2.pickle
+[2019-03-30 18:25:22,549: INFO/MainProcess] Received task: records.tasks.load_model[50d0b16f-254c-450f-8bba-c1720a09e09e]  
+[2019-03-30 18:25:22,550: INFO/MainProcess] Received task: records.tasks.load_model[bec830cc-268c-4bf4-80a1-e99ac5551498]  
+[2019-03-30 18:25:22,551: INFO/MainProcess] Received task: records.tasks.load_model[a8bd8c3b-818d-4c9e-9984-80d37b77f3c3]  
+[2019-03-30 18:25:22,551: WARNING/ForkPoolWorker-2] loading model!
+[2019-03-30 18:25:22,551: WARNING/ForkPoolWorker-10] loading model!
+[2019-03-30 18:25:22,551: WARNING/ForkPoolWorker-2] /home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/model2.pickle
+[2019-03-30 18:25:22,551: WARNING/ForkPoolWorker-10] /home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/model2.pickle
+[2019-03-30 18:25:22,552: INFO/MainProcess] Received task: records.tasks.load_model[04fcf19e-caa4-46e8-8cc5-9a3277b2ce00]  
+[2019-03-30 18:25:22,552: WARNING/ForkPoolWorker-12] loading model!
+[2019-03-30 18:25:22,552: WARNING/ForkPoolWorker-11] loading model!
+[2019-03-30 18:25:22,553: WARNING/ForkPoolWorker-12] /home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/model2.pickle
+[2019-03-30 18:25:22,553: WARNING/ForkPoolWorker-11] /home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/model2.pickle
+[2019-03-30 18:25:22,553: INFO/MainProcess] Received task: records.tasks.load_model[b2e5b57e-0b91-4fda-bc89-f775f0903262]  
+[2019-03-30 18:25:22,554: INFO/MainProcess] Received task: records.tasks.load_model[239de746-12ee-4c87-88ab-985311b3680b]  
+[2019-03-30 18:25:22,555: WARNING/ForkPoolWorker-5] loading model!
+[2019-03-30 18:25:22,555: WARNING/ForkPoolWorker-6] loading model!
+[2019-03-30 18:25:22,555: WARNING/ForkPoolWorker-5] /home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/model2.pickle
+[2019-03-30 18:25:22,555: INFO/MainProcess] Received task: records.tasks.load_model[73bec332-1b03-4adb-bd8e-83ff84ec7e0c]  
+[2019-03-30 18:25:22,555: WARNING/ForkPoolWorker-6] /home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/model2.pickle
+[2019-03-30 18:25:22,557: INFO/MainProcess] Received task: records.tasks.load_model[ea54d377-9e4f-40ac-abd1-d6f627cc7de6]  
+[2019-03-30 18:25:22,557: WARNING/ForkPoolWorker-9] loading model!
+[2019-03-30 18:25:22,557: WARNING/ForkPoolWorker-3] loading model!
+[2019-03-30 18:25:22,558: WARNING/ForkPoolWorker-9] /home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/model2.pickle
+[2019-03-30 18:25:22,558: WARNING/ForkPoolWorker-3] /home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/model2.pickle
+[2019-03-30 18:25:22,558: INFO/MainProcess] Received task: records.tasks.load_model[18a8a3ff-2912-45a3-9c0e-534e9390f263]  
+[2019-03-30 18:25:22,559: INFO/MainProcess] Received task: records.tasks.load_model[d2545b1b-6b93-4aa6-8893-08cabdaf10a2]  
+[2019-03-30 18:25:22,560: INFO/MainProcess] Received task: records.tasks.load_model[8e0d7255-3d35-4c79-a7bb-86482637ec32]  
+[2019-03-30 18:25:22,561: WARNING/ForkPoolWorker-8] loading model!
+[2019-03-30 18:25:22,561: WARNING/ForkPoolWorker-8] /home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/model2.pickle
+[2019-03-30 18:25:22,561: INFO/MainProcess] Received task: records.tasks.load_model[7ab134d6-55cc-4b9a-94b0-46deba3b4346]  
+[2019-03-30 18:25:22,562: WARNING/ForkPoolWorker-4] loading model!
+[2019-03-30 18:25:22,562: WARNING/ForkPoolWorker-4] /home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/model2.pickle
+[2019-03-30 18:25:22,563: INFO/MainProcess] Received task: records.tasks.load_model[663781e1-9403-4685-8014-b3f6ebcebe4b]  
+[2019-03-30 18:25:22,564: INFO/MainProcess] Received task: records.tasks.load_model[e8d01a18-9361-4411-a4d3-4408eea1ee11]  
+[2019-03-30 18:25:22,565: INFO/MainProcess] Received task: records.tasks.load_model[cdf9afaa-f321-45cf-a759-ca3905139e6e]  
+[2019-03-30 18:25:22,566: INFO/MainProcess] Received task: records.tasks.load_model[d46094df-3b49-49de-8c47-2a0564e30664]  
+[2019-03-30 18:25:22,567: INFO/MainProcess] Received task: records.tasks.load_model[cfbf2084-957a-43e7-9d86-28929158230e]  
+[2019-03-30 18:25:22,567: INFO/MainProcess] Received task: records.tasks.load_model[05f486a7-6efc-4837-b20b-9c34f1ea81fa]  
+[2019-03-30 18:25:22,568: INFO/MainProcess] Received task: records.tasks.load_model[0bfcb952-f874-42e8-8158-048476b0dc3b]  
+[2019-03-30 18:25:22,568: INFO/MainProcess] Received task: records.tasks.load_model[790ce66c-1425-45c2-8fd9-fed61a8380ea]  
+[2019-03-30 18:25:22,569: INFO/MainProcess] Received task: records.tasks.load_model[fd325ba2-0229-4701-a50a-97aa64ba1adc]  
+[2019-03-30 18:25:22,570: INFO/MainProcess] Received task: records.tasks.load_model[c61825f7-6d29-4bb7-9eac-22e5c4a9ea58]  
+[2019-03-30 18:25:22,570: INFO/MainProcess] Received task: records.tasks.load_model[9fffc9ab-1f4f-40fb-abd1-1d98306b1b0f]  
+[2019-03-30 18:25:22,571: INFO/MainProcess] Received task: records.tasks.load_model[6a75dd18-4347-4aeb-97fe-6796cae39f6d]  
+[2019-03-30 18:25:22,571: INFO/MainProcess] Received task: records.tasks.load_model[05d064ed-a335-411a-97ab-a596d155057a]  
+[2019-03-30 18:25:22,571: ERROR/ForkPoolWorker-10] Task records.tasks.load_model[bec830cc-268c-4bf4-80a1-e99ac5551498] raised unexpected: ValueError('all the input arrays must have same number of dimensions',)
+Traceback (most recent call last):
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/app/trace.py", line 375, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/app/trace.py", line 632, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/tasks.py", line 79, in load_model
+    predicted_water_loss = np.dot(np.concatenate((np.matrix([1]*len(input_data)).T, np.array(input_data)), axis = 1), w)[0, 0]
+ValueError: all the input arrays must have same number of dimensions
+[2019-03-30 18:25:22,572: INFO/MainProcess] Received task: records.tasks.load_model[c31904bc-582d-4284-b92b-41f4c2fb2e1c]  
+[2019-03-30 18:25:22,573: INFO/MainProcess] Received task: records.tasks.load_model[da62c123-3ed9-4a95-89a2-83c6dddf4d49]  
+[2019-03-30 18:25:22,573: WARNING/ForkPoolWorker-10] loading model!
+[2019-03-30 18:25:22,573: WARNING/ForkPoolWorker-10] /home/migiwara/HBKU/sustainability/biosustainability/backend/apps/records/model2.pickle
+[2019-03-30 18:25:22,574: INFO/MainProcess] Received task: records.tasks.load_model[2e17a6ab-5d17-4cb5-a362-5120acad3073]  
+[2019-03-30 18:25:22,574: INFO/MainProcess] Received task: records.tasks.load_model[1f92d155-6e1d-42b6-aab4-20cd3b78259f]  
+[2019-03-30 18:25:22,575: INFO/MainProcess] Received task: records.tasks.load_model[db6514af-8447-4fb1-9206-01487021e3db]  
+[2019-03-30 18:25:22,575: INFO/MainProcess] Received task: records.tasks.load_model[8dad8a73-35d2-4e33-97ab-b33bcd6b4ce7]  
+[2019-03-30 18:25:22,576: INFO/MainProcess] Received task: records.tasks.load_model[3b9174ca-1dcf-47c9-8edd-e89553272173]  
+[2019-03-30 18:25:22,576: INFO/MainProcess] Received task: records.tasks.load_model[c5eef38b-3e68-4c19-a6ba-c09389524b7e]  
+[2019-03-30 18:25:22,577: INFO/MainProcess] Received task: records.tasks.load_model[e85327bf-a70e-472e-86e8-687ee59fb330]  
+[2019-03-30 18:25:22,578: INFO/MainProcess] Received task: records.tasks.load_model[7611aec8-87da-4c00-857d-3937bf862c4c]  
+[2019-03-30 18:25:22,578: INFO/MainProcess] Received task: records.tasks.load_model[9107a035-a2b3-46d6-b4f3-b9fb2a98613d]  
+[2019-03-30 18:25:22,579: INFO/MainProcess] Received task: records.tasks.load_model[42334ff1-a663-4ef8-ac75-a8a6405b5ff0]  
+[2019-03-30 18:25:22,579: INFO/MainProcess] Received task: records.tasks.load_model[c30315f8-515e-4b62-b150-1197f82e6c3e]  
+[2019-03-30 18:25:22,580: INFO/MainProcess] Received task: records.tasks.load_model[4f44abc5-3b96-44e1-a977-6d0197d6e484]  
+[2019-03-30 18:25:22,580: INFO/MainProcess] Received task: records.tasks.load_model[c97089a1-04a1-4188-85c1-8e788937ef40]  
+[2019-03-30 18:25:22,581: INFO/MainProcess] Received task: records.tasks.load_model[2c6580a1-9212-4816-a14e-775568ed758c]  
+[2019-03-30 18:25:22,581: INFO/MainProcess] Received task: records.tasks.load_model[693c29ca-f893-4e91-a4b6-6065801a9552]  
+[2019-03-30 18:25:22,582: INFO/MainProcess] Received task: records.tasks.load_model[eac10a0b-a9a5-473a-a3c3-81825aff72ba]  
+[2019-03-30 18:25:22,582: INFO/MainProcess] Received task: records.tasks.load_model[7ebae382-9565-4928-bee4-bdbaad6ef1a5]  
+[2019-03-30 18:25:22,583: INFO/MainProcess] Received task: records.tasks.load_model[50c05ae6-a826-4277-bd5b-09152753bd07]  
+[2019-03-30 18:25:22,583: INFO/MainProcess] Received task: records.tasks.load_model[e7dad18b-a399-4007-a969-c9aec5ce5706]  
+[2019-03-30 18:25:22,584: INFO/MainProcess] Received task: records.tasks.load_model[9ef4cdf7-93d2-46de-b5db-ce024f550401]  
+[2019-03-30 18:25:22,584: INFO/MainProcess] Received task: records.tasks.load_model[ec297054-f0dd-4f8a-b679-8afebd129b1b]  
+[2019-03-30 18:25:22,585: INFO/MainProcess] Received task: records.tasks.load_model[38562dcd-7cb3-4598-be07-a680021eaf95]  
+[2019-03-30 18:25:22,585: INFO/MainProcess] Received task: records.tasks.load_model[3d704c50-e352-4215-a050-51a65d4aa44b]  
+[2019-03-30 18:25:22,586: INFO/MainProcess] Received task: records.tasks.load_model[f4531b4d-2e5b-462e-9efd-9cfa28b66a13]  
+[2019-03-30 18:25:22,586: INFO/MainProcess] Received task: records.tasks.load_model[273d7674-0500-414e-a11c-a2530155b141]  
+[2019-03-30 18:25:22,587: INFO/MainProcess] Received task: records.tasks.load_model[bc54ff83-4064-436c-8e29-b74be42dc294]  
+[2019-03-30 18:25:22,587: INFO/MainProcess] Received task: records.tasks.load_model[ac941d39-545d-43be-9936-6c77d25f0f77]  
+[2019-03-30 18:25:22,588: INFO/MainProcess] Received task: records.tasks.load_model[ac7ae7ad-a249-4936-b169-edca8bb7ac76]  
+[2019-03-30 18:25:22,588: INFO/MainProcess] Received task: records.tasks.load_model[b91eedec-b527-4c74-a311-4de6ec21b58d]  
+[2019-03-30 18:25:22,589: INFO/MainProcess] Received task: records.tasks.load_model[0a40d5ec-f431-47fa-86d1-1b5002a087a5]  
+[2019-03-30 18:25:22,590: INFO/MainProcess] Received task: records.tasks.load_model[1764d8f4-3a3e-4fea-90b7-ed3a5061c5b5]  
+[2019-03-30 18:25:22,590: INFO/MainProcess] Received task: records.tasks.load_model[3d4fe01d-770b-4f7a-b3b8-a6d643eaffc2]  
+[2019-03-30 18:25:32,412: ERROR/MainProcess] Error on stopping Pool: TypeError("can't pickle _thread.lock objects",)
+Traceback (most recent call last):
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/worker/worker.py", line 205, in start
+    self.blueprint.start(self)
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/bootsteps.py", line 370, in start
+    return self.obj.start()
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/worker/consumer/consumer.py", line 316, in start
+    blueprint.start(self)
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/worker/consumer/consumer.py", line 592, in start
+    c.loop(*c.loop_args())
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/worker/loops.py", line 91, in asynloop
+    next(loop)
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/kombu/asynchronous/hub.py", line 298, in create_loop
+    events = poll(poll_timeout)
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/kombu/utils/eventio.py", line 84, in poll
+    return self._epoll.poll(timeout if timeout is not None else -1)
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/apps/worker.py", line 284, in _handle_request
+    raise exc(exitcode)
+celery.exceptions.WorkerShutdown: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/bootsteps.py", line 151, in send_all
+    fun(parent, *args)
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/bootsteps.py", line 374, in stop
+    return self.obj.stop()
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/concurrency/base.py", line 122, in stop
+    self.on_stop()
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/concurrency/prefork.py", line 140, in on_stop
+    self._pool.join()
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/billiard/pool.py", line 1578, in join
+    stop_if_not_current(self._result_handler)
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/billiard/pool.py", line 143, in stop_if_not_current
+    thread.stop(timeout)
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/billiard/pool.py", line 500, in stop
+    self.on_stop_not_started()
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/celery/concurrency/asynpool.py", line 321, in on_stop_not_started
+    check_timeouts()
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/billiard/pool.py", line 744, in handle_event
+    next(self._it)
+  File "/home/migiwara/HBKU/CSE_DBV/venv/lib/python3.6/site-packages/billiard/pool.py", line 697, in handle_timeouts
+    cache = copy.deepcopy(self.cache)
+  File "/usr/lib/python3.6/copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "/usr/lib/python3.6/copy.py", line 240, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/usr/lib/python3.6/copy.py", line 180, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/usr/lib/python3.6/copy.py", line 280, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/usr/lib/python3.6/copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "/usr/lib/python3.6/copy.py", line 240, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/usr/lib/python3.6/copy.py", line 180, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/usr/lib/python3.6/copy.py", line 280, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/usr/lib/python3.6/copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "/usr/lib/python3.6/copy.py", line 240, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/usr/lib/python3.6/copy.py", line 180, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/usr/lib/python3.6/copy.py", line 280, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/usr/lib/python3.6/copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "/usr/lib/python3.6/copy.py", line 240, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/usr/lib/python3.6/copy.py", line 169, in deepcopy
+    rv = reductor(4)
+TypeError: can't pickle _thread.lock objects
+[2019-03-30 18:25:32,446: WARNING/MainProcess] Restoring 48 unacknowledged message(s)

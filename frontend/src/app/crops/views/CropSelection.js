@@ -7,23 +7,23 @@ import hasPermission from "app/components/higherOrder/hasPermission";
 
 class Form extends React.Component {
     render() {
-        const {changeSet, handleChange, handleSubmit} = this.props;
-
+        const {nextUrl, changeSet, handleChange, handleSubmit} = this.props;
         return (
             <form onSubmit={handleSubmit}>
                 <Input
-                    bsStyle={changeSet._errors.first_name ? "error" : null}
+                    bsStyle={changeSet._errors.name ? "error" : null}
                     hasFeedback
-                    help={changeSet._errors.first_name}
+                    help={changeSet._errors.name}
                     label="Crop"
-                    name="crop"
+                    name="name"
                     type="select"
                     onChange={handleChange}
-                    value={changeSet.first_name}
-                    help={changeSet._errors.first_name}
+                    value={changeSet.name}
+                    help={changeSet._errors.name}
+                    nextUrl={nextUrl}
                 >
+                <option>Choose...</option>
                  <option value="alfalfa">Alfalfa</option>
-                 <option value="other">All</option>
                </Input>   
 
                 <button type="submit" className="hidden"/>

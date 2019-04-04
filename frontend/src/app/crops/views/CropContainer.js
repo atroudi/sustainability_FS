@@ -9,9 +9,10 @@ import CropSelection from "./CropSelection";
 class Container extends React.Component {
 
     render(){
+        let nextUrl = this.props.routes[2].path;
         return(
             <div className="text-center">
-                <CropSelection titleSingular="Crop" nextUrl="geolocations" {...this.props} />
+                <CropSelection titleSingular="Select crop to grow" entry="/admin/geolocations" {...this.props} />
             </div>
         )
     }

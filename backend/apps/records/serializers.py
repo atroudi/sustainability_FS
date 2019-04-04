@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Record
+from .models import Record, Crop
 from .models import Prediction
 from .models import Geolocation
 
@@ -23,4 +23,11 @@ class PredictionSerializer(serializers.ModelSerializer):
         model = Prediction
         fields = (
             'id', 'temp_avg', 'humidity_avg', 'solar_radiation', 'water_loss', 'water_actual', 'time', 'label', 'geolocation'
+        )
+
+class CropSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Crop
+        fields = (
+            'id', 'name'
         )

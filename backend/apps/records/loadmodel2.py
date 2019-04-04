@@ -17,7 +17,7 @@ if __name__ == '__main__':
     geolocation_id = 8
     location_label = "Irkhaya Farm"
 
-
+    print("here1")
     # load the pre-trained multi-linear regression model
     with open('model2.pickle', 'rb') as f:
         w_mat = pickle.load(f)
@@ -30,6 +30,7 @@ if __name__ == '__main__':
     # Read a week input values fom database
     conn = psycopg2.connect("host=localhost dbname=biosustainabilitydb user=postgres password=root")
     cur = conn.cursor()
+    print("here2")
 
     # Free up field_prediction table
     try:
@@ -39,8 +40,11 @@ if __name__ == '__main__':
 
 
     try:
+        print("here3")
+
         cur.execute("Select temp_avg,humidity_avg,solar_radiation,water_loss,time from geolocation_records where geolocation_id=8 order by time LIMIT %d OFFSET %d" % (
         OFFSET_LIMIT, startDateOffset))
+        print("here4")
 
         input_data = []
         water_loss_actual = []

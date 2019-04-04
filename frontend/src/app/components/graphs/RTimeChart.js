@@ -37,7 +37,6 @@ function buildPoints_perf(props) {
     Enry_Date=[entries,dates];
     var end = Date.now();
     var elapsed = end - start;
-    // console.log("RT Build points execution time: " + elapsed);
     return Enry_Date;
 }
 

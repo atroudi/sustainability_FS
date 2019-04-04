@@ -6,7 +6,7 @@ class Footer extends React.Component {
         return (
             <footer className="main-footer">
                 <div className="pull-right hidden-xs">CSE College</div>
-                <strong>Copyright &copy; 2018 <a href="#">HBKU</a>.</strong>
+                <strong>Copyright &copy; 2019 <a href="https://www.hbku.edu.qa/en">HBKU</a>.</strong>
                 All rights reserved.
             </footer>
         );

@@ -47,7 +47,6 @@ class PredictionGraph extends React.Component {
         let query = collection.get("query");
 
         if (props.params.geolocation !== nextProps.params.geolocation){
-            console.log("new geolocation")
             query = query.set("search", nextProps.params.geolocation);
             actions.fetchCollection({collection, query});
         }

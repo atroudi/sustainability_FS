@@ -152,8 +152,6 @@ class GraphChartJs extends React.Component{
 
 		const {model,collection} = this.props;
 
-		console.log(collection);
-		console.log(model);
 
 		function formatDate(date) {
 			var hours = date.getHours();
@@ -194,9 +192,6 @@ class GraphChartJs extends React.Component{
 			}
 			count++;
 		});
-		console.log(entries);
-
-		// console.log(datelabels);
 
 		// datelabels = collection.models.toList().map(model => model.id);
 
@@ -211,8 +206,6 @@ class GraphChartJs extends React.Component{
 		.map(model => 
 			entries.push(parseInt(model.getSgv()))
 		);
-		// console.log(entries);
-		// console.log(model.id)
 		// var entries2 = [];
 		// var entries2 = entries.slice(0, 50);
 		data2.datasets.push(

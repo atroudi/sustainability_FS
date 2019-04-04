@@ -223,8 +223,6 @@ export default class Map extends Component {
       this.props.history.push("/admin/"+ this.props.route.path + "/" + key + "/field/prediction")
     }
     else {
-      console.log("/admin/"+ this.props.route.path + "/" + key + "/rtime")
-
       this.props.history.push("/admin/"+ this.props.route.path + "/" + key + "/rtime")
 
     }
@@ -272,7 +270,6 @@ export default class Map extends Component {
     // const places = this.props.greatPlaces
     //   .map(place => {
     //     const {id, ...coords} = place;
-    //     console.log(id)
 
     //     return (
     //       <MyGreatPlaceWithControllableHover

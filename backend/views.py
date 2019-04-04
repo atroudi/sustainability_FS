@@ -16,8 +16,10 @@ def index(request):
 @login_required
 def app(request):
     context = {
-        'permissions': json.dumps(list(request.user.get_all_permissions()))
-    }
+        'permissions': json.dumps(list(request.user.get_all_permissions())),
+        'decisions': json.dumps(list(request.user.get_all_permissions()))
 
+    }
+    print(json.dumps(list(request.user.get_all_permissions())))
     template = 'backend/app.html'
     return render(request, template, context)
