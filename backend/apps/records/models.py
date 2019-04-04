@@ -12,7 +12,7 @@ class Record(models.Model):
     label = models.CharField(max_length=100)
     solar_radiation = models.FloatField(null=True, blank=True)
     water_loss = models.FloatField(null=True, blank=True)
-
+    risk = models.FloatField(null=True, blank=True)
     geolocation = models.ForeignKey('Geolocation')
 
     class Meta:
@@ -48,3 +48,13 @@ class Prediction(models.Model):
     class Meta:
         managed = True
         db_table = 'field_prediction'
+
+
+class Crop(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=100)
+    decision = models.BooleanField(default=False)
+
+    class Meta:
+        managed = True
+        db_table = 'crop'

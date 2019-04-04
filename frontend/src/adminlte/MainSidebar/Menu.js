@@ -4,28 +4,34 @@ import {Link} from "react-router";
 
 
 const allLinks = [
-    {
+    // {
+    //     permission: "users.view_emailuser",
+    //     text: "Crop selection",
+    //     to: "/admin/crops/",
+    //     icon: "fa fa-map"
+    // },
+    // {
+    //     permission: "users.view_emailuser",
+    //     text: "Field selection",
+    //     to: "/admin/geolocations/",
+    //     icon: "fa fa-map"
+    // },
+        {
         permission: "users.view_emailuser",
-        text: "Crop selection",
-        to: "/admin/crops/",
-        icon: "fa fa-map"
-    },
-    {
-        permission: "users.view_emailuser",
-        text: "Field selection",
-        to: "/admin/geolocations/",
+        text: "Home",
+        to: "/admin/home/",
         icon: "fa fa-map"
     },
     {
         permission: "users.view_emailuser",
         text: "Visualizations",
-        to: "/admin/geolocations/",
+        to: "/admin/crops/",
         icon: "fa fa-map"
     },
     {
         permission: "users.view_emailuser",
         text: "Decision",
-        to: "/admin/geolocations/",
+        to: "/admin/decision/",
         icon: "fa fa-map"
     },
     // {
@@ -62,16 +68,13 @@ export default class Menu extends React.Component {
         this.state = {
           activeIndex: 0
         }
-        console.log(this)
     }
     
     componentWillReceiveProps(){
-        console.log(this)
     }
     
     toggleClass(index, e) {
         this.setState({ activeIndex: index });
-        console.log(index)
     };
 
     render() {
@@ -83,7 +86,7 @@ export default class Menu extends React.Component {
                         <li className={this.state.activeIndex==key ? 'active': null}
                         onClick={this.toggleClass.bind(this, key)}
                         key={key}>
-                            <Link to={link.to}>
+                            <Link nextUrl={link.text} to={link.to}>
                                 <i className={link.icon}/>
                                 <span>{link.text}</span>
                             </Link>

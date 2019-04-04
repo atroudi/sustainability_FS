@@ -44,7 +44,6 @@ function  buildPoints_perf(props) {
     let points = [];
     var start = Date.now();
      
-    // console.log(collection.models.toList())
     collection.models.toList().
     sort((a, b) => a.id - b.id).
     map((model, key) => {
@@ -56,7 +55,6 @@ function  buildPoints_perf(props) {
     });
     var end = Date.now();
     var elapsed = end - start;
-    console.log(elapsed);
     return points;
 
 }

@@ -32,7 +32,6 @@ class Container extends React.Component {
         if (props.params.geolocation !== nextProps.params.geolocation){
             query = query.set("search", nextProps.params.geolocation);
             actions.fetchCollection({collection, query});
-            console.log(props.params.geolocation);
         }
     }
 

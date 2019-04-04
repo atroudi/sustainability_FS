@@ -12,7 +12,6 @@ class TabGraphsContainer extends React.Component {
     componentWillMount() {
         const {props} = this;
         this.setState({activeKey: props.children.props.route.path});
-        console.log(React.version);
     }
 
     componentWillReceiveProps(nextProps) {
