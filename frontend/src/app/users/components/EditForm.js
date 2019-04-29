@@ -13,7 +13,6 @@ class Form extends React.Component {
             <form onSubmit={handleSubmit}>
                 <Input
                     bsStyle={changeSet._errors.first_name ? "error" : null}
-                    hasFeedback
                     help={changeSet._errors.first_name}
                     label="First Name"
                     name="first_name"
@@ -24,7 +23,6 @@ class Form extends React.Component {
                 />
                 <Input
                     bsStyle={changeSet._errors.last_name ? "error" : null}
-                    hasFeedback
                     help={changeSet._errors.last_name}
                     label="Last Name"
                     name="last_name"
@@ -35,7 +33,6 @@ class Form extends React.Component {
                 <Input
                     autoComplete="off"
                     bsStyle={changeSet._errors.email ? "error" : null}
-                    hasFeedback
                     help={changeSet._errors.email}
                     label="Email"
                     name="email"

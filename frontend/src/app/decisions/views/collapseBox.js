@@ -8,17 +8,6 @@ import {Col, Row} from "react-bootstrap";
 import InfoBox from "./InfoBox"
 class Container extends React.Component {
 
-    constructor(props) {
-        super(props);
-        const {actions, collection} = props;
-        let query = collection.get("query");
-        query = query.set("search", "");
-        query = query.set("crop", "alflfa");
-        query = query.set("demand", 200);
-        actions.fetchCollection({collection, query});
-        console.log(this.props);
-    }
-
     render(){        
         return(
             

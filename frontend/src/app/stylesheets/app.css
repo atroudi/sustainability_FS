@@ -1123,7 +1123,7 @@
     border-color: #378663;
   }
 
-  .btn-primary:active,
+.btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
@@ -1144,4 +1144,33 @@
 .redirect-link-text:hover {
   color: #06a35c;
   background-color: #fff;
+}
+
+.countries-panel {
+  border-top-color: #605ca8;
+}
+
+.nav-tabs-custom {
+  /* position: absolute; */
+  margin: 15px;
+  /* top: 0; */
+  /* right: 0; */
+}
+.hint--info .hint__content.field {
+ background-image: url('../images/food/photo1.png');
+}
+
+.content {
+  padding: 0px 15px;
+}
+
+.home-container {
+  padding: 15px;
+}
+
+.home-text {
+  font-size: 15px;
+}
+.text-center {
+  padding: 15px;
 }

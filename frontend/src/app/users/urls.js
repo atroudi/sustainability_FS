@@ -22,7 +22,7 @@ const routes = (
             <Route path="field/prediction" component={PredictionGraph}/>
             <Route path="images" component={PicTab}/>
             <Route path="records" component={RecordsGraph}/>
-            <IndexRedirect to="rtime"/>
+            {/* <IndexRedirect to="rtime"/> */}
             <Route path="rtime" component={RTimeGraph}/>
         </Route>
     </Route>

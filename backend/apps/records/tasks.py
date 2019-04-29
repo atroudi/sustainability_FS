@@ -4,6 +4,8 @@ from celery import shared_task
 import pickle
 import psycopg2
 import numpy as np
+import pandas as pd
+
 
 @shared_task
 def hello():

@@ -7,6 +7,8 @@ import records from "app/users/recordReducers";
 import predictions from "app/users/predictionReducers";
 import geolocations from "app/users/Reducers_geolocation";
 import crops from "app/crops/reducers"
+import decisions from "app/decisions/reducers"
+import imports from "app/decisions/reducers_import"
 
 export default combineReducers({
     adminlte,
@@ -15,5 +17,7 @@ export default combineReducers({
     records,
     predictions,
     geolocations,
-    crops
+    crops,
+    decisions,
+    imports
 });

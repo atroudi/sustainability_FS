@@ -7,7 +7,12 @@ import actions from "app/actions/collection";
 import CropSelection from "./CropSelection";
 
 class Container extends React.Component {
-
+    componentWillMount() { 
+        const {actions, collection} = this.props;
+        let query = collection.get("query");
+        query = query.set("week", 0);
+        actions.fetchCollection({collection, query});
+    }
     render(){
         let nextUrl = this.props.routes[2].path;
         return(
@@ -19,7 +24,7 @@ class Container extends React.Component {
 }
 
 const selector = createSelector(
-    (state) => state.geolocations,
+    (state) => state.predictions,
     (collection) => {
         return {
             collection,

@@ -22,19 +22,19 @@ class UserMenu extends React.Component {
                     className="cursor-pointer dropdown-toggle"
                 >
                     <img
-                        src={`${staticRoot}adminlte/img/user2-160x160.jpg`}
+                        src={`${staticRoot}adminlte/img/sus_logo_withbackground.png`}
                         className="user-image" alt="User Image"
                     />
-                    <span className="hidden-xs">{window.django.user.full_name}</span>
+                    <span className="hidden-xs">National Food Security Decision Platform</span>
                 </a>
 
                 <ul className="dropdown-menu">
                     <li className="user-header">
-                        <img src={`${staticRoot}adminlte/img/user2-160x160.jpg`}
+                        <img src={`${staticRoot}adminlte/img/sus_logo_withbackground.png`}
                             className="img-circle" alt="User Image" />
 
                         <p>
-                            {window.django.user.full_name}
+                            NFSDP Admin
                             <small>Last Login {window.django.user.last_login}</small>
                         </p>
                     </li>

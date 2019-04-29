@@ -32,7 +32,7 @@ class Container extends React.Component {
 }
 
 const selector = createSelector(
-    (state) => state.reducer,
+    (state) => state.imports,
     (collection) => {
         return {
             collection

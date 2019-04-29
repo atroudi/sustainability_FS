@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Record, Crop
+from .models import Record, Crop, Decision, ImportCountries
 from .models import Prediction
 from .models import Geolocation
 
@@ -30,4 +30,19 @@ class CropSerializer(serializers.ModelSerializer):
         model = Crop
         fields = (
             'id', 'name'
+        )
+
+class DecisionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Decision
+        fields = (
+            'id', 'demand', 'crop_inventory', 'time', 'month', 'decision_flag',
+            'tmp_grow', 'tmp_import', 'crop_inventory', 'cost', 'env'
+        )
+
+class ImportCoutriesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ImportCountries
+        fields = (
+            'id', 'full_name', 'abbr', 'quantity_import', 'rank'
         )

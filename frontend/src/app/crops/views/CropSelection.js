@@ -1,5 +1,5 @@
 import React from "react";
-import {Input} from "react-bootstrap";
+import {FormGroup, ControlLabel, FormControl, Input} from "react-bootstrap";
 
 import selection from "app/components/higherOrder/selection";
 import hasPermission from "app/components/higherOrder/hasPermission";
@@ -10,21 +10,24 @@ class Form extends React.Component {
         const {nextUrl, changeSet, handleChange, handleSubmit} = this.props;
         return (
             <form onSubmit={handleSubmit}>
-                <Input
+            
+            <ControlLabel>Crop</ControlLabel>
+                <FormControl
                     bsStyle={changeSet._errors.name ? "error" : null}
-                    hasFeedback
                     help={changeSet._errors.name}
-                    label="Crop"
+                    // label="Crop"
                     name="name"
                     type="select"
                     onChange={handleChange}
                     value={changeSet.name}
                     help={changeSet._errors.name}
                     nextUrl={nextUrl}
+                    componentClass="select" 
                 >
-                <option>Choose...</option>
-                 <option value="alfalfa">Alfalfa</option>
-               </Input>   
+                    <option value="select">Choose ...</option>
+                    <option value="alfalfa">Alfalfa</option>
+                    <option value="Tomato-lettuce-strawberry">Tomato-lettuce-strawberry</option>
+               </FormControl>   
 
                 <button type="submit" className="hidden"/>
             </form>

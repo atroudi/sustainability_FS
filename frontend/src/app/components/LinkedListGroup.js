@@ -5,10 +5,11 @@ import {Link} from "react-router";
 class LinkedListGroup extends React.Component {
     render() {
         const {collection} = this.props;
-
         return (
             <div className="list-group" style={{opacity: collection.isLoading ? 0.5 : 1}}>
-                {collection.models.toList().map((model, key) =>
+                {collection.models.toList()
+                .sort((model1,model2) => model1.quantity_import<model2.quantity_import)
+                .map((model, key) =>
                 <Link
                     activeClassName="active"
                     className="list-group-item"

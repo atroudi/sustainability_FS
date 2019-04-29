@@ -12,12 +12,8 @@ const routes = (
         <IndexRedirect to="crops"/>
             <Route path="crops" component={CropContainer}>
                 <Route path=":crop" component={DemandContainer}>
-                    {/* <IndexRedirect to="demands"/> */}
-                    {/* <Route path="demands" component={DecisionContainer}> */}
-                        <Route path=":demand*" component={DecisionContainer}>
-                        
-                        {/* </Route> */}
-                    </Route>
+                <Route path=":demand" component={DecisionContainer}/>
+
                 </Route>
         </Route>
     </Route>

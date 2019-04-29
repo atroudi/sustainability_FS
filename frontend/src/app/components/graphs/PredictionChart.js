@@ -188,17 +188,19 @@ class PredictionChart extends React.Component {
         
     }
  
-
+    // # TODO: Change the below to didmount cause it will load the data after modification made in the constructor function
     componentWillMount() { 
         const {actions, collection} = this.props;
         let query = collection.get("query");
-        query = query.set("week", 0);
+        // query = query.set("week", 0);
         actions.fetchCollection({collection, query});
         console.log("2 fetch done")
 
         this.intialize_events();
     }
 
+    // Yeah why not keeping this in case the user is navigating through tabs and you want to reinitialize prediction data everytime as the 
+    // Actually it's quite important one; atherwise it will break everytime it loads this graph from previous disconnected prediction state
     componentWillUnmount() {
         const {actions, collection} = this.props;
         let query = collection.get("query");

@@ -6,7 +6,6 @@ import Pagination from "app/components/Pagination";
 import RefreshButton from "app/components/RefreshButton";
 import SearchBox from "app/components/SearchBox";
 
-
 class MasterBox extends React.Component {
     render() {
         const {collection, CreateForm, QueryForm} = this.props;

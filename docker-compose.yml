@@ -13,6 +13,8 @@ services:
       - POSTGRES_PASSWORD:'qatar123'
     ports:
       - "5432:5432"
+  redis:
+    image: "redis:alpine"
   django:
     build: .
 #    command: ["python", "manage.py", "migrate"]
@@ -31,6 +33,14 @@ services:
       - node-modules:/app/frontend/node_modules
     ports:
       - "3000:3000"
+  celery:
+    build: .
+    command: celery -A proj worker -l info
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+      - redis
 
 volumes:
   node-modules:
