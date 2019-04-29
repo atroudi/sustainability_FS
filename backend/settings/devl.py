@@ -12,20 +12,20 @@ DATABASES = {
     'default': {
 
         # DEVELOPMENT INIT DB
-        'ENGINE': 'django.db.backends.postgresql',
-        'USER': 'migiwara',
-        'PASSWORD': 'root',
-        'HOST':'localhost',
-        'PORT':'5432',
-        'NAME': 'biosustainabilitydb',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'USER': 'migiwara',
+        # 'PASSWORD': 'root',
+        # 'HOST':'localhost',
+        # 'PORT':'5432',
+        # 'NAME': 'biosustainabilitydb',
 
         # DOCKER INIT DB
 
-        # 'ENGINE': 'django.db.backends.postgresql',
-        # 'USER': 'biosensorsadmin',
-        # 'NAME': 'biosensorsdb',
-        # 'PASSWORD': 'qatar123',
-        # 'HOST': 'db'
+        'ENGINE': 'django.db.backends.postgresql',
+        'USER': 'biosensorsadmin',
+        'NAME': 'biosensorsdb',
+        'PASSWORD': 'qatar123',
+        'HOST': 'db'
     }
 }
 
