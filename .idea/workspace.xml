@@ -2,35 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
+      <change afterPath="$PROJECT_DIR$/backend/apps/records/Country_Facts.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/records/decision/Country_Facts.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/records/decision/Demand.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/records/decision/agent_decision_making.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/records/decision/model2.pickle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/records/decision_task.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/records/demand_dt_2.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/records/loadmodel2.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/loadmodel2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/records/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/records/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/tasks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/records/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/records/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/templates/backend/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/backend/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/backend/templates/registration/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/celery.logs" beforeDir="false" afterPath="$PROJECT_DIR$/celery.logs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/GlucoseChartJs2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/Content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/ContentWrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/ContentWrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/Logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/UserMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainHeader/UserMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/ContainerMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/ContainerMap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/Map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/PredictionChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/PredictionChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/RTInputChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/RTInputChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/RTimeChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/RTimeChart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/selection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/list/Box.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/list/Box.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/crops/views/CropContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/crops/views/CropContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/crops/views/CropSelection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/crops/views/CropSelection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/MainFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/MainFooter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/layouts/Admin/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/urls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/CropContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/CropContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/CropSelection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/CropSelection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DemandContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DemandContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DemandSelection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DemandSelection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/InfoBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/InfoBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/collapseBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/collapseBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/views/HomeContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/views/HomeContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/urls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/FieldHistoricalGraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/FieldHistoricalGraph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/PredictionGraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/PredictionGraph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/RTimeGraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/RTimeGraph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/RecordsGraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/RecordsGraph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/Tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/components/CreateForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/components/CreateForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/components/EditForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/components/EditForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/urls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/Detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/Detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/PicTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/PicTab.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,70 +67,13 @@
     <favorites_list name="biosustainability" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.36731938">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#0#20#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/apps/records/tasks.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-                  <folding>
-                    <element signature="e#0#9#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/Agents.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="64" column="33" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/run.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="24" selection-start-line="24" selection-end-line="24" />
-                  <folding>
-                    <element signature="e#0#10#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/decision.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-                  <folding>
-                    <element signature="e#0#10#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/Economy.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
+                <state relative-caret-position="360">
                   <caret line="22" column="31" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="31" />
                   <folding>
                     <element signature="e#0#22#0" expanded="true" />
@@ -122,17 +85,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/Demand.csv">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
+                <state relative-caret-position="180">
                   <caret line="10" column="52" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="52" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/backend/apps/records/loadmodel2.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="49" />
+                <state relative-caret-position="1152">
+                  <caret line="70" column="28" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="28" />
                   <folding>
                     <element signature="e#0#10#0" expanded="true" />
                   </folding>
@@ -141,9 +104,59 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/apps/records/decision/agent_decision_making.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="578">
+                  <caret line="239" selection-start-line="239" selection-end-line="239" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/requirements.txt">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/apps/records/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="326">
+                  <caret line="122" column="52" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="52" />
+                  <folding>
+                    <element signature="e#0#11#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/apps/records/decision_task.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="316">
+                  <caret line="278" column="20" selection-start-line="278" selection-start-column="20" selection-end-line="278" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/backend/settings/devl.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="13" column="21" selection-start-line="13" selection-end-line="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/backend/apps/records/loadmodel.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="528">
+                <state relative-caret-position="270">
                   <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
@@ -155,11 +168,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/backend/apps/records/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#1743#1942#0" />
-                  </folding>
+                <state relative-caret-position="1188">
+                  <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -167,98 +177,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/apps/records/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="738">
-                  <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#0#11#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/message.log">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-                </state>
-              </provider>
-            </entry>
-          </file>
+        <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Commands.txt">
+            <entry file="file://$PROJECT_DIR$/docker-compose.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1023">
-                  <caret line="32" column="51" selection-start-line="32" selection-end-line="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/celery.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/templates/backend/app.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="18" column="20" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#0#11#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/templates/registration/base.html">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/Admin/MainFooter.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/apps/users/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/apps/users/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="2" selection-start-line="2" selection-end-line="2" />
+                <state relative-caret-position="288">
+                  <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -278,21 +202,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Djan</find>
-      <find>data</find>
-      <find>permissions</find>
-      <find>form</find>
-      <find>green</find>
-      <find>purple</find>
-      <find>record</find>
-      <find>rec</find>
-      <find>debug</find>
-      <find>settings</find>
-      <find>STATIC</find>
-      <find>MiddlewareMixin</find>
-      <find>INTER</find>
-      <find>DEBUG</find>
-      <find>create</find>
       <find>retrieve</find>
       <find>search</find>
       <find>puto</find>
@@ -300,13 +209,29 @@
       <find>model2.pickle</find>
       <find>OFFSET_LIMIT</find>
       <find>request</find>
-      <find>print</find>
       <find>hello</find>
       <find>week</find>
       <find>_make_decision</find>
       <find>Shortage in the</find>
       <find>step</find>
       <find>680</find>
+      <find>file</find>
+      <find>data</find>
+      <find>startDateOffset</find>
+      <find>records</find>
+      <find>input_data</find>
+      <find>w_mat</find>
+      <find>id</find>
+      <find>int</find>
+      <find>sudo</find>
+      <find>import_crop</find>
+      <find>tasks</find>
+      <find>model_file_location</find>
+      <find>import_dict</find>
+      <find>print</find>
+      <find>field_prediction</find>
+      <find>Demand</find>
+      <find>crop_demand</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -322,13 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/apps/snippets/permissions.py" />
-        <option value="$PROJECT_DIR$/backend/apps/snippets/models.py" />
-        <option value="$PROJECT_DIR$/backend/apps/snippets/views.py" />
-        <option value="$PROJECT_DIR$/backend/apps/snippets/serializers.py" />
-        <option value="$PROJECT_DIR$/backend/apps/snippets/urls.py" />
-        <option value="$PROJECT_DIR$/backend/templates/signup.html" />
-        <option value="$PROJECT_DIR$/backend/apps/users/forms.py" />
         <option value="$USER_HOME$/anaconda3/lib/python3.6/site-packages/django/contrib/auth/forms.py" />
         <option value="$PROJECT_DIR$/frontend/dist/stylesheets.css" />
         <option value="$PROJECT_DIR$/frontend/build/stylesheets.css" />
@@ -339,7 +257,6 @@
         <option value="$PROJECT_DIR$/backend/apps/users/models.py" />
         <option value="$PROJECT_DIR$/backend/apps/users/management/view_permission.py" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/LinkedListGroup.js" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/frontend/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" />
@@ -354,13 +271,7 @@
         <option value="$PROJECT_DIR$/backend/__init__.py" />
         <option value="$PROJECT_DIR$/backend/settings/devl.py" />
         <option value="$PROJECT_DIR$/backend/celery.py" />
-        <option value="$PROJECT_DIR$/backend/apps/records/loadmodel.py" />
         <option value="$PROJECT_DIR$/backend/apps/records/storeActual.py" />
-        <option value="$PROJECT_DIR$/backend/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/backend/templates/registration/signup.html" />
-        <option value="$PROJECT_DIR$/backend/apps/records/serializers.py" />
-        <option value="$PROJECT_DIR$/backend/templates/backend/app.html" />
-        <option value="$PROJECT_DIR$/backend/apps/records/urls.py" />
         <option value="$PROJECT_DIR$/backend/apps/records/migrations/decison/Economy.py" />
         <option value="$PROJECT_DIR$/backend/apps/records/migrations/decison/decision.py" />
         <option value="$PROJECT_DIR$/backend/apps/records/migrations/decison/Demand.csv" />
@@ -368,19 +279,33 @@
         <option value="$PROJECT_DIR$/backend/apps/records/migrations/decison/Agents.py" />
         <option value="$PROJECT_DIR$/backend/apps/records/migrations/decison/run.py" />
         <option value="$PROJECT_DIR$/backend/views.py" />
-        <option value="$PROJECT_DIR$/backend/apps/records/views.py" />
-        <option value="$PROJECT_DIR$/backend/apps/records/models.py" />
-        <option value="$PROJECT_DIR$/backend/apps/records/tasks.py" />
-        <option value="$PROJECT_DIR$/backend/apps/records/loadmodel2.py" />
         <option value="$PROJECT_DIR$/Commands.txt" />
+        <option value="$PROJECT_DIR$/backend/apps/records/loadmodel.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/loadmodel2.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/urls.py" />
+        <option value="$PROJECT_DIR$/backend/templates/backend/app.html" />
+        <option value="$PROJECT_DIR$/backend/apps/records/models.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/agent_decision_making.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/tasks.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/serializers.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/decision/agent_decision_making.py" />
+        <option value="$PROJECT_DIR$/backend/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/backend/templates/registration/signup.html" />
+        <option value="$PROJECT_DIR$/backend/apps/records/decision/agent_decision_making_latest.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/decision/demand_dt_2.csv" />
+        <option value="$PROJECT_DIR$/backend/apps/records/demand_dt_2.csv" />
+        <option value="$PROJECT_DIR$/backend/apps/records/views.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/decision/agent_decision_making_v2.py" />
+        <option value="$PROJECT_DIR$/backend/apps/records/decision_task.py" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3840" />
-    <option name="y" value="18" />
-    <option name="width" value="3840" />
-    <option name="height" value="2142" />
+    <option name="x" value="1920" />
+    <option name="y" value="-10" />
+    <option name="width" value="1920" />
+    <option name="height" value="1090" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -388,6 +313,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -418,7 +344,8 @@
               <item name="biosustainability" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="records" type="462c0819:PsiDirectoryNode" />
+              <item name="decision" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="biosustainability" type="b2602c69:ProjectViewProjectNode" />
@@ -431,27 +358,31 @@
               <item name="biosustainability" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biosustainability" type="b2602c69:ProjectViewProjectNode" />
+              <item name="biosustainability" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/apps/records" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/frontend/node_modules/eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -463,15 +394,16 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backend/apps/records/migrations/decison" />
-      <recent name="$PROJECT_DIR$/backend/static" />
-      <recent name="$PROJECT_DIR$/backend/apps/records" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend/apps/users/registration" />
       <recent name="$PROJECT_DIR$/backend/templates/registration" />
       <recent name="$PROJECT_DIR$/backend/templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/apps/records" />
+      <recent name="$PROJECT_DIR$/backend/apps/records/decision" />
+      <recent name="$PROJECT_DIR$/backend/apps/records/migrations/decison" />
+      <recent name="$PROJECT_DIR$/backend/static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -487,13 +419,12 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="BiosustainabilityServer" type="Python.DjangoServer" factoryName="Django server">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
       <module name="biosustainability" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="backend.settings.devl" />
       </envs>
       <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -503,6 +434,30 @@
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="4000" />
       <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sus" type="Python.DjangoServer" factoryName="Django server">
+      <module name="biosustainability" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="4000" />
+      <option name="host" value="0.0.0.0" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -568,7 +523,38 @@
       <workItem from="1552807332570" duration="13371000" />
       <workItem from="1553636223296" duration="24839000" />
       <workItem from="1554193075739" duration="423000" />
-      <workItem from="1554193539949" duration="8770000" />
+      <workItem from="1554193539949" duration="10090000" />
+      <workItem from="1554373424870" duration="32000" />
+      <workItem from="1554373737415" duration="1772000" />
+      <workItem from="1554377580839" duration="25000" />
+      <workItem from="1554377861311" duration="2409000" />
+      <workItem from="1554399890969" duration="1411000" />
+      <workItem from="1554491065045" duration="1571000" />
+      <workItem from="1554510924209" duration="293000" />
+      <workItem from="1554511291507" duration="997000" />
+      <workItem from="1554550264910" duration="327000" />
+      <workItem from="1554560050707" duration="17434000" />
+      <workItem from="1554681848596" duration="14934000" />
+      <workItem from="1554722012555" duration="9724000" />
+      <workItem from="1554810286592" duration="3204000" />
+      <workItem from="1554885173760" duration="13670000" />
+      <workItem from="1554935300478" duration="730000" />
+      <workItem from="1554942764250" duration="6937000" />
+      <workItem from="1555085347896" duration="1982000" />
+      <workItem from="1555232145094" duration="1254000" />
+      <workItem from="1555239816348" duration="2376000" />
+      <workItem from="1555405041394" duration="3934000" />
+      <workItem from="1555524966413" duration="3174000" />
+      <workItem from="1555836873214" duration="1797000" />
+      <workItem from="1555922315418" duration="5573000" />
+      <workItem from="1555965107571" duration="7185000" />
+      <workItem from="1556050806328" duration="1931000" />
+      <workItem from="1556094247323" duration="15533000" />
+      <workItem from="1556255694505" duration="7082000" />
+      <workItem from="1556376290440" duration="651000" />
+      <workItem from="1556435670844" duration="3852000" />
+      <workItem from="1556483768057" duration="3268000" />
+      <workItem from="1556528638710" duration="2641000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1535285696860</created>
@@ -616,7 +602,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295239000" />
+    <option name="totallyTimeSpent" value="434262000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -628,24 +614,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3840" y="18" width="3840" height="2142" extended-state="6" />
+    <frame x="1920" y="-10" width="1920" height="1090" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49954668" visible="true" weight="0.17367022" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.5004533" side_tool="true" weight="0.17495854" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976" visible="true" weight="0.16577825" />
+      <window_info id="Structure" order="1" sideWeight="0.5024" side_tool="true" weight="0.19458264" />
+      <window_info id="Favorites" order="2" sideWeight="0.5024" side_tool="true" weight="0.19458264" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.3291536" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.57579786" visible="true" weight="0.32224533" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4978678" weight="0.32881" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.14372581" visible="true" weight="0.427957" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978677" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32967606" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4991708" weight="0.32903227" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32920924" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4997236" weight="0.32903227" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49972558" weight="0.32900208" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4242021" side_tool="true" visible="true" weight="0.32224533" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.42398465" side_tool="true" weight="0.50987524" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.498618" weight="0.32795697" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.5021322" side_tool="true" visible="true" weight="0.30897704" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50082916" side_tool="true" weight="0.32903227" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -653,6 +640,30 @@
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976" visible="true" weight="0.1705757" />
+      <window_info id="Structure" order="1" sideWeight="0.5024" side_tool="true" weight="0.19458264" />
+      <window_info id="Favorites" order="2" sideWeight="0.5024" side_tool="true" weight="0.19458264" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.3291536" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.14372581" visible="true" weight="0.427957" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978677" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4991708" weight="0.32903227" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4997236" weight="0.32903227" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.498618" weight="0.32795697" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.8562742" side_tool="true" visible="true" weight="0.41544884" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50082916" side_tool="true" weight="0.32903227" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -682,134 +693,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/debug_toolbar/middleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/settings/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../CSE_DBV/venv/lib/python3.6/site-packages/django/apps/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="162" selection-start-line="162" selection-end-line="162" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../CSE_DBV/venv/lib/python3.6/site-packages/psycopg2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3306">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/Mukenis_Data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../CSE_DBV/venv/lib/python3.6/site-packages/django/db/backends/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-384" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/settings/devl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-448">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib64/python3.6/site-packages/kombu/utils/div.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/db/models/query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11136">
-          <caret line="370" selection-start-line="370" selection-end-line="370" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/storeActual.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="8" selection-start-line="8" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/rest_framework/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
@@ -844,20 +727,6 @@
     <entry file="file://$PROJECT_DIR$/backend/permissions.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/templates/registration/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -888,16 +757,6 @@
     <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/Country_Facts.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/utils/autoreload.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5136">
@@ -905,19 +764,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="54">
           <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
@@ -925,77 +774,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/Agents.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="64" column="33" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/decision.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/Economy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/Demand.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/message.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="342">
           <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/celery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/templates/backend/app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="234">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="20" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -1006,60 +794,148 @@
     <entry file="file://$PROJECT_DIR$/backend/templates/registration/base.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/Admin/MainFooter.js">
+    <entry file="file://$PROJECT_DIR$/backend/templates/backend/app.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        <state relative-caret-position="558">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/models.py">
+    <entry file="file://$PROJECT_DIR$/../../CSE_DBV/venv/lib/python3.6/site-packages/celery/app/task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+        <state relative-caret-position="1597">
+          <caret line="378" selection-start-line="378" selection-end-line="378" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/users/urls.py">
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/agent_decision_making.py" />
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="648">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
           <folding>
-            <element signature="e#1743#1942#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/apps/records/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="1764">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/Agents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/biosustainability/sarah/demand_dt_2.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/decision/Country_Facts.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="12" selection-start-line="15" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/templates/registration/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/Country_Facts.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/decision_task_old.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/decision/demand_dt_2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="31" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/demand_dt_2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/decision.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/Economy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/migrations/decison/Demand.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/loadmodel2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/apps/records/loadmodel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
+        <state relative-caret-position="270">
           <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -1067,20 +943,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/apps/records/loadmodel2.py">
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="49" />
+        <state relative-caret-position="1188">
+          <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/settings/devl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="21" selection-start-line="13" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/requirements/common.pip">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="8" selection-start-line="4" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/decision_task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="278" column="20" selection-start-line="278" selection-start-column="20" selection-end-line="278" selection-end-column="20" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/demand_dt_3.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/decision/agent_decision_making_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4200">
+          <caret line="270" selection-start-line="270" selection-end-line="271" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/decision/agent_decision_making_latest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="251" column="14" selection-start-line="251" selection-start-column="12" selection-end-line="251" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Commands.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1023">
-          <caret line="32" column="51" selection-start-line="32" selection-end-line="33" />
+        <state relative-caret-position="540">
+          <caret line="30" column="14" selection-start-line="30" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/layouts/Admin/MainFooter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="65" column="15" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/users/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="122" column="52" selection-start-line="122" selection-start-column="47" selection-end-line="122" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/apps/records/decision/agent_decision_making.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="239" selection-start-line="239" selection-end-line="239" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
         </state>
       </provider>
     </entry>

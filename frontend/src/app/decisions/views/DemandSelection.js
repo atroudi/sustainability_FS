@@ -1,18 +1,23 @@
 import React from "react";
-import {Input} from "react-bootstrap";
-
 import selection from "app/components/higherOrder/selection";
 import hasPermission from "app/components/higherOrder/hasPermission";
+import {FormGroup, ControlLabel, FormControl} from "react-bootstrap";
 
 
 class Form extends React.Component {
+
+    _onChangePredictionDay = (evnt) => {
+        this.setState({day:evnt.target.value})
+    }
+
     render() {
         const {changeSet, handleChange, handleSubmit} = this.props;
         return (
             <form onSubmit={handleSubmit}>
-                <Input
+                <ControlLabel>Demand (T)</ControlLabel>
+
+                <FormControl
                     bsStyle={changeSet._errors.demand ? "error" : null}
-                    hasFeedback
                     help={changeSet._errors.demand}
                     label="Demand"
                     name="demand"
@@ -21,20 +26,32 @@ class Form extends React.Component {
                     value={changeSet.demand}
                     help={changeSet._errors.demand}
                 >
-               </Input>   
-
-               <Input
+               </FormControl>  
+                <br/>
+               <ControlLabel>Inventory [Optional]</ControlLabel>
+               <FormControl
                     bsStyle={changeSet._errors.inventory ? "error" : null}
-                    hasFeedback
                     help={changeSet._errors.inventory}
                     label="Inventory (optional)"
-                    name="inventory"
+                    name="crop_inventory"
                     type="number"
                     onChange={handleChange}
-                    value={changeSet.inventory}
+                    value={changeSet.crop_inventory}
                     help={changeSet._errors.inventory}
                 >
-               </Input>   
+               </FormControl>   
+               <br/>
+               <div className="input">
+               <ControlLabel>Select Decision Day</ControlLabel>
+
+                <FormControl 
+                    className="icheck"
+                    type="date"
+                    name="time"
+                    onChange={handleChange}
+                    value={changeSet.time}
+                    />
+                </div>
 
                 <button type="submit" className="hidden"/>
             </form>

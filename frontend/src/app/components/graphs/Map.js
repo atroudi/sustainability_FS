@@ -52,7 +52,7 @@ import PropTypes from 'prop-types';
 import shouldPureComponentUpdate from 'react-pure-render/function';
 import controllable from 'react-controllables';
 import { GoogleApiWrapper, InfoWindow, Marker } from 'google-map-react';
-
+import {browserHistory} from 'react-router';
 import GoogleMap from 'google-map-react';
 
 
@@ -220,10 +220,13 @@ export default class Map extends Component {
     });
     // redirect properly stations and fields
     if (childProps.is_field){
-      this.props.history.push("/admin/"+ this.props.route.path + "/" + key + "/field/prediction")
+      console.log(this.props.context)
+      this.context.router.replace("/admin/"+ this.props.route.path + "/" + key + "/field/prediction")
+
     }
     else {
-      this.props.history.push("/admin/"+ this.props.route.path + "/" + key + "/rtime")
+      this.context.router.push("/admin/"+ this.props.route.path + "/" + key + "/rtime")
+      console.log(this.context)
 
     }
   }
@@ -262,9 +265,8 @@ export default class Map extends Component {
             is_field={model.is_field}
             // use your hover state (from store, react-controllables etc...)
             hover={this.props.hoverKey === model.id.toString()}
-            
             />
-        );
+                    );
     });
 
     // const places = this.props.greatPlaces

@@ -3,14 +3,15 @@ import time
 from rest_framework import viewsets
 from rest_framework.response import Response
 
-from .serializers import RecordSerializer, PredictionSerializer, CropSerializer
+from .serializers import RecordSerializer, PredictionSerializer, CropSerializer, DecisionSerializer, ImportCoutriesSerializer
 from .serializers import GeolocationSerializer
-from .models import Record, Crop
+from .models import Record, Crop, Decision, ImportCountries
 from .models import Geolocation
 from .models import Prediction
 from rest_framework import status, permissions
 from .tasks import hello
 from .tasks import load_model
+from .decision_task import decision
 
 class RecordViewSet(viewsets.ModelViewSet):
     serializer_class = RecordSerializer
@@ -62,9 +63,11 @@ class PredictionViewSet(viewsets.ModelViewSet):
 
     def list(self, request, *args, **kwargs):
 
-        week = int(self.request.query_params.get('week'))
+        week = self.request.query_params.get('week')
         print(week)
-        load_model.delay(week)
+
+        if week:
+            load_model.delay(int(week))
 
         queryset = self.filter_queryset(self.get_queryset())
 
@@ -76,6 +79,7 @@ class PredictionViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
 
+
 class CropViewSet(viewsets.ModelViewSet):
     serializer_class = CropSerializer
     queryset = Crop.objects.all()
@@ -83,11 +87,11 @@ class CropViewSet(viewsets.ModelViewSet):
 
     def list(self, request, *args, **kwargs):
 
-        print("list crop")
-        demand = int(self.request.query_params.get('demand'))
-        print(demand)
-        crop = self.request.query_params.get('crop')
-        print(crop)
+        # print("list crop")
+        # demand = int(self.request.query_params.get('demand'))
+        # print(demand)
+        # crop = self.request.query_params.get('crop')
+        # print(crop)
         # load_model.delay(demand)
 
         queryset = self.filter_queryset(self.get_queryset())
@@ -103,3 +107,39 @@ class CropViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(queryset, many=True)
         print(serializer.data)
         return Response(serializer.data)
+
+class DecisionViewSet(viewsets.ModelViewSet):
+    serializer_class = DecisionSerializer
+    queryset = Decision.objects.all()
+    permission_classes = (permissions.AllowAny,)
+
+    def list(self, request, *args, **kwargs):
+
+        print("list crop")
+        demand = self.request.query_params.get('demand')
+        print(demand)
+        crop = self.request.query_params.get('crop')
+        print(crop)
+        month = self.request.query_params.get('month')
+        print(month)
+        if demand and month:
+            decision.delay(int(demand), int(month))
+
+        queryset = self.filter_queryset(self.get_queryset())
+
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            test = serializer.data
+            print(test + [serializer.data[0]])
+
+            return self.get_paginated_response(serializer.data)
+
+        serializer = self.get_serializer(queryset, many=True)
+        print(serializer.data)
+        return Response(serializer.data)
+
+class ImportCountriesViewSet(viewsets.ModelViewSet):
+    serializer_class = ImportCoutriesSerializer
+    queryset = ImportCountries.objects.all()
+    permission_classes = (permissions.AllowAny,)

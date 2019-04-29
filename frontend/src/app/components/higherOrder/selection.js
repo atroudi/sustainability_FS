@@ -2,6 +2,7 @@ import React from "react";
 import {Button, Modal} from "react-bootstrap";
 import {List} from "immutable";
 import PropTypes from 'prop-types';
+import {browserHistory} from 'react-router';
 
 export default (Component) => {
     class CreateForm extends React.Component {
@@ -36,11 +37,9 @@ export default (Component) => {
         //     //Make a request to server and send formData
         //     const {changeSet} = this.state;
 
-
-
         //     this.setState({
         //         file: f
-        //         // changeSet: changeSet.set(event.target.name, file)
+                //  changeSet: changeSet.set(event.target.name, file)
         //     });
         //   }
 
@@ -55,7 +54,7 @@ export default (Component) => {
           
         handleChange = (evnt) => {
             const {changeSet} = this.state;
-
+            console.log(changeSet)
             this.setState({
                 changeSet: changeSet.set(evnt.target.name, evnt.target.value)
             });
@@ -95,9 +94,9 @@ export default (Component) => {
             // hide modal
             this.hideModal()
             if (changeSet.get(this.props.entry))
-                this.props.history.push(this.props.location.pathname + "/" + changeSet.get(this.props.entry))
+                this.context.router.push(this.props.location.pathname + "/" + changeSet.get(this.props.entry))
             else
-                this.props.history.push(this.props.entry)
+                this.context.router.push(this.props.entry)
 
             // const successCb = List([
             //     () => this.hideModal(),
@@ -128,7 +127,6 @@ export default (Component) => {
                     // <i className="fa fa-plus"></i> Add {collection.titleSingular}
                     <Modal
                         onHide={this.hideModal}
-                        centered
                         show={this.state.show}
                     >
                         <Modal.Header closeButton>

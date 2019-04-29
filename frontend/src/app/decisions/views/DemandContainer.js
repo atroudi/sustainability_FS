@@ -10,19 +10,24 @@ import DemandSelection from "./DemandSelection"
 class Container extends React.Component {
 
     render(){
-        const {children} = this.props;
-        console.log(window.django.permissions);
-        return(
-            <div className="text-center">
+        const children = React.Children.map(this.props.children, child => {
+            return React.cloneElement(child, {
+                updateImportCountries: this.props.updateImportCountries,
+            });
+        });
+        console.log(this.props)
+
+        return(<div>
+
                 <DemandSelection titleSingular="Enter target demand" entry="demand" {...this.props} />
                 {children}
-            </div> 
+            </div>
         )
     }
 }
 
 const selector = createSelector(
-    (state) => state.crops,
+    (state) => state.decisions,
     (collection) => {
         return {
             collection,

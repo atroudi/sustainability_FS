@@ -9,12 +9,15 @@ import CropSelection from "./CropSelection";
 class Container extends React.Component {
 
     render(){
-        const {children} = this.props;
-        return(
-            <div className="text-center">
+        const children = React.Children.map(this.props.children, child => {
+            return React.cloneElement(child, {
+                updateImportCountries: this.props.updateImportCountries,
+            });
+        });
+        return(<div>
                 <CropSelection titleSingular="Select crop to grow" entry="name" {...this.props} />
                 {children}
-            </div>
+                </div>
         )
     }
 }

@@ -30,39 +30,33 @@ class Container extends React.Component {
         super(props);
         const {actions, collection} = this.props;
         const query = collection.get("query");
-
-        
         actions.fetchCollectionIfEmpty({collection, query});
 
     }
     
     render() {
         const staticRoot = window.django.urls.staticRoot;
+        let img_width = 200
         let img=<img
         style={{padding: 10, alignSelf: 'flex-start'}}
         src={`${staticRoot}adminlte/img/food/vegetation_health_autumn_2013.bmp`}
-        className="pull-middle" alt="food1" width="275" height="275"
+        className="pull-middle" alt="food1" width={img_width} height={img_width}
         />
         let img2=<img
         style={{padding: 10, alignSelf: 'flex-start'}}
         src={`${staticRoot}adminlte/img/food/vegetation_health_winter_2013.bmp`}
-        className="pull-middle" alt="food1" width="275" height="275"
+        className="pull-middle" alt="food1" width={img_width} height={img_width}
         />
         let img3=<img
         style={{padding: 10, alignSelf: 'flex-start'}}
         src={`${staticRoot}adminlte/img/food/vegetation_health_spring_2013.bmp`}
-        className="pull-middle" alt="food1" width="275" height="275"
+        className="pull-middle" alt="food1" width={img_width} height={img_width}
         />
         let img4=<img
         style={{padding: 10, alignSelf: 'flex-start'}}
         src={`${staticRoot}adminlte/img/food/vegetation_health_summer_2013.bmp`}
-        className="pull-middle" alt="food1" width="275" height="275"
+        className="pull-middle" alt="food1" width={img_width} height={img_width}
         />
-        // let img2=<img 
-        // style={{padding: 10, alignSelf: 'flex-start'}}
-        // src={`${staticRoot}adminlte/img/food/f2.png`}
-        // className="pull-middle" alt="food2" width="275" height="183" 
-        // />
 
         var background = {backgroundSize : 'cover'};
         var textStyle = {
@@ -70,8 +64,8 @@ class Container extends React.Component {
           fontSize:14,
           fontWeight:"bold",
           color:"white",
-          top: '80%', 
-          left: '9%'
+          top: '70%', 
+          left: '15%'
         };
 
         var textStyle2 = {

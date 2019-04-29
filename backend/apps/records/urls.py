@@ -1,6 +1,6 @@
 from sys import path
 from rest_framework.routers import DefaultRouter
-from .views import RecordViewSet, PredictionViewSet, CropViewSet
+from .views import RecordViewSet, PredictionViewSet, CropViewSet, DecisionViewSet, ImportCountriesViewSet
 from .views import GeolocationViewSet
 
 from rest_framework.routers import SimpleRouter
@@ -12,6 +12,8 @@ router.register(r'records', RecordViewSet)
 router.register(r'predictions', PredictionViewSet)
 router.register(r'geolocations', GeolocationViewSet)
 router.register(r'crops', CropViewSet)
+router.register(r'decisions', DecisionViewSet)
+router.register(r'imports', ImportCountriesViewSet)
 
 urlpatterns = router.urls
 
