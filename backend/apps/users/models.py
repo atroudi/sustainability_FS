@@ -4,7 +4,6 @@ from django.contrib.auth.models import (AbstractBaseUser, PermissionsMixin,
                                         BaseUserManager)
 from django.db import models
 from django.utils import timezone
-from pipenv.vendor import first
 import hashlib
 
 
