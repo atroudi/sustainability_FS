@@ -44,12 +44,20 @@ APPEND_SLASH = True
 # CSRF_COOKIE_SECURE = False
 
 
-# CELERY CONFIG
-CELERY_BROKER_URL = 'amqp://localhost'
+# DOCKER CELERY CONFIG
+CELERY_BROKER_URL = 'redis://redis:6379'
 
 # CELERY STUFF
-BROKER_URL = 'redis://localhost:6379'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+BROKER_URL = 'redis://redis:6379'
+CELERY_RESULT_BACKEND = 'redis://redis:6379'
+
+# # CELERY CONFIG
+# CELERY_BROKER_URL = 'amqp://localhost'
+#
+# # CELERY STUFF
+# BROKER_URL = 'redis://localhost:6379'
+# CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'

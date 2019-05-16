@@ -4,6 +4,7 @@ import pickle
 import psycopg2
 import os
 from celery import shared_task
+from django.conf import settings
 
 @shared_task
 def load_model2(month):
@@ -35,7 +36,12 @@ def load_model2(month):
     # for w in w_mat:
     #     print(np.dot(np.concatenate((np.matrix([1]*len(data)).T, np.array(data)), axis = 1), w)[0, 0])
     # Read a week input values fom database
-    conn = psycopg2.connect("host=localhost dbname=biosustainabilitydb user=postgres password=root")
+    # conn = psycopg2.connect("host=localhost dbname=biosustainabilitydb user=postgres password=root")
+    conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (settings.DATABASES.get("default").get("HOST"),
+                                                                       settings.DATABASES.get("default").get("NAME"),
+                                                                       settings.DATABASES.get("default").get("USER"),
+                                                                       settings.DATABASES.get("default").get("PASSWORD"),
+                                                                       ))
     cur = conn.cursor()
 
     # Free up field_prediction table
@@ -231,7 +237,13 @@ def storeDecision(month, demand, results):
     print("Start storing!")
 
     # connect to database
-    conn = psycopg2.connect("host=localhost dbname=biosustainabilitydb user=postgres password=root")
+    # conn = psycopg2.connect("host=localhost dbname=biosustainabilitydb user=postgres password=root")
+
+    conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (settings.DATABASES.get("default").get("HOST"),
+                                                                       settings.DATABASES.get("default").get("NAME"),
+                                                                       settings.DATABASES.get("default").get("USER"),
+                                                                       settings.DATABASES.get("default").get("PASSWORD"),
+                                                                       ))
     cur = conn.cursor()
 
     print("Store decision")

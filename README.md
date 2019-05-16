@@ -14,6 +14,7 @@ cd $project_name
 ````
 sudo docker-compose build
 sudo docker-compose run django python3 manage.py migrate
+sudo docker-compose run django python3 manage.py createsuperuser
 sudo docker-compose up 
 ````
 

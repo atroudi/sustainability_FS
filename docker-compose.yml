@@ -35,9 +35,9 @@ services:
       - "3000:3000"
   celery:
     build: .
-    command: celery -A proj worker -l info
+    command: celery -A backend worker -l info
     volumes:
-      - .:/code
+      - .:/app
     depends_on:
       - db
       - redis

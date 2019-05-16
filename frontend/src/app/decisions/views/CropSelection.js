@@ -21,8 +21,7 @@ class Form extends React.Component {
                     onChange={handleChange}
                     value={changeSet.name}
                     help={changeSet._errors.name}
-                    componentClass="select" 
-
+                    componentClass="select"
                 >
                 <option>Choose...</option>
                  <option value="alfalfa">Alfalfa</option>
