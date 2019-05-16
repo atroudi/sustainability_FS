@@ -4,8 +4,7 @@ from celery import shared_task
 import pickle
 import psycopg2
 import numpy as np
-import pandas as pd
-
+from django.conf import settings
 
 @shared_task
 def hello():
@@ -14,6 +13,9 @@ def hello():
 @shared_task
 def load_model(week):
     print('loading model!')
+
+    print('settings log:\n')
+    print(settings.DATABASES.get("default").get("HOST"))
     # loadmodel2()
 
     OFFSET_LIMIT = 8  # we assume that the offset is a week
@@ -40,7 +42,13 @@ def load_model(week):
     # for w in w_mat:
     #     print(np.dot(np.concatenate((np.matrix([1]*len(data)).T, np.array(data)), axis = 1), w)[0, 0])
     # Read a week input values fom database
-    conn = psycopg2.connect("host=localhost dbname=biosustainabilitydb user=postgres password=root")
+    # conn = psycopg2.connect("host=localhost dbname=biosustainabilitydb user=postgres password=root")
+    conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (settings.DATABASES.get("default").get("HOST"),
+                                                                       settings.DATABASES.get("default").get("NAME"),
+                                                                       settings.DATABASES.get("default").get("USER"),
+                                                                       settings.DATABASES.get("default").get("PASSWORD"),
+                                                                       ))
+
     cur = conn.cursor()
 
     # Free up field_prediction table
