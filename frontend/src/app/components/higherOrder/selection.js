@@ -93,10 +93,19 @@ export default (Component) => {
             const {router} = this.context;
             // hide modal
             this.hideModal()
+
+
             if (changeSet.get(this.props.entry))
                 this.context.router.push(this.props.location.pathname + "/" + changeSet.get(this.props.entry))
             else
                 this.context.router.push(this.props.entry)
+
+            if (this.props.variables){
+                var variablesList = this.props.variables.split(",");
+                for (var variable in variablesList){
+                    this.context.router.push(this.props.location.pathname + "/" + changeSet.get(this.props.entry) + "?" + variablesList[variable] + "=" + changeSet.get(variablesList[variable]))
+                }
+            }
 
             // const successCb = List([
             //     () => this.hideModal(),

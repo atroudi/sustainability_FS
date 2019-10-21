@@ -29,17 +29,33 @@ class Container extends React.Component {
     constructor(props){
         super(props)
         const {actions, collection} =props;
+    
+        let clean_demand = this.props.params.demand.split("&")[0];
+        let month_tmp =1
+        if (this.props.location.query.time){
+            month_tmp = this.props.location.query.time.split("-")[1];
+            this.setState({month: month_tmp})
+        }
+
         this.state = {
             time: new Date(1900, 0, 1),
             events: new Ring(200),
+            month: month_tmp
         }
 
         let query = collection.get("query");
         query = query.set("search", "");
         query = query.set("crop", this.props.params.crop);
-        query = query.set("demand", this.props.params.demand);
-        query = query.set("month", 13);
+        query = query.set("demand", clean_demand);
 
+        console.log("this.props.location.query.__firebase_request_key");
+        console.log(this.props.location.query.time)
+        console.log(clean_demand)
+        console.log(month_tmp)
+
+        // query = query.set("month", this.props.params.month);
+        query = query.set("month", month_tmp);
+       
         actions.fetchCollection({collection, query});
 
     }
@@ -103,7 +119,7 @@ class Container extends React.Component {
     // }
 
     render(){      
-
+        
         const children = React.Children.map(this.props.children, child => {
             return React.cloneElement(child, {
                 updateImportCountries: this.props.updateImportCountries,
@@ -111,7 +127,8 @@ class Container extends React.Component {
         });
 
         // TODO: has to be changed as input
-        const month = 13
+        const month = this.state.month;
+        console.log(this.state.month)
         let import_val = 0 
         let grow_val = 0
         let grow_purcentage = 0  
@@ -119,7 +136,7 @@ class Container extends React.Component {
         var decision;
         this.props.collection.models.map(model => {
             // console.log(model.month)
-            if(model.month==month){
+            if(model.month==this.state.month){
                 decision = model;
             }
         })
@@ -165,12 +182,12 @@ class Container extends React.Component {
                 <Box.Body>
                 <Row>
                     <Col sm={4}>
-                    <InfoBox {...this.props} text={"Grow"} progress={"100"} logo={"fa fa-bookmark-o"} color={"info-box bg-green"} val={grow_val} collection={this.props.collection} />
+                    <InfoBox {...this.props} text={"Grow"} progress={"1"} logo={"fa fa-bookmark-o"} color={"info-box bg-green"} val={grow_val} collection={this.props.collection} />
                     {/* <CollapseBox/> */}
                     {/* <ContainerDetails {...this.props} model={decision} /> */}
                     </Col>
                     <Col sm={8}>
-                    <InfoBox {...this.props} text={"Import"} progress={"1"} logo={"fa fa-bookmark-o"} color={"info-box bg-red"} val={import_val} />
+                    <InfoBox {...this.props} text={"Import"} progress={"100"} logo={"fa fa-bookmark-o"} color={"info-box bg-red"} val={import_val} />
                     <div className="text-left">
 
                     {/* <ImportMap/> */}

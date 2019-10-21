@@ -45,7 +45,8 @@ class Form extends React.Component {
                <ControlLabel>Select Decision Day</ControlLabel>
 
                 <FormControl 
-                    className="icheck"
+                    bsStyle={changeSet._errors.time ? "error" : null}
+                    help={changeSet._errors.time}
                     type="date"
                     name="time"
                     onChange={handleChange}

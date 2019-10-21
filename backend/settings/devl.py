@@ -12,20 +12,20 @@ DATABASES = {
     'default': {
 
         # DEVELOPMENT INIT DB
-        # 'ENGINE': 'django.db.backends.postgresql',
-        # 'USER': 'migiwara',
-        # 'PASSWORD': 'root',
-        # 'HOST':'localhost',
-        # 'PORT':'5432',
-        # 'NAME': 'biosustainabilitydb',
+        'ENGINE': 'django.db.backends.postgresql',
+        'USER': 'migiwara',
+        'PASSWORD': 'root',
+        'HOST':'localhost',
+        'PORT':'5432',
+        'NAME': 'biosustainabilitydb',
 
         # DOCKER INIT DB
 
-        'ENGINE': 'django.db.backends.postgresql',
-        'USER': 'biosensorsadmin',
-        'NAME': 'biosensorsdb',
-        'PASSWORD': 'qatar123',
-        'HOST': 'db'
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'USER': 'migiwara',
+        # 'NAME': 'sustainabilitydb',
+        # 'PASSWORD': 'qatar123',
+        # 'HOST': 'db'
     }
 }
 
@@ -44,19 +44,19 @@ APPEND_SLASH = True
 # CSRF_COOKIE_SECURE = False
 
 
-# DOCKER CELERY CONFIG
-CELERY_BROKER_URL = 'redis://redis:6379'
-
-# CELERY STUFF
-BROKER_URL = 'redis://redis:6379'
-CELERY_RESULT_BACKEND = 'redis://redis:6379'
-
-# # CELERY CONFIG
-# CELERY_BROKER_URL = 'amqp://localhost'
+# # DOCKER CELERY CONFIG
+# CELERY_BROKER_URL = 'redis://redis:6379'
 #
 # # CELERY STUFF
-# BROKER_URL = 'redis://localhost:6379'
-# CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+# BROKER_URL = 'redis://redis:6379'
+# CELERY_RESULT_BACKEND = 'redis://redis:6379'
+
+# CELERY CONFIG
+CELERY_BROKER_URL = 'amqp://localhost'
+
+# CELERY STUFF
+BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'
 
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'

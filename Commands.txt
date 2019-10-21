@@ -5,7 +5,7 @@ sudo docker-compose build
 # Migrate database (It will become SECONDARY once loading the database will be performed )
 sudo docker-compose run django python3 manage.py migrate
 # Load datatbase
-cat dump_20-09-2018_16_57_07.sql | sudo docker exec -i biosensors_db_1 psql -Upostgres  -d $database_name
+cat biosustainabilitydb-Backup-File_29-04-2019_18_23_43.sql | sudo docker exec -i $database_docker_name psql -Umigiwara  -d $database_name
 # Run containers
 sudo docker-compose up -d
 

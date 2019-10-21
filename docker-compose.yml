@@ -8,8 +8,8 @@ services:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
       # - ./dump_23-09-2018_19_24_30.sql:/docker-entrypoint-initdb.d/dump_23-09-2018_19_24_30.sql
     environment:
-      - POSTGRES_USER:'biosensorsadmin'
-      - POSTGRES_DB:'biosensorsdb'
+      - POSTGRES_USER:'migiwara'
+      - POSTGRES_DB:'sustainabilitydb'
       - POSTGRES_PASSWORD:'qatar123'
     ports:
       - "5432:5432"
