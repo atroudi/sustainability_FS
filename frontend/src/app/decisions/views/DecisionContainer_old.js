@@ -47,7 +47,6 @@ class Container extends React.Component {
         let grow_val = 0
         let grow_purcentage = 0  
         let import_purcentage = 0 
-        console.log(this.props)
         var decision = this.props.collection.models
         .reduce(model => model.month==1)
         if (decision){

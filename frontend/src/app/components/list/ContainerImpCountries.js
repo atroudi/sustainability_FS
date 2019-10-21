@@ -13,7 +13,7 @@ import Ring from "ringjs";
 const sec = 1000;
 const minute = 60 * sec;
 const hours = 60 * minute;
-const rate = 4000;
+const rate = 8000;
 
 class Container extends React.Component {
 

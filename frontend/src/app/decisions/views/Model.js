@@ -24,8 +24,8 @@ class Model extends React.Component {
                 <dt className="text-muted">Crop Inventory</dt>
                 <dd>{Math.trunc(model.crop_inventory)}</dd>
 
-                <dt className="text-muted">Month</dt>
-                <dd>Jaunuary</dd>
+                <dt className="text-muted">Start date</dt>
+                <dd>{model.time}</dd>
 
                 <dt className="text-muted">Estimation period</dt>
                 <dd>{model.month} month</dd> 

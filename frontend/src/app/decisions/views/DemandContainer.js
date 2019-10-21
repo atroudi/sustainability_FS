@@ -15,11 +15,11 @@ class Container extends React.Component {
                 updateImportCountries: this.props.updateImportCountries,
             });
         });
-        console.log(this.props)
+        // console.log(this.props)
 
         return(<div>
 
-                <DemandSelection titleSingular="Enter target demand" entry="demand" {...this.props} />
+                <DemandSelection titleSingular="Enter Demand details" entry="demand" variables="time" {...this.props} />
                 {children}
             </div>
         )
