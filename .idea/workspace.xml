@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/settings/devl.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/devl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/celery.logs" beforeDir="false" afterPath="$PROJECT_DIR$/celery.logs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/selection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/list/ContainerImpCountries.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/list/ContainerImpCountries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/models.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer_old.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer_old.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DemandContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DemandContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/Model.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/Model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -245,7 +235,7 @@
       <workItem from="1570369567474" duration="707000" />
       <workItem from="1570968614404" duration="2882000" />
       <workItem from="1571223153896" duration="1173000" />
-      <workItem from="1571318769905" duration="15072000" />
+      <workItem from="1571318769905" duration="17120000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1535285696860</created>

@@ -24,11 +24,11 @@ class Model extends React.Component {
                 <dt className="text-muted">Crop Inventory</dt>
                 <dd>{Math.trunc(model.crop_inventory)}</dd>
 
-                <dt className="text-muted">Start date</dt>
-                <dd>{model.time}</dd>
+                <dt className="text-muted">Prediction month</dt>
+                <dd>{model.month}</dd>
 
                 <dt className="text-muted">Estimation period</dt>
-                <dd>{model.month} month</dd> 
+                <dd>1 month</dd> 
 
                 {/* <dd>{moment(model.last_login).format("ddd. MMM. Do YYYY, h:mm A")}</dd> */}
             </dl>
