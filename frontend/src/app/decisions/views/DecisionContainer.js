@@ -38,7 +38,7 @@ class Container extends React.Component {
         }
 
         this.state = {
-            time: new Date(1900, 0, 1),
+            time: new Date(),
             events: new Ring(200),
             month: month_tmp
         }
@@ -47,11 +47,6 @@ class Container extends React.Component {
         query = query.set("search", "");
         query = query.set("crop", this.props.params.crop);
         query = query.set("demand", clean_demand);
-
-        console.log("this.props.location.query.__firebase_request_key");
-        console.log(this.props.location.query.time)
-        console.log(clean_demand)
-        console.log(month_tmp)
 
         // query = query.set("month", this.props.params.month);
         query = query.set("month", month_tmp);
@@ -128,14 +123,12 @@ class Container extends React.Component {
 
         // TODO: has to be changed as input
         const month = this.state.month;
-        console.log(this.state.month)
         let import_val = 0 
         let grow_val = 0
         let grow_purcentage = 0  
         let import_purcentage = 0 
         var decision;
         this.props.collection.models.map(model => {
-            // console.log(model.month)
             if(model.month==this.state.month){
                 decision = model;
             }
@@ -157,13 +150,9 @@ class Container extends React.Component {
                 import_purcentage = Math.trunc(grow_val/(grow_val + import_val))* 100
                 console.log(grow_purcentage, import_purcentage)
             }
-
         } else {
             decision = this.props.model
         }
-
-
-
         return(
             <Row>
             <Col sm={6}>
