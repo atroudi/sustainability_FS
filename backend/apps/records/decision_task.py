@@ -224,7 +224,7 @@ def make_decision(crop_demand, local_water_requirement, external_water_requireme
                                                                              env)
 
             # Consumption update model assumed
-            crop_inventory = 0.01 * crop_inventory
+            # crop_inventory = 0.01 * crop_inventory
             return [2, tmp_grow, tmp_import, crop_inventory, cost, env, import_dict]  # '2' means 'only import'
 
     else:

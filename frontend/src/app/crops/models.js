@@ -4,14 +4,14 @@ import constants from "./constants";
 
 
 class CropChangeSet extends Record({
-    name:"",
+    crop:"",
     demand:"",
     _errors: Map()
 }){}
 
 class Crop extends Record({
     id: "0",
-    name:"",
+    crop:"",
     demand:"",
     constants: constants,
     ChangeSet: CropChangeSet,

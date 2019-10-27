@@ -36,7 +36,11 @@ class PredictionGraph extends React.Component {
         else 
             throw "couldn't find geolocation id, so database query is not filtered! "
 
-        query = query.set("search", geolocation);
+         // TODO: change the below HARD CODED station data streamed to fields in range [9-12]
+         if (geolocation>=8)
+            query = query.set("search", 8);
+        else
+            query = query.set("search", geolocation);
         actions.fetchCollection({collection, query});
     }
     
@@ -45,9 +49,14 @@ class PredictionGraph extends React.Component {
         const {props} = this;
         const {actions, collection} = props;
         let query = collection.get("query");
+        console.log(props.params.geolocation)
 
         if (props.params.geolocation !== nextProps.params.geolocation){
-            query = query.set("search", nextProps.params.geolocation);
+            // TODO: change the below HARD CODED station data streamed to fields in range [9-12]
+            if (nextProps.params.geolocation>=8)
+                query = query.set("search", 8);
+            else
+                query = query.set("search", nextProps.params.geolocation);
             actions.fetchCollection({collection, query});
         }
     }

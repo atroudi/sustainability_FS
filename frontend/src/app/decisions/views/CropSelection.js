@@ -16,7 +16,7 @@ class Form extends React.Component {
                     bsStyle={changeSet._errors.name ? "error" : null}
                     help={changeSet._errors.name}
                     label="Crop"
-                    name="name"
+                    name="crop"
                     type="select"
                     onChange={handleChange}
                     value={changeSet.name}

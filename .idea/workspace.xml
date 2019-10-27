@@ -3,8 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/Model.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/Model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/decision_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/decision_task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celery.logs" beforeDir="false" afterPath="$PROJECT_DIR$/celery.logs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/Map3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/Map3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/higherOrder/selection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/crops/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/crops/models.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/crops/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/crops/urls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/crops/views/CropContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/crops/views/CropContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/crops/views/CropSelection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/crops/views/CropSelection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/CropContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/CropContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/InfoBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/InfoBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/stylesheets/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/models.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/views/PredictionGraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/views/PredictionGraph.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +246,8 @@
       <workItem from="1570369567474" duration="707000" />
       <workItem from="1570968614404" duration="2882000" />
       <workItem from="1571223153896" duration="1173000" />
-      <workItem from="1571318769905" duration="17120000" />
+      <workItem from="1571318769905" duration="23517000" />
+      <workItem from="1572181940272" duration="9475000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1535285696860</created>

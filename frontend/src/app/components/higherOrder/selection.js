@@ -103,7 +103,10 @@ export default (Component) => {
             if (this.props.variables){
                 var variablesList = this.props.variables.split(",");
                 for (var variable in variablesList){
-                    this.context.router.push(this.props.location.pathname + "/" + changeSet.get(this.props.entry) + "?" + variablesList[variable] + "=" + changeSet.get(variablesList[variable]))
+                    if (changeSet.get(this.props.entry))
+                        this.context.router.push(this.props.location.pathname + "/" + changeSet.get(this.props.entry) + "?" + variablesList[variable] + "=" + changeSet.get(variablesList[variable]))
+                    else
+                        this.context.router.push(this.props.entry + "?" + variablesList[variable] + "=" + changeSet.get(variablesList[variable]))
                 }
             }
 

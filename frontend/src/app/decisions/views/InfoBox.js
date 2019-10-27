@@ -32,7 +32,7 @@ class InfoBox extends React.Component{
                         <div/>
                     ) : (
                         <span className="progress-description">
-                    {progress}% Increase in 30 Days
+                    {/* {progress}% Increase in 30 Days */}
                     </span>
                     )}
                     

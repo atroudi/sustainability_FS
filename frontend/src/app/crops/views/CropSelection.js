@@ -16,7 +16,7 @@ class Form extends React.Component {
                     bsStyle={changeSet._errors.name ? "error" : null}
                     help={changeSet._errors.name}
                     // label="Crop"
-                    name="name"
+                    name="crop"
                     type="select"
                     onChange={handleChange}
                     value={changeSet.name}
@@ -25,7 +25,7 @@ class Form extends React.Component {
                     componentClass="select" 
                 >
                     <option value="select">Choose ...</option>
-                    <option value="alfalfa">Alfalfa</option>
+                    <option value="Alfalfa">Alfalfa</option>
                     <option value="Tomato-lettuce-strawberry">Tomato-lettuce-strawberry</option>
                </FormControl>   
 
