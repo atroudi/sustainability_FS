@@ -15,7 +15,7 @@ class Container extends React.Component {
             });
         });
         return(<div>
-                <CropSelection titleSingular="Select crop to grow" entry="name" {...this.props} />
+                <CropSelection titleSingular="Select crop to grow" entry="crop"  {...this.props} />
                 {children}
                 </div>
         )

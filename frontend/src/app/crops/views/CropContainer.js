@@ -17,7 +17,7 @@ class Container extends React.Component {
         let nextUrl = this.props.routes[2].path;
         return(
             <div className="text-center">
-                <CropSelection titleSingular="Select crop to grow" entry="/admin/geolocations" {...this.props} />
+                <CropSelection titleSingular="Select crop to grow" entry="/admin/geolocations" variables="crop" {...this.props} />
             </div>
         )
     }

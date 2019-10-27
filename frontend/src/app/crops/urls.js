@@ -7,8 +7,10 @@ import CropSelection from "./views/CropSelection"
 
 const routes = (
     <Route path="crops" component={CropContainer}>
-        {/* <Route path=":crop" >
-        </Route> */}
+        <Route path=":crop" >
+                {/* <IndexRedirect to="geolocation"/> */}
+
+        </Route>
     </Route>
     
 );

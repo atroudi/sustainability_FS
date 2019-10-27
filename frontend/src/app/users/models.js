@@ -12,6 +12,7 @@ class GeolocationChangeSet extends Record({
     lat: "",
     lng:"",
     is_field:"",
+    crop:"",
     _errors: Map()
 }){}
 
@@ -24,6 +25,7 @@ class Geolocation extends Record({
     label:"",
     lat: "",
     lng:"",
+    crop:"",
     is_field:"",
     constants: constantsGeolocation,
     ChangeSet: GeolocationChangeSet,
@@ -188,6 +190,7 @@ class PredictionChangeSet extends Record({
     time: "",
     label:"",
     geolocation:"",
+    crop:"",
     _errors: Map()
 }){}
 

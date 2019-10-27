@@ -77,7 +77,7 @@ const greatFieldStyle = {
   borderRadius: F_SIZE,
   // backgroundColor: 'white',
   textAlign: 'center',
-  color: '#378663',
+  color: '#ecb349',
   fontSize: 10,
   fontWeight: 'bold',
   // padding: 0,
@@ -110,9 +110,7 @@ class MyGreatPlaceWithControllableHover extends Component {
     const className_content_info = this.props.is_field ? "hint hint--html hint--info hint--top field" : "hint hint--html hint--info hint--top";
     const locationId = this.props.is_field ? this.props.locationId-7 : this.props.locationId;
     let img_width=40
-
     const img = this.props.is_field ? <img  style={{position: 'absolute', left: '-15px'}} src={`${ window.django.urls.staticRoot}adminlte/img/food/farm_logo.png`} width={img_width} height={img_width} alt="Logo" /> : <img style={{position: 'absolute', left: '0px'}} src={`${ window.django.urls.staticRoot}adminlte/img/food/station_logo2.png`} width={img_width} height={img_width} alt="Logo" />
-
     let style = this.props.hover ? greatPlaceStyleHover : greatPlaceStyle;
 
     if(this.props.is_field){
@@ -164,25 +162,30 @@ export default class Map extends Component {
 
   constructor(props) {
     super(props);
-    console.log(this.props)
+    // console.log(this.props)
+
+    let crop_var = this.props.location.query.crop;
     
+    console.log(crop_var);
     if(this.props.params.geolocation){
-      console.log(this.props.params.geolocation)
       this.state = {
+        crop: crop_var,
         isOpen: false,
         viewport: {
           latitude: 25.1,
           longitude: 51.15 + 1.3,
-          zoom: 8
+          zoom: 8,
+         
         }      
       }
     } else {
       this.state = {
+        crop: crop_var,
         isOpen: false,
         viewport: {
           latitude: 25.1,
           longitude: 51.15,
-          zoom: 8
+          zoom: 8,
         }      
       }
     }
@@ -307,6 +310,16 @@ export default class Map extends Component {
           // All geolocations case
           return true;
     })
+    // exit if the field is not in the selected crop 
+    .filter(
+      model => {
+        console.log(this.state.crop);
+        if ((this.state.crop===undefined) || (!model.is_field) || ((model.is_field) && (model.crop===this.state.crop)) )
+          return true
+        else 
+          return false
+      }
+    )
     // Add map markers
     .map((model, key) => {
       var coords = {lat: model.lat, lng: model.lng};
@@ -322,6 +335,7 @@ export default class Map extends Component {
             locationId={model.id}
             locationLabel={model.label}
             is_field={model.is_field}
+            crop={model.crop}
             // use your hover state (from store, react-controllables etc...)
             hover={this.props.hoverKey === model.id.toString()}
             onClick={() => this.click_function(model)}
