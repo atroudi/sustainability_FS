@@ -24,16 +24,17 @@ const allLinks = [
     },
     {
         permission: "users.view_emailuser",
-        text: "Visualizations",
-        to: "/admin/crops/",
-        icon: "fa fa-map"
-    },
-    {
-        permission: "users.view_emailuser",
         text: "Decision",
         to: "/admin/decision/",
         icon: "fa fa-map"
     },
+    {
+        permission: "users.view_emailuser",
+        text: "Visualizations",
+        to: "/admin/crops/",
+        icon: "fa fa-map"
+    },
+
     // {
     //     permission: "users.view_emailuser",
     //     text: "All Geolocations",
