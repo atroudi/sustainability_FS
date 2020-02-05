@@ -10,10 +10,11 @@ def index(request):
     if request.user.is_authenticated():
         return redirect(reverse("app"))
     else:
-        return redirect(settings.LOGIN_REDIRECT_URL)
+        return redirect(reverse("app"))
+        # return redirect(settings.LOGIN_REDIRECT_URL)
 
 
-@login_required
+# @login_required
 def app(request):
     context = {
         'permissions': json.dumps(list(request.user.get_all_permissions())),

@@ -44,13 +44,14 @@ APPEND_SLASH = True
 # CSRF_COOKIE_SECURE = False
 
 
-# # DOCKER CELERY CONFIG
+# ********************* DOCKER CELERY CONFIG
 # CELERY_BROKER_URL = 'redis://redis:6379'
 #
 # # CELERY STUFF
 # BROKER_URL = 'redis://redis:6379'
 # CELERY_RESULT_BACKEND = 'redis://redis:6379'
 
+# ********************* DEVELOPMENT CELERY CONFIG
 # CELERY CONFIG
 CELERY_BROKER_URL = 'amqp://localhost'
 

@@ -5,6 +5,7 @@ import psycopg2
 import os
 from celery import shared_task
 from django.conf import settings
+import datetime
 
 @shared_task
 def load_model2(month):
@@ -249,9 +250,10 @@ def storeDecision(month, demand, results):
     print("Store decision")
     try:
         cur.execute(
-            "INSERT INTO decision ( month, demand, decision_flag, tmp_grow, tmp_import, crop_inventory, cost, env ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
+            "INSERT INTO decision ( month, demand, decision_flag, tmp_grow, tmp_import, crop_inventory, cost, env) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
             "ON CONFLICT (month) DO UPDATE SET demand = %s, decision_flag = %s, tmp_grow = %s, tmp_import = %s, crop_inventory = %s, cost = %s, env = %s",
             [month, demand] + results[:len(results) - 1] + [demand] + results[:len(results) - 1]
+            # + [datetime.datetime.now().strftime("%m/%d/%Y, %H:%M:%S")]
         )
     except (Exception, psycopg2.Error) as error:
         print("Error while inserting data into decision table.", error)

@@ -16,7 +16,7 @@ import { TimeSeries, TimeRange, TimeEvent,
     EventOut,
     percentile} from "pondjs";
 import Ring from "ringjs";
-
+import DecisionControlPanel from './DecisionControlPanel'
 
 const sec = 1000;
 const minute = 60 * sec;
@@ -30,23 +30,24 @@ class Container extends React.Component {
         super(props)
         const {actions, collection} =props;
     
-        let clean_demand = this.props.params.demand.split("&")[0];
+        let initial_demand = parseInt(this.props.params.demand);
         let month_tmp =1
         if (this.props.location.query.time){
             month_tmp = this.props.location.query.time.split("-")[1];
-            this.setState({month: month_tmp})
+            this.setState({month: month_tmp});
         }
 
         this.state = {
             time: new Date(),
             events: new Ring(200),
-            month: month_tmp
+            month: month_tmp,
+            demand: initial_demand
         }
 
         let query = collection.get("query");
         query = query.set("search", "");
         query = query.set("crop", this.props.params.crop);
-        query = query.set("demand", clean_demand);
+        query = query.set("demand", initial_demand);
 
         // query = query.set("month", this.props.params.month);
         query = query.set("month", month_tmp);
@@ -66,6 +67,7 @@ class Container extends React.Component {
         const {actions, collection} = this.props;
         let query = collection.get("query");
         query = query.set("search", "");
+        query = query.set("demand", this.state.demand);
         actions.fetchCollection({collection, query});
 
         return event;
@@ -85,6 +87,15 @@ class Container extends React.Component {
     }
 
 
+    _onChangeDemand = (variable, new_demand) => {
+        console.log(new_demand);
+        if (variable == "demand")
+            this.setState({demand: new_demand});
+        else if (variable =="temperature")
+            this.setState({});
+        else
+            console.warn("Invalid variable.")
+    } 
     componentWillMount() { 
         const {actions, collection} = this.props;
         let query = collection.get("query");
@@ -155,14 +166,17 @@ class Container extends React.Component {
         }
         return(
             <Row>
-            <Col sm={6}>
+            <Col sm={3}>
+                <DecisionControlPanel {...this.props} onChange = {this._onChangeDemand} />
+            </Col>
+            <Col sm={3}>
             </Col>
             <Col sm={6}>
             <div className="text-center">
 
             <Box.Wrapper>
                 <Box.Header>
-                    <Box.Title>Decision</Box.Title>
+                    <Box.Title>Decision Results</Box.Title>
                 </Box.Header>
 
                 <Box.Tools>

@@ -35,7 +35,7 @@ services:
       - "3000:3000"
   celery:
     build: .
-    command: celery -A backend worker -l info
+    command: celery -A backend worker -l info -f celery.logs
     volumes:
       - .:/app
     depends_on:

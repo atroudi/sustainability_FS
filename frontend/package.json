@@ -39,6 +39,7 @@
     "webpack": "^1.15.0"
   },
   "dependencies": {
+    "@turf/turf": "^3.14.3",
     "admin-lte": "^2.4.9",
     "chart.js": "^1.1.1",
     "classnames": "2.2.3",
@@ -56,8 +57,10 @@
     "react-chartjs": "^1.2.0",
     "react-controllables": "^0.6.0",
     "react-dom": "^16.8.6",
+    "react-map-gl": "^4.1.1",
     "react-mapbox-gl": "^4.2.0",
     "react-pure-render": "^1.0.2",
+    "react-range": "^1.5.3",
     "react-redux": "^4.4.1",
     "react-router": "^3.2.1",
     "react-router-dom": "^5.0.0",
@@ -69,8 +72,6 @@
     "reselect": "^2.2.1",
     "ring": "^2.2.3",
     "ringjs": "0.0.1",
-    "superagent": "^1.8.2",
-    "react-map-gl": "^4.1.1",
-    "@turf/turf": "^3.14.3"
+    "superagent": "^1.8.2"
   }
 }
