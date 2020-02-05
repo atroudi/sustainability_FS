@@ -56,7 +56,8 @@ const allLinks = [
 ];
 
 const userLinks = _.filter(allLinks, (link) => {
-    return window.django.user.permissions.has(link.permission);
+    // return window.django.user.permissions.has(link.permission);
+    return true;  // for testing TO REMOVE
 });
 
 

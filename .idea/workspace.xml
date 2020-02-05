@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/records/decision_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/decision_task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/settings/devl.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/devl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +38,11 @@
   </component>
   <component name="ProjectId" id="1PYb5w4jSOhmkrptGc6pyt5cYjW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -67,18 +78,6 @@
       <recent name="$PROJECT_DIR$/backend/apps/records/migrations/decison" />
       <recent name="$PROJECT_DIR$/backend/static" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
@@ -128,6 +127,18 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -234,7 +245,21 @@
       <workItem from="1570968614404" duration="2882000" />
       <workItem from="1571223153896" duration="1173000" />
       <workItem from="1571318769905" duration="23517000" />
-      <workItem from="1572181940272" duration="10437000" />
+      <workItem from="1572181940272" duration="15118000" />
+      <workItem from="1572305297181" duration="1845000" />
+      <workItem from="1572507686468" duration="21429000" />
+      <workItem from="1574258171230" duration="2166000" />
+      <workItem from="1574350323897" duration="3695000" />
+      <workItem from="1575449555136" duration="594000" />
+      <workItem from="1575968191043" duration="1239000" />
+      <workItem from="1576064325111" duration="702000" />
+      <workItem from="1576570559725" duration="599000" />
+      <workItem from="1577096134862" duration="599000" />
+      <workItem from="1579088725591" duration="1239000" />
+      <workItem from="1579778721507" duration="603000" />
+      <workItem from="1580296450901" duration="4275000" />
+      <workItem from="1580725954040" duration="1216000" />
+      <workItem from="1580737192860" duration="12015000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1535285696860</created>
@@ -315,6 +340,12 @@
     <MESSAGE value="Added signup page. Improve glucose graph2 with per userId graph visualization." />
     <option name="LAST_COMMIT_MESSAGE" value="Added signup page. Improve glucose graph2 with per userId graph visualization." />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="167" y="101" width="1653" height="862" key="DiffContextDialog" timestamp="1580731668453">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="167" y="101" width="1653" height="862" key="DiffContextDialog/67.27.1853.1052/1920.0.1920.1080@67.27.1853.1052" timestamp="1580731668453" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -329,7 +360,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/backend/apps/records/decision_task.py</url>
-          <line>9</line>
+          <line>10</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
