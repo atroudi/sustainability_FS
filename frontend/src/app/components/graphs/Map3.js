@@ -162,8 +162,6 @@ export default class Map extends Component {
 
   constructor(props) {
     super(props);
-    // console.log(this.props)
-
     let crop_var = this.props.location.query.crop;
     
     console.log(crop_var);
@@ -246,7 +244,6 @@ export default class Map extends Component {
     transitionInterpolator: new FlyToInterpolator(),
     transitionDuration: 3000
   });
-  // console.log(this.state.viewport.longitude)
     if (model.is_field){
       this._onViewportChange({
         longitude: model.lng + 0.09,

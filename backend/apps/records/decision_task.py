@@ -15,6 +15,8 @@ def load_model2(month):
     total_monthly_crop_demand = 0
     OFFSET_LIMIT = 31  # we assume that the offset is a week
 
+    # TODO: [high PRIORITY] Change the startDate offset to current date and the OFFSET limit to the prediction date
+
     file = 'Mukenis_Data.csv'
     if not month:
         startDateOffset = 0
@@ -53,7 +55,7 @@ def load_model2(month):
 
     try:
         cur.execute(
-            "Select temp_avg,humidity_avg,solar_radiation,water_loss,time from geolocation_records where geolocation_id=%d order by time LIMIT %d OFFSET %d" % (
+            "Select temp_avg,humidity_avg,solar_radiation,q,time from geolocation_records where geolocation_id=%d order by time LIMIT %d OFFSET %d" % (
                 geolocation_id, OFFSET_LIMIT, startDateOffset))
 
         input_data = []
