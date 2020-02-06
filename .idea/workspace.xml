@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/records/decision_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/decision_task.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/settings/devl.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/devl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/Map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/Map3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/Map3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -259,7 +256,7 @@
       <workItem from="1579778721507" duration="603000" />
       <workItem from="1580296450901" duration="4275000" />
       <workItem from="1580725954040" duration="1216000" />
-      <workItem from="1580737192860" duration="12015000" />
+      <workItem from="1580737192860" duration="16539000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1535285696860</created>

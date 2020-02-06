@@ -220,14 +220,11 @@ export default class Map extends Component {
     });
     // redirect properly stations and fields
     if (childProps.is_field){
-      console.log(this.props.context)
       this.context.router.replace("/admin/"+ this.props.route.path + "/" + key + "/field/prediction")
 
     }
     else {
       this.context.router.push("/admin/"+ this.props.route.path + "/" + key + "/rtime")
-      console.log(this.context)
-
     }
   }
 
