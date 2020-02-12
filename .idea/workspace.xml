@@ -4,9 +4,13 @@
     <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/records/decision_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/decision_task.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/Map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/graphs/Map3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/graphs/Map3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/ContentWrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/ContentWrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/list/ContainerDetails.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/list/ContainerImpCountries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/CountryList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/CountryList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionResultPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionResultPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/ImportMap3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/ImportMap3.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,16 +68,16 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backend/apps/users/registration" />
-      <recent name="$PROJECT_DIR$/backend/templates/registration" />
-      <recent name="$PROJECT_DIR$/backend/templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend/apps/records" />
       <recent name="$PROJECT_DIR$/backend/apps/records/decision" />
       <recent name="$PROJECT_DIR$/backend/apps/records/migrations/decison" />
       <recent name="$PROJECT_DIR$/backend/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/apps/users/registration" />
+      <recent name="$PROJECT_DIR$/backend/templates/registration" />
+      <recent name="$PROJECT_DIR$/backend/templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -256,7 +260,11 @@
       <workItem from="1579778721507" duration="603000" />
       <workItem from="1580296450901" duration="4275000" />
       <workItem from="1580725954040" duration="1216000" />
-      <workItem from="1580737192860" duration="16539000" />
+      <workItem from="1580737192860" duration="18347000" />
+      <workItem from="1581233961823" duration="7049000" />
+      <workItem from="1581245056122" duration="5689000" />
+      <workItem from="1581345641173" duration="2364000" />
+      <workItem from="1581357412900" duration="9934000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1535285696860</created>
@@ -338,10 +346,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added signup page. Improve glucose graph2 with per userId graph visualization." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="167" y="101" width="1653" height="862" key="DiffContextDialog" timestamp="1580731668453">
+    <state x="167" y="61" width="1653" height="862" key="DiffContextDialog" timestamp="1581359917915">
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
-    <state x="167" y="101" width="1653" height="862" key="DiffContextDialog/67.27.1853.1052/1920.0.1920.1080@67.27.1853.1052" timestamp="1580731668453" />
+    <state x="167" y="77" width="1653" height="862" key="DiffContextDialog/67.27.1853.1052/1920.0.1920.1080@67.27.1853.1052" timestamp="1581237342529" />
+    <state x="167" y="61" width="1653" height="862" key="DiffContextDialog/67.27.1853.1052@67.27.1853.1052" timestamp="1581359917915" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -357,7 +366,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/backend/apps/records/decision_task.py</url>
-          <line>10</line>
+          <line>11</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

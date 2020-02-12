@@ -7,9 +7,8 @@ import {Box} from "adminlte";
 import actions from "app/actions/collection";
 import {Col, Row} from "react-bootstrap";
 import InfoBox from "./InfoBox"
-import ContainerDetails from "app/components/list/ContainerDetails";
+import ContainerDetails from "./ContainerDetails";
 import CountryList from "./CountryList";
-import ContainerImpCountries from "app/components/list/ContainerImpCountries";
 import { TimeSeries, TimeRange, TimeEvent,
     Pipeline as pipeline,
     Stream,
@@ -177,9 +176,9 @@ export default class DecisionResultPanel extends React.Component{
                     <ContainerDetails {...this.props} model={decision} /> 
                     </Col>
                     <Col sm={6}>
-                    
-                     <CountryList>
-                     {this.props.updateImportCountries}
+                     
+                     <CountryList {...this.props}>
+                     
                      </CountryList>
                     {/* <ImportMap
                     /> */}

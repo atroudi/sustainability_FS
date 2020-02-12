@@ -7,7 +7,6 @@ from celery import shared_task
 from django.conf import settings
 import datetime
 
-
 @shared_task
 def load_model2(month):
     print('loading model!')
@@ -24,19 +23,15 @@ def load_model2(month):
     file = 'Mukenis_Data.csv'
     # dates to be used to query the database
     current_date = datetime.date.today()
-    current_date = current_date.replace(year=2010)  # As we have historical data TODO: to be chaged with recent data
+    current_date = current_date.replace(year=2010) # As we have historical data TODO: to be chaged with recent data
     prediction_date = datetime.date.today()
-    prediction_date = prediction_date.replace(
-        year=2010)  # As we have historical data TODO: to be chaged with recent data
+    prediction_date = prediction_date.replace(year=2010) # As we have historical data TODO: to be chaged with recent data
 
     if not month:
         startDateOffset = 0
     else:
-        # Case of prediction month is the same as current month
-        if current_date.month == month:
-            current_date = current_date.replace(month=current_date.month - 1)
-        else:
-            prediction_date = prediction_date.replace(month=month)
+        # startDateOffset = int(month * 31) // OLD APPROACH TO BE REOMOVED
+        prediction_date = prediction_date.replace(month= month)
     print(current_date)
     print(prediction_date)
     geolocation_id = 8
@@ -60,8 +55,7 @@ def load_model2(month):
     conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (settings.DATABASES.get("default").get("HOST"),
                                                                        settings.DATABASES.get("default").get("NAME"),
                                                                        settings.DATABASES.get("default").get("USER"),
-                                                                       settings.DATABASES.get("default").get(
-                                                                           "PASSWORD"),
+                                                                       settings.DATABASES.get("default").get("PASSWORD"),
                                                                        ))
     cur = conn.cursor()
 
@@ -97,15 +91,19 @@ def load_model2(month):
         print("Error while fetching data from PostgreSQL", error)
 
     # example of prediction with a single input
+    data = [27.5, 65, 4.5]
     id = 0
-    number_of_weeks = (prediction_date.month-current_date.month)*4
-    # compute prediction for every week
-    for week in range(number_of_weeks-1):
+    print(input_data)
+
+    # repeat for 4 weeks
+    for j in range(3):
         for w in w_mat:
             predicted_water_loss = \
-                np.dot(np.concatenate((np.matrix([1] * len(input_data)).T, np.array(input_data)), axis=1), w)[0, 0]
+            np.dot(np.concatenate((np.matrix([1] * len(input_data)).T, np.array(input_data)), axis=1), w)[0, 0]
 
             # store values in Prediction table
+            print(id)
+            print(len(dates))
             time = dates[id]
             tmp_temp_avg2 = input_data[id][0]
             tmp_humidity_avg2 = input_data[id][1]
@@ -116,8 +114,10 @@ def load_model2(month):
             print("Date " + str(dates[id]))
             print("Actual water loss: %f" % actual_water_loss)
             id += 1
+
             prediction_list = [id, time, tmp_temp_avg2, tmp_humidity_avg2, location_label, tmp_solar_radiation2,
                                predicted_water_loss, actual_water_loss, geolocation_id]
+            print(prediction_list)
             try:
                 cur.execute(
                     "INSERT INTO field_prediction (id, time, temp_avg, humidity_avg ,label, solar_radiation, water_loss, water_actual, geolocation_id ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)",
@@ -125,6 +125,7 @@ def load_model2(month):
                 )
             except (Exception, psycopg2.Error) as error:
                 print("Error while inserting data into field_prediction table.", error)
+
     conn.commit()
     return total_monthly_crop_demand
 
@@ -258,8 +259,7 @@ def storeDecision(month, demand, results):
     conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (settings.DATABASES.get("default").get("HOST"),
                                                                        settings.DATABASES.get("default").get("NAME"),
                                                                        settings.DATABASES.get("default").get("USER"),
-                                                                       settings.DATABASES.get("default").get(
-                                                                           "PASSWORD"),
+                                                                       settings.DATABASES.get("default").get("PASSWORD"),
                                                                        ))
     cur = conn.cursor()
 
@@ -274,6 +274,7 @@ def storeDecision(month, demand, results):
     except (Exception, psycopg2.Error) as error:
         print("Error while inserting data into decision table.", error)
 
+
     imports_dict = results[-1]
 
     print("Store import countries")
@@ -286,6 +287,7 @@ def storeDecision(month, demand, results):
             [country, imports_dict[country], rank] + [imports_dict[country], rank]
         )
         rank += 1
+
 
     # commit db connection
     conn.commit()
@@ -302,6 +304,7 @@ def decision(crop_demand, month):
     print("local water demand: " + str(local_water_requirement))
     crop_inventory = 0
 
+
     results = []
     print("make decision")
 
@@ -310,6 +313,7 @@ def decision(crop_demand, month):
     # store results into crop table
     storeDecision(month, crop_demand, results)
     print(results)
+
 
 
 if __name__ == "__main__":
