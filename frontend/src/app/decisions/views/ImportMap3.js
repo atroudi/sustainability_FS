@@ -400,6 +400,14 @@ export default class Map extends React.Component {
       }
   }
 
+  componentWillReceiveProps(nextProps){
+    const {props} = this;
+    if (props.import_countries !== nextProps.import_countries) {
+      this._updateImportCountries(nextProps.import_countries)
+    }
+    console.log(nextProps.import_countries)
+  }
+
   render() {
 
     const {viewport, allDay, selectedTime, startTime, endTime} = this.state;
@@ -409,12 +417,11 @@ export default class Map extends React.Component {
           updateImportCountries: this._updateImportCountries,
       });
   });
-
     return (
-        <div >
+        <div>
         <MapGL
             width= "100%"
-            height="1000px"
+            height= {this.props.contentWrapperMinHeight}
           ref={this._mapRef}
           {...viewport}
           mapStyle="mapbox://styles/mapbox/light-v10"

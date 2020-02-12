@@ -4,7 +4,7 @@ import {createSelector} from "reselect";
 import findModel from "app/components/higherOrder/findModel";
 
 import actions from "app/actions/collection";
-import ContainerImpCountries from "app/components/list/ContainerImpCountries";
+import ContainerImpCountries from "./ContainerImpCountries";
 import CreateForm from "app/users/components/CreateForm";
 import QueryForm from "app/users/components/QueryForm";
 

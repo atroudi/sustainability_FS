@@ -1,8 +1,8 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
-import GraphChartJs from "../graphs/GlucoseChartJs"
+import GraphChartJs from "../../components/graphs/GlucoseChartJs"
 
-import Box from "./Box2";
+import Box from "../../components/list/Box2";
 import { TimeSeries, TimeRange, TimeEvent,
     Pipeline as pipeline,
     Stream,
@@ -84,9 +84,8 @@ class Container extends React.Component {
 
             }
         })
-        this.props.children(country_list)
 
-        console.log(country_list)
+        this.props.onChangeImportCountries(country_list)
         return (
             <div className="countries-panel">
                 <Box {...this.props}/>

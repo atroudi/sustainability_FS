@@ -1,8 +1,8 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
-import GraphChartJs from "../graphs/GlucoseChartJs"
+import GraphChartJs from "../../components/graphs/GlucoseChartJs"
 
-import Box from "./Box3";
+import Box from "../../components/list/Box3";
 
 class Container extends React.Component {
     componentDidMount() {

@@ -7,16 +7,15 @@ import {Row} from "react-bootstrap"
 class ContentWrapper extends React.Component {
     render() {
         const {children, contentWrapperMinHeight} = this.props;
-
         return (
             <Row>
             <div
                 style={{"minHeight": contentWrapperMinHeight, "minWidth": 0}}
                 className="content-wrapper"
             >
-            <ImportMap3>
+            {/* <ImportMap3> */}
             {children}
-            </ImportMap3>
+            {/* </ImportMap3> */}
             </div>
             </Row>
         );
