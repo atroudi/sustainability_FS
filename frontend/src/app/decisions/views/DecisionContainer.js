@@ -35,18 +35,33 @@ class Container extends React.Component {
         this.state = {
             demand: initial_demand,
             month: initial_month,
-            import_countries:[]
+            import_countries:[],
+            decision_models:this.props.collection.models
         }
+        // const {actions, collection} = this.props;
+        // let query = collection.get("query");
+        // query = query.set("search", "");
+        // query = query.set("demand", initial_demand);
+        // actions.fetchCollection({collection, query});
     }
 
     _onChangeImportCountries = (new_countries) => {
-        console.log(new_countries)
+        // console.log(new_countries)
         this.setState({import_countries: new_countries});
     }
 
     _onChangeDemand = (variable, new_demand) => {
         if (variable == "demand"){
             this.setState({demand: new_demand});
+            const {actions, collection} = this.props;
+            let query = collection.get("query");
+            query = query.set("search", "");
+            query = query.set("demand", new_demand);
+            actions.fetchCollection({collection, query});
+
+            // wait for decision task to complete in the back end triggered by the fetch query
+            // update with the 
+
         }
         else if (variable =="temperature")
             this.setState({});
@@ -61,14 +76,15 @@ class Container extends React.Component {
     //     actions.fetchCollection({collection, query});
     // }
 
-    // componentWillReceiveProps(nextProps){
+    componentWillReceiveProps(nextProps){
 
-    //     const decision = nextProps.collection.models
-    //     .reduce(model => model.month==1)
-    //     if (decision){
-    //         console.log(decision.tmp_import)
-    //     }
-    // }
+        const {props} = this;
+        // console.log(props)
+        if (props.collection.models !== nextProps.collection.models) {
+            console.log("received new predictions");
+            this.setState({decision_models: nextProps.collection.models});
+        }
+    }
 
     render(){   
         const {children} = this.props;   
@@ -89,7 +105,7 @@ class Container extends React.Component {
                     <Col sm={3}>
                     </Col>
                     <Col sm={6}>
-                        <DecisionResultPanel {...this.props} demand={this.state.demand} month={this.state.month} onChangeImportCountries={this._onChangeImportCountries}>
+                        <DecisionResultPanel {...this.props} decision_models={this.state.decision_models} demand={this.state.demand} month={this.state.month} onChangeImportCountries={this._onChangeImportCountries}>
                             {children}
                         </DecisionResultPanel>
                     </Col>    

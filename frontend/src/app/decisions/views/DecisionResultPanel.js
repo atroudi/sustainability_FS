@@ -50,7 +50,6 @@ export default class DecisionResultPanel extends React.Component{
         query = query.set("month", initial_month);
        
         actions.fetchCollection({collection, query});
-
     }
 
     getDecisionEvent = t => {
@@ -77,28 +76,35 @@ export default class DecisionResultPanel extends React.Component{
         //
         this.stream = new Stream();
         const increment = minute; 
-        this.interval = setInterval(() => {
-            const t = new Date(this.state.time.getTime() + increment);
-            const dbevent = this.getDecisionEvent(t);
-        }, this.props.rate ? this.props.rate : rate ); // Check if there's a rate props passed from parent object
+        // this.interval = setInterval(() => {
+        //     const t = new Date(this.state.time.getTime() + increment);
+        //     const dbevent = this.getDecisionEvent(t);
+        // }, this.props.rate ? this.props.rate : rate ); // Check if there's a rate props passed from parent object
     }
 
-    componentWillMount() { 
-        const {actions, collection} = this.props;
-        let query = collection.get("query");
-        query = query.set("search", "");
-        actions.fetchCollection({collection, query});
+    // componentWillMount() { 
+    //     const {actions, collection} = this.props;
+    //     let query = collection.get("query");
+    //     query = query.set("search", "");
+    //     actions.fetchCollection({collection, query});
 
-        this.intialize_events();
-    }
+    //     this.intialize_events();
+    // }
 
-    componentWillUnmount() {
-        clearInterval(this.interval);
-    }
+    // componentWillUnmount() {
+    //     clearInterval(this.interval);
+    // }
 
 
     componentWillReceiveProps(nextProps){
-        this.setState({demand: nextProps.demand});
+        const {props} = this;
+        if(props.demand !== nextProps.demand){
+            console.log(nextProps.demand);
+            this.setState({demand: nextProps.demand});
+            const {actions, collection} = nextProps;
+            let query = collection.get("query");
+            actions.fetchCollection({collection, query});
+        }
     }
 
     render(){      

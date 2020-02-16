@@ -12,6 +12,7 @@ from rest_framework import status, permissions
 from .tasks import hello
 from .tasks import load_model
 from .decision_task import decision
+from time import sleep
 
 class RecordViewSet(viewsets.ModelViewSet):
     serializer_class = RecordSerializer
@@ -84,7 +85,6 @@ class CropViewSet(viewsets.ModelViewSet):
     serializer_class = CropSerializer
     queryset = Crop.objects.all()
     permission_classes = (permissions.AllowAny,)
-
     def list(self, request, *args, **kwargs):
 
         # print("list crop")
@@ -123,7 +123,11 @@ class DecisionViewSet(viewsets.ModelViewSet):
         month = self.request.query_params.get('month')
         print(month)
         if demand and month:
-            decision.delay(int(demand), int(month))
+            result = decision.delay(int(demand), int(month))
+            while not result.ready():
+                print("waiting for decision task to finish...")
+                sleep(0.5)
+                print("finished decision task")
 
         queryset = self.filter_queryset(self.get_queryset())
 
@@ -131,7 +135,7 @@ class DecisionViewSet(viewsets.ModelViewSet):
         if page is not None:
             serializer = self.get_serializer(page, many=True)
             test = serializer.data
-            print(test + [serializer.data[0]])
+            # print(serializer.data)
 
             return self.get_paginated_response(serializer.data)
 

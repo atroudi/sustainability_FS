@@ -14,7 +14,7 @@ class InfoBox extends React.Component{
     // }
     
     render(){
-        const {progress, text, number, color, logo, collection} = this.props;
+        const {progress, text, number, color, logo, collection, val} = this.props;
         const {rowOneWidth} = 2;
         const showprogress = progress==="0";
 
@@ -24,7 +24,7 @@ class InfoBox extends React.Component{
                 <span className="info-box-icon"><i className={logo}></i></span>
                 <div className="info-box-content">
                     <span className="info-box-number">{text}</span>
-                    <span className="info-box-text">{this.props.val}</span>
+                    <span className="info-box-text">{val}</span>
                     <div className="progress">
                     <div className="progress-bar" style={{ width: `${progress}%` }}></div>
                     </div>

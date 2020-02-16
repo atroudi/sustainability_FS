@@ -88,7 +88,6 @@ export default class ControlPanel extends PureComponent {
     super(props);
 
     let demand = parseInt(this.props.params.demand);
-    console.log(demand)
     this.state = {
       demand: 0,
       temperature: 0,
@@ -107,7 +106,7 @@ export default class ControlPanel extends PureComponent {
         <div className="text-center" >
         <Box.Wrapper   >
             <Box.Header>
-                    <Box.Title>Decision controls</Box.Title>
+                    <Box.Title>Decision Input</Box.Title>
                 </Box.Header>
                 <Box.Body>
 

@@ -86,8 +86,11 @@ export default class Map extends React.Component {
         }
     };
 
+
     this._mapRef = React.createRef();
     this._handleMapLoaded = this._handleMapLoaded.bind(this);
+    this._updateImportCountries = this._updateImportCountries.bind(this);
+
   }
 
   
@@ -193,14 +196,8 @@ export default class Map extends React.Component {
       }
     });
 
-    // this._updateImportCountries(["IRN", "NLD" ,"CHN" ,
-    // "ESP" ,
-    // "USA" ,
-    // "MRC" ,
-    // "FRA" ,
-    // "IND" ,
-    // "LBN" ,
-    // "TUR" ])
+    // Once the map is loaded Update it with import countries
+    this._updateImportCountries(this.props.import_countries)
   }
 
   
@@ -217,7 +214,6 @@ export default class Map extends React.Component {
   // };
 
   _updateImportCountries= (countries) => {
-    console.log("Update import countries");
     const map = this._getMap();
     if(map){
 
@@ -228,11 +224,6 @@ export default class Map extends React.Component {
       origins = countries_coord;
       var counter = 0;
 
-
-      
-      
-        
-      
           // Destination
           var destination = [51.15, 25.2 ];
 
@@ -402,10 +393,11 @@ export default class Map extends React.Component {
 
   componentWillReceiveProps(nextProps){
     const {props} = this;
+
     if (props.import_countries !== nextProps.import_countries) {
-      this._updateImportCountries(nextProps.import_countries)
+      
+      this._updateImportCountries(props.import_countries)
     }
-    console.log(nextProps.import_countries)
   }
 
   render() {
