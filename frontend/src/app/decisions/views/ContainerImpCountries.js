@@ -25,6 +25,9 @@ class Container extends React.Component {
             events: new Ring(200),
         }
 
+        let query = collection.get("query");
+        actions.fetchCollection({collection, query});
+
     }
 
     getDecisionEvent = t => {
@@ -49,10 +52,10 @@ class Container extends React.Component {
         //
         this.stream = new Stream();
         const increment = minute; 
-        this.interval = setInterval(() => {
-            const t = new Date(this.state.time.getTime() + increment);
-            const dbevent = this.getDecisionEvent(t);
-        }, this.props.rate ? this.props.rate : rate ); // Check if there's a rate props passed from parent object
+        // this.interval = setInterval(() => {
+        //     const t = new Date(this.state.time.getTime() + increment);
+        //     const dbevent = this.getDecisionEvent(t);
+        // }, this.props.rate ? this.props.rate : rate ); // Check if there's a rate props passed from parent object
     }
 
 
@@ -74,6 +77,15 @@ class Container extends React.Component {
     //     actions.fetchCollection({collection, query});
     // }
 
+    componentWillReceiveProps(nextProps){
+        const {props} = this;
+        if (props.decision_models !== nextProps.decision_models) {
+            const {actions, collection} =nextProps;
+            let query = collection.get("query");
+            actions.fetchCollection({collection, query});
+            // this._updateImportCountries(nextProps.import_countries)
+        }
+      }
     render() {
         const {rowOneWidth = 3, rowTwoWidth = 8} = this.props;
         var country_list = []
@@ -84,7 +96,6 @@ class Container extends React.Component {
 
             }
         })
-
         this.props.onChangeImportCountries(country_list)
         return (
             <div className="countries-panel">
