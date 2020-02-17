@@ -14,7 +14,7 @@ def index(request):
         return redirect(settings.LOGIN_REDIRECT_URL)
 
 
-# @login_required
+@login_required
 def app(request):
     context = {
         'permissions': json.dumps(list(request.user.get_all_permissions())),
