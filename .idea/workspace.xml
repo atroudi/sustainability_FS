@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/records/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/records/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/settings/devl.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/devl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/MainSidebar/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/ContainerImpCountries.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/ContainerImpCountries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionControlPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionControlPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionResultPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionResultPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/ImportMap3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/ImportMap3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/InfoBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/InfoBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celery.logs" beforeDir="false" afterPath="$PROJECT_DIR$/celery.logs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +259,7 @@
       <workItem from="1581233961823" duration="7049000" />
       <workItem from="1581245056122" duration="5689000" />
       <workItem from="1581345641173" duration="2364000" />
-      <workItem from="1581357412900" duration="25235000" />
+      <workItem from="1581357412900" duration="35235000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1535285696860</created>
@@ -353,6 +347,10 @@
     <state x="167" y="77" width="1653" height="862" key="DiffContextDialog/67.27.1853.1052/1920.0.1920.1080@67.27.1853.1052" timestamp="1581237342529" />
     <state x="167" y="61" width="1653" height="862" key="DiffContextDialog/67.27.1853.1052@67.27.1853.1052" timestamp="1581359917915" />
     <state x="1920" y="53" width="1920" height="862" key="DiffContextDialog/67.27.3773.1052@67.27.3773.1052" timestamp="1581867988682" />
+    <state x="563" y="145" width="857" height="814" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581945083633">
+      <screen x="67" y="27" width="3773" height="1052" />
+    </state>
+    <state x="563" y="145" width="857" height="814" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.3773.1052@67.27.3773.1052" timestamp="1581945083633" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
