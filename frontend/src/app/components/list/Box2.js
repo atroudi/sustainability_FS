@@ -14,7 +14,9 @@ class MasterBox extends React.Component {
             <Box.Wrapper>
                 <Box.Header>
                     <Box.Title>{collection.title}</Box.Title>
-                
+                    <Box.Tools>
+                        <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                    </Box.Tools>
                 </Box.Header>
                 <Box.Body>
                     <LinkedListGroup {...this.props}/>

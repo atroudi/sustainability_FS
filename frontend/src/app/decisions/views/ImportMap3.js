@@ -86,7 +86,6 @@ export default class Map extends React.Component {
         }
     };
 
-
     this._mapRef = React.createRef();
     this._handleMapLoaded = this._handleMapLoaded.bind(this);
     this._updateImportCountries = this._updateImportCountries.bind(this);
@@ -214,6 +213,7 @@ export default class Map extends React.Component {
   // };
 
   _updateImportCountries= (countries) => {
+    console.log(countries)
     const map = this._getMap();
     if(map){
 

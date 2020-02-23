@@ -17,6 +17,7 @@ import Ring from "ringjs";
 import DecisionControlPanel from './DecisionControlPanel'
 import DecisionResultPanel from './DecisionResultPanel'
 import ImportMap3 from "./ImportMap3"
+import FlightMap from "./FlightMap"
 import {contentWrapperMinHeight} from "../../../adminlte/selectors";
 import viewportDimensions from "app/utils/viewportDimensions";
 
@@ -92,9 +93,10 @@ class Container extends React.Component {
             <div>
                 
                 <div style={{ width:2000, position:'absolute'}}>
-                    <ImportMap3 {...this.props} import_countries= {this.state.import_countries}>
-                    </ImportMap3>
-                                
+                    {/* <ImportMap3 {...this.props} import_countries= {this.state.import_countries}>
+                    </ImportMap3> */}
+                    <FlightMap {...this.props} import_countries= {this.state.import_countries}>
+                    </FlightMap>
                 </div>
 
                 <div >

@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/settings/devl.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings/devl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/celery.logs" beforeDir="false" afterPath="$PROJECT_DIR$/celery.logs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/adminlte/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/adminlte/model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/list/Box.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/list/Box.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/list/Box2.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/list/Box2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/list/Box3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/list/Box3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/ContainerDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/ContainerDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionControlPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionControlPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/ImportMap3.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/ImportMap3.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +53,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/apps/records" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Flight-traffic/ft_platform/ft_platform" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/frontend/node_modules/eslint" />
@@ -259,7 +269,9 @@
       <workItem from="1581233961823" duration="7049000" />
       <workItem from="1581245056122" duration="5689000" />
       <workItem from="1581345641173" duration="2364000" />
-      <workItem from="1581357412900" duration="35235000" />
+      <workItem from="1581357412900" duration="38957000" />
+      <workItem from="1582013103479" duration="8341000" />
+      <workItem from="1582434063170" duration="4413000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1535285696860</created>
@@ -347,6 +359,10 @@
     <state x="167" y="77" width="1653" height="862" key="DiffContextDialog/67.27.1853.1052/1920.0.1920.1080@67.27.1853.1052" timestamp="1581237342529" />
     <state x="167" y="61" width="1653" height="862" key="DiffContextDialog/67.27.1853.1052@67.27.1853.1052" timestamp="1581359917915" />
     <state x="1920" y="53" width="1920" height="862" key="DiffContextDialog/67.27.3773.1052@67.27.3773.1052" timestamp="1581867988682" />
+    <state x="779" y="306" width="424" height="492" key="FileChooserDialogImpl" timestamp="1582114142339">
+      <screen x="67" y="27" width="3773" height="1052" />
+    </state>
+    <state x="779" y="306" width="424" height="492" key="FileChooserDialogImpl/67.27.3773.1052@67.27.3773.1052" timestamp="1582114142339" />
     <state x="563" y="145" width="857" height="814" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581945083633">
       <screen x="67" y="27" width="3773" height="1052" />
     </state>

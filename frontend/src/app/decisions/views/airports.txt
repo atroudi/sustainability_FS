@@ -1,0 +1,5 @@
+2097,"Abadan Airport","Abadan","Iran","ABD","OIAA",30.371099472,48.2282981873,10,3.5,"E","Asia/Tehran","airport","OurAirports"
+580,"Amsterdam Airport Schiphol","Amsterdam","Netherlands","AMS","EHAM",52.308601,4.76389,-11,1,"E","Europe/Amsterdam","airport","OurAirports"
+3364,"Beijing Capital International Airport","Beijing","China","PEK","ZBAA",40.080101013183594,116.58499908447266,116,8,"U","Asia/Shanghai","airport","OurAirports"
+1051,"Fuerteventura Airport","Fuerteventura","Spain","FUE","GCFV",28.452699661254883,-13.863800048828125,85,0,"E","Atlantic/Canary","airport","OurAirports"
+6482,"Concord-Padgett Regional Airport","Concord","United States","USA","KJQF",35.387798,-80.709099,705,-5,"A","America/New_York","airport","OurAirports"

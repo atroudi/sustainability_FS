@@ -11,7 +11,7 @@ class MasterBox extends React.Component {
         const {collection, CreateForm, QueryForm} = this.props;
 
         return (
-            <Box.Wrapper>
+            <Box.Wrapper> 
                 <Box.Header>
                     <Box.Title>{collection.title}</Box.Title>
                     <Box.Tools>

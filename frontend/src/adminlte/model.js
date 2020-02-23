@@ -6,7 +6,7 @@ class AdminLTE extends Record({
         classNames: List([
             "skin-green",
             "sidebar-mini",
-            "sidebar-open"
+            "sidebar-collapse"
         ])
     }),
     controlSidebar: Map({
