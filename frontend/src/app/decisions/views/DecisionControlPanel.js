@@ -158,6 +158,7 @@ export default class ControlPanel extends PureComponent {
           <br/>
           <RangeControl {...this.props} min={-5} max={5} step={0.1} values={[0]} variable="temperature" />
         </div>
+        
         </Box.Body>
 
         </Box.Wrapper>

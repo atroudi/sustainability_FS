@@ -15,7 +15,9 @@ class Container extends React.Component {
         const {children, rowOneWidth = 3, rowTwoWidth = 8, collection} = this.props;
         return (
             <div className="grow-detail-panel">
-                <Box {...this.props}/>
+                <Box 
+                {...this.props}
+                />
             </div>
         );
     }

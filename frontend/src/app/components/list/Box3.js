@@ -11,10 +11,13 @@ class MasterBox extends React.Component {
     render() {
         const {collection, CreateForm, QueryForm} = this.props;
         return (
-            <Box.Wrapper>
-                <Box.Header>
+            <Box.Wrapper boxTools ={'collapse'}>
+                <Box.Header >
+
                     <Box.Title>Details</Box.Title>
-                
+                                    <Box.Tools>
+                        <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                    </Box.Tools>
                 </Box.Header>
                 <Box.Body>
                     <Detail {...this.props}/>

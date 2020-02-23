@@ -26,5 +26,7 @@ backend/apps/users/__pycache__
 backend/apps/users/migrations/__pycache__
 backend/apps/users/registration/__pycache__
 backend/settings/__pycache__
+backend/settings/devl.py
+celery.logs
 *.pyc
 *.pyo
