@@ -37,7 +37,8 @@ class Container extends React.Component {
             demand: initial_demand,
             month: initial_month,
             import_countries:[],
-            decision_models:this.props.collection.models
+            decision_models:this.props.collection.models,
+            openResultPanel:false
         }
         // const {actions, collection} = this.props;
         // let query = collection.get("query");
@@ -49,6 +50,12 @@ class Container extends React.Component {
     _onChangeImportCountries = (new_countries) => {
         // console.log(new_countries)
         this.setState({import_countries: new_countries});
+    }
+
+    _onSwitchResultPanel = (new_countries) => {
+        // console.log(new_countries)
+        this.setState({openResultPanel: !this.state.openResultPanel});
+        console.log(this.state.openResultPanel);
     }
 
     _onChangeDemand = (variable, new_demand) => {
@@ -102,12 +109,12 @@ class Container extends React.Component {
                 <div >
                     <Row>   
                     <Col sm={3}>
-                        <DecisionControlPanel {...this.props} onChange = {this._onChangeDemand} />
+                        <DecisionControlPanel {...this.props} onChange = {this._onChangeDemand} onSwitchResultPanel={this._onSwitchResultPanel}/>
                     </Col>
                     <Col sm={3}>
                     </Col>
                     <Col sm={6}>
-                        <DecisionResultPanel {...this.props} decision_models={this.state.decision_models} demand={this.state.demand} month={this.state.month} onChangeImportCountries={this._onChangeImportCountries}>
+                        <DecisionResultPanel {...this.props} decision_models={this.state.decision_models} demand={this.state.demand} month={this.state.month} onChangeImportCountries={this._onChangeImportCountries} openResultPanel={this.state.openResultPanel}>
                             {children}
                         </DecisionResultPanel>
                     </Col>    

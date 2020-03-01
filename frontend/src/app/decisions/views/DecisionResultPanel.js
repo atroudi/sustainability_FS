@@ -5,7 +5,7 @@ import {createSelector} from "reselect";
 import React from "react";
 import {Box} from "adminlte";
 import actions from "app/actions/collection";
-import {Col, Row} from "react-bootstrap";
+import {Col, Row, Toast} from "react-bootstrap";
 import InfoBox from "./InfoBox"
 import ContainerDetails from "./ContainerDetails";
 import CountryList from "./CountryList";
@@ -15,6 +15,7 @@ import { TimeSeries, TimeRange, TimeEvent,
     EventOut,
     percentile} from "pondjs";
 import Ring from "ringjs";
+import {Panel} from "react-bootstrap";
 
 
 const sec = 1000;
@@ -149,7 +150,9 @@ export default class DecisionResultPanel extends React.Component{
         }
         return(
             <div className="text-center">
-
+            <Panel id="collapsible-panel-example-1" style= {{border: 'none', padding: "0", backgroundColor: 'rgba( 255, 255, 255, 0)'}} expanded={this.props.openResultPanel}>
+            <Panel.Collapse>
+            <Panel.Body>
             <Box.Wrapper>
                 <Box.Header>
                     <Box.Title>Decision Results</Box.Title>
@@ -162,7 +165,6 @@ export default class DecisionResultPanel extends React.Component{
                 <Row>
                     <Col sm={4}>
                     <InfoBox {...this.props} text={"Grow"} progress={"1"} logo={"fa fa-bookmark-o"} color={"info-box bg-green"} val={grow_val} collection={this.props.collection} />
-                    {/* <CollapseBox/> */}
                     {/* <ContainerDetails {...this.props} model={decision} /> */}
                     </Col>
                     <Col sm={8}>
@@ -178,7 +180,6 @@ export default class DecisionResultPanel extends React.Component{
                 </Row>
                 <Row>
                 <Col sm={6}>
-                    {/* <CollapseBox/> */}
                     <ContainerDetails {...this.props} model={decision} /> 
                     </Col>
                     <Col sm={6}>
@@ -193,6 +194,9 @@ export default class DecisionResultPanel extends React.Component{
                 </Row>
                 </Box.Body>
             </Box.Wrapper> 
+            </Panel.Body>
+          </Panel.Collapse>
+            </Panel>
             </div>
         );
     }
