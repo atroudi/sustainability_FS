@@ -79,7 +79,7 @@ class Container extends React.Component {
 
     componentWillReceiveProps(nextProps){
         const {props} = this;
-        if (props.decision_models !== nextProps.decision_models) {
+        if (JSON.stringify(props.decision_models) !== JSON.stringify(nextProps.decision_models)) {
             const {actions, collection} =nextProps;
             let query = collection.get("query");
             actions.fetchCollection({collection, query});

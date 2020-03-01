@@ -1,6 +1,7 @@
 import {Box} from "adminlte";
 import React, {PureComponent} from 'react';
 import { Range } from 'react-range';
+import Switch from "react-switch";
 
 const defaultContainer = ({children}) => <div className="control-panel">{children}</div>;
 
@@ -13,7 +14,7 @@ class RangeControl extends PureComponent {
     this.state = {
       demand: 0,
       temperature: 0,
-      values: this.props.values
+      values: this.props.values,
     };
   }
 
@@ -91,14 +92,20 @@ export default class ControlPanel extends PureComponent {
     this.state = {
       demand: 0,
       temperature: 0,
-      demands: [demand]
+      demands: [demand],
+      resultPanelswitch: false
     };
+    this.handleChange = this.handleChange.bind(this);
   }
 
   // componentWillMount(){
   //   this.setState({values : [this.props.params.demand]});
   // }
 
+  handleChange(checked) {
+    this.setState({ resultPanelswitch: checked });
+    this.props.onSwitchResultPanel();
+  }
   render() {
     const {time} = this.props;
     
@@ -117,36 +124,6 @@ export default class ControlPanel extends PureComponent {
           </p>
           <hr />
         </div>
-        {/* <div className="text-left" >
-          <label>Demand</label>
-          <input
-            className="slider form-control"
-            data-slider-id="purple"
-            type="range"
-            // disabled={allDay}
-            min={0}
-            max={10000000}
-            step={1000}
-            value={this.state.demand}
-            onChange={event => { console.log(event.target.value); this.setState({ demand: event.target.value });}}
-            // onChange={_onChangeDay}
-            />
-        </div>
-        <div className="text-left" >
-          <label>Temperature</label>
-          <input
-            className="slider form-control"
-            data-slider-id="purple"
-            type="range"
-            // disabled={allDay}
-            min={-5}
-            max={5}
-            step={0.1}
-            value={this.state.temperature}
-            // onChange={temperature => this.setState({ temperature })}
-            // onChange={_onChangeDay}
-            />
-        </div> */}
         <div className="text-left" >
           <label>Demand</label>
           <br/>
@@ -158,7 +135,28 @@ export default class ControlPanel extends PureComponent {
           <br/>
           <RangeControl {...this.props} min={-5} max={5} step={0.1} values={[0]} variable="temperature" />
         </div>
-        
+        <hr />
+        <div className="text-left" >
+          <label htmlFor="material-switch">
+            <Switch
+                checked={this.state.resultPanelswitch}
+                onChange={this.handleChange}
+                onColor="#bdebd6"
+                onHandleColor="#378663"
+                handleDiameter={20}
+                uncheckedIcon={false}
+                checkedIcon={false}
+                boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+                activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+                height={10}
+                width={32}
+                className="react-switch"
+                id="material-switch"
+              />
+              <span style={{paddingTop: '100px'}}>     Result Panel </span>
+              </label>
+              </div>
+
         </Box.Body>
 
         </Box.Wrapper>

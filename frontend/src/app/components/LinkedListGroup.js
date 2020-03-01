@@ -8,6 +8,7 @@ class LinkedListGroup extends React.Component {
         return (
             <div className="list-group" style={{opacity: collection.isLoading ? 0.5 : 1}}>
                 {collection.models.toList()
+                .filter(model => model.quantity_import !== 0)
                 .sort((model1,model2) => model1.quantity_import<model2.quantity_import)
                 .map((model, key) =>
                 <Link

@@ -234,7 +234,7 @@ class World extends React.Component {
     super(props);
 
     const byIata = indexBy(this.props.airports, 'iata', false);
-    let filteredRoutes = this.props.routes
+    let initialAllRoutes = this.props.routes
     .map(d => Object.assign(d, {
       srcAirport: byIata[d.srcIata],
       dstAirport: byIata[d.dstIata]
@@ -243,7 +243,8 @@ class World extends React.Component {
 
     this.state = {
       airports: this.props.airports,
-      routes: filteredRoutes
+      routes: initialAllRoutes,
+      hoverArc: null
     }
 
     this._mapRef = React.createRef();
@@ -266,15 +267,17 @@ class World extends React.Component {
     // load data
     if(countries){
       filteredRoutes = routes
-      .filter(d => countries.includes(d.srcIata) || countries.includes(d.dstIata)) // exclude unknown airports
-      // .filter(d => byIata.hasOwnProperty(d.srcIata) && byIata.hasOwnProperty(d.dstIata)) // exclude unknown airports
-      // .filter(d => d.stops === '0') // non-stop flights only
+      .filter(d => countries.includes(d.srcIata)) // exclude unknown airports
       .map(d => Object.assign(d, {
         srcAirport: byIata[d.srcIata],
         dstAirport: byIata[d.dstIata]
       }))
 
-      console.log(filteredRoutes);
+      // TODO: if new filteredRoutes are more than previous we have to make refresh 
+      // console.log(filteredRoutes);
+      // console.log(filteredRoutes.length);
+      // console.log(this.state.routes.length);
+
     } else {
       filteredRoutes = routes
       .map(d => Object.assign(d, {
@@ -296,12 +299,19 @@ class World extends React.Component {
 
   componentWillReceiveProps(nextProps){
     const {props} = this;
-    if (props.import_countries !== nextProps.import_countries) {
-      this._updateImportCountries(nextProps.import_countries, nextProps.routes)
+
+    if (JSON.stringify(props.import_countries) !== JSON.stringify(nextProps.import_countries)) {
+      console.log(props.import_countries);
+      console.log(nextProps.import_countries);
+      this._updateImportCountries(nextProps.import_countries, nextProps.routes);
+      console.log(this.state.routes);
     }
   }
 
   render(){
+    console.log("render");
+    console.log(this.state.routes);
+
     return  (<Globe
       ref={this._mapRef}
       // globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
@@ -316,13 +326,19 @@ class World extends React.Component {
       arcDashGap={0.1}
       // arcDashInitialGap={() => Math.random()}
       arcDashAnimateTime={1500}
-      arcColor={d => [`rgba(0, 255, 0, ${OPACITY})`, `rgba(255, 0, 0, ${OPACITY})`]}
-      arcsTransitionDuration={0}
+      // arcColor={d => [`rgba(0, 255, 0, ${OPACITY})`, `rgba(255, 0, 0, ${OPACITY})`]}
+      arcsTransitionDuration={1000}
       arcStroke={0.3}
+      arcColor={d => {
+        const op = !this.state.hoverArc ? OPACITY : d === this.state.hoverArc ? 0.9 : OPACITY / 4;
+        return [`rgba(0, 255, 0, ${op})`, `rgba(255, 0, 0, ${op})`];
+      }}
+      onArcHover={arc=>this.setState({hoverArc : arc})}
+
       pointsData={this.state.airports}
       pointColor={() => 'orange'}
       pointAltitude={0}
-      pointRadius={0.02}
+      pointRadius={0.2}
       pointsMerge={true}
     />);
 

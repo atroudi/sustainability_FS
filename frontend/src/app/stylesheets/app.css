@@ -1175,3 +1175,8 @@
 .text-center {
   padding: 15px;
 }
+
+.react-switch {
+  vertical-align: middle;
+  margin-left: 4px;
+}

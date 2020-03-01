@@ -7,7 +7,7 @@ import actions from "app/actions/collection";
 import CropSelection from "./CropSelection";
 
 class Container extends React.Component {
-    componentWillMount() { 
+    componentWillMount() {
         const {actions, collection} = this.props;
         let query = collection.get("query");
         query = query.set("week", 0);
