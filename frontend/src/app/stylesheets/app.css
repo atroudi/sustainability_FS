@@ -1180,3 +1180,18 @@
   vertical-align: middle;
   margin-left: 4px;
 }
+
+.box-header .panel-title {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1;
+}
+
+.box-header .panel-title a:hover {
+  color: #378663;
+}
+
+.box-header .panel-title a:focus {
+  color: #378663;
+}
