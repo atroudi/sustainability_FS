@@ -301,16 +301,16 @@ class World extends React.Component {
     const {props} = this;
 
     if (JSON.stringify(props.import_countries) !== JSON.stringify(nextProps.import_countries)) {
-      console.log(props.import_countries);
-      console.log(nextProps.import_countries);
+      // console.log(props.import_countries);
+      // console.log(nextProps.import_countries);
       this._updateImportCountries(nextProps.import_countries, nextProps.routes);
-      console.log(this.state.routes);
+      // console.log(this.state.routes);
     }
   }
 
   render(){
-    console.log("render");
-    console.log(this.state.routes);
+    // console.log("render");
+    // console.log(this.state.routes);
 
     return  (<Globe
       ref={this._mapRef}

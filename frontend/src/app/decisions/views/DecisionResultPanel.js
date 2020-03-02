@@ -5,7 +5,7 @@ import {createSelector} from "reselect";
 import React from "react";
 import {Box} from "adminlte";
 import actions from "app/actions/collection";
-import {Col, Row, Toast} from "react-bootstrap";
+import {Col, Row, Panel} from "react-bootstrap";
 import InfoBox from "./InfoBox"
 import ContainerDetails from "./ContainerDetails";
 import CountryList from "./CountryList";
@@ -15,8 +15,6 @@ import { TimeSeries, TimeRange, TimeEvent,
     EventOut,
     percentile} from "pondjs";
 import Ring from "ringjs";
-import {Panel} from "react-bootstrap";
-
 
 const sec = 1000;
 const minute = 60 * sec;
@@ -150,7 +148,7 @@ export default class DecisionResultPanel extends React.Component{
         }
         return(
             <div className="text-center">
-            <Panel id="collapsible-panel-example-1" style= {{border: 'none', padding: "0", backgroundColor: 'rgba( 255, 255, 255, 0)'}} expanded={this.props.openResultPanel}>
+            <Panel id="collapsible-panel-example-1" style= {{border: 'none', padding: "0", backgroundColor: 'transparent'}} expanded={this.props.openResultPanel}>
             <Panel.Collapse>
             <Panel.Body>
             <Box.Wrapper>

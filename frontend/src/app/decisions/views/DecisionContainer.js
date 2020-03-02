@@ -55,7 +55,6 @@ class Container extends React.Component {
     _onSwitchResultPanel = (new_countries) => {
         // console.log(new_countries)
         this.setState({openResultPanel: !this.state.openResultPanel});
-        console.log(this.state.openResultPanel);
     }
 
     _onChangeDemand = (variable, new_demand) => {
