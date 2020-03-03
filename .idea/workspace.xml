@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f3f6d289-d346-4991-a3f9-661756bb1926" name="Default" comment="Added signup page. Improve glucose graph2 with per userId graph visualization.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionControlPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/DecisionControlPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/decisions/views/FlightMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/decisions/views/FlightMap.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +261,7 @@
       <workItem from="1581357412900" duration="38957000" />
       <workItem from="1582013103479" duration="8341000" />
       <workItem from="1582434063170" duration="6178000" />
-      <workItem from="1583046104005" duration="3042000" />
+      <workItem from="1583046104005" duration="4296000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1535285696860</created>

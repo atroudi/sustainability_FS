@@ -309,8 +309,8 @@ class World extends React.Component {
   }
 
   render(){
-    // console.log("render");
-    // console.log(this.state.routes);
+    console.log("render");
+    console.log(this.state.routes);
 
     return  (<Globe
       ref={this._mapRef}
@@ -328,18 +328,18 @@ class World extends React.Component {
       arcDashAnimateTime={1500}
       // arcColor={d => [`rgba(0, 255, 0, ${OPACITY})`, `rgba(255, 0, 0, ${OPACITY})`]}
       arcsTransitionDuration={1000}
-      arcStroke={0.3}
+      arcStroke={1.6}
       arcColor={d => {
         const op = !this.state.hoverArc ? OPACITY : d === this.state.hoverArc ? 0.9 : OPACITY / 4;
         return [`rgba(0, 255, 0, ${op})`, `rgba(255, 0, 0, ${op})`];
       }}
       onArcHover={arc=>this.setState({hoverArc : arc})}
 
-      pointsData={this.state.airports}
-      pointColor={() => 'orange'}
-      pointAltitude={0}
-      pointRadius={0.2}
-      pointsMerge={true}
+      // pointsData={this.state.airports}
+      // pointColor={() => 'orange'}
+      // pointAltitude={0}
+      // pointRadius={0.2}
+      // pointsMerge={true}
     />);
 
   }
