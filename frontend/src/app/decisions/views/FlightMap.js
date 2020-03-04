@@ -204,7 +204,17 @@ const routes_local = [
     srcIata: "USA",
     stops: "0",
   },
-
+  {
+    airline: "4E",
+    airlineId: "\N",
+    codeshare: "",
+    dstAirportId: "1",
+    dstIata: "DOH",
+    equipment: "PAG",
+    srcAirportId: "5",
+    srcIata: "USA",
+    stops: "0",
+  },
   {
     airline: "4E",
     airlineId: "\N",
@@ -244,7 +254,8 @@ class World extends React.Component {
     this.state = {
       airports: this.props.airports,
       routes: initialAllRoutes,
-      hoverArc: null
+      hoverArc: null,
+      countries: this.props.import_countries,
     }
 
     this._mapRef = React.createRef();
@@ -263,31 +274,48 @@ class World extends React.Component {
   
     const byIata = indexBy(this.state.airports, 'iata', false);
 
-    var filteredRoutes = []
+    let filteredRoutes = []
+    console.log(countries);
+    console.log(this.state.countries);
     // load data
     if(countries){
       filteredRoutes = routes
-      .filter(d => countries.includes(d.srcIata)) // exclude unknown airports
-      .map(d => Object.assign(d, {
-        srcAirport: byIata[d.srcIata],
-        dstAirport: byIata[d.dstIata]
-      }))
+      .filter(d => countries.includes(d.srcIata)) // exclude countries without import
+      .map(d => {
+        if(this.state.countries && this.state.countries.includes(d.srcIata))
+          return Object.assign(d, {
+            srcAirport: byIata[d.srcIata],
+            dstAirport: byIata[d.dstIata]
+          });
+        else
+          // For new object reinitialize threeJS objects attributes
+          return Object.assign(d, {
+            __threeObj: null,
+            __currentTargetD: null,
+            srcAirport: byIata[d.srcIata],
+            dstAirport: byIata[d.dstIata]
+          });
 
-      // TODO: if new filteredRoutes are more than previous we have to make refresh 
-      // console.log(filteredRoutes);
-      // console.log(filteredRoutes.length);
-      // console.log(this.state.routes.length);
+    })
+
 
     } else {
       filteredRoutes = routes
       .map(d => Object.assign(d, {
+        __threeObj: null,
+        __currentTargetD: null,
         srcAirport: byIata[d.srcIata],
         dstAirport: byIata[d.dstIata]
       }))
     }
 
     this.setState({routes:filteredRoutes});
-
+    this.setState({countries: countries})
+    // const map = this._getMap();
+    // if(map){
+    //   console.log("resume animation")
+    //   map.resumeAnimation();
+    // }
   }
 
 
@@ -301,17 +329,11 @@ class World extends React.Component {
     const {props} = this;
 
     if (JSON.stringify(props.import_countries) !== JSON.stringify(nextProps.import_countries)) {
-      // console.log(props.import_countries);
-      // console.log(nextProps.import_countries);
       this._updateImportCountries(nextProps.import_countries, nextProps.routes);
-      // console.log(this.state.routes);
     }
   }
 
   render(){
-    console.log("render");
-    console.log(this.state.routes);
-
     return  (<Globe
       ref={this._mapRef}
       // globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
@@ -324,7 +346,7 @@ class World extends React.Component {
       arcEndLng={d => +d.dstAirport.lng}
       arcDashLength={1.0}
       arcDashGap={0.1}
-      // arcDashInitialGap={() => Math.random()}
+      arcDashInitialGap={() => Math.random()}
       arcDashAnimateTime={1500}
       // arcColor={d => [`rgba(0, 255, 0, ${OPACITY})`, `rgba(255, 0, 0, ${OPACITY})`]}
       arcsTransitionDuration={1000}
