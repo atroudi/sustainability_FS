@@ -87,11 +87,11 @@ class World extends React.Component {
       })
 
       filtered_countries_polygon = countries_polygon_local.features
-        .filter(feature => blockade_switch ? countries.includes(feature.properties.ADM0_A3) || blocked_countries.includes(feature.properties.ADM0_A3)
-        : countries.includes(feature.properties.ADM0_A3));
+        .filter(feature => blockade_switch ? countries.includes(feature.properties.ADM0_A3) || blocked_countries.includes(feature.properties.ADM0_A3) || (feature.properties.ADM0_A3==='QAT')
+        : countries.includes(feature.properties.ADM0_A3) || (feature.properties.ADM0_A3==='QAT'));
       filtered_countries_polygon_simple = countries_polygon_simple_local.features
-        .filter(feature => blockade_switch ? countries.includes(feature.properties.sov_a3) || blocked_countries.includes(feature.properties.sov_a3)
-        : countries.includes(feature.properties.sov_a3));
+        .filter(feature => blockade_switch ? countries.includes(feature.properties.sov_a3) || blocked_countries.includes(feature.properties.sov_a3) || (feature.properties.sov_a3==='QAT')
+        : countries.includes(feature.properties.sov_a3) || (feature.properties.sov_a3==='QAT'));
 
       console.log(filtered_countries_polygon);
       this.setState({routes:filteredRoutes});
@@ -163,7 +163,7 @@ class World extends React.Component {
 
       polygonsData={this.state.countries_polygon}
       polygonAltitude={d => ["USA","AUS"].includes(d.properties.ADM0_A3) ? 0.04 : (d.properties.ADM0_A3 === "QAT" ? 0 : (d === this.state.clickPolygon ? 0.04 : 0.01))}
-      polygonCapColor={d => (this.state.blockade_switch && this.state.blocked_countries.includes(d.properties.ADM0_A3)) ? "#FF5630" : (d === this.state.clickPolygon ? 'rgba(242, 121, 53, 0.8)' : 'rgba(0, 100, 0, 0.5)')}
+      polygonCapColor={d => (this.state.blockade_switch && this.state.blocked_countries.includes(d.properties.ADM0_A3)) ? "#FF5630" : (d === this.state.clickPolygon ? 'rgba(242, 121, 53, 0.8)' : (d.properties.ADM0_A3 === 'QAT'? 'rgba(128, 0, 0, 0.8)' :'rgba(0, 100, 0, 0.5)'))}
       polygonSideColor={() => 'rgba(0, 100, 0, 0.15)'}
       polygonStrokeColor={() => 'rgba(255,255,255,0.7)'}
       polygonLabel={({ properties: d }) => `
@@ -180,7 +180,7 @@ class World extends React.Component {
       labelSize={d => 0.4}
       labelDotRadius={d => 0.2}
       labelColor={() => 'white'}
-      labelAltitude={d => ["USA","AUS"].includes(d.properties.sov_a3) ? 0.04 : (d.properties.sov_a3 === "QAT" ? 0 : (d === this.state.clickPolygon ? 0.06 : 0.01))}
+      labelAltitude={d => ["USA","AUS"].includes(d.properties.sov_a3) ? 0.04 : (d.properties.sov_a3 === "QAT" ? 0.01 : (d === this.state.clickPolygon ? 0.06 : 0.01))}
       labelResolution={2}
     />);
 
