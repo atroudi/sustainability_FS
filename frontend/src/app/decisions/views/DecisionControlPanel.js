@@ -3,7 +3,16 @@ import React, {PureComponent} from 'react';
 import {PanelGroup, Panel} from "react-bootstrap";
 import RangeControl from "./Utils/RangeControl"
 import SwitchControl from "./Utils/SwitchControl"
+import Select from 'react-select';
+import makeAnimated from 'react-select/animated';
 
+const animatedComponents = makeAnimated();
+
+const blockedCountries = [
+  {value:'SAU', label:'Kingdom Saudi Arabia'},
+  {value:'ARE', label:'United Arab Emirates'},
+  {value:'PAK', label:'Pakistan'}
+]
 export default class ControlPanel extends PureComponent {
 
   constructor(props) {
@@ -14,10 +23,24 @@ export default class ControlPanel extends PureComponent {
       demand: 0,
       temperature: 0,
       demands: [demand],
-      resultPanelswitch: false
+      resultPanelswitch: false,
+      blockadeSwitch: false
     };
   }
 
+  onSwitchBloackade(s){
+    this.setState({blockadeSwitch: ! this.state.blockadeSwitch});
+    this.props.onSwitchBlockedCountries(s);
+  }
+
+  changeBlockCountries(blocked_countries){
+    console.log(blocked_countries);
+    let blocker_countries_simple = []
+    if (blocked_countries)
+      blocker_countries_simple= blocked_countries.map(c => c.value);
+    this.props.onChangeBlockedCountries(blocker_countries_simple);
+  }
+  
   render() {
     const {time} = this.props;
     
@@ -79,9 +102,41 @@ export default class ControlPanel extends PureComponent {
       
               <div className="text-left" >
                 <label htmlFor="material-switch2">
-                  <SwitchControl handleSwitchChange={t => console.log("blockade switch enabled")} />
+                  <SwitchControl color='red' handleSwitchChange={s => this.onSwitchBloackade(s) } />
                   <span style={{paddingTop: '100px'}}> Blockade </span>
                 </label>
+                
+                <Select
+                  closeMenuOnSelect={false}
+                  components={animatedComponents}
+                  // defaultValue={[blockedCountries[1], blockedCountries[2]]}
+                  isMulti
+                  options={blockedCountries}
+                  onChange={c => this.changeBlockCountries(c)}
+                  theme={theme => ({
+                    ...theme,
+                    borderRadius: 0,
+                    colors: {
+                      ...theme.colors,
+                      primary25: '#bdebd6',
+                      primary: '#378663',
+                    },
+                    
+                  })}
+                  styles={this.state.blockadeSwitch ? {
+                    multiValue: (styles, { data }) => {
+                      return {
+                        ...styles,
+                        backgroundColor: "#eb9494",
+                        color: 'white',
+
+                      };
+                    },
+                  }:{}
+                }
+
+                />
+                <hr />
                 <label htmlFor="material-switch3">
                     <SwitchControl handleSwitchChange={t => console.log("Fire switch enabled")} />
                     <span style={{paddingTop: '100px'}}> Fire </span>

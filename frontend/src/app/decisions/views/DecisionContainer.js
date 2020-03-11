@@ -37,8 +37,10 @@ class Container extends React.Component {
             demand: initial_demand,
             month: initial_month,
             import_countries:[],
+            blocked_countries:[],
             decision_models:this.props.collection.models,
-            openResultPanel:false
+            openResultPanel:false,
+            blocked_countries_switch:false
         }
         // const {actions, collection} = this.props;
         // let query = collection.get("query");
@@ -75,6 +77,15 @@ class Container extends React.Component {
         else
             console.warn("Invalid variable.")
     } 
+
+    _onSwitchBlockedCountries = (block_switch) => {
+        console.log(block_switch);
+        this.setState({blocked_countries_switch : block_switch});
+    }
+
+    _onChangeBlockedCountries = (blocked_countries) => {
+        this.setState({blocked_countries: blocked_countries});
+    }
     
     // componentDidMount(){
     //     const {actions, collection} = this.props;
@@ -101,14 +112,14 @@ class Container extends React.Component {
                 <div style={{ width:2000, position:'absolute'}}>
                     {/* <ImportMap3 {...this.props} import_countries= {this.state.import_countries}>
                     </ImportMap3> */}
-                    <FlightMap {...this.props} import_countries= {this.state.import_countries}>
+                    <FlightMap {...this.props} import_countries= {this.state.import_countries} blocked_countries_switch={this.state.blocked_countries_switch} blocked_countries={this.state.blocked_countries}>
                     </FlightMap>
                 </div>
 
                 <div >
                     <Row>   
                     <Col sm={3}>
-                        <DecisionControlPanel {...this.props} onChange = {this._onChangeDemand} onSwitchResultPanel={this._onSwitchResultPanel}/>
+                        <DecisionControlPanel {...this.props} onChange = {this._onChangeDemand} onSwitchResultPanel={this._onSwitchResultPanel} onSwitchBlockedCountries={this._onSwitchBlockedCountries} onChangeBlockedCountries={this._onChangeBlockedCountries}/>
                     </Col>
                     <Col sm={3}>
                     </Col>
