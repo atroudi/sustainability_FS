@@ -5,7 +5,10 @@ import React, { useRef, useState, useEffect } from 'react'
 import Globe from 'react-globe.gl'
 import {csvParseRows} from 'd3-dsv'
 import indexBy from 'index-array-by'
-// import airports from './airports.txt';
+import airports_local from './datasets/airports.json';
+import routes_local from './datasets/routes.json';
+import countries_polygon_local from './datasets/countries.json';
+import countries_polygon_simple_local from './datasets/countries_simple.json';
 
 const COUNTRY = 'United States';
 const OPACITY = 0.4;
@@ -13,255 +16,33 @@ const OPACITY = 0.4;
 const airportParse = ([airportId, name, city, country, iata, icao, lat, lng, alt, timezone, dst, tz, type, source]) => ({ airportId, name, city, country, iata, icao, lat, lng, alt, timezone, dst, tz, type, source });
 const routeParse = ([airline, airlineId, srcIata, srcAirportId, dstIata, dstAirportId, codeshare, stops, equipment]) => ({ airline, airlineId, srcIata, srcAirportId, dstIata, dstAirportId, codeshare, stops, equipment});
 
-const airports_local = [{
-  airportId: "1",
-  alt: "13",
-  city: "Doha",
-  country: "Qatar",
-  dst: "N",
-  iata: "DOH",
-  icao: "OTHH",
-  lat: "25.273056",
-  lng: "51.608056",
-  name: "Hamad International Airport",
-  source: "OurAirports",
-  timezone: "3",
-  type: "airport",
-  tz: "\\N",
-},
-{
-  airportId: "2",
-  alt: "20",
-  city: "Madrid",
-  country: "Spain",
-  dst: "U",
-  iata: "ESP",
-  icao: "AYMD",
-  lat: "40.4",
-  lng: "-3.76",
-  name: "Madang Airport",
-  source: "OurAirports",
-  timezone: "10",
-  type: "airport",
-  tz: "Pacific/Port_Moresby",
-},
-{
-  airportId: "3",
-  alt: "3627",
-  city: "Teheran",
-  country: "Iran",
-  dst: "U",
-  iata: "IRN",
-  icao: "OIII",
-  lat: "35.68920135498047",
-  lng: "51.31340026855469",
-  name: "Ghale Morghi Airport",
-  source: "OurAirports",
-  timezone: "10",
-  type: "airport",
-  tz: "Pacific/Port_Moresby",
-},
-{
-  airportId: "4",
-  alt: "3627",
-  city: "Melbourne",
-  country: "Australia",
-  dst: "O",
-  iata: "AUS",
-  icao: "YMML",
-  lat: "-37.673302",
-  lng: "144.843002",
-  name: "Melbourne International Airport",
-  source: "OurAirports",
-  timezone: "10",
-  type: "airport",
-  tz: "Pacific/Port_Moresby",
-},
-{
-  airportId: "5",
-  alt: "3627",
-  city: "Miami",
-  country: "United States",
-  dst: "O",
-  iata: "USA",
-  icao: "KMIA",
-  lat: "25.79319953918457",
-  lng: "-80.29060363769531",
-  name: "Miami International Airport",
-  source: "OurAirports",
-  timezone: "10",
-  type: "airport",
-  tz: "Pacific/Port_Moresby",
-},
-{
-  airportId: "6",
-  alt: "3627",
-  city: "Islamabad",
-  country: "Pakistan",
-  dst: "O",
-  iata: "PAK",
-  icao: "OPIS",
-  lat: "33.560713",
-  lng: "72.851613",
-  name: "New Islamabad International Airport",
-  source: "OurAirports",
-  timezone: "10",
-  type: "airport",
-  tz: "Pacific/Port_Moresby",
-},
-];
-
-
-const routes_local = [
-  {
-    airline: "4E",
-    airlineId: "\N",
-    codeshare: "",
-    dstAirportId: "2",
-    dstIata: "ESP",
-    equipment: "PAG",
-    srcAirportId: "1",
-    srcIata: "DOH",
-    stops: "0",
-  },
-  {
-    airline: "4E",
-    airlineId: "\N",
-    codeshare: "",
-    dstAirportId: "1",
-    dstIata: "DOH",
-    equipment: "PAG",
-    srcAirportId: "2",
-    srcIata: "ESP",
-    stops: "0",
-  },
-
-  {
-    airline: "4E",
-    airlineId: "\N",
-    codeshare: "",
-    dstAirportId: "3",
-    dstIata: "IRN",
-    equipment: "PAG",
-    srcAirportId: "1",
-    srcIata: "DOH",
-    stops: "0",
-  },
-  {
-    airline: "4E",
-    airlineId: "\N",
-    codeshare: "",
-    dstAirportId: "1",
-    dstIata: "DOH",
-    equipment: "IRN",
-    srcAirportId: "3",
-    srcIata: "IRN",
-    stops: "0",
-  },
-
-  {
-    airline: "4E",
-    airlineId: "\N",
-    codeshare: "",
-    dstAirportId: "4",
-    dstIata: "AUS",
-    equipment: "PAG",
-    srcAirportId: "1",
-    srcIata: "DOH",
-    stops: "0",
-  },
-  {
-    airline: "4E",
-    airlineId: "\N",
-    codeshare: "",
-    dstAirportId: "1",
-    dstIata: "DOH",
-    equipment: "PAG",
-    srcAirportId: "4",
-    srcIata: "AUS",
-    stops: "0",
-  },
-
-  {
-    airline: "4E",
-    airlineId: "\N",
-    codeshare: "",
-    dstAirportId: "5",
-    dstIata: "USA",
-    equipment: "PAG",
-    srcAirportId: "1",
-    srcIata: "DOH",
-    stops: "0",
-  },
-  {
-    airline: "4E",
-    airlineId: "\N",
-    codeshare: "",
-    dstAirportId: "1",
-    dstIata: "DOH",
-    equipment: "PAG",
-    srcAirportId: "5",
-    srcIata: "USA",
-    stops: "0",
-  },
-  {
-    airline: "4E",
-    airlineId: "\N",
-    codeshare: "",
-    dstAirportId: "1",
-    dstIata: "DOH",
-    equipment: "PAG",
-    srcAirportId: "5",
-    srcIata: "USA",
-    stops: "0",
-  },
-  {
-    airline: "4E",
-    airlineId: "\N",
-    codeshare: "",
-    dstAirportId: "6",
-    dstIata: "PAK",
-    equipment: "PAG",
-    srcAirportId: "1",
-    srcIata: "DOH",
-    stops: "0",
-  },
-  {
-    airline: "4E",
-    airlineId: "\N",
-    codeshare: "",
-    dstAirportId: "1",
-    dstIata: "DOH",
-    equipment: "PAG",
-    srcAirportId: "6",
-    srcIata: "PAK",
-    stops: "0",
-  },
-]
-
 class World extends React.Component {
   constructor(props) {
     super(props);
 
     const byIata = indexBy(this.props.airports, 'iata', false);
+
     let initialAllRoutes = this.props.routes
     .map(d => Object.assign(d, {
       srcAirport: byIata[d.srcIata],
       dstAirport: byIata[d.dstIata]
     }))
 
-
     this.state = {
       airports: this.props.airports,
       routes: initialAllRoutes,
-      hoverArc: null,
       countries: this.props.import_countries,
+      blocked_countries: this.props.blocked_countries,
+      blockade_switch: false,
+      countries_polygon: countries_polygon_local.features,
+      countries_polygon_simple: countries_polygon_simple_local.features,
+      hoverArc: null,
+      clickPolygon:null,
     }
 
     this._mapRef = React.createRef();
     this._updateImportCountries= this._updateImportCountries.bind(this);
-
-    this._updateImportCountries(this.state.countries, this.state.routes)
+    this._updateImportCountries(this.state.countries, this.state.routes, this.state.blocked_countries);
 
   }
 
@@ -270,66 +51,89 @@ class World extends React.Component {
     return this._mapRef.current ? this._mapRef.current : null;
   }
 
-  _updateImportCountries = (countries, routes) => {
+  _updateImportCountries = (countries, routes, blocked_countries, blockade_switch = this.state.blockade_switch) => {
   
     const byIata = indexBy(this.state.airports, 'iata', false);
+    let filteredRoutes = [];
+    let filtered_countries_polygon = [];
+    let filtered_countries_polygon_simple = [];
 
-    let filteredRoutes = []
-    console.log(countries);
-    console.log(this.state.countries);
-    // load data
     if(countries){
       filteredRoutes = routes
-      .filter(d => countries.includes(d.srcIata)) // exclude countries without import
-      .map(d => {
-        if(this.state.countries && this.state.countries.includes(d.srcIata))
-          return Object.assign(d, {
-            srcAirport: byIata[d.srcIata],
-            dstAirport: byIata[d.dstIata]
-          });
-        else
-          // For new object reinitialize threeJS objects attributes
-          return Object.assign(d, {
-            __threeObj: null,
-            __currentTargetD: null,
-            srcAirport: byIata[d.srcIata],
-            dstAirport: byIata[d.dstIata]
-          });
+        .filter(d => countries.includes(d.srcIata)) // include countries with import
+        .filter(d => ! (blockade_switch && blocked_countries.includes(d.srcIata)))
+        .map(d => {
+          if((blockade_switch!==this.state.blockade_switch)  && blocked_countries.includes(d.srcIata)){
+            return Object.assign(d, {
+              __threeObj: null,
+              __currentTargetD: null,
+              srcAirport: byIata[d.srcIata],
+              dstAirport: byIata[d.dstIata]
+            });
+          }
+          if(this.state.countries && this.state.countries.includes(d.srcIata))
+            return Object.assign(d, {
+              srcAirport: byIata[d.srcIata],
+              dstAirport: byIata[d.dstIata]
+            });
+          else
+            // For new object reinitialize threeJS objects attributes
+            return Object.assign(d, {
+              __threeObj: null,
+              __currentTargetD: null,
+              srcAirport: byIata[d.srcIata],
+              dstAirport: byIata[d.dstIata]
+            });
+      })
 
-    })
+      filtered_countries_polygon = countries_polygon_local.features
+        .filter(feature => blockade_switch ? countries.includes(feature.properties.ADM0_A3) || blocked_countries.includes(feature.properties.ADM0_A3)
+        : countries.includes(feature.properties.ADM0_A3));
+      filtered_countries_polygon_simple = countries_polygon_simple_local.features
+        .filter(feature => blockade_switch ? countries.includes(feature.properties.sov_a3) || blocked_countries.includes(feature.properties.sov_a3)
+        : countries.includes(feature.properties.sov_a3));
 
+      console.log(filtered_countries_polygon);
+      this.setState({routes:filteredRoutes});
+      this.setState({countries: countries});
 
-    } else {
-      filteredRoutes = routes
-      .map(d => Object.assign(d, {
-        __threeObj: null,
-        __currentTargetD: null,
-        srcAirport: byIata[d.srcIata],
-        dstAirport: byIata[d.dstIata]
-      }))
-    }
-
-    this.setState({routes:filteredRoutes});
-    this.setState({countries: countries})
-    // const map = this._getMap();
-    // if(map){
-    //   console.log("resume animation")
-    //   map.resumeAnimation();
+      // set polygon data
+      this.setState({countries_polygon: filtered_countries_polygon});
+      this.setState({countries_polygon_simple: filtered_countries_polygon_simple});
+    } 
+    // else {
+    //   filteredRoutes = routes
+    //   .map(d => Object.assign(d, {
+    //     __threeObj: null,
+    //     __currentTargetD: null,
+    //     srcAirport: byIata[d.srcIata],
+    //     dstAirport: byIata[d.dstIata]
+    //   }))
     // }
+
   }
+
 
 
   componentDidMount(){
     const map = this._getMap();
     map.pointOfView({ lat: 25.31, lng: 51.47, altitude: 1.5 });
-    this._updateImportCountries(this.state.countries, this.state.routes)
+    this._updateImportCountries(this.state.countries, this.state.routes, this.state.blocked_countries)
   }
 
   componentWillReceiveProps(nextProps){
     const {props} = this;
 
     if (JSON.stringify(props.import_countries) !== JSON.stringify(nextProps.import_countries)) {
-      this._updateImportCountries(nextProps.import_countries, nextProps.routes);
+      this._updateImportCountries(nextProps.import_countries, nextProps.routes, this.state.blocked_countries);
+    }
+    if ( (nextProps.blocked_countries_switch !== this.state.blockade_switch) || (JSON.stringify(this.state.blocked_countries) !== JSON.stringify(nextProps.blocked_countries)) ){
+      // if  {
+        console.log(nextProps.blocked_countries);
+        this.setState({blocked_countries: nextProps.blocked_countries});
+        this.setState({blockade_switch: nextProps.blocked_countries_switch});
+        this._updateImportCountries(nextProps.import_countries, nextProps.routes, nextProps.blocked_countries, nextProps.blocked_countries_switch);
+      // }
     }
   }
 
@@ -350,18 +154,34 @@ class World extends React.Component {
       arcDashAnimateTime={1500}
       // arcColor={d => [`rgba(0, 255, 0, ${OPACITY})`, `rgba(255, 0, 0, ${OPACITY})`]}
       arcsTransitionDuration={1000}
-      arcStroke={1.6}
+      arcStroke={1.0}
       arcColor={d => {
         const op = !this.state.hoverArc ? OPACITY : d === this.state.hoverArc ? 0.9 : OPACITY / 4;
         return [`rgba(0, 255, 0, ${op})`, `rgba(255, 0, 0, ${op})`];
       }}
       onArcHover={arc=>this.setState({hoverArc : arc})}
 
-      // pointsData={this.state.airports}
-      // pointColor={() => 'orange'}
-      // pointAltitude={0}
-      // pointRadius={0.2}
-      // pointsMerge={true}
+      polygonsData={this.state.countries_polygon}
+      polygonAltitude={d => ["USA","AUS"].includes(d.properties.ADM0_A3) ? 0.04 : (d.properties.ADM0_A3 === "QAT" ? 0 : (d === this.state.clickPolygon ? 0.04 : 0.01))}
+      polygonCapColor={d => (this.state.blockade_switch && this.state.blocked_countries.includes(d.properties.ADM0_A3)) ? "#FF5630" : (d === this.state.clickPolygon ? 'rgba(242, 121, 53, 0.8)' : 'rgba(0, 100, 0, 0.5)')}
+      polygonSideColor={() => 'rgba(0, 100, 0, 0.15)'}
+      polygonStrokeColor={() => 'rgba(255,255,255,0.7)'}
+      polygonLabel={({ properties: d }) => `
+        <b>${d.ADMIN} (${d.ISO_A2}):</b> <br />
+        Importation cost: <i>${d.GDP_MD_EST}</i> M$<br/>
+        Imported demand: <i>${d.POP_EST}</i>
+      `}
+      onPolygonClick={polygon=>this.setState({clickPolygon : polygon})}
+      polygonsTransitionDuration={3000}
+      labelsData={this.state.countries_polygon_simple}
+      labelLat={d => d.properties.latitude}
+      labelLng={d => d.properties.longitude}
+      labelText={d => d.properties.name}
+      labelSize={d => 0.4}
+      labelDotRadius={d => 0.2}
+      labelColor={() => 'white'}
+      labelAltitude={d => ["USA","AUS"].includes(d.properties.sov_a3) ? 0.04 : (d.properties.sov_a3 === "QAT" ? 0 : (d === this.state.clickPolygon ? 0.06 : 0.01))}
+      labelResolution={2}
     />);
 
   }
@@ -372,8 +192,8 @@ export default class Map extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      routes: routes_local,
-      airports: airports_local
+      routes: routes_local.routes,
+      airports: airports_local.airports
     };
 
   }
