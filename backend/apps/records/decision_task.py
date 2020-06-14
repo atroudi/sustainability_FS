@@ -105,7 +105,7 @@ def load_model2(month):
     for week in range(number_of_weeks-1):
         print(len(w_mat))
         for w in w_mat:
-            # add condition to avoid prediction numbers exceeding number of prediction dates
+            # add condition to avoid prediction values exceeding number of prediction dates
             if (id<len(dates)):
                 predicted_water_loss = \
                     np.dot(np.concatenate((np.matrix([1] * len(input_data)).T, np.array(input_data)), axis=1), w)[0, 0]
