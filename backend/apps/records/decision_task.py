@@ -67,7 +67,9 @@ def load_model2(month):
 
     # Free up field_prediction table
     try:
+        print("start deleting field_prediction table")
         cur.execute("delete from field_prediction")
+        print("finished deleting field_prediction table")
     except (Exception, psycopg2.Error) as error:
         print("Error while emptying data from PostgreSQL", error)
 
@@ -101,30 +103,37 @@ def load_model2(month):
     number_of_weeks = (prediction_date.month-current_date.month)*4
     # compute prediction for every week
     for week in range(number_of_weeks-1):
+        print(len(w_mat))
         for w in w_mat:
-            predicted_water_loss = \
-                np.dot(np.concatenate((np.matrix([1] * len(input_data)).T, np.array(input_data)), axis=1), w)[0, 0]
+            # add condition to avoid prediction numbers exceeding number of prediction dates
+            if (id<len(dates)):
+                predicted_water_loss = \
+                    np.dot(np.concatenate((np.matrix([1] * len(input_data)).T, np.array(input_data)), axis=1), w)[0, 0]
 
-            # store values in Prediction table
-            time = dates[id]
-            tmp_temp_avg2 = input_data[id][0]
-            tmp_humidity_avg2 = input_data[id][1]
-            tmp_solar_radiation2 = input_data[id][2]
-            actual_water_loss = water_loss_actual[id]
-            total_monthly_crop_demand += actual_water_loss
-            print("Predicted water loss: %f" % predicted_water_loss)
-            print("Date " + str(dates[id]))
-            print("Actual water loss: %f" % actual_water_loss)
-            id += 1
-            prediction_list = [id, time, tmp_temp_avg2, tmp_humidity_avg2, location_label, tmp_solar_radiation2,
-                               predicted_water_loss, actual_water_loss, geolocation_id]
-            try:
-                cur.execute(
-                    "INSERT INTO field_prediction (id, time, temp_avg, humidity_avg ,label, solar_radiation, water_loss, water_actual, geolocation_id ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)",
-                    prediction_list
-                )
-            except (Exception, psycopg2.Error) as error:
-                print("Error while inserting data into field_prediction table.", error)
+                # store values in Prediction table
+                print(dates)
+                print(len(dates))
+                print(id)
+                time = dates[0]
+
+                tmp_temp_avg2 = input_data[id][0]
+                tmp_humidity_avg2 = input_data[id][1]
+                tmp_solar_radiation2 = input_data[id][2]
+                actual_water_loss = water_loss_actual[id]
+                total_monthly_crop_demand += actual_water_loss
+                print("Predicted water loss: %f" % predicted_water_loss)
+                print("Date " + str(dates[id]))
+                print("Actual water loss: %f" % actual_water_loss)
+                id += 1
+                prediction_list = [id, time, tmp_temp_avg2, tmp_humidity_avg2, location_label, tmp_solar_radiation2,
+                                   predicted_water_loss, actual_water_loss, geolocation_id]
+                try:
+                    cur.execute(
+                        "INSERT INTO field_prediction (id, time, temp_avg, humidity_avg ,label, solar_radiation, water_loss, water_actual, geolocation_id ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)",
+                        prediction_list
+                    )
+                except (Exception, psycopg2.Error) as error:
+                    print("Error while inserting data into field_prediction table.", error)
     conn.commit()
     return total_monthly_crop_demand
 
