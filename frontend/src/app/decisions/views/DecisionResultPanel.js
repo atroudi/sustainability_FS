@@ -147,7 +147,6 @@ export default class DecisionResultPanel extends React.Component{
             decision = this.props.model
         }
         return(
-            <div className="text-center">
             <Panel id="collapsible-panel-example-1" style= {{border: 'none', padding: "0", backgroundColor: 'transparent'}} expanded={this.props.openResultPanel}>
             <Panel.Collapse>
             <Panel.Body>
@@ -195,7 +194,6 @@ export default class DecisionResultPanel extends React.Component{
             </Panel.Body>
           </Panel.Collapse>
             </Panel>
-            </div>
         );
     }
     

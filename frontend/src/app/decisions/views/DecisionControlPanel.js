@@ -13,6 +13,11 @@ const blockedCountries = [
   {value:'ARE', label:'United Arab Emirates'},
   {value:'PAK', label:'Pakistan'}
 ]
+
+const PANDEMY_LIST = [
+  {value:'COVID-19', label:'Covid-19'},
+  {value:'OTHER', label:'Other'},
+]
 export default class ControlPanel extends PureComponent {
 
   constructor(props) {
@@ -24,13 +29,23 @@ export default class ControlPanel extends PureComponent {
       temperature: 0,
       demands: [demand],
       resultPanelswitch: false,
-      blockadeSwitch: false
+      blockadeSwitch: false,
+      pandemicSwitch: false
     };
   }
 
   onSwitchBloackade(s){
     this.setState({blockadeSwitch: ! this.state.blockadeSwitch});
     this.props.onSwitchBlockedCountries(s);
+  }
+
+  onSwitchPandemic(s){
+    this.setState({pandemicSwitch: ! this.state.pandemicSwitch});
+    // this.props.onSwitchPandemic(s);
+
+  }
+  changePandemic(pandemic){
+    console.log(pandemic);
   }
 
   changeBlockCountries(blocked_countries){
@@ -57,7 +72,7 @@ export default class ControlPanel extends PureComponent {
               <div className="text-left" >
                 <p>Set parameters for crop decision prediction
                   <br/>
-                  from <b>2020-02-19 {time}</b> to <b>2020-02-19 {time}</b>
+                  from <b>2020-02-19 {time}</b> to <b>2020-03-19 {time}</b>
                 </p>
                 <hr />
               </div>
@@ -95,7 +110,7 @@ export default class ControlPanel extends PureComponent {
               <div className="text-left" >
                 <p>Possible scenarios that may affect decsion prediction
                   <br/>
-                  from <b>2020-02-19 {time}</b> to <b>2020-02-19 {time}</b>
+                  from <b>2020-02-19 {time}</b> to <b>2020-03-19 {time}</b>
                 </p>
                 <hr />
               </div>
@@ -106,6 +121,7 @@ export default class ControlPanel extends PureComponent {
                   <span style={{paddingTop: '100px'}}> Blockade </span>
                 </label>
                 
+                {this.state.blockadeSwitch &&
                 <Select
                   closeMenuOnSelect={false}
                   components={animatedComponents}
@@ -118,8 +134,8 @@ export default class ControlPanel extends PureComponent {
                     borderRadius: 0,
                     colors: {
                       ...theme.colors,
-                      primary25: '#bdebd6',
-                      primary: '#378663',
+                      primary25: '#eb9494',
+                      primary: '#eb9494',
                     },
                     
                   })}
@@ -135,8 +151,37 @@ export default class ControlPanel extends PureComponent {
                   }:{}
                 }
 
-                />
+                />}
                 <hr />
+                <label htmlFor="material-switch6">
+                    <SwitchControl color='red' handleSwitchChange={s => this.onSwitchPandemic(s) } />
+                    <span style={{paddingTop: '100px'}}> Pandemic </span>
+                </label>
+
+                {this.state.pandemicSwitch &&
+                  <Select
+                  closeMenuOnSelect={false}
+                  components={animatedComponents}
+                  isMulti
+                  options={PANDEMY_LIST}
+                  onChange={c => this.changePandemic(c)}
+                  theme={theme => ({
+                    ...theme,
+                    borderRadius: 0,
+                    colors: {
+                      ...theme.colors,
+                      primary25: '#eb9494',
+                      primary: '#eb9494',
+                    },
+                    
+                  })}
+
+
+                  />
+                }
+
+                <hr />
+
                 <label htmlFor="material-switch3">
                     <SwitchControl handleSwitchChange={t => console.log("Fire switch enabled")} />
                     <span style={{paddingTop: '100px'}}> Fire </span>

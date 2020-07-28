@@ -20,6 +20,7 @@ import ImportMap3 from "./ImportMap3"
 import FlightMap from "./FlightMap"
 import {contentWrapperMinHeight} from "../../../adminlte/selectors";
 import viewportDimensions from "app/utils/viewportDimensions";
+import PandemicPanel from "./PandemicPanel"
 
 class Container extends React.Component {
 
@@ -40,6 +41,7 @@ class Container extends React.Component {
             blocked_countries:[],
             decision_models:this.props.collection.models,
             openResultPanel:false,
+            openPandemicPanel:false,
             blocked_countries_switch:false
         }
         // const {actions, collection} = this.props;
@@ -57,6 +59,11 @@ class Container extends React.Component {
     _onSwitchResultPanel = (new_countries) => {
         // console.log(new_countries)
         this.setState({openResultPanel: !this.state.openResultPanel});
+    }
+
+    _onSwitchPandemicPanel = (new_countries) => {
+        // console.log(new_countries)
+        this.setState({openPandemicPanel: !this.state.openPandemicPanel});
     }
 
     _onChangeDemand = (variable, new_demand) => {
@@ -119,7 +126,7 @@ class Container extends React.Component {
                 <div >
                     <Row>   
                     <Col sm={3}>
-                        <DecisionControlPanel {...this.props} onChange = {this._onChangeDemand} onSwitchResultPanel={this._onSwitchResultPanel} onSwitchBlockedCountries={this._onSwitchBlockedCountries} onChangeBlockedCountries={this._onChangeBlockedCountries}/>
+                        <DecisionControlPanel {...this.props} onChange = {this._onChangeDemand} onSwitchResultPanel={this._onSwitchResultPanel} onSwitchPandemicPanel={this._onSwitchPandemicPanel} onSwitchBlockedCountries={this._onSwitchBlockedCountries} onChangeBlockedCountries={this._onChangeBlockedCountries}/>
                     </Col>
                     <Col sm={3}>
                     </Col>
@@ -127,6 +134,11 @@ class Container extends React.Component {
                         <DecisionResultPanel {...this.props} decision_models={this.state.decision_models} demand={this.state.demand} month={this.state.month} onChangeImportCountries={this._onChangeImportCountries} openResultPanel={this.state.openResultPanel}>
                             {children}
                         </DecisionResultPanel>
+                        <PandemicPanel {...this.props}  openResultPanel={this.state.openPandemicPanel}>
+                            {children}
+                        </PandemicPanel>
+
+
                     </Col>    
                     </Row>
                 </div>
