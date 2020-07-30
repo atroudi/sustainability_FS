@@ -41,7 +41,7 @@ export default class ControlPanel extends PureComponent {
 
   onSwitchPandemic(s){
     this.setState({pandemicSwitch: ! this.state.pandemicSwitch});
-    // this.props.onSwitchPandemic(s);
+    this.props.onSwitchPandemicPanel(s);
 
   }
   changePandemic(pandemic){
@@ -162,6 +162,7 @@ export default class ControlPanel extends PureComponent {
                   <Select
                   closeMenuOnSelect={false}
                   components={animatedComponents}
+                  defaultValue={[PANDEMY_LIST[0]]}
                   isMulti
                   options={PANDEMY_LIST}
                   onChange={c => this.changePandemic(c)}
