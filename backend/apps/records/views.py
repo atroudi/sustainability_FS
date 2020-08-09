@@ -124,9 +124,13 @@ class DecisionViewSet(viewsets.ModelViewSet):
         print(month)
         if demand and month:
             result = decision.delay(int(demand), int(month))
-            while not result.ready():
+
+            counter = 0
+            counter_max = 10
+            while not result.ready() and counter < counter_max:
                 print("waiting for decision task to finish...")
                 sleep(0.5)
+                counter += 1
                 print("finished decision task")
 
         queryset = self.filter_queryset(self.get_queryset())
