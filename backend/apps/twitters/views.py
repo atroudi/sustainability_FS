@@ -4,6 +4,7 @@ from .models import Twitter
 from django.views.decorators.http import require_http_methods
 from django.http import HttpResponse, Http404, JsonResponse
 import tweepy
+from rest_framework.decorators import api_view
 
 
 
@@ -17,7 +18,7 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth,wait_on_rate_limit=True)
 
-@require_http_methods(["GET"])
+@api_view(["GET"])
 def gettweets(request):
     tweets = []
     count=0
@@ -41,5 +42,4 @@ class TwitterViewSet(viewsets.ModelViewSet):
     serializer_class = TwitterSerializer
     queryset = Twitter.objects.all()
     search_fields = ('first_name', 'last_name', 'email')
-    filter_fields = ('id', 'first_name', 'last_name', 'email')
 

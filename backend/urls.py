@@ -6,14 +6,17 @@ from backend.apps.users.registration.signup import signup
 from django.contrib import admin
 
 from .views import app, index
-
+from backend.apps.twitters.views import gettweets
 from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include('users.urls')),
     url(r'^api/v1/', include('records.urls')),
+    url(r'^api/v1/', include('twitters.urls')),
     url(r'^', include('snippets.urls')),
+    # url(r'^twitter/', gettweets, name='twitter'),
+
     url(r'^app/', app, name='app'),
     url('^auth/login/$', login, name='login'),
     url('^auth/login/signup/$', signup, name='signup'),

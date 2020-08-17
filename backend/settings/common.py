@@ -29,7 +29,8 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "backend.apps.users",
     "snippets",
-    "records"
+    "records",
+    "twitters"
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
