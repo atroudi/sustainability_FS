@@ -6,7 +6,7 @@ from backend.apps.users.registration.signup import signup
 from django.contrib import admin
 
 from .views import app, index
-from backend.apps.twitters.sentimentAnalysisView import gettweets
+from backend.apps.twitters.sentimentAnalysisView import getSentiment
 from django.conf import settings
 
 urlpatterns = [
@@ -15,7 +15,7 @@ urlpatterns = [
     url(r'^api/v1/', include('records.urls')),
     url(r'^api/v1/', include('twitters.urls')),
     url(r'^', include('snippets.urls')),
-    url(r'^twitter/', gettweets, name='twitter'),
+    url(r'^twitter/', getSentiment, name='twitter'),
 
     url(r'^app/', app, name='app'),
     url('^auth/login/$', login, name='login'),
