@@ -32,9 +32,7 @@ export default class DecisionResultPanel extends React.Component{
 
     getAnaysis(tweet_list){
         const url = window.django.urls
-        console.log(url.twitter)
-
-        let request = superagent.get("http://localhost:8001/twitter/");
+        let request = superagent.get(window.django.urls.twitter);
         request.set("Accept", "application/json");
         request.query({});
         nprogress.start();
@@ -141,23 +139,26 @@ export default class DecisionResultPanel extends React.Component{
             })
 
             var renderTweets2 = this.state.tweets.map(function(item, i){
-                var color = "#46BFBD";
+                // list only first 10 tweets
+                if(i<10){
+                    var color = "#46BFBD";
             
-                if(item.label == "Neutral"){
-                    color = "#FDB45C";
+                    if(item.label == "Neutral"){
+                        color = "#FDB45C";
+                    }
+                    if(item.label == "Negative"){
+                        color = "#F7464A";
+                    }
+                    return (
+                    <li key={i} className={i}>
+                      <div key={i} className="tweets">
+                        <h3>@{item.username}</h3>
+                        <p>{item.text}</p>
+                        <h4 style={{"color": color}}>Predicted Sentiment - {item.label}</h4>
+                        </div>
+                    </li>
+                  );
                 }
-                if(item.label == "Negative"){
-                    color = "#F7464A";
-                }
-                return (
-                <li key={i} className={i}>
-                  <div key={i} className="tweets">
-                    <h3>@{item.username}</h3>
-                    <p>{item.text}</p>
-                    <h4 style={{"color": color}}>Predicted Sentiment - {item.label}</h4>
-                    </div>
-                </li>
-              );
             })
                   
         return(
