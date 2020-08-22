@@ -72,4 +72,4 @@ def getSentiment(request):
         if (prediction["label"] == "Negative"):
             negative += 1
 
-    return JsonResponse({"positive": positive, "neutral": neutral, "negative": negative, "results": tweets});
+    return JsonResponse({"positive": positive, "neutral": neutral, "negative": negative, "tweets": tweets});

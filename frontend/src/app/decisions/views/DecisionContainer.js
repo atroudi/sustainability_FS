@@ -39,6 +39,7 @@ class Container extends React.Component {
             month: initial_month,
             import_countries:[],
             blocked_countries:[],
+            pandemic_tweets:[],
             decision_models:this.props.collection.models,
             openResultPanel:false,
             openPandemicPanel:false,
@@ -64,6 +65,10 @@ class Container extends React.Component {
     _onSwitchPandemicPanel = (new_countries) => {
         // console.log(new_countries)
         this.setState({openPandemicPanel: !this.state.openPandemicPanel});
+    }
+
+    _onChangeTweets = (tweet_list) => {
+        this.setState({pandemic_tweets: tweet_list});
     }
 
     _onChangeDemand = (variable, new_demand) => {
@@ -126,7 +131,7 @@ class Container extends React.Component {
                 <div >
                     <Row>   
                     <Col sm={3}>
-                        <DecisionControlPanel {...this.props} onChange = {this._onChangeDemand} onSwitchResultPanel={this._onSwitchResultPanel} onSwitchPandemicPanel={this._onSwitchPandemicPanel} onSwitchBlockedCountries={this._onSwitchBlockedCountries} onChangeBlockedCountries={this._onChangeBlockedCountries}/>
+                        <DecisionControlPanel {...this.props} onChange = {this._onChangeDemand} onSwitchResultPanel={this._onSwitchResultPanel} onSwitchPandemicPanel={this._onSwitchPandemicPanel} onSwitchBlockedCountries={this._onSwitchBlockedCountries} onChangeBlockedCountries={this._onChangeBlockedCountries} onChangeTweets={this._onChangeTweets}/>
                     </Col>
                     <Col sm={3}>
                     </Col>
@@ -134,7 +139,7 @@ class Container extends React.Component {
                         <DecisionResultPanel {...this.props} decision_models={this.state.decision_models} demand={this.state.demand} month={this.state.month} onChangeImportCountries={this._onChangeImportCountries} openResultPanel={this.state.openResultPanel}>
                             {children}
                         </DecisionResultPanel>
-                        <PandemicPanel {...this.props}  openResultPanel={this.state.openPandemicPanel}>
+                        <PandemicPanel {...this.props}  openResultPanel={this.state.openPandemicPanel} pandemic_tweets={this.state.pandemic_tweets}>
                             {children}
                         </PandemicPanel>
 

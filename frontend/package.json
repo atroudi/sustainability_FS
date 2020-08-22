@@ -41,7 +41,7 @@
   "dependencies": {
     "@turf/turf": "^3.14.3",
     "admin-lte": "^2.4.9",
-    "chart.js": "^1.1.1",
+    "chart.js": "^2.9.3",
     "classnames": "2.2.3",
     "d3-dsv": "^1.2.0",
     "google-map-react": "^1.1.2",
@@ -57,6 +57,7 @@
     "react": "^16.8.6",
     "react-bootstrap": "^0.32.4",
     "react-chartjs": "^1.2.0",
+    "react-chartjs-2": "^2.10.0",
     "react-controllables": "^0.6.0",
     "react-dom": "^16.8.6",
     "react-globe.gl": "^2.6.2",

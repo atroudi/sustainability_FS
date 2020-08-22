@@ -1195,3 +1195,8 @@
 .box-header .panel-title a:focus {
   color: #378663;
 }
+
+.collapsible-pandemic-panel {
+  flex: 1;
+  height: 100px;
+}

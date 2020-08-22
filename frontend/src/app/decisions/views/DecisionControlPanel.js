@@ -44,8 +44,8 @@ export default class ControlPanel extends PureComponent {
     this.props.onSwitchPandemicPanel(s);
 
   }
-  changePandemic(pandemic){
-    console.log(pandemic);
+  changePandemic(tweet_list){
+    this.changeTweets(tweet_list)
   }
 
   changeBlockCountries(blocked_countries){
@@ -54,6 +54,14 @@ export default class ControlPanel extends PureComponent {
     if (blocked_countries)
       blocker_countries_simple= blocked_countries.map(c => c.value);
     this.props.onChangeBlockedCountries(blocker_countries_simple);
+  }
+
+  changeTweets(tweet_list){
+    console.log(tweet_list)
+    let tweet_list_simple = []
+    if (tweet_list)
+      tweet_list_simple= tweet_list.map(c => c.value);
+    this.props.onChangeTweets(tweet_list_simple);
   }
   
   render() {
