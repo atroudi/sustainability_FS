@@ -32,7 +32,7 @@ export default class DecisionResultPanel extends React.Component{
 
     getAnaysis(tweet_list){
         const url = window.django.urls
-        console.log(url.tweets)
+        console.log(url.twitter)
 
         let request = superagent.get("http://localhost:8001/twitter/");
         request.set("Accept", "application/json");
@@ -45,7 +45,6 @@ export default class DecisionResultPanel extends React.Component{
             if (error) {
                 console.log(error)
             } else {
-                console.log(response)
                 this.setState({
                     positive : response.body.positive, 
                     negative: response.body.negative, 
@@ -100,24 +99,17 @@ export default class DecisionResultPanel extends React.Component{
     
     
 
-    componentDidMount(){
-                
-        // promise with async/await
-        this.getAnaysis(this.props.tweets);
-
-        // console.log(successCb)
-        console.log(url.twitter)
-        }
+    // componentDidMount(){                
+    //     // promise with async/await
+    //     this.getAnaysis(this.props.tweets);
+    //     }
 
 
     componentWillReceiveProps(nextProps){
         const {props} = this;
-        console.log("RECEIIVE PROPS")
-        console.log(nextProps);
-        if (JSON. stringify(nextProps.tweets) !== JSON. stringify(props.tweets)){
-            console.log(nextProps.tweets)
-            console.log(props.tweets)
-            this.getAnaysis(this.nextProps.tweets);
+        if (JSON.stringify(nextProps.pandemic_tweets) !== JSON.stringify(props.pandemic_tweets)){
+            if (nextProps.pandemic_tweets)
+                this.getAnaysis(nextProps.pandemic_tweets);
         }
         if(props.demand !== nextProps.demand){
             console.log(nextProps.demand);
@@ -170,7 +162,7 @@ export default class DecisionResultPanel extends React.Component{
                   
         return(
             
-            <Panel  style= {{border: 'none', padding: "0", backgroundColor: 'transparent', height: "200px"}} expanded={true}>
+            <Panel  style= {{border: 'none', padding: "0", backgroundColor: 'transparent', height: "200px"}} expanded={this.props.openPandemicPanel}>
             <Panel.Collapse>
             <Panel.Body>
             <Box.Wrapper>

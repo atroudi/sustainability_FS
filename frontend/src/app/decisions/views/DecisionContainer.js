@@ -139,7 +139,7 @@ class Container extends React.Component {
                         <DecisionResultPanel {...this.props} decision_models={this.state.decision_models} demand={this.state.demand} month={this.state.month} onChangeImportCountries={this._onChangeImportCountries} openResultPanel={this.state.openResultPanel}>
                             {children}
                         </DecisionResultPanel>
-                        <PandemicPanel {...this.props}  openResultPanel={this.state.openPandemicPanel} pandemic_tweets={this.state.pandemic_tweets}>
+                        <PandemicPanel {...this.props}  openPandemicPanel={this.state.openPandemicPanel} pandemic_tweets={this.state.pandemic_tweets}>
                             {children}
                         </PandemicPanel>
 

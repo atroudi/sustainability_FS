@@ -170,7 +170,7 @@ export default class ControlPanel extends PureComponent {
                   <Select
                   closeMenuOnSelect={false}
                   components={animatedComponents}
-                  defaultValue={[PANDEMY_LIST[0]]}
+                  // defaultValue={[PANDEMY_LIST[0]]}
                   isMulti
                   options={PANDEMY_LIST}
                   onChange={c => this.changePandemic(c)}
