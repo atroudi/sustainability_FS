@@ -5,6 +5,7 @@ import RangeControl from "./Utils/RangeControl"
 import SwitchControl from "./Utils/SwitchControl"
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
+import CreatableSelect from 'react-select/creatable';
 
 const animatedComponents = makeAnimated();
 
@@ -15,8 +16,9 @@ const blockedCountries = [
 ]
 
 const PANDEMY_LIST = [
-  {value:'COVID-19', label:'Covid-19'},
-  {value:'OTHER', label:'Other'},
+  {value:'covid19', label:'Covid-19'},
+  {value:'vaccine', label:'Vaccine'},
+  {value:'other', label:'Other'},
 ]
 export default class ControlPanel extends PureComponent {
 
@@ -49,7 +51,6 @@ export default class ControlPanel extends PureComponent {
   }
 
   changeBlockCountries(blocked_countries){
-    console.log(blocked_countries);
     let blocker_countries_simple = []
     if (blocked_countries)
       blocker_countries_simple= blocked_countries.map(c => c.value);
@@ -57,7 +58,6 @@ export default class ControlPanel extends PureComponent {
   }
 
   changeTweets(tweet_list){
-    console.log(tweet_list)
     let tweet_list_simple = []
     if (tweet_list)
       tweet_list_simple= tweet_list.map(c => c.value);
@@ -80,18 +80,18 @@ export default class ControlPanel extends PureComponent {
               <div className="text-left" >
                 <p>Set parameters for crop decision prediction
                   <br/>
-                  from <b>2020-02-19 {time}</b> to <b>2020-03-19 {time}</b>
+                  from <b>2020-11-19 {time}</b> to <b>2020-12-19 {time}</b>
                 </p>
                 <hr />
               </div>
               <div className="text-left" >
                 <label>Demand</label>
                 <br/>
-                <RangeControl {...this.props} min={0} max={this.state.demands[0]*3} step={1000} values={this.state.demands} variable="demand" />
+                <RangeControl {...this.props} min={0} max={Math.max(this.state.demands[0], 20000000)} step={1000} values={this.state.demands} variable="demand" />
               </div>
               <br/>
               <div className="text-left" >
-                <label>Temperature</label>
+                <label>Temperature skew</label>
                 <br/>
                 <RangeControl {...this.props} min={-5} max={5} step={0.1} values={[0]} variable="temperature" />
               </div>
@@ -116,9 +116,9 @@ export default class ControlPanel extends PureComponent {
               <Panel.Body collapsible>
               <Box.Body>
               <div className="text-left" >
-                <p>Possible scenarios that may affect decsion prediction
+                <p>Possible scenarios that may affect decision prediction
                   <br/>
-                  from <b>2020-02-19 {time}</b> to <b>2020-03-19 {time}</b>
+                  from <b>2020-11-19 {time}</b> to <b>2020-12-19 {time}</b>
                 </p>
                 <hr />
               </div>
@@ -163,11 +163,12 @@ export default class ControlPanel extends PureComponent {
                 <hr />
                 <label htmlFor="material-switch6">
                     <SwitchControl color='red' handleSwitchChange={s => this.onSwitchPandemic(s) } />
-                    <span style={{paddingTop: '100px'}}> Pandemic </span>
+                    <span style={{paddingTop: '100px'}}> Sentiment Analysis </span>
                 </label>
 
                 {this.state.pandemicSwitch &&
-                  <Select
+                <div>
+                  {/* <Select
                   closeMenuOnSelect={false}
                   components={animatedComponents}
                   // defaultValue={[PANDEMY_LIST[0]]}
@@ -184,10 +185,27 @@ export default class ControlPanel extends PureComponent {
                     },
                     
                   })}
-
-
+                  /> */}
+                  <CreatableSelect
+                    closeMenuOnSelect={false}
+                    components={animatedComponents}
+                    isMulti
+                    onChange={c => this.changePandemic(c)}
+                    options={PANDEMY_LIST}
+                    theme={theme => ({
+                      ...theme,
+                      borderRadius: 0,
+                      colors: {
+                        ...theme.colors,
+                        primary25: '#eb9494',
+                        primary: '#eb9494',
+                      },
+                      
+                    })}
                   />
+                </div>
                 }
+
 
                 <hr />
 
@@ -209,7 +227,7 @@ export default class ControlPanel extends PureComponent {
           <Panel eventKey="3">
               <Box.Wrapper>
                   <Box.Header>
-                          <Panel.Title toggle>Fields Visualization</Panel.Title>
+                          <Panel.Title toggle>Visualizations</Panel.Title>
                       </Box.Header>
               <Panel.Body collapsible>
               <Box.Body>
@@ -224,7 +242,12 @@ export default class ControlPanel extends PureComponent {
               <div className="text-left" >
                 <label htmlFor="material-switch4">
                   <SwitchControl handleSwitchChange={t => console.log("blockade switch enabled")} />
-                  <span style={{paddingTop: '100px'}}> Visualize </span>
+                  <span style={{paddingTop: '100px'}}> Visualize Fields </span>
+                </label>
+                <hr />
+                <label htmlFor="material-switch7">
+                  <SwitchControl handleSwitchChange={t => console.log("blockade switch enabled")} />
+                  <span style={{paddingTop: '100px'}}> Drone Visualization </span>
                 </label>
               </div>
 

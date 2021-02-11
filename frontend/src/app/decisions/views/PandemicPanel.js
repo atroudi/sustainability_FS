@@ -31,10 +31,12 @@ export default class DecisionResultPanel extends React.Component{
     }
 
     getAnaysis(tweet_list){
+        console.log(tweet_list);
         const url = window.django.urls
         let request = superagent.get(window.django.urls.twitter);
         request.set("Accept", "application/json");
-        request.query({});
+        request.query({ tweet_list: tweet_list.toString()});
+        
         nprogress.start();
 
         request.end((error, response) => {
@@ -121,43 +123,23 @@ export default class DecisionResultPanel extends React.Component{
 
         
         var renderTweets = this.state.tweets.map(function(item, i){
-            var color = "#46BFBD";
-            
-            if(item.label == "Neutral"){
-                color = "#FDB45C";
-            }
-            if(item.label == "Negative"){
-                color = "#F7464A";
-            }
-              return (
-                    <div key={i} className="tweets">
-                    <h3>@{item.username}</h3>
-                    <p>{item.text}</p>
-                    <h4 style={{"color": color}}>Predicted Sentiment - {item.label}</h4>
-                    </div>
-                  );
-            })
-
-            var renderTweets2 = this.state.tweets.map(function(item, i){
-                // list only first 10 tweets
-                if(i<10){
-                    var color = "#46BFBD";
-            
-                    if(item.label == "Neutral"){
-                        color = "#FDB45C";
-                    }
-                    if(item.label == "Negative"){
-                        color = "#F7464A";
-                    }
-                    return (
-                    <li key={i} className={i}>
-                      <div key={i} className="tweets">
+            // list only first 10 tweets
+            if(i<10){
+                var color = "#46BFBD";
+                
+                if(item.label == "Neutral"){
+                    color = "#FDB45C";
+                }
+                if(item.label == "Negative"){
+                    color = "#F7464A";
+                }
+                return (
+                        <div key={i} className="tweets">
                         <h3>@{item.username}</h3>
                         <p>{item.text}</p>
                         <h4 style={{"color": color}}>Predicted Sentiment - {item.label}</h4>
                         </div>
-                    </li>
-                  );
+                    );
                 }
             })
                   

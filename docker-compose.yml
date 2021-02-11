@@ -2,8 +2,7 @@ version: '3'
 
 services:
   db:
-    restart: always
-    image: postgres
+    image: postgres:10.1-alpine
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
       # - ./dump_23-09-2018_19_24_30.sql:/docker-entrypoint-initdb.d/dump_23-09-2018_19_24_30.sql

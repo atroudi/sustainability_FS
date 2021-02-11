@@ -7,7 +7,6 @@ from celery import shared_task
 from django.conf import settings
 import datetime
 
-
 @shared_task
 def load_model2(month):
     print('loading model!')

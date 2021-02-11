@@ -68,6 +68,7 @@ class Container extends React.Component {
     }
 
     _onChangeTweets = (tweet_list) => {
+        // console.log(tweet_list);
         this.setState({pandemic_tweets: tweet_list});
     }
 

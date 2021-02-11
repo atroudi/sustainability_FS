@@ -51,8 +51,21 @@ def getSentiment(request):
     positive = 0
     neutral = 0
     negative = 0
+    print(request.query_params.get('tweet_list'))
     print("getting tweets")
-    for tweet in tweepy.Cursor(api.search,q="#" + "covid19" + " -filter:retweets",rpp=5,lang="en", tweet_mode='extended').items(50):
+    # search_terms = 'covid19 ', 'qatar'
+    searchCountry = ['QATAR', 'USA']
+    places = api.geo_search(query=searchCountry, granularity="country")
+    place_id_list = map(lambda p : p.id, places)
+    print(places)
+    place_ids = " OR ".join(place_id_list)
+    print(place_ids)
+    tweet_list = request.query_params.get('tweet_list')
+    # replace commas with ' '
+    tweet_list.replace(",", " ")
+    search_terms = tweet_list
+    # for tweet in tweepy.Cursor(api.search,q="#" + "covid19" + " -filter:retweets",rpp=5,lang="en", tweet_mode='extended').items(50):
+    for tweet in tweepy.Cursor(api.search,q='{} place:{}'.format(search_terms, place_ids) ,rpp=5,lang="en", tweet_mode='extended').items(50):
         # print(tweet)
         print("getting tweet counter:" + str(count))
         count+=1

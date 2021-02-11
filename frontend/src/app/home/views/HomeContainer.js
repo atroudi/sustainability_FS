@@ -19,7 +19,7 @@ class Container extends React.Component {
             <div className="home-container">
             <Box.Wrapper>
                 <Box.Header>
-                    <Box.Title>National Food Security Decision</Box.Title>
+                    <Box.Title>National Food Security Decision Platform</Box.Title>
                 </Box.Header>
 
                 <Box.Tools>
