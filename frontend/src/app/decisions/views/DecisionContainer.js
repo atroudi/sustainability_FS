@@ -132,7 +132,10 @@ class Container extends React.Component {
                 <div >
                     <Row>   
                     <Col sm={3}>
-                        <DecisionControlPanel {...this.props} onChange = {this._onChangeDemand} onSwitchResultPanel={this._onSwitchResultPanel} onSwitchPandemicPanel={this._onSwitchPandemicPanel} onSwitchBlockedCountries={this._onSwitchBlockedCountries} onChangeBlockedCountries={this._onChangeBlockedCountries} onChangeTweets={this._onChangeTweets}/>
+                        <DecisionControlPanel {...this.props} onChange = {this._onChangeDemand} 
+                        onSwitchResultPanel={this._onSwitchResultPanel} onSwitchPandemicPanel={this._onSwitchPandemicPanel} 
+                        onSwitchBlockedCountries={this._onSwitchBlockedCountries} onChangeBlockedCountries={this._onChangeBlockedCountries} 
+                        onChangeTweets={this._onChangeTweets} importCountries={this.state.import_countries} />
                     </Col>
                     <Col sm={3}>
                     </Col>

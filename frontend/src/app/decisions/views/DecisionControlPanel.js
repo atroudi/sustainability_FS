@@ -39,6 +39,8 @@ export default class ControlPanel extends PureComponent {
   onSwitchBloackade(s){
     this.setState({blockadeSwitch: ! this.state.blockadeSwitch});
     this.props.onSwitchBlockedCountries(s);
+    console.log(this.props.importCountries);
+
   }
 
   onSwitchPandemic(s){
@@ -135,7 +137,7 @@ export default class ControlPanel extends PureComponent {
                   components={animatedComponents}
                   // defaultValue={[blockedCountries[1], blockedCountries[2]]}
                   isMulti
-                  options={blockedCountries}
+                  options={this.props.importCountries.map(c => {var dict = { value: c, label: c}; return dict})}
                   onChange={c => this.changeBlockCountries(c)}
                   theme={theme => ({
                     ...theme,
