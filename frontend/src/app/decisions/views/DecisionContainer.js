@@ -43,7 +43,8 @@ class Container extends React.Component {
             decision_models:this.props.collection.models,
             openResultPanel:false,
             openPandemicPanel:false,
-            blocked_countries_switch:false
+            blocked_countries_switch:false,
+            fieldVizualization_switch:false
         }
         // const {actions, collection} = this.props;
         // let query = collection.get("query");
@@ -65,6 +66,10 @@ class Container extends React.Component {
     _onSwitchPandemicPanel = (new_countries) => {
         // console.log(new_countries)
         this.setState({openPandemicPanel: !this.state.openPandemicPanel});
+    }
+
+    _onSwitchFieldVizualization = (fieldVizualizationSwitch) => {
+        this.setState({ fieldVizualization_switch : !this.state.fieldVizualization_switch})
     }
 
     _onChangeTweets = (tweet_list) => {
@@ -125,7 +130,10 @@ class Container extends React.Component {
                 <div style={{ width:2000, position:'absolute'}}>
                     {/* <ImportMap3 {...this.props} import_countries= {this.state.import_countries}>
                     </ImportMap3> */}
-                    <FlightMap {...this.props} import_countries= {this.state.import_countries} blocked_countries_switch={this.state.blocked_countries_switch} blocked_countries={this.state.blocked_countries}>
+                    <FlightMap {...this.props} import_countries= {this.state.import_countries} 
+                    blocked_countries_switch={this.state.blocked_countries_switch} 
+                    blocked_countries={this.state.blocked_countries}
+                    fieldVizualization={this.state.fieldVizualization_switch} >
                     </FlightMap>
                 </div>
 
@@ -135,7 +143,9 @@ class Container extends React.Component {
                         <DecisionControlPanel {...this.props} onChange = {this._onChangeDemand} 
                         onSwitchResultPanel={this._onSwitchResultPanel} onSwitchPandemicPanel={this._onSwitchPandemicPanel} 
                         onSwitchBlockedCountries={this._onSwitchBlockedCountries} onChangeBlockedCountries={this._onChangeBlockedCountries} 
-                        onChangeTweets={this._onChangeTweets} importCountries={this.state.import_countries} />
+                        onChangeTweets={this._onChangeTweets} importCountries={this.state.import_countries} 
+                        onSwitchFieldVizualization={this._onSwitchFieldVizualization}
+                        />
                     </Col>
                     <Col sm={3}>
                     </Col>

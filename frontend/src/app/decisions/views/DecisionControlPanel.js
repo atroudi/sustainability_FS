@@ -48,6 +48,7 @@ export default class ControlPanel extends PureComponent {
     this.props.onSwitchPandemicPanel(s);
 
   }
+
   changePandemic(tweet_list){
     this.changeTweets(tweet_list)
   }
@@ -165,7 +166,7 @@ export default class ControlPanel extends PureComponent {
                 <hr />
                 <label htmlFor="material-switch6">
                     <SwitchControl color='red' handleSwitchChange={s => this.onSwitchPandemic(s) } />
-                    <span style={{paddingTop: '100px'}}> Sentiment Analysis </span>
+                    <span style={{paddingTop: '100px'}}> Pandemic </span>
                 </label>
 
                 {this.state.pandemicSwitch &&
@@ -243,7 +244,7 @@ export default class ControlPanel extends PureComponent {
       
               <div className="text-left" >
                 <label htmlFor="material-switch4">
-                  <SwitchControl handleSwitchChange={t => console.log("blockade switch enabled")} />
+                  <SwitchControl handleSwitchChange={s => this.props.onSwitchFieldVizualization(s)} />
                   <span style={{paddingTop: '100px'}}> Visualize Fields </span>
                 </label>
                 <hr />

@@ -16,6 +16,13 @@ const OPACITY = 0.4;
 const airportParse = ([airportId, name, city, country, iata, icao, lat, lng, alt, timezone, dst, tz, type, source]) => ({ airportId, name, city, country, iata, icao, lat, lng, alt, timezone, dst, tz, type, source });
 const routeParse = ([airline, airlineId, srcIata, srcAirportId, dstIata, dstAirportId, codeshare, stops, equipment]) => ({ airline, airlineId, srcIata, srcAirportId, dstIata, dstAirportId, codeshare, stops, equipment});
 
+const QatarAnimation = [{
+  coordinates: [1.3521, 103.8198],
+  focusAnimationDuration: 3000,
+  focusDistanceRadiusScale: 8,
+  focusEasingFunction: ['Linear', 'None'],
+},]
+
 class World extends React.Component {
   constructor(props) {
     super(props);
@@ -38,6 +45,7 @@ class World extends React.Component {
       countries_polygon_simple: countries_polygon_simple_local.features,
       hoverArc: null,
       clickPolygon:null,
+      animation: QatarAnimation,
     }
 
     this._mapRef = React.createRef();
@@ -115,9 +123,14 @@ class World extends React.Component {
 
 
 
+  _zoomIntoQatar = () => {
+    const map = this._getMap();
+    map.pointOfView({ lat: 25.31, lng: 51.47, altitude: 0.05}, 2000);
+  }
+
   componentDidMount(){
     const map = this._getMap();
-    map.pointOfView({ lat: 25.31, lng: 51.47, altitude: 1.5 });
+    map.pointOfView({ lat: 25.31, lng: 51.47, altitude: 1.5});
     this._updateImportCountries(this.state.countries, this.state.routes, this.state.blocked_countries)
   }
 
@@ -134,6 +147,12 @@ class World extends React.Component {
         this.setState({blockade_switch: nextProps.blocked_countries_switch});
         this._updateImportCountries(nextProps.import_countries, nextProps.routes, nextProps.blocked_countries, nextProps.blocked_countries_switch);
       // }
+    }
+
+    if(nextProps.fieldVizualization!= props.fieldVizualization){
+      if(nextProps.fieldVizualization== true){
+        this._zoomIntoQatar()
+      }
     }
   }
 
@@ -182,6 +201,9 @@ class World extends React.Component {
       labelColor={() => 'white'}
       labelAltitude={d => ["USA","AUS"].includes(d.properties.sov_a3) ? 0.04 : (d.properties.sov_a3 === "QAT" ? 0.01 : (d === this.state.clickPolygon ? 0.06 : 0.01))}
       labelResolution={2}
+
+      animations={QatarAnimation}
+
     />);
 
   }
