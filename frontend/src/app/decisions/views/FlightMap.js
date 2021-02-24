@@ -125,12 +125,16 @@ class World extends React.Component {
 
   _zoomIntoQatar = () => {
     const map = this._getMap();
-    map.pointOfView({ lat: 25.31, lng: 51.47, altitude: 0.05}, 2000);
+    map.pointOfView({ lat: 25.31, lng: 51.47, altitude: 0.05}, 2000).then(
+      () => {
+        map.pauseAnimation();
+      }
+    );
   }
 
   componentDidMount(){
     const map = this._getMap();
-    map.pointOfView({ lat: 25.31, lng: 51.47, altitude: 1.5});
+    map.pointOfView({ lat: 25.315, lng: 51.434, altitude: 1.5});
     this._updateImportCountries(this.state.countries, this.state.routes, this.state.blocked_countries)
   }
 
@@ -152,6 +156,10 @@ class World extends React.Component {
     if(nextProps.fieldVizualization!= props.fieldVizualization){
       if(nextProps.fieldVizualization== true){
         this._zoomIntoQatar()
+      } else {
+        // resume animation if field viz is disabled
+        const map = this._getMap();
+        map.resumeAnimation();
       }
     }
   }
