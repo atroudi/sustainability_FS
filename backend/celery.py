@@ -4,7 +4,12 @@ from celery import Celery
 from django.conf import settings
 
 # set the default Django settings module for the 'celery' program.
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings.devl')
+if os.environ.get('DJANGO_PROD') == 'true':
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend.settings.prod")
+else:
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend.settings.devl")
+from django.core.management import execute_from_command_line
+
 app = Celery('backend')
 
 # Using a string here means the worker will not have to

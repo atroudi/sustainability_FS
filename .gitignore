@@ -3,11 +3,6 @@
 node_modules
 npm-debug.log
 frontend/build/*
-#backend/settings/devl.py
-.idea/CSE_DBV.iml .idea/dataSources.local.xml .idea/dataSources.xml .idea/inspectionProfiles .idea/misc.xml .idea/modules.xml .idea/vcs.xml .idea/workspace.xml
-#docker-compose.yml
-#Dockerfile
-.idea/workspace.xml
 documents
 media
 venv
@@ -26,7 +21,8 @@ backend/apps/users/__pycache__
 backend/apps/users/migrations/__pycache__
 backend/apps/users/registration/__pycache__
 backend/settings/__pycache__
-backend/settings/devl.py
 celery.logs
-*.pyc
 *.pyo
+.idea/CSE_DBV.iml .idea/dataSources.local.xml .idea/dataSources.xml .idea/inspectionProfiles .idea/misc.xml .idea/modules.xml .idea/vcs.xml .idea/workspace.xml
+.idea/workspace.xml
+backend/apps/twitters/resources/Sentiment_CNN_model.h5

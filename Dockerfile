@@ -6,8 +6,11 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-COPY requirements.txt /app
+COPY . /app
 RUN pip install -r requirements.txt
+
+#Download sentiment analysis model
+RUN cd backend/apps/twitters/resources/ && bash downloadModel.sh
 
 EXPOSE 80
 CMD ["python", "manage.py", "migrate", "--noinput"]

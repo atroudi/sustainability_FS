@@ -36,6 +36,8 @@ services:
       - "3000:3000"
   celery:
     build: .
+    environment:
+      - DJANGO_PROD=true
     command: celery -A backend worker -l info -f celery.logs
     volumes:
       - .:/app

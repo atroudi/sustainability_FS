@@ -125,11 +125,12 @@ class World extends React.Component {
 
   _zoomIntoQatar = () => {
     const map = this._getMap();
-    map.pointOfView({ lat: 25.31, lng: 51.47, altitude: 0.05}, 2000).then(
-      () => {
-        map.pauseAnimation();
-      }
-    );
+    map.pointOfView({ lat: 25.31, lng: 51.47, altitude: 0.05}, 2000);
+    // .then(
+    //   () => {
+    //     map.pauseAnimation();
+    //   }
+    // );
   }
 
   componentDidMount(){
