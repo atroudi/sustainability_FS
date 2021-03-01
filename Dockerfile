@@ -5,12 +5,12 @@ RUN apt-get update \
         postgresql-client \
     && rm -rf /var/lib/apt/lists/*
 
+#Download sentiment analysis model
+RUN cd backend/apps/twitters/resources/ && bash downloadModel.sh
+
 WORKDIR /app
 COPY . /app
 RUN pip install -r requirements.txt
-
-#Download sentiment analysis model
-RUN cd backend/apps/twitters/resources/ && bash downloadModel.sh
 
 EXPOSE 80
 CMD ["python", "manage.py", "migrate", "--noinput"]
