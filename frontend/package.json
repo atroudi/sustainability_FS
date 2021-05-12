@@ -41,7 +41,7 @@
   "dependencies": {
     "@turf/turf": "^3.14.3",
     "admin-lte": "^2.4.9",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "classnames": "2.2.3",
     "d3-dsv": "^1.2.0",
     "google-map-react": "^1.1.2",
