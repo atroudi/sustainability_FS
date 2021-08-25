@@ -15,5 +15,5 @@ tweepy==3.7.0
 Keras==2.2.4
 Keras-Applications==1.0.6
 Keras-Preprocessing==1.0.5
-tensorflow==1.11.0rc2
+tensorflow==2.5.1
 h5py==2.10.0
