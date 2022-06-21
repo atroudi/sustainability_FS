@@ -9,7 +9,7 @@ flake8==2.5.4
 pygments==2.2.0
 celery==4.1.1
 redis==3.2.0
-numpy==1.16.2
+numpy==1.22.0
 pandas==0.22
 tweepy==3.7.0
 Keras==2.2.4
