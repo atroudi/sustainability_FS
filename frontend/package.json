@@ -78,7 +78,7 @@
     "reselect": "^2.2.1",
     "ring": "^2.2.3",
     "ringjs": "0.0.1",
-    "superagent": "^1.8.2",
+    "superagent": "^8.0.5",
     "three": "^0.113.2"
   }
 }
